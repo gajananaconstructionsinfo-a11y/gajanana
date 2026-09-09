@@ -1,0 +1,36 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141a22"/>
+      <stop offset="50%" stop-color="#1b2430"/>
+      <stop offset="100%" stop-color="#0f1318"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2a3848" stroke-width="0.8" opacity="0.4"/>
+      <circle cx="0" cy="0" r="1.5" fill="#f59e0b" opacity="0.5"/>
+    </pattern>
+    <pattern id="fineGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#222d3a" stroke-width="0.4" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+  <rect width="100%" height="100%" fill="url(#fineGrid)"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  
+  <line x1="60" y1="100" x2="740" y2="100" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.6"/>
+  <line x1="60" y1="500" x2="740" y2="500" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.6"/>
+  <line x1="120" y1="60" x2="120" y2="540" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.6"/>
+  <line x1="680" y1="60" x2="680" y2="540" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.6"/>
+
+  <g transform="translate(400, 300)">
+    <circle r="120" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.5"/>
+    <circle r="100" fill="#18202a" stroke="#d97706" stroke-width="2"/>
+    <polygon points="0,-70 50,30 -50,30" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="0" cy="0" r="24" fill="#d97706"/>
+    <path d="M-40,45 L40,45 M-30,55 L30,55" stroke="#f59e0b" stroke-width="2"/>
+    <text x="0" y="6" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">GC</text>
+  </g>
+
+  <text x="400" y="470" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#f8fafc" text-anchor="middle" letter-spacing="3">GAJANANA CONSTRUCTIONS & MATERIALS</text>
+  <text x="400" y="495" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle" letter-spacing="1.5">ENGINEERING PRECISION &amp; QUALITY MATERIALS</text>
+</svg>
