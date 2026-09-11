@@ -4,13 +4,20 @@ import Breadcrumb from '../components/Breadcrumb';
 import { useApp } from '../context/AppContext';
 
 export default function GetAQuote() {
-  const { submitInquiry } = useApp();
+  const { submitInquiry, data } = useApp();
+  const company = data?.company || {
+    phone: "8884238688",
+    phoneDisplay: "+91 88842 38688",
+    email: "gajananaconstructionsinfo@gmail.com",
+    whatsappNumber: "918884238688"
+  };
 
   // Estimator state
-  const [projectType, setProjectType] = useState('turnkey'); // turnkey, civil, materials, renovation
+  const [projectType, setProjectType] = useState('turnkey'); // turnkey, machinery, civil, materials, renovation
   const [builtUpArea, setBuiltUpArea] = useState(2500); // sq ft
   const [qualityGrade, setQualityGrade] = useState('premium'); // standard, premium, luxury
   const [selectedMaterials, setSelectedMaterials] = useState({
+    jcb: true,
     steel: true,
     cement: true,
     aggregates: true,
@@ -31,43 +38,17 @@ export default function GetAQuote() {
   const [submitted, setSubmitted] = useState(false);
   const [generatedTicket, setGeneratedTicket] = useState(null);
 
-  // Dynamic calculations
+  // Dynamic engineering physical takeoffs based on IS 456 standards (Strictly physical units, ZERO numeric prices)
   const estimation = useMemo(() => {
-    let ratePerSqFt = 0;
-    if (projectType === 'turnkey') {
-      if (qualityGrade === 'standard') ratePerSqFt = 1850;
-      else if (qualityGrade === 'premium') ratePerSqFt = 2450;
-      else ratePerSqFt = 3200;
-    } else if (projectType === 'civil') {
-      if (qualityGrade === 'standard') ratePerSqFt = 1250;
-      else if (qualityGrade === 'premium') ratePerSqFt = 1600;
-      else ratePerSqFt = 2100;
-    } else if (projectType === 'materials') {
-      // Estimated materials base consumption per sqft
-      ratePerSqFt = 950;
-    } else {
-      // Renovation
-      ratePerSqFt = 1100;
-    }
-
-    const baseCost = builtUpArea * ratePerSqFt;
-
-    // Materials add-on delta
-    let materialCostEstimate = baseCost * 0.58;
-    let laborStructuralEstimate = baseCost * 0.32;
-    let complianceSafetyEstimate = baseCost * 0.10;
-
     return {
-      ratePerSqFt,
-      totalCost: baseCost,
-      materialCostEstimate,
-      laborStructuralEstimate,
-      complianceSafetyEstimate,
       estSteelQty: Math.round((builtUpArea * 3.8) / 1000 * 10) / 10, // metric tons (approx 3.8kg/sqft)
-      estCementQty: Math.round(builtUpArea * 0.42), // bags (approx 0.42 bags/sqft)
-      estSandQty: Math.round((builtUpArea * 1.8) / 100), // tons
+      estCementQty: Math.round(builtUpArea * 0.42), // 50kg bags (approx 0.42 bags/sqft)
+      estSandQty: Math.round((builtUpArea * 1.8) / 100), // tonnes
+      estJcbHours: Math.max(12, Math.round(builtUpArea * 0.038)), // machine hours (JCB 3DX & Excavation)
+      estRmcQty: Math.round(builtUpArea * 0.14), // cu.m of concrete
+      estBlocksQty: Math.round(builtUpArea * 1.25), // AAC masonry blocks
     };
-  }, [projectType, builtUpArea, qualityGrade]);
+  }, [builtUpArea]);
 
   const handleMaterialToggle = (key) => {
     setSelectedMaterials(prev => ({ ...prev, [key]: !prev[key] }));
@@ -84,9 +65,10 @@ export default function GetAQuote() {
       projectType,
       builtUpArea,
       qualityGrade,
-      estimatedTotal: estimation.totalCost,
+      estimatedTotal: 'Price on Enquiry',
+      estimationTakeoff: estimation,
       date: new Date().toISOString(),
-      type: 'Comprehensive Rate Estimation'
+      type: 'Engineering Takeoff & BOQ Estimation'
     };
 
     submitInquiry(quotePayload);
@@ -94,29 +76,29 @@ export default function GetAQuote() {
     setSubmitted(true);
   };
 
-  const formatINR = (val) => {
-    return new Intl.NumberFormat('en-IN', {
-      style: 'currency',
-      currency: 'INR',
-      maximumFractionDigits: 0
-    }).format(val);
-  };
-
   return (
     <div className="min-h-screen bg-slate-50">
       <Breadcrumb items={[{ label: 'Get a Quote' }]} />
+
+      {/* Pricing Policy Top Notice */}
+      <div className="bg-amber-500 text-slate-950 py-2.5 px-4 text-xs font-mono font-bold text-center border-b border-amber-600 shadow-inner">
+        <span>📢 ZERO BROKERAGE PRICING: For official rate cards, wholesale project pricing, and machine dispatch, contact </span>
+        <a href="tel:8884238688" className="underline font-extrabold text-slate-950 hover:text-white ml-1">8884238688</a>
+        <span className="mx-1.5">|</span>
+        <a href="mailto:gajananaconstructionsinfo@gmail.com" className="underline font-extrabold text-slate-950 hover:text-white">gajananaconstructionsinfo@gmail.com</a>
+      </div>
 
       {/* Header */}
       <section className="bg-slate-900 text-white py-14 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
         <div className="max-w-7xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-4 border border-amber-500/30">
-            Interactive BOQ & Cost Estimator
+            Interactive BOQ &amp; Physical Takeoff Estimator
           </div>
           <h1 className="text-3xl sm:text-5xl font-extrabold font-heading text-white tracking-tight mb-4">
-            Instant Construction & Material Quotation Engine
+            Construction, JCB Fleet &amp; Material BOQ Engine
           </h1>
           <p className="text-slate-300 text-lg max-w-3xl leading-relaxed">
-            Calculate accurate preliminary project expenditures, material volume allocations (TMT steel, cement bags, sand tonnage), and receive an engineering-verified itemized quotation within hours.
+            Calculate accurate structural material volume allocations (Fe 550D TMT steel, 53G cement bags, sand tonnage, JCB machine hours), and receive an engineering-verified itemized quotation directly from our central depot.
           </p>
         </div>
       </section>
@@ -133,16 +115,17 @@ export default function GetAQuote() {
                 <span className="w-8 h-8 rounded-full bg-slate-900 text-amber-400 font-bold flex items-center justify-center text-sm">1</span>
                 <div>
                   <h3 className="text-lg font-bold font-heading text-slate-900">Select Project Execution Scope</h3>
-                  <p className="text-xs text-slate-500">Choose between end-to-end turnkey delivery or raw materials supply.</p>
+                  <p className="text-xs text-slate-500">Choose between end-to-end turnkey delivery, earthmoving machinery, or raw materials supply.</p>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
                   { id: 'turnkey', title: 'Complete Turnkey Construction', desc: 'Architecture, civil structure, finishes, plumbing, electrical & handover.', icon: 'fa-house-chimney' },
+                  { id: 'machinery', title: 'Earthmoving & JCB Fleet Rental', desc: 'JCB 3DX backhoes, 20T hydraulic excavators, rock breakers & site grading.', icon: 'fa-truck-front' },
                   { id: 'civil', title: 'Civil & Structural Core', desc: 'Foundation, RCC column frame, masonry walls & slab casting.', icon: 'fa-cubes-stacked' },
                   { id: 'materials', title: 'Direct Yard Materials Supply', desc: 'Bulk procurement of Fe 550D TMT, 53G cement, sand & bricks.', icon: 'fa-truck-ramp-box' },
-                  { id: 'renovation', title: 'Commercial / Structural Additions', desc: 'Vertical floors expansion, retrofitting, industrial shed erection.', icon: 'fa-industry' },
+                  { id: 'renovation', title: 'Commercial & Structural Additions', desc: 'Vertical floors expansion, retrofitting, industrial shed erection.', icon: 'fa-industry' },
                 ].map((item) => (
                   <button
                     key={item.id}
@@ -169,8 +152,8 @@ export default function GetAQuote() {
               <div className="flex items-center gap-3 mb-6">
                 <span className="w-8 h-8 rounded-full bg-slate-900 text-amber-400 font-bold flex items-center justify-center text-sm">2</span>
                 <div>
-                  <h3 className="text-lg font-bold font-heading text-slate-900">Project Dimensions & Quality Specification</h3>
-                  <p className="text-xs text-slate-500">Fine-tune the gross built-up area and structural finish grade.</p>
+                  <h3 className="text-lg font-bold font-heading text-slate-900">Project Dimensions &amp; Specification Standard</h3>
+                  <p className="text-xs text-slate-500">Fine-tune the gross built-up area and structural quality benchmarks.</p>
                 </div>
               </div>
 
@@ -199,16 +182,16 @@ export default function GetAQuote() {
                 </div>
               </div>
 
-              {/* Quality Grade Options */}
+              {/* Quality Grade Options - Without monetary currency */}
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-3">
-                  Specification Grade & Finish Standard
+                  Specification Grade &amp; Finish Standard
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   {[
-                    { id: 'standard', title: 'Standard Grade', rate: '₹1,850/sq.ft', desc: 'ISI Fe 500D Steel, 43G Cement, vitrified tiles, standard CP fittings.' },
-                    { id: 'premium', title: 'Premium Architectural', rate: '₹2,450/sq.ft', desc: 'Tata Tiscon Fe 550D, UltraTech 53G, Italian marble touch, Kohler fittings.' },
-                    { id: 'luxury', title: 'Luxury Signature', rate: '₹3,200/sq.ft', desc: 'Engineered earthquake resistant, smart home automation, imported finishes.' },
+                    { id: 'standard', title: 'Standard Grade', badge: 'IS 456 Standard', desc: 'ISI Fe 500D Steel, 43G Cement, vitrified tiles, standard CP fittings.' },
+                    { id: 'premium', title: 'Premium Architectural', badge: 'High Ductility 550D', desc: 'Tata Tiscon Fe 550D, UltraTech 53G, Italian marble touch, Kohler fittings.' },
+                    { id: 'luxury', title: 'Luxury Signature', badge: 'Engineered Elite', desc: 'Earthquake-resistant RCC frame, smart home automation, imported finishes.' },
                   ].map((tier) => (
                     <button
                       key={tier.id}
@@ -221,7 +204,9 @@ export default function GetAQuote() {
                       }`}
                     >
                       <div className="font-bold text-sm text-slate-900">{tier.title}</div>
-                      <div className="text-xs font-bold text-amber-600 mt-0.5">{tier.rate}</div>
+                      <span className="inline-block mt-1 px-2 py-0.5 rounded bg-amber-100 text-amber-800 font-mono text-[10px] font-bold">
+                        {tier.badge}
+                      </span>
                       <p className="text-xs text-slate-500 mt-2 leading-tight">{tier.desc}</p>
                     </button>
                   ))}
@@ -229,18 +214,19 @@ export default function GetAQuote() {
               </div>
             </div>
 
-            {/* Step 3: Material Packages Included */}
+            {/* Step 3: Material & Machinery Packages Included */}
             <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm">
               <div className="flex items-center gap-3 mb-6">
                 <span className="w-8 h-8 rounded-full bg-slate-900 text-amber-400 font-bold flex items-center justify-center text-sm">3</span>
                 <div>
-                  <h3 className="text-lg font-bold font-heading text-slate-900">Direct Material Logistics Inclusions</h3>
-                  <p className="text-xs text-slate-500">Check required materials from our centralized yard dispatch.</p>
+                  <h3 className="text-lg font-bold font-heading text-slate-900">Direct Material &amp; Machinery Logistics</h3>
+                  <p className="text-xs text-slate-500">Check required machinery &amp; materials from our centralized yard dispatch.</p>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
+                  { key: 'jcb', name: 'JCB 3DX & Heavy Excavators', tag: 'Machinery Fleet' },
                   { key: 'steel', name: 'TMT Steel Fe 550D Primary Mills', tag: 'Direct Trailer' },
                   { key: 'cement', name: 'Fresh Batch 53G Portland Cement', tag: 'Moisture Sealed' },
                   { key: 'aggregates', name: 'Washed M-Sand & 20mm Blue Metal', tag: 'Calibrated Tippers' },
@@ -292,14 +278,14 @@ export default function GetAQuote() {
 
           </div>
 
-          {/* Right Column: Live Cost Summary & Official Quote Generator (5 Cols) */}
+          {/* Right Column: Physical BOQ Matrix & Direct Official Quote (5 Cols) */}
           <div className="lg:col-span-5 space-y-6">
             
-            {/* Live Pricing Breakdown Card */}
+            {/* Live Pricing Policy Card */}
             <div className="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-xl sticky top-28">
               <div className="flex items-center justify-between pb-4 border-b border-slate-800">
-                <div className="text-xs font-bold text-amber-400 uppercase tracking-widest">
-                  Live Preliminary Estimate
+                <div className="text-xs font-bold text-amber-400 uppercase tracking-widest font-mono">
+                  Official Rate Specification
                 </div>
                 <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -308,48 +294,69 @@ export default function GetAQuote() {
               </div>
 
               <div className="my-6">
-                <div className="text-xs text-slate-400 font-medium mb-1">Total Estimated Project Value</div>
-                <div className="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight text-amber-400">
-                  {formatINR(estimation.totalCost)}
+                <div className="text-xs text-slate-400 font-medium mb-1 font-mono uppercase">Indicative Quotation</div>
+                <div className="text-3xl sm:text-4xl font-extrabold font-heading text-amber-400">
+                  Price on Enquiry
                 </div>
-                <div className="text-xs text-slate-400 mt-1">
-                  Based on ~₹{estimation.ratePerSqFt.toLocaleString('en-IN')} / sq.ft across {builtUpArea.toLocaleString('en-IN')} sq.ft
-                </div>
-              </div>
-
-              {/* Itemized Volume Allocation Forecast */}
-              <div className="space-y-3 py-4 border-t border-slate-800/80 text-sm">
-                <div className="flex justify-between items-center text-slate-300">
-                  <span className="text-xs">Direct Raw Materials Allocation (58%):</span>
-                  <span className="font-mono font-bold text-white">{formatINR(estimation.materialCostEstimate)}</span>
-                </div>
-                <div className="flex justify-between items-center text-slate-300">
-                  <span className="text-xs">Civil Engineering, Labour & Machinery (32%):</span>
-                  <span className="font-mono font-bold text-white">{formatINR(estimation.laborStructuralEstimate)}</span>
-                </div>
-                <div className="flex justify-between items-center text-slate-300">
-                  <span className="text-xs">Quality Audits, Approvals & Buffer (10%):</span>
-                  <span className="font-mono font-bold text-white">{formatINR(estimation.complianceSafetyEstimate)}</span>
+                <div className="text-xs text-slate-300 mt-2 font-mono">
+                  Physical quantity takeoff calculated across {builtUpArea.toLocaleString('en-IN')} sq.ft
                 </div>
               </div>
 
-              {/* Estimated Material Quantities (BOQ Preview) */}
-              <div className="mt-4 p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 space-y-2">
-                <div className="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">
+              {/* Price Enquiry Direct Notice Box */}
+              <div className="p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 text-xs font-mono space-y-2 mb-6">
+                <div className="font-bold text-amber-300 uppercase">
+                  📞 For Official Price Queries &amp; Signed Rate Sheet:
+                </div>
+                <div className="text-slate-200">
+                  Phone: <a href="tel:8884238688" className="font-bold underline text-amber-400">8884238688</a>
+                </div>
+                <div className="text-slate-200">
+                  Email: <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold underline text-amber-400">gajananaconstructionsinfo@gmail.com</a>
+                </div>
+              </div>
+
+              {/* Physical Quantities BOQ Matrix */}
+              <div className="space-y-3 py-4 border-t border-slate-800/80">
+                <div className="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2 font-mono">
                   Estimated Physical Yard Consumption:
                 </div>
-                <div className="grid grid-cols-3 gap-2 text-center text-xs">
-                  <div className="bg-slate-900/80 p-2 rounded border border-slate-700">
-                    <span className="text-slate-400 block text-[10px]">TMT Fe 550D</span>
-                    <span className="font-bold text-white font-mono">{estimation.estSteelQty} MT</span>
+
+                <div className="grid grid-cols-2 gap-2.5 text-xs font-mono">
+                  <div className="bg-slate-800/90 p-3 rounded-xl border border-slate-700">
+                    <span className="text-slate-400 block text-[10px]">TMT Fe 550D Steel</span>
+                    <span className="font-bold text-white text-base">{estimation.estSteelQty} MT</span>
+                    <span className="text-[10px] text-slate-500 block">Primary Rolling Mill</span>
                   </div>
-                  <div className="bg-slate-900/80 p-2 rounded border border-slate-700">
+
+                  <div className="bg-slate-800/90 p-3 rounded-xl border border-slate-700">
                     <span className="text-slate-400 block text-[10px]">53G Cement</span>
-                    <span className="font-bold text-white font-mono">{estimation.estCementQty} Bags</span>
+                    <span className="font-bold text-emerald-400 text-base">{estimation.estCementQty} Bags</span>
+                    <span className="text-[10px] text-slate-500 block">Moisture-Proof HDPE</span>
                   </div>
-                  <div className="bg-slate-900/80 p-2 rounded border border-slate-700">
-                    <span className="text-slate-400 block text-[10px]">M-Sand</span>
-                    <span className="font-bold text-white font-mono">{estimation.estSandQty} Tons</span>
+
+                  <div className="bg-slate-800/90 p-3 rounded-xl border border-slate-700">
+                    <span className="text-slate-400 block text-[10px]">M-Sand &amp; Coarse</span>
+                    <span className="font-bold text-blue-400 text-base">{estimation.estSandQty} Tons</span>
+                    <span className="text-[10px] text-slate-500 block">Zero Silt Grade</span>
+                  </div>
+
+                  <div className="bg-slate-800/90 p-3 rounded-xl border border-slate-700">
+                    <span className="text-slate-400 block text-[10px]">JCB &amp; Excavator Fleet</span>
+                    <span className="font-bold text-orange-400 text-base">~{estimation.estJcbHours} Hrs</span>
+                    <span className="text-[10px] text-slate-500 block">Excavation &amp; Grading</span>
+                  </div>
+
+                  <div className="bg-slate-800/90 p-3 rounded-xl border border-slate-700">
+                    <span className="text-slate-400 block text-[10px]">Ready Concrete (RMC)</span>
+                    <span className="font-bold text-purple-400 text-base">{estimation.estRmcQty} cu.m</span>
+                    <span className="text-[10px] text-slate-500 block">Transit Mixer Pour</span>
+                  </div>
+
+                  <div className="bg-slate-800/90 p-3 rounded-xl border border-slate-700">
+                    <span className="text-slate-400 block text-[10px]">AAC Masonry Blocks</span>
+                    <span className="font-bold text-amber-300 text-base">{estimation.estBlocksQty} Units</span>
+                    <span className="text-[10px] text-slate-500 block">Precision Joint Units</span>
                   </div>
                 </div>
               </div>
@@ -357,29 +364,38 @@ export default function GetAQuote() {
               {/* Official Quote Submission Form */}
               <div className="mt-6 pt-6 border-t border-slate-800">
                 <div className="text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">
-                  Lock Rates & Receive Formally Signed PDF BOQ
+                  Lock Specifications &amp; Receive Signed PDF BOQ
                 </div>
 
                 {submitted ? (
-                  <div className="p-5 rounded-xl bg-emerald-950/60 border border-emerald-500/50 text-center">
-                    <div className="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto mb-2 text-lg">
-                      <i className="fa-solid fa-file-invoice-dollar"></i>
+                  <div className="p-5 rounded-xl bg-emerald-950/60 border border-emerald-500/50 text-center space-y-3">
+                    <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto text-xl">
+                      <i className="fa-solid fa-check"></i>
                     </div>
                     <div className="font-bold text-white text-base">Quotation Ticket Created!</div>
-                    <div className="text-xs text-slate-300 mt-1">Ticket Reference:</div>
-                    <div className="font-mono text-amber-400 font-bold text-sm my-1">{generatedTicket?.ticketId}</div>
-                    <p className="text-xs text-slate-400 mt-2">
-                      Our commercial estimation lead has been assigned. You will receive the detailed rate-card PDF on your phone via WhatsApp.
+                    <div className="text-xs text-slate-300">Ticket Reference:</div>
+                    <div className="font-mono text-amber-400 font-bold text-base">{generatedTicket?.ticketId}</div>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      Our commercial estimating lead has received your specifications for {builtUpArea.toLocaleString('en-IN')} sq.ft.
                     </p>
-                    <a
-                      href={`https://wa.me/919448123456?text=Hello%20Gajanana%20Constructions,%20I%20generated%20Estimate%20${generatedTicket?.ticketId}%20for%20${builtUpArea}%20sqft.%20Please%20send%20PDF.`}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-bold transition"
-                    >
-                      <i className="fa-brands fa-whatsapp"></i>
-                      <span>Fast-Track on WhatsApp</span>
-                    </a>
+                    <div className="pt-2 flex flex-col gap-2">
+                      <a
+                        href={`https://wa.me/918884238688?text=Hello%20GCM,%20I%20generated%20Estimate%20${generatedTicket?.ticketId}%20for%20${builtUpArea}%20sqft.%20Please%20send%20signed%20rate%20card.`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold transition shadow"
+                      >
+                        <i className="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Fast-Track on WhatsApp (8884238688)</span>
+                      </a>
+                      <a
+                        href="tel:8884238688"
+                        className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-xl text-xs font-bold transition font-mono"
+                      >
+                        <i className="fa-solid fa-phone text-sm"></i>
+                        <span>Call Dispatch Desk: 8884238688</span>
+                      </a>
+                    </div>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-3">
@@ -413,7 +429,7 @@ export default function GetAQuote() {
                     <div>
                       <input
                         type="text"
-                        placeholder="Project Site Location (e.g. Whitefield, Bangalore)"
+                        placeholder="Project Site Location (e.g. Bangalore / Industrial Ring Road)"
                         value={customer.location}
                         onChange={(e) => setCustomer(prev => ({ ...prev, location: e.target.value }))}
                         className="w-full px-3.5 py-2.5 bg-slate-800 border border-slate-700 rounded-lg text-xs text-white placeholder-slate-400 focus:outline-none focus:border-amber-500"
@@ -424,11 +440,11 @@ export default function GetAQuote() {
                       type="submit"
                       className="w-full py-3.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 shadow-lg"
                     >
-                      <span>Lock In Estimate & Generate Official BOQ</span>
+                      <span>Lock In Specifications &amp; Request BOQ</span>
                       <i className="fa-solid fa-arrow-right"></i>
                     </button>
                     <p className="text-[11px] text-slate-400 text-center">
-                      Rates valid for 14 calendar days from creation. Transparent billing guarantee.
+                      Rates provided directly without broker markup. For price queries call 8884238688.
                     </p>
                   </form>
                 )}
@@ -453,7 +469,7 @@ export default function GetAQuote() {
                 </li>
                 <li className="flex items-start gap-2">
                   <i className="fa-solid fa-check text-emerald-500 mt-0.5"></i>
-                  <span><strong>Dedicated Project Lead:</strong> Senior civil engineer appointed as single point of contact.</span>
+                  <span><strong>In-House Machinery Fleet:</strong> JCB 3DX &amp; heavy excavators mobilized directly from yard.</span>
                 </li>
               </ul>
             </div>

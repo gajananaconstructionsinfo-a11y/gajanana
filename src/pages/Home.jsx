@@ -290,8 +290,13 @@ export default function Home() {
                       {sku.specSummary}
                     </p>
                     <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 font-mono">
-                      <span className="text-[10px] text-slate-400 block uppercase">Contractor Rate Guide</span>
-                      <span className="text-sm font-extrabold text-slate-900">{sku.priceGuide}</span>
+                      <div className="flex items-center justify-between mb-1">
+                        <span className="text-[10px] text-slate-500 uppercase font-bold">Pricing Policy</span>
+                        <span className="text-xs font-extrabold text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Price on Enquiry</span>
+                      </div>
+                      <div className="text-[11px] text-slate-600">
+                        Call: <a href="tel:8884238688" className="font-bold text-slate-900 hover:text-amber-600 font-mono">8884238688</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -314,24 +319,28 @@ export default function Home() {
             ))}
           </div>
 
-          {/* B2B Wholesale Banner */}
-          <div className="mt-12 p-8 rounded-3xl bg-slate-950 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+          {/* B2B Wholesale & Pricing Banner */}
+          <div className="mt-12 p-8 rounded-3xl bg-slate-950 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-slate-800">
             <div className="space-y-2 text-center md:text-left">
               <span className="text-amber-400 font-mono text-xs font-bold uppercase tracking-wider">
-                COMMERCIAL &amp; B2B WHOLESALE RAKES
+                COMMERCIAL FLEET &amp; BULK MATERIALS QUOTATIONS
               </span>
               <h3 className="text-2xl font-bold font-heading">
-                Need Bulk Rake Dispatches for Ongoing Sites?
+                For All Price Queries &amp; Bulk Rake Dispatches
               </h3>
-              <p className="text-xs text-slate-400 max-w-xl font-light">
-                We supply primary steel, bulk cement tankers, and truckloads of triple-washed M-Sand directly to commercial builders and government project sites.
+              <p className="text-xs text-slate-300 max-w-xl font-light">
+                We supply primary steel, cement, triple-washed M-Sand, and dispatch JCB 3DX &amp; heavy excavators directly to site. For live market rates and project quotes, contact our coordination desk:
               </p>
+              <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-mono text-amber-400">
+                <span>📞 <a href="tel:8884238688" className="font-bold underline text-white hover:text-amber-400">8884238688</a></span>
+                <span>✉️ <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold underline text-white hover:text-amber-400">gajananaconstructionsinfo@gmail.com</a></span>
+              </div>
             </div>
             <Link
               to="/contact"
               className="px-6 py-3.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl shrink-0 transition-colors shadow"
             >
-              CONTACT B2B SUPPLY DESK →
+              CONTACT DISPATCH DESK →
             </Link>
           </div>
         </div>
@@ -520,9 +529,14 @@ export default function Home() {
           <h2 className="text-3xl sm:text-5xl font-extrabold font-heading mb-4 max-w-2xl mx-auto">
             Get an Itemized Estimate or Material Rate Sheet
           </h2>
-          <p className="text-slate-400 text-sm max-w-xl mx-auto mb-8 font-light">
-            Schedule a consultation with our senior civil engineering estimators today.
+          <p className="text-slate-300 text-sm max-w-xl mx-auto mb-4 font-light">
+            Schedule a consultation with our senior civil engineering estimators today. For all pricing queries, daily wholesale rates, and machine dispatch:
           </p>
+          <div className="inline-flex flex-wrap items-center justify-center gap-6 px-6 py-2.5 rounded-2xl bg-slate-900 border border-slate-800 text-xs font-mono text-amber-400 mb-8 shadow-inner">
+            <span>Call: <a href="tel:8884238688" className="font-bold underline text-white hover:text-amber-400">8884238688</a></span>
+            <span>•</span>
+            <span>Email: <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold underline text-white hover:text-amber-400">gajananaconstructionsinfo@gmail.com</a></span>
+          </div>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               to="/get-a-quote"

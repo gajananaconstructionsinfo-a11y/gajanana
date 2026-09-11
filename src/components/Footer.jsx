@@ -69,9 +69,9 @@ export default function Footer() {
 
           {/* Construction Services */}
           <div>
-            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Services</h4>
+            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Key Services</h4>
             <ul className="space-y-2.5 text-xs text-slate-400">
-              {data.services.slice(0, 6).map((service) => (
+              {data.services.slice(0, 5).map((service) => (
                 <li key={service.slug}>
                   <Link to={`/services/${service.slug}`} className="hover:text-amber-400 transition-colors">
                     {service.title}
@@ -81,23 +81,40 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Yard */}
+          {/* Machinery & Materials */}
           <div>
-            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Contact Yard</h4>
+            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Fleet & Materials</h4>
+            <ul className="space-y-2.5 text-xs text-slate-400">
+              <li><Link to="/services/earthmoving-machinery-jcb" className="hover:text-amber-400 transition-colors">JCB 3DX & Excavators</Link></li>
+              <li><Link to="/materials/earthmoving-machinery" className="hover:text-amber-400 transition-colors">Earthmoving Machinery</Link></li>
+              <li><Link to="/materials/steel" className="hover:text-amber-400 transition-colors">Fe 550D TMT Steel</Link></li>
+              <li><Link to="/materials/cement" className="hover:text-amber-400 transition-colors">Grade 53 OPC Cement</Link></li>
+              <li><Link to="/materials/aggregates" className="hover:text-amber-400 transition-colors">Washed M-Sand & Metal</Link></li>
+              <li><Link to="/materials/concrete" className="hover:text-amber-400 transition-colors">Ready Mix Concrete (RMC)</Link></li>
+            </ul>
+          </div>
+
+          {/* Contact Yard & Price Queries */}
+          <div>
+            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Contact & Quotes</h4>
             <div className="space-y-3 text-xs text-slate-400">
+              <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-300 text-[11px] leading-relaxed">
+                <span className="font-bold block text-amber-400 uppercase font-mono">Pricing Queries:</span>
+                Call <a href="tel:8884238688" className="font-bold underline text-white">8884238688</a> or email <a href="mailto:gajananaconstructionsinfo@gmail.com" className="underline text-white">gajananaconstructionsinfo@gmail.com</a>
+              </div>
               <p className="leading-relaxed flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
                 <span>{company.address}</span>
               </p>
               <p className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-amber-500 shrink-0" />
-                <a href={`tel:${company.phone.replace(/\s+/g, '')}`} className="hover:text-amber-400 font-mono">
+                <a href={`tel:${company.phone.replace(/\s+/g, '')}`} className="hover:text-amber-400 font-mono font-bold">
                   {company.phoneDisplay}
                 </a>
               </p>
               <p className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-amber-500 shrink-0" />
-                <a href={`mailto:${company.email}`} className="hover:text-amber-400 font-mono">
+                <a href={`mailto:${company.email}`} className="hover:text-amber-400 font-mono text-[11px]">
                   {company.email}
                 </a>
               </p>

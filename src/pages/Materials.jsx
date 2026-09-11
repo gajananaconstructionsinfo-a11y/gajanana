@@ -10,17 +10,24 @@ export default function Materials() {
 
   const [builtupSqFt, setBuiltupSqFt] = useState(3500);
 
-  // Dynamic calculations based on ratios in data
+  // Dynamic calculations based on physical ratios in data
   const steelTons = ((builtupSqFt * boqRatios.steelKgPerSqFt) / 1000).toFixed(2);
   const cementBags = Math.round(builtupSqFt * boqRatios.cementBagsPerSqFt).toLocaleString('en-IN');
   const sandTons = Math.round(builtupSqFt * boqRatios.sandTonnesPerSqFt).toLocaleString('en-IN');
   const aacBlocks = Math.round(builtupSqFt * boqRatios.aacBlocksPerSqFt).toLocaleString('en-IN');
-  const minCostLakhs = ((builtupSqFt * boqRatios.baselineCostMin) / 100000).toFixed(2);
-  const maxCostLakhs = ((builtupSqFt * boqRatios.baselineCostMax) / 100000).toFixed(2);
+  const jcbHours = Math.max(8, Math.round(builtupSqFt * 0.035));
 
   return (
     <div>
       <Breadcrumb items={[{ label: 'Materials Depot & Mill Specs' }]} />
+
+      {/* Pricing Policy Top Banner */}
+      <div className="bg-amber-500 text-slate-950 py-2.5 px-4 text-xs font-mono font-bold text-center border-b border-amber-600 shadow-inner">
+        <span>📢 NOTICE: We maintain strict transparency with zero hidden brokerage. For wholesale bulk rates, project BOQ pricing, and today's market rate card, contact </span>
+        <a href="tel:8884238688" className="underline font-extrabold text-slate-950 hover:text-white ml-1">8884238688</a>
+        <span className="mx-1.5">|</span>
+        <a href="mailto:gajananaconstructionsinfo@gmail.com" className="underline font-extrabold text-slate-950 hover:text-white">gajananaconstructionsinfo@gmail.com</a>
+      </div>
 
       {/* 1. HERO & STATS BANNER (Stitch Screen 2) */}
       <section className="py-14 sm:py-20 bg-white border-b border-slate-200">
@@ -39,7 +46,7 @@ export default function Materials() {
                 </span>
               </h1>
               <p className="text-base text-slate-600 leading-relaxed font-light max-w-2xl">
-                Direct primary rolling mill TMT rebars, factory-fresh cement silos, triple-washed M-Sand, and precision AAC blocks with verified NABL mill test reports for civil engineering compliance.
+                Direct primary rolling mill TMT rebars, factory-fresh cement silos, triple-washed M-Sand, heavy earthmoving machinery fleet (JCB 3DX &amp; excavators), and precision AAC blocks with verified NABL mill test reports.
               </p>
             </div>
 
@@ -50,11 +57,11 @@ export default function Materials() {
                 <span>Controlled Humidity Silos</span>
               </div>
               <p className="text-slate-600 text-[11px] leading-relaxed">
-                All bagged cement is stored in elevated, de-humidified covered bays to prevent hydration pre-curing. Rebars stored under overhead gantry cranes.
+                All bagged cement is stored in elevated, de-humidified covered bays to prevent hydration pre-curing. Rebars stored under overhead gantry cranes. Heavy fleet mobilized within 2 hours.
               </p>
               <div className="pt-2 border-t border-slate-200 flex justify-between text-slate-900 font-bold">
                 <span>Daily Dispatch Fleet:</span>
-                <span className="text-emerald-700">24 Trucks Active</span>
+                <span className="text-emerald-700">24 Trucks &amp; Machinery</span>
               </div>
             </div>
 
@@ -114,33 +121,52 @@ export default function Materials() {
             </div>
 
             {/* Calculated Results (7 cols) */}
-            <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-4">
-              <div className="p-5 rounded-2xl bg-slate-800/90 border border-slate-700/80">
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-400 block mb-2"></span>
-                <div className="text-xs text-slate-400 font-mono">Fe 550D Steel</div>
-                <div className="text-xl font-extrabold text-amber-400 font-mono mt-1">{steelTons} MT</div>
-                <div className="text-[10px] text-slate-500 font-mono mt-1">~3.8 kg / sq ft</div>
+            <div className="lg:col-span-7 space-y-4">
+              <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+                <div className="p-4 rounded-2xl bg-slate-800/90 border border-slate-700/80">
+                  <span className="w-2.5 h-2.5 rounded-full bg-amber-400 block mb-2"></span>
+                  <div className="text-[11px] text-slate-400 font-mono">Fe 550D Steel</div>
+                  <div className="text-lg font-extrabold text-amber-400 font-mono mt-1">{steelTons} MT</div>
+                  <div className="text-[10px] text-slate-500 font-mono mt-1">~3.8 kg/sq ft</div>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-slate-800/90 border border-slate-700/80">
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 block mb-2"></span>
+                  <div className="text-[11px] text-slate-400 font-mono">53G Cement</div>
+                  <div className="text-lg font-extrabold text-emerald-400 font-mono mt-1">{cementBags}</div>
+                  <div className="text-[10px] text-slate-500 font-mono mt-1">50 kg Bags</div>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-slate-800/90 border border-slate-700/80">
+                  <span className="w-2.5 h-2.5 rounded-full bg-blue-400 block mb-2"></span>
+                  <div className="text-[11px] text-slate-400 font-mono">M-Sand Metal</div>
+                  <div className="text-lg font-extrabold text-blue-400 font-mono mt-1">{sandTons} T</div>
+                  <div className="text-[10px] text-slate-500 font-mono mt-1">Zero Silt</div>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-slate-800/90 border border-slate-700/80">
+                  <span className="w-2.5 h-2.5 rounded-full bg-purple-400 block mb-2"></span>
+                  <div className="text-[11px] text-slate-400 font-mono">AAC Blocks</div>
+                  <div className="text-lg font-extrabold text-purple-400 font-mono mt-1">{aacBlocks}</div>
+                  <div className="text-[10px] text-slate-500 font-mono mt-1">Masonry Units</div>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-slate-800/90 border border-slate-700/80 col-span-2 sm:col-span-1">
+                  <span className="w-2.5 h-2.5 rounded-full bg-orange-400 block mb-2"></span>
+                  <div className="text-[11px] text-slate-400 font-mono">JCB / Excavator</div>
+                  <div className="text-lg font-extrabold text-orange-400 font-mono mt-1">~{jcbHours} Hrs</div>
+                  <div className="text-[10px] text-slate-500 font-mono mt-1">Earthmoving</div>
+                </div>
               </div>
 
-              <div className="p-5 rounded-2xl bg-slate-800/90 border border-slate-700/80">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 block mb-2"></span>
-                <div className="text-xs text-slate-400 font-mono">OPC/PPC Cement</div>
-                <div className="text-xl font-extrabold text-emerald-400 font-mono mt-1">{cementBags}</div>
-                <div className="text-[10px] text-slate-500 font-mono mt-1">50 kg Bags</div>
-              </div>
-
-              <div className="p-5 rounded-2xl bg-slate-800/90 border border-slate-700/80">
-                <span className="w-2.5 h-2.5 rounded-full bg-blue-400 block mb-2"></span>
-                <div className="text-xs text-slate-400 font-mono">M-Sand &amp; Coarse</div>
-                <div className="text-xl font-extrabold text-blue-400 font-mono mt-1">{sandTons} Tonnes</div>
-                <div className="text-[10px] text-slate-500 font-mono mt-1">Zero Silt Grade</div>
-              </div>
-
-              <div className="p-5 rounded-2xl bg-slate-800/90 border border-slate-700/80">
-                <span className="w-2.5 h-2.5 rounded-full bg-purple-400 block mb-2"></span>
-                <div className="text-xs text-slate-400 font-mono">AAC Blocks</div>
-                <div className="text-xl font-extrabold text-purple-400 font-mono mt-1">{aacBlocks}</div>
-                <div className="text-[10px] text-slate-500 font-mono mt-1">Masonry Units</div>
+              {/* Price Enquiry Notice */}
+              <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono">
+                <span className="text-amber-300">
+                  ⚡ <strong>Rate Schedule:</strong> For wholesale prices per MT/bag &amp; machine dispatch, contact our dispatch desk:
+                </span>
+                <span className="shrink-0 font-bold text-white">
+                  Call <a href="tel:8884238688" className="text-amber-400 underline">8884238688</a>
+                </span>
               </div>
             </div>
 
@@ -200,8 +226,13 @@ export default function Materials() {
                     </div>
 
                     <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 font-mono">
-                      <span className="text-[10px] text-slate-400 block uppercase">Contractor Rate Guide</span>
-                      <span className="text-sm font-extrabold text-slate-900">{sku.priceGuide}</span>
+                      <div className="flex items-center justify-between mb-1">
+                        <span className="text-[10px] text-slate-500 uppercase font-bold">Pricing Policy</span>
+                        <span className="text-xs font-extrabold text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Price on Enquiry</span>
+                      </div>
+                      <div className="text-[11px] text-slate-600">
+                        Call: <a href="tel:8884238688" className="font-bold text-slate-900 hover:text-amber-600 font-mono">8884238688</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -331,15 +362,22 @@ export default function Materials() {
           <h2 className="text-3xl font-extrabold font-heading mb-4">
             Need Scheduled Delivery to Your Active Site?
           </h2>
-          <p className="text-slate-400 text-sm mb-8 font-light">
-            We provide timed site tipping for aggregates and transit mixer coordinate pourings.
+          <p className="text-slate-400 text-sm mb-4 font-light">
+            We provide timed site tipping for aggregates, transit mixer coordinate pourings, and heavy machinery dispatch.
           </p>
-          <Link
-            to="/contact"
-            className="px-8 py-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-xs uppercase tracking-wider rounded-xl transition-all shadow"
-          >
-            DISCUSS SITE DISPATCH SCHEDULE →
-          </Link>
+          <div className="inline-flex flex-wrap items-center justify-center gap-4 px-6 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-amber-400 mb-8">
+            <span>Price Queries: <a href="tel:8884238688" className="text-white font-bold underline">8884238688</a></span>
+            <span>•</span>
+            <span><a href="mailto:gajananaconstructionsinfo@gmail.com" className="text-white font-bold underline">gajananaconstructionsinfo@gmail.com</a></span>
+          </div>
+          <div>
+            <Link
+              to="/contact"
+              className="px-8 py-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-xs uppercase tracking-wider rounded-xl transition-all shadow"
+            >
+              DISCUSS SITE DISPATCH SCHEDULE →
+            </Link>
+          </div>
         </div>
       </section>
     </div>

@@ -77,23 +77,25 @@ export default function Navbar() {
               <div className="absolute left-0 top-full hidden group-hover:block w-80 bg-white rounded-2xl shadow-xl border border-slate-100 p-3 z-50 animate-fade-in">
                 <div className="grid grid-cols-2 gap-1 mb-2">
                   <div>
-                    <Link to="/materials/cement" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Cement</Link>
-                    <Link to="/materials/steel" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Steel &amp; TMT</Link>
-                    <Link to="/materials/bricks-blocks" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Bricks &amp; Blocks</Link>
+                    <Link to="/materials/earthmoving-machinery" className="block px-2.5 py-1.5 text-xs text-amber-700 font-bold hover:bg-amber-50 rounded-lg">🚜 JCB &amp; Machinery</Link>
+                    <Link to="/materials/steel" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Steel &amp; TMT Rebar</Link>
+                    <Link to="/materials/cement" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Cement &amp; Binders</Link>
+                    <Link to="/materials/rmc" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Ready-Mix Concrete</Link>
                     <Link to="/materials/sand-aggregates" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Sand &amp; Aggregates</Link>
                   </div>
                   <div>
+                    <Link to="/materials/bricks-blocks" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Bricks &amp; Blocks</Link>
+                    <Link to="/materials/sub-base-filling" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Earthfilling &amp; Murrum</Link>
                     <Link to="/materials/tiles" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Tiles &amp; Granite</Link>
-                    <Link to="/materials/plumbing" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Plumbing</Link>
-                    <Link to="/materials/electrical" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Electrical</Link>
-                    <Link to="/materials/hardware" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Hardware</Link>
+                    <Link to="/materials/plumbing" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Plumbing &amp; Tanks</Link>
+                    <Link to="/materials/electrical" className="block px-2.5 py-1.5 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Electrical &amp; Wires</Link>
                   </div>
                 </div>
                 <Link
                   to="/materials"
                   className="block px-3 py-2 text-xs font-bold text-amber-600 hover:bg-amber-50 rounded-xl transition-colors border-t border-slate-100 text-center"
                 >
-                  Materials Depot &amp; Mill Specs →
+                  All Building Materials Depot →
                 </Link>
               </div>
             </div>
@@ -111,6 +113,14 @@ export default function Navbar() {
 
           {/* Desktop Right CTA */}
           <div className="hidden sm:flex items-center space-x-3">
+            <a
+              href="tel:8884238688"
+              className="hidden xl:inline-flex items-center gap-1.5 px-3 py-2 bg-amber-50 hover:bg-amber-100 text-slate-900 rounded-xl text-xs font-bold border border-amber-200 transition"
+              title="Call for Price Enquiry"
+            >
+              <i className="fa-solid fa-phone text-amber-600"></i>
+              <span>8884238688</span>
+            </a>
             <Link
               to="/get-a-quote"
               className="px-5 py-2.5 bg-slate-950 hover:bg-amber-600 text-white font-extrabold text-xs tracking-wider uppercase rounded-xl transition-all shadow hover:shadow-md"
@@ -191,12 +201,15 @@ export default function Navbar() {
             </button>
             {mobileMaterialsOpen && (
               <div className="pl-4 space-y-1.5 py-1 border-l-2 border-amber-500 my-1">
-                <Link to="/materials/cement" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Cement</Link>
-                <Link to="/materials/steel" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Steel &amp; TMT</Link>
+                <Link to="/materials/earthmoving-machinery" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-amber-700 font-bold">🚜 JCB &amp; Earthmoving Fleet</Link>
+                <Link to="/materials/steel" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Steel &amp; TMT Rebar</Link>
+                <Link to="/materials/cement" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Cement &amp; Binders</Link>
+                <Link to="/materials/rmc" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Ready-Mix Concrete (RMC)</Link>
                 <Link to="/materials/bricks-blocks" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Bricks &amp; Blocks</Link>
                 <Link to="/materials/sand-aggregates" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Sand &amp; Aggregates</Link>
-                <Link to="/materials/tiles" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Tiles</Link>
-                <Link to="/materials" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs font-bold text-amber-600">Full Depot &amp; Specs →</Link>
+                <Link to="/materials/sub-base-filling" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Earthfilling &amp; Murrum</Link>
+                <Link to="/materials/tiles" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Tiles &amp; Granite</Link>
+                <Link to="/materials" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs font-bold text-amber-600">Full Building Materials Depot →</Link>
               </div>
             )}
           </div>
@@ -222,7 +235,15 @@ export default function Navbar() {
           >
             CONTACT
           </Link>
-          <div className="pt-2">
+
+          <div className="pt-2 space-y-2">
+            <a
+              href="tel:8884238688"
+              className="flex items-center justify-center gap-2 w-full py-3 bg-slate-900 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow"
+            >
+              <i className="fa-solid fa-phone text-amber-400"></i>
+              <span>Price Queries: 8884238688</span>
+            </a>
             <Link
               to="/get-a-quote"
               onClick={() => setMobileMenuOpen(false)}

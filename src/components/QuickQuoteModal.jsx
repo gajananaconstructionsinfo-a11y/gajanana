@@ -67,6 +67,13 @@ export default function QuickQuoteModal() {
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="p-2.5 rounded-xl bg-amber-50 border border-amber-200 text-[11px] font-mono text-amber-900">
+                <span>For immediate wholesale pricing: </span>
+                <a href="tel:8884238688" className="font-bold underline text-slate-900">Call 8884238688</a>
+                <span className="mx-1">•</span>
+                <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold underline text-slate-900">Email us</a>
+              </div>
+
               <div>
                 <label className="block text-[11px] font-mono font-bold uppercase text-slate-700 mb-1">
                   Your Full Name *
@@ -161,14 +168,20 @@ export default function QuickQuoteModal() {
             </p>
             <div className="space-y-2.5">
               <a
-                href={`https://wa.me/919845012345?text=Hello%20GCM,%20I%20just%20submitted%20Quote%20Request%20${submittedId}%20for%20${encodeURIComponent(
+                href={`https://wa.me/918884238688?text=Hello%20GCM,%20I%20just%20submitted%20Quote%20Request%20${submittedId}%20for%20${encodeURIComponent(
                   quickQuoteModal.initialTitle
                 )}`}
                 target="_blank"
                 rel="noreferrer"
                 className="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center space-x-2 shadow"
               >
-                <span>Chat Immediately on WhatsApp</span>
+                <span>Chat on WhatsApp (8884238688)</span>
+              </a>
+              <a
+                href="tel:8884238688"
+                className="w-full py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-all flex items-center justify-center space-x-2 font-mono"
+              >
+                <span>Call Dispatch: 8884238688</span>
               </a>
               <button
                 onClick={handleClose}

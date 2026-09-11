@@ -66,15 +66,24 @@ export default function ProductDetail() {
               </div>
 
               {/* Price Box */}
-              <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200">
-                <div className="text-xs font-mono text-slate-500 uppercase tracking-wider mb-1">
-                  Contractor Direct Rate Guide
+              <div className="p-6 rounded-2xl bg-amber-50/50 border border-amber-200">
+                <div className="text-xs font-mono font-bold text-amber-800 uppercase tracking-wider mb-1">
+                  Pricing Policy &amp; Quotation
                 </div>
-                <div className="text-2xl sm:text-3xl font-extrabold text-slate-950 font-mono">
-                  {sku.priceGuide}
+                <div className="text-2xl sm:text-3xl font-extrabold text-slate-950 font-heading">
+                  Price on Enquiry
                 </div>
-                <div className="text-[11px] text-slate-500 mt-1 font-mono">
-                  * Tier-1 direct mill rake discount applicable for full truckloads (20+ MT) and ongoing turnkey projects.
+                <p className="text-xs text-slate-600 mt-2 leading-relaxed">
+                  For wholesale market rates, bulk project volume discounts, and site delivery quotation:
+                </p>
+                <div className="mt-3 flex flex-wrap items-center gap-4 text-xs font-mono font-bold">
+                  <a href="tel:8884238688" className="text-slate-950 hover:text-amber-600 underline">
+                    📞 Call: 8884238688
+                  </a>
+                  <span className="text-slate-300">•</span>
+                  <a href="mailto:gajananaconstructionsinfo@gmail.com" className="text-slate-950 hover:text-amber-600 underline">
+                    ✉️ gajananaconstructionsinfo@gmail.com
+                  </a>
                 </div>
               </div>
 
@@ -97,13 +106,19 @@ export default function ProductDetail() {
               <div className="flex flex-wrap gap-4 pt-2">
                 <button
                   onClick={() => openQuickQuote(sku.name)}
-                  className="px-8 py-4 bg-slate-950 hover:bg-amber-600 text-white font-extrabold text-xs tracking-wider uppercase rounded-xl transition-all shadow-md flex items-center space-x-2"
+                  className="px-6 py-4 bg-slate-950 hover:bg-amber-600 text-white font-extrabold text-xs tracking-wider uppercase rounded-xl transition-all shadow-md flex items-center space-x-2"
                 >
                   <span>REQUEST INSTANT BATCH QUOTE</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
                 <a
-                  href={`https://wa.me/919845012345?text=Hello%20GCM,%20please%20send%20current%20site%20delivery%20rates%20for%20${encodeURIComponent(
+                  href="tel:8884238688"
+                  className="px-6 py-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs tracking-wider uppercase rounded-xl transition-all shadow-md flex items-center space-x-2 font-mono"
+                >
+                  <span>CALL 8884238688</span>
+                </a>
+                <a
+                  href={`https://wa.me/918884238688?text=Hello%20GCM,%20please%20send%20current%20site%20delivery%20rates%20for%20${encodeURIComponent(
                     sku.name
                   )}`}
                   target="_blank"

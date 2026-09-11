@@ -33,6 +33,14 @@ export default function Contact() {
     <div className="min-h-screen bg-white">
       <Breadcrumb items={[{ label: 'Contact Us' }]} />
 
+      {/* Pricing Policy Top Banner */}
+      <div className="bg-amber-500 text-slate-950 py-2.5 px-4 text-xs font-mono font-bold text-center border-b border-amber-600 shadow-inner">
+        <span>📢 FOR ALL PRICING QUERIES, WHOLESALE RATES &amp; MACHINERY BOOKINGS: Contact </span>
+        <a href="tel:8884238688" className="underline font-extrabold text-slate-950 hover:text-white ml-1">8884238688</a>
+        <span className="mx-1.5">|</span>
+        <a href="mailto:gajananaconstructionsinfo@gmail.com" className="underline font-extrabold text-slate-950 hover:text-white">gajananaconstructionsinfo@gmail.com</a>
+      </div>
+
       {/* Hero Header */}
       <section className="bg-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
         <div className="max-w-7xl mx-auto">
@@ -87,20 +95,20 @@ export default function Contact() {
                   <i className="fa-solid fa-phone text-xl"></i>
                 </div>
                 <div className="flex-1">
-                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Direct Lines & Helpdesk</div>
+                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Direct Lines &amp; Price Queries</div>
                   <div className="space-y-1">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs text-slate-500">Sales & Contracts:</span>
-                      <a href="tel:+919448123456" className="text-sm font-bold text-slate-900 hover:text-amber-600">+91 94481 23456</a>
+                      <span className="text-xs text-slate-500">Sales &amp; Price Queries:</span>
+                      <a href="tel:8884238688" className="text-sm font-bold text-slate-900 hover:text-amber-600 font-mono">8884238688</a>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-xs text-slate-500">Yard Dispatch:</span>
-                      <a href="tel:+918023456789" className="text-sm font-bold text-slate-900 hover:text-amber-600">+91 80 2345 6789</a>
+                      <span className="text-xs text-slate-500">Yard &amp; JCB Dispatch:</span>
+                      <a href="tel:8884238688" className="text-sm font-bold text-slate-900 hover:text-amber-600 font-mono">8884238688</a>
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-xs text-slate-500">Direct WhatsApp:</span>
-                      <a href="https://wa.me/919448123456?text=Hello%20Gajanana%20Constructions,%20I%20have%20an%20enquiry" target="_blank" rel="noreferrer" className="text-sm font-bold text-emerald-600 hover:underline">
-                        +91 94481 23456
+                      <a href="https://wa.me/918884238688?text=Hello%20Gajanana%20Constructions,%20I%20have%20an%20enquiry" target="_blank" rel="noreferrer" className="text-sm font-bold text-emerald-600 hover:underline font-mono">
+                        +91 88842 38688
                       </a>
                     </div>
                   </div>
@@ -113,10 +121,11 @@ export default function Contact() {
                   <i className="fa-solid fa-envelope text-xl"></i>
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Official Communications</div>
-                  <p className="text-sm font-bold text-slate-900">projects@gajananaconstructions.com</p>
-                  <p className="text-xs text-slate-500 mt-0.5">procurement@gajananaconstructions.com</p>
-                  <p className="text-xs text-slate-500 mt-2">Verified digital tenders, structural drawings, and BOQ submissions.</p>
+                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Official Communications &amp; Pricing</div>
+                  <a href="mailto:gajananaconstructionsinfo@gmail.com" className="text-sm font-bold text-slate-900 hover:text-amber-600 block">
+                    gajananaconstructionsinfo@gmail.com
+                  </a>
+                  <p className="text-xs text-slate-500 mt-2">Verified digital tenders, structural drawings, and itemized BOQ rate requests.</p>
                 </div>
               </div>
 
@@ -250,13 +259,16 @@ export default function Contact() {
                         className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition text-slate-800"
                       >
                         <option value="General Construction Enquiry">General Construction Enquiry</option>
-                        <option value="Turnkey Residential & Luxury Villa">Turnkey Residential & Luxury Villa</option>
-                        <option value="Commercial & Structural Contracting">Commercial & Structural Contracting</option>
+                        <option value="JCB 3DX & Heavy Earthmoving Machinery Rental">JCB 3DX &amp; Heavy Earthmoving Machinery Rental</option>
+                        <option value="Excavation, Site Grading & Rock Breaking Fleet">Excavation, Site Grading &amp; Rock Breaking Fleet</option>
+                        <option value="Turnkey Residential & Luxury Villa">Turnkey Residential &amp; Luxury Villa</option>
+                        <option value="Commercial & Structural Contracting">Commercial &amp; Structural Contracting</option>
                         <option value="TMT Steel Bulk Procurement (Fe 550D)">TMT Steel Bulk Procurement (Fe 550D)</option>
+                        <option value="Cement (53G / OPC / PPC) Bulk Supply">Cement (53G / OPC / PPC) Bulk Supply</option>
                         <option value="RMC Concrete Transit Mixer Supply">RMC Concrete Transit Mixer Supply</option>
-                        <option value="Architectural Sand / Aggregates Hauling">Architectural Sand / Aggregates Hauling</option>
-                        <option value="BOQ Analysis & Architectural Consulting">BOQ Analysis & Architectural Consulting</option>
-                        <option value="Site Inspection & Soil Verification Request">Site Inspection & Soil Verification Request</option>
+                        <option value="Triple-Washed M-Sand / Aggregates Hauling">Triple-Washed M-Sand / Aggregates Hauling</option>
+                        <option value="BOQ Analysis & Architectural Consulting">BOQ Analysis &amp; Architectural Consulting</option>
+                        <option value="Site Inspection & Soil Verification Request">Site Inspection &amp; Soil Verification Request</option>
                       </select>
                     </div>
                   </div>

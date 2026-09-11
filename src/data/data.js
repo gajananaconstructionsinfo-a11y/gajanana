@@ -1,165 +1,309 @@
 // GAJANANA CONSTRUCTIONS & MATERIALS - Core Data Store (React Vite Edition)
 // Brand Positioning: "Building Dreams. Supplying Quality. Delivering Strength."
+// Pricing Policy: Direct quotes on enquiry - Contact 8884238688 | gajananaconstructionsinfo@gmail.com
 
 export const DEFAULT_DATA = {
   company: {
     name: "GAJANANA CONSTRUCTIONS & MATERIALS",
     shortName: "GCM",
     tagline: "Building Dreams. Supplying Quality. Delivering Strength.",
-    subheading: "Complete Construction Solutions & One-Stop Building Materials Destination",
-    trustStatement: "Construction • Materials • Engineering • Project Solutions",
-    phone: "+91 98450 12345",
-    phoneDisplay: "+91 98450 12345",
-    whatsapp: "+91 98450 12345",
-    whatsappNumber: "919845012345",
-    email: "contact@gajananaconstructions.com",
+    subheading: "Complete Construction Solutions, Earthmoving Machinery & One-Stop Building Materials Destination",
+    trustStatement: "Construction • Earthmoving & JCB Fleet • All Building Materials • Engineering Solutions",
+    phone: "8884238688",
+    phoneDisplay: "+91 88842 38688",
+    whatsapp: "8884238688",
+    whatsappNumber: "918884238688",
+    email: "gajananaconstructionsinfo@gmail.com",
+    priceNotice: "For all pricing queries, daily wholesale rates, and quantity discounts, contact 8884238688 or email gajananaconstructionsinfo@gmail.com",
     address: "Plot No. 42, Heavy Industrial & Construction Supply Zone, Outer Ring Road, Bengaluru, Karnataka, India",
-    workingHours: "Monday - Saturday: 8:00 AM – 7:30 PM | Sunday: 9:00 AM – 2:00 PM",
+    workingHours: "Monday - Saturday: 8:00 AM – 7:30 PM | Sunday: 9:00 AM – 2:00 PM (Yard & Machinery Dispatch Open)",
     establishedYear: 1999,
     experienceYears: "25+",
     stats: [
       { id: "01", label: "Complete Construction Solutions", value: "Turnkey & Civil Engineering" },
-      { id: "02", label: "Wide Material Range", value: "16+ Verified Categories" },
-      { id: "03", label: "Quality-Focused Approach", value: "IS Standard & NABL Certified" },
-      { id: "04", label: "Customer-Centric Service", value: "Transparent Milestone Billing" }
+      { id: "02", label: "Heavy Machinery & Fleet", value: "JCB 3DX, Excavators, Tippers & Cranes" },
+      { id: "03", label: "All Construction Materials", value: "16+ Verified Building Categories" },
+      { id: "04", label: "Quality-Focused Approach", value: "IS Standard & NABL Certified" }
     ]
   },
 
   services: [
     {
+      id: "earthmoving-machinery-jcb",
+      slug: "earthmoving-machinery-jcb",
+      title: "Earthmoving, Excavation & JCB Machinery Services",
+      subtitle: "JCB 3DX backhoes, heavy hydraulic excavators, plot leveling and site preparation.",
+      desc: "Comprehensive mechanized earthmoving and excavation division. We mobilize our own fleet of JCB 3DX machines, 20-ton Poclain excavators, hydraulic rock breakers, and vibratory soil compactors with certified expert operators for residential, commercial, and industrial groundworks.",
+      deliverables: [
+        "JCB 3DX & Heavy Excavators on Hourly / Daily / Monthly Contracts",
+        "Deep Basement Excavation & Foundation Trenching",
+        "Site Grading, Land Clearing, Leveling & Sub-base Compaction",
+        "Structural Demolition, Rock Breaking & Controlled Debris Hauling",
+        "Pipeline, Drainage & Retaining Wall Trench Digging",
+        "Certified Heavy Machinery Operators with Strict Safety Protocols"
+      ],
+      image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=800&q=80",
+      badge: "In-House Machinery Fleet",
+      applications: [
+        "Basement Excavation for Multi-Storey Buildings",
+        "Residential Plot Leveling & Boundary Trenching",
+        "Industrial Site Grading & Compaction",
+        "Road Works & Stormwater Drain Excavation",
+        "Rock Breaking & Hard Ground Penetration"
+      ],
+      faqs: [
+        { q: "What machines are available in your earthmoving fleet?", a: "Our fleet includes JCB 3DX Super Backhoe Loaders, Tata Hitachi / Hyundai 20-Ton Excavators with Rock Breaker attachments, 10-Ton Vibratory Road Rollers, and high-capacity Tipper Trucks." },
+        { q: "How do I get machine rental rates or excavation contract pricing?", a: "For competitive pricing and immediate site mobilization, please contact our dispatch desk at 8884238688 or email gajananaconstructionsinfo@gmail.com." }
+      ]
+    },
+    {
+      id: "heavy-equipment-logistics",
+      slug: "heavy-equipment-logistics",
+      title: "Heavy Equipment, Cranes & Transit Logistics",
+      subtitle: "Mobile Hydra cranes, RMC concrete transit mixers, boom placers, and tipper fleet.",
+      desc: "Seamless logistics and high-capacity equipment backing your site. We operate mobile hydraulic cranes for heavy precast and steel erection, high-reach concrete boom pumps for high-rise slab pours, and a fleet of GPS-monitored tippers for aggregate and sand transport.",
+      deliverables: [
+        "Hydra Mobile Cranes (12T - 25T) for Structural Steel & Precast Placement",
+        "Concrete Transit Mixers & 36-Meter High-Reach Boom Pumps",
+        "Heavy Tipper Trucks (Hyva Dumpers) for Bulk Material Site Tipping",
+        "Vibratory Compactors & Plate Tampers for Subgrade Settlement",
+        "On-Time Site Dispatch with Route-Optimized Fleet Tracking"
+      ],
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+      badge: "Heavy Logistics",
+      applications: [
+        "Heavy Precast & Steel Column Erection",
+        "Multi-Storey Concrete Slab Pouring",
+        "Bulk Sand, Aggregates & Soil Hauling",
+        "Subgrade Road Compaction & Earth Consolidation"
+      ],
+      faqs: [
+        { q: "How are crane and equipment bookings scheduled?", a: "Equipment dispatch is scheduled directly through our central desk. Call 8884238688 or email gajananaconstructionsinfo@gmail.com with your site location and required dates." }
+      ]
+    },
+    {
       id: "residential-construction",
       slug: "residential-construction",
-      title: "Residential Construction",
-      subtitle: "Independent houses, villas and residential buildings.",
-      desc: "Comprehensive turnkey residential building solutions. We manage every phase from soil test, foundation layout, structural RCC casting, brickwork, to high-end interior finishes with engineering precision.",
-      deliverables: ["Custom Architectural & Structural Drawings", "Seismic-Resilient RCC Foundation & Framing", "End-to-End Turnkey Execution (Grey to Finishes)", "Direct Quality Material Assurance & Testing"],
+      title: "Residential Turnkey Construction",
+      subtitle: "Independent houses, luxury villas, duplexes, and residential apartment buildings.",
+      desc: "End-to-end turnkey residential building solutions. We manage every phase from soil test, foundation layout, structural RCC casting, brickwork, to high-end interior finishes with engineering precision and zero material compromise.",
+      deliverables: [
+        "Custom Architectural Floor Plans & 3D Structural Drawings",
+        "Seismic-Resilient RCC Foundation & Framing (Fe 550D TMT + 53G Cement)",
+        "Precision Masonry with Red Clay Bricks or AAC Lightweight Blocks",
+        "Turnkey Execution from Foundation Excavation to Final Key Handover",
+        "Full Direct Material Supply from Our Own Quality Stockyard"
+      ],
       image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      badge: "Turnkey Solutions",
-      applications: ["Custom Luxury Villas", "Duplex Residences", "Multi-Family Residential Apartments", "Row Houses & Gated Communities"],
+      badge: "Turnkey Residential",
+      applications: ["Custom Luxury Villas", "Independent Duplex Residences", "Multi-Family Residential Apartments", "Row Houses & Gated Communities"],
       faqs: [
         { q: "How do you ensure material quality during construction?", a: "Because Gajanana Constructions & Materials operates its own certified material depot, all steel rebars, cement, and aggregates undergo rigorous batch testing with NABL mill test reports before site delivery." },
-        { q: "Can we customize the floor plan and material specifications?", a: "Yes. Our in-house structural engineers and architects collaborate with you to create tailored architectural floor plans and itemized material schedules." }
+        { q: "How do we get a project quote for our residential plan?", a: "For an itemized BOQ estimation and turnkey pricing, contact 8884238688 or email your floor plan to gajananaconstructionsinfo@gmail.com." }
       ]
     },
     {
       id: "commercial-construction",
       slug: "commercial-construction",
-      title: "Commercial Construction",
-      subtitle: "Shops, offices, commercial buildings and business spaces.",
-      desc: "Robust, scalable commercial spaces engineered for longevity, high footfall, and municipal safety compliance. Designed for maximum space utilization, structural safety, and fast-track milestone execution.",
-      deliverables: ["Multi-Storey Post-Tensioned & RCC Frameworks", "Commercial Grade High-Traffic Flooring & MEP Utilities", "Fire, Life Safety & Municipal Code Compliance", "Dedicated Milestone Delivery Schedules"],
+      title: "Commercial & Industrial Construction",
+      subtitle: "Commercial complexes, retail showrooms, corporate offices, and industrial PEB sheds.",
+      desc: "Robust, scalable commercial and industrial structures engineered for longevity, high floor loadings, and municipal safety compliance. Designed for maximum space efficiency, heavy traffic endurance, and milestone-driven timelines.",
+      deliverables: [
+        "Multi-Storey Post-Tensioned & High-Load RCC Frameworks",
+        "Pre-Engineered Steel Buildings (PEB) & Industrial Warehouses",
+        "Heavy-Duty Industrial Tremix Flooring & High-Traffic Finishes",
+        "Fire Suppression, Electrical Substations, Plumbing & HVAC Coordination",
+        "Municipal Authority Sanction Drawings & Structural Stability Certificates"
+      ],
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-      badge: "Commercial Grade",
-      applications: ["Corporate IT Parks & Office Complexes", "Retail Plazas & Commercial Showrooms", "Commercial Warehouses & Logistics Hubs", "Hospitality & Healthcare Facilities"],
+      badge: "Commercial & Industrial",
+      applications: ["Corporate IT Parks & Office Complexes", "Retail Plazas & Commercial Showrooms", "Industrial Warehouses & Logistics Hubs", "Hospitality & Healthcare Buildings"],
       faqs: [
-        { q: "Do you handle structural civil works and MEP integration?", a: "Yes, our commercial turnkey contracts cover full civil superstructure, electrical substations, plumbing risers, fire suppression lines, and HVAC ducting." }
+        { q: "Do you handle industrial PEB shed design and foundation works?", a: "Yes, our civil engineering team executes deep machine foundations, heavy anchor bolt casting, and structural steel truss fabrication." }
       ]
     },
     {
       id: "civil-construction",
       slug: "civil-construction",
-      title: "Civil Construction",
-      subtitle: "Civil works and structural construction services.",
-      desc: "Heavy-duty civil infrastructure and earthworks executed with certified machinery and strict civil engineering standards for commercial, industrial, and infrastructure sectors.",
-      deliverables: ["Deep Excavation & Earth Retaining Systems", "Heavy Machine Foundations & Piling Works", "Industrial RCC Roadways & Compound Enclosures", "Stormwater Drainage & Site Civil Infrastructure"],
+      title: "Civil & Structural Engineering",
+      subtitle: "Deep piling, isolated footings, heavy machine foundations, RCC frame casting, and slabs.",
+      desc: "Heavy-duty civil infrastructure and structural core works executed with certified machinery and strict civil engineering standards for residential, commercial, industrial, and infrastructure sectors.",
+      deliverables: [
+        "Deep Excavation, Soil Investigation & Earth Retaining Systems",
+        "Heavy Machine Foundations, Piling & Raft Slabs",
+        "Industrial RCC Roadways, Retaining Walls & Compound Enclosures",
+        "Stormwater Drainage & Site Civil Infrastructure",
+        "Concrete Cube Testing & Quality Certification at Every Stage"
+      ],
       image: "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=800&q=80",
-      badge: "Heavy Infrastructure",
-      applications: ["Industrial Factories & Shed Foundations", "Bridge & Culvert Works", "Earth Retaining & Shoring Walls", "Substation & Utility Civil Bases"],
+      badge: "Core Civil Engineering",
+      applications: ["High-Rise RCC Frames", "Factory & Heavy Machinery Foundations", "Bridge, Culvert & Retaining Wall Works", "Substation & Industrial Bases"],
       faqs: [
-        { q: "What heavy machinery do you mobilize on site?", a: "We operate our own fleet of hydraulic excavators, batching plants, transit mixers, mobile cranes, and automated soil compactors." }
+        { q: "What concrete grades do you pour?", a: "We supply and pour design mixes from M20 up to M50 with transit mixers and concrete pumps, verified by 7-day and 28-day cube compressive strength tests." }
+      ]
+    },
+    {
+      id: "architectural-planning",
+      slug: "architectural-planning",
+      title: "Architectural Planning, 3D Elevation & Approvals",
+      subtitle: "2D/3D floor layouts, structural detailing, 3D exterior elevations, and building approvals.",
+      desc: "Transform your vision into approved, engineered construction blueprints. Our in-house architects and structural consultants produce detailed 2D working drawings, 3D photorealistic elevations, soil investigation analyses, and structural stability certifications.",
+      deliverables: [
+        "Architectural 2D Working Floor Plans & Vastu Compliance",
+        "Photorealistic 3D Exterior Elevation Renderings",
+        "Structural Reinforcement Schedules (BBS) & Load Calculations",
+        "Electrical, Plumbing & Drainage Schematics (MEP)",
+        "Municipal Approval & Plan Sanction Assistance"
+      ],
+      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
+      badge: "Design & Approvals",
+      applications: ["Custom Luxury Homes", "Commercial Multi-Storey Complexes", "Apartment Layouts", "Industrial Shed Layouts"],
+      faqs: [
+        { q: "Can you provide structural drawings for an external contractor?", a: "Yes, we provide independent architectural and structural consultancy services." }
       ]
     },
     {
       id: "renovation",
       slug: "renovation",
-      title: "Renovation & Remodeling",
-      subtitle: "Renovation, remodeling and structural improvement solutions.",
-      desc: "Breathe new life into aging structures. We reinforce structural integrity, reconfigure layouts, replace outdated plumbing and electrical setups, and modernize exterior facades.",
-      deliverables: ["Structural Retrofitting & Column Jacketing", "Architectural Facade Modernization", "Flooring, Waterproofing & Interior Upgrades", "Acoustic & Thermal Performance Improvements"],
-      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
-      badge: "Restoration",
-      applications: ["Heritage Home Restorations", "Commercial Office Overhauls", "Structural Distress Strengthening", "Retail Space Refurbishment"],
-      faqs: [
-        { q: "How do you assess structural safety before renovation?", a: "Our structural engineers perform non-destructive concrete rebound hammer tests, ultrasonic pulse velocity, and load analysis before commencing structural modifications." }
-      ]
-    },
-    {
-      id: "project-management",
-      slug: "project-management",
-      title: "Project Management",
-      subtitle: "Professional coordination and project execution support.",
-      desc: "Eliminate delays, budget overruns, and coordination friction. Our veteran site supervisors and project managers track schedules, quality benchmarks, safety protocols, and material logistics.",
-      deliverables: ["Accurate Cost Estimation & Bill of Quantities (BOQ)", "Material Logistics & Batch Quality Inspection", "Daily Digital Site Supervision & Milestone Tracking", "Zero-Escalation Budget & Timeline Guarantee"],
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
-      badge: "Full Oversight",
-      applications: ["Turnkey Project Coordination", "Independent Engineer Supervision", "Contractor Material Audits", "Quality Control Compliance"],
-      faqs: [
-        { q: "Can we engage project management for an ongoing construction project?", a: "Yes, we provide independent project management, quality audits, and procurement supervision for active construction sites." }
-      ]
-    },
-    {
-      id: "structural-works",
-      slug: "structural-works",
-      title: "Structural Works",
-      subtitle: "Foundation, RCC, structural and related construction works.",
-      desc: "The core backbone of any lasting edifice. We specialize in deep piling, isolated footings, seismic-resilient RCC frames, structural steel truss fabrication, and high-load civil engineering.",
-      deliverables: ["Seismic-Resilient RCC Framing (Zone III/IV)", "High-Load Pile, Raft & Combined Footings", "Structural Steel Fabrications & Portals", "High-Grade Concrete Quality Control & Curing"],
+      title: "Renovation, Remodeling & Structural Retrofitting",
+      subtitle: "Building extensions, vertical floor additions, column jacketing, and facade revamp.",
+      desc: "Breathe new life into existing structures. We reinforce structural integrity, reconfigure layouts, add vertical floors, modernize electrical and plumbing networks, and execute architectural exterior transformations.",
+      deliverables: [
+        "Structural Retrofitting, Column Jacketing & Beams Reinforcement",
+        "Vertical Floor Additions & Structural Load Assessment",
+        "Architectural Facade Modernization & Exterior Cladding",
+        "Complete Plumbing, Electrical & Flooring Replacement",
+        "Non-Destructive Concrete Testing Before Commencing Modifications"
+      ],
       image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80",
-      badge: "Core Engineering",
-      applications: ["High-Rise RCC Frames", "Industrial Steel Shed Trusses", "Heavy Equipment Machine Foundations", "Basement Retaining Structures"],
+      badge: "Restoration & Expansion",
+      applications: ["Residential Home Modernization", "Commercial Office Overhauls", "Structural Distress Strengthening", "Retail Space Refurbishment"],
       faqs: [
-        { q: "What concrete grades do you test and pour?", a: "We pour design mixes from M20 up to M50 with 7-day and 28-day cube compressive strength verification." }
+        { q: "How do you assess whether an existing building can support an extra floor?", a: "Our structural engineers perform rebound hammer tests, core cut tests, and foundation load analyses before recommending vertical expansion." }
       ]
     },
     {
       id: "finishing",
       slug: "finishing",
-      title: "Finishing Works",
-      subtitle: "Flooring, walls, ceilings, painting and finishing solutions.",
-      desc: "Turn raw masonry into breathtaking living and working spaces. Precision vitrified and natural stone tiling, designer false ceilings, premium acoustic paneling, and flawless exterior weather coatings.",
-      deliverables: ["Vitrified, Granite & Marble Precision Tiling", "Designer Gypsum False Ceilings & Lighting Coves", "Architectural Wall Emulsions & Textured Finishes", "Custom Solid Wood Joinery & Flush Doors"],
+      title: "Interior & Exterior Finishing Works",
+      subtitle: "Vitrified tiling, Italian marble, false ceilings, waterproofing, and architectural painting.",
+      desc: "Turn raw masonry into breathtaking, durable spaces. We execute precision vitrified and natural stone tiling, designer false ceilings, premium texture painting, and flawless weather-barrier exterior coats.",
+      deliverables: [
+        "Vitrified, Granite & Italian Marble Precision Tiling",
+        "Designer Gypsum False Ceilings & Concealed Lighting Coves",
+        "Premium Interior Emulsions & Exterior Weatherproof Coatings",
+        "Custom Teakwood Joinery, Flush Doors & UPVC Windows",
+        "CPVC Plumbing Fixtures, Sanitaryware & Glass Partitions"
+      ],
       image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
-      badge: "Finishing",
-      applications: ["Luxury Residences", "Corporate Executive Suites", "Commercial Retail Outlets", "Hospitality Interiors"],
+      badge: "Finishing & Interiors",
+      applications: ["Luxury Residences", "Corporate Executive Suites", "Retail Outlets", "Hospitality Interiors"],
       faqs: [
-        { q: "Can we inspect tile and sanitaryware samples before installation?", a: "Yes! You can visit our material depot or inspect curated sample boards for tiles, paints, sanitaryware, and hardware." }
+        { q: "Can we inspect tile and sanitaryware samples before installation?", a: "Yes, you can visit our material depot to inspect curated sample displays for tiles, paints, sanitaryware, and hardware." }
       ]
     },
     {
-      id: "custom-construction",
-      slug: "custom-construction",
-      title: "Custom Construction Solutions",
-      subtitle: "Construction solutions based on individual project requirements.",
-      desc: "Have bespoke architectural plans or complex spatial challenges? We provide tailored construction blueprints, specialized material sourcing, and dedicated craft teams.",
-      deliverables: ["Bespoke Architectural Execution", "Specialized Material Procurement", "Flexible Milestone Billing", "Dedicated Project Engineering Team"],
+      id: "waterproofing-solutions",
+      slug: "waterproofing-solutions",
+      title: "Waterproofing & Structural Protection",
+      subtitle: "Basement tanking, terrace heat-proof waterproofing, expansion joints, and chemical injection.",
+      desc: "Guaranteed moisture barrier systems engineered to protect RCC structures against seepage, chemical attack, and efflorescence. We use polymer-modified coatings, crystalline treatments, and elastomeric membranes.",
+      deliverables: [
+        "Deep Basement Retaining Wall & Raft Sump Tanking",
+        "Terrace Waterproofing with Heat-Reflective Thermal Barrier",
+        "Sunken Slab Waterproofing for Bathrooms & Wet Areas",
+        "High-Pressure Polyurethane Injection Grouting for Active Leakages",
+        "Written Multi-Year Leak-Proof Warranty Backed by Material Certification"
+      ],
       image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
-      badge: "Bespoke",
-      applications: ["Unique Architectural Homes", "Eco-Friendly Sustainable Builds", "Specialized Industrial Enclosures", "Custom Structural Expansions"],
+      badge: "Leak-Proof Warranty",
+      applications: ["Rooftop Terraces", "Basement Retaining Structures", "Swimming Pools & Water Tanks", "Bathroom & Kitchen Slabs"],
       faqs: [
-        { q: "Do you work with third-party architects?", a: "Yes, we regularly collaborate with leading architectural firms, executing their blueprints with engineering rigor." }
+        { q: "What brands of waterproofing chemicals do you use?", a: "We utilize certified products from Dr. Fixit, Fosroc, Sika, and Asian Paints Damp Proof." }
+      ]
+    },
+    {
+      id: "project-management",
+      slug: "project-management",
+      title: "Construction Project Management & BOQ Audits",
+      subtitle: "Cost estimation, material quantity takeoff, quality audits, and site supervision.",
+      desc: "Eliminate site delays, budget overruns, and coordination friction. Our veteran site supervisors and chartered civil engineers track daily progress, verify material quality, and conduct stage-wise structural quality audits.",
+      deliverables: [
+        "Accurate Bill of Quantities (BOQ) & Material Takeoff Estimation",
+        "Batch Quality Inspection & NABL Mill Sheet Verification",
+        "Daily Digital Site Supervision & Milestone Progress Reports",
+        "Quality Control Audits for Reinforcement, Shuttering & Slump Tests",
+        "Vendor Management & Material Delivery Scheduling"
+      ],
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+      badge: "Quality Oversight",
+      applications: ["Turnkey Project Supervision", "Independent Quality Audits", "Contractor Material Verification", "Structural Safety Compliance"],
+      faqs: [
+        { q: "How do I request a site visit or consultation?", a: "Contact our project coordination desk at 8884238688 or email gajananaconstructionsinfo@gmail.com." }
       ]
     }
   ],
 
+  // 16 Comprehensive Building Material & Equipment Categories
   materialCategories: [
-    { id: "cement", slug: "cement", name: "Cement", count: "8 Products", icon: "box", shortDesc: "OPC 53, OPC 43, PPC, White Cement and specialized waterproofing cement.", image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" },
-    { id: "steel", slug: "steel", name: "Steel & TMT Bars", count: "6 Products", icon: "layers", shortDesc: "Fe 550D, Fe 500 TMT rebars, MS angles, channels and binding wires.", image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=600&q=80" },
-    { id: "bricks-blocks", slug: "bricks-blocks", name: "Bricks & Blocks", count: "5 Products", icon: "grid", shortDesc: "First-class red clay bricks, AAC lightweight blocks, solid concrete blocks.", image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=600&q=80" },
-    { id: "sand-aggregates", slug: "sand-aggregates", name: "Sand & Aggregates", count: "5 Products", icon: "disc", shortDesc: "Graded river sand, M-sand, P-sand, 20mm/40mm blue metal aggregates.", image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=600&q=80" },
-    { id: "tiles", slug: "tiles", name: "Tiles", count: "7 Products", icon: "layout", shortDesc: "Glazed vitrified tiles (GVT/PGVT), parking tiles, digital wall tiles.", image: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=600&q=80" },
-    { id: "plumbing", slug: "plumbing", name: "Plumbing & Pipes", count: "7 Products", icon: "droplets", shortDesc: "Rigid PVC, CPVC hot & cold pipes, UPVC drainage lines and pressure valves.", image: "https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=600&q=80" },
-    { id: "electrical", slug: "electrical", name: "Electrical Materials", count: "6 Products", icon: "zap", shortDesc: "FR-LSH copper wires, armoured cables, modular switches, PVC conduits.", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" },
-    { id: "hardware", slug: "hardware", name: "Hardware", count: "6 Products", icon: "tool", shortDesc: "High-tensile fasteners, concrete anchors, mortise locksets, stainless hinges.", image: "https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=600&q=80" },
-    { id: "paints", slug: "paints", name: "Paints & Wall Finishes", count: "6 Products", icon: "feather", shortDesc: "Exterior weather-proof emulsions, acrylic interior paints, primers and putty.", image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" },
-    { id: "sanitaryware", slug: "sanitaryware", name: "Sanitaryware", count: "5 Products", icon: "shield", shortDesc: "Wall-hung closets, one-piece toilets, countertop basins, ceramic pedestals.", image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" },
-    { id: "roofing", slug: "roofing", name: "Roofing Materials", count: "4 Products", icon: "home", shortDesc: "Zinc-aluminium colour coated sheets, UPVC roofing tiles, insulation sheets.", image: "https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=600&q=80" },
-    { id: "waterproofing", slug: "waterproofing", name: "Waterproofing", count: "5 Products", icon: "umbrella", shortDesc: "Liquid polymer membranes, crystalline waterproofing, epoxy crack fillers.", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" },
-    { id: "construction-chemicals", slug: "construction-chemicals", name: "Construction Chemicals", count: "5 Products", icon: "flask", shortDesc: "Concrete plasticizers, bonding agents, tile adhesives and non-shrink grouts.", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" },
-    { id: "doors-windows", slug: "doors-windows", name: "Doors & Windows", count: "4 Products", icon: "maximize", shortDesc: "Engineered timber flush doors, architectural UPVC & aluminium windows.", image: "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=600&q=80" }
+    { id: "earthmoving-machinery", slug: "earthmoving-machinery", name: "JCB & Heavy Earthmoving Machinery", count: "Fleet Ready", icon: "truck", shortDesc: "JCB 3DX backhoes, 20T hydraulic excavators, rock breakers, road rollers and tippers.", image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=600&q=80" },
+    { id: "steel", slug: "steel", name: "Steel & TMT Rebar", count: "Primary Mills", icon: "layers", shortDesc: "Tata Tiscon Fe 550D, JSW Neosteel, Kamdhenu, Jindal Panther (8mm to 32mm rebars).", image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=600&q=80" },
+    { id: "cement", slug: "cement", name: "Cement & Binders", count: "Fresh Batches", icon: "box", shortDesc: "UltraTech, ACC, Birla Super, Dalmia, Ramco (OPC 53, PPC 43, White Cement).", image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" },
+    { id: "rmc", slug: "rmc", name: "Ready-Mix Concrete (RMC)", count: "Batching Plant Direct", icon: "cpu", shortDesc: "M20 to M45 design mix concrete with transit mixer and boom pump delivery.", image: "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=600&q=80" },
+    { id: "sand-aggregates", slug: "sand-aggregates", name: "Sand & Blue Metal Aggregates", count: "Calibrated Loads", icon: "disc", shortDesc: "VSI triple-washed M-Sand, Plastering P-Sand, 20mm Blue Metal, 40mm Jelly, GSB.", image: "https://images.unsplash.com/photo-160058515526-990dced4db0d?auto=format&fit=crop&w=600&q=80" },
+    { id: "bricks-blocks", slug: "bricks-blocks", name: "Bricks & Masonry Blocks", count: "Factory Bundled", icon: "grid", shortDesc: "Table-moulded red clay bricks, Aerocon AAC lightweight blocks, solid concrete blocks.", image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=600&q=80" },
+    { id: "sub-base-filling", slug: "sub-base-filling", name: "Earthfilling, Murrum & Gravel", count: "Bulk Tippers", icon: "activity", shortDesc: "Natural red earth, filling soil, graded murrum, quarry dust and boulder rocks.", image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=600&q=80" },
+    { id: "structural-steel-roofing", slug: "structural-steel-roofing", name: "Structural Steel & Roofing", count: "Heavy Sections", icon: "home", shortDesc: "MS angles, channels, beams, hollow square pipes, color coated roofing sheets.", image: "https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=600&q=80" },
+    { id: "tiles", slug: "tiles", name: "Tiles, Granite & Natural Stone", count: "Depot Display", icon: "layout", shortDesc: "Glazed vitrified tiles (GVT/PGVT), Black Galaxy granite, Tan Brown, Kota stone.", image: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=600&q=80" },
+    { id: "plumbing", slug: "plumbing", name: "Plumbing, Pipes & Tanks", count: "Certified", icon: "droplets", shortDesc: "Astral / Ashirvad CPVC, UPVC, SWR drainage lines, brass valves, overhead water tanks.", image: "https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=600&q=80" },
+    { id: "electrical", slug: "electrical", name: "Electrical Cables & Conduits", count: "ISI Marked", icon: "zap", shortDesc: "Polycab / Havells FRLS copper wires, heavy PVC conduits, distribution boards, MCBs.", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" },
+    { id: "formwork-hardware", slug: "formwork-hardware", name: "Shuttering Plywood & Scaffolding", count: "Full Yard Stock", icon: "tool", shortDesc: "Film-faced shuttering plywood, adjustable MS props, steel spans, scaffolding pipes, binding wire.", image: "https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=600&q=80" },
+    { id: "waterproofing", slug: "waterproofing", name: "Waterproofing Membranes", count: "Certified", icon: "umbrella", shortDesc: "Liquid polymer membranes, crystalline waterproofing, terrace heat barrier coatings.", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" },
+    { id: "construction-chemicals", slug: "construction-chemicals", name: "Construction Chemicals & Adhesives", count: "Authorized", icon: "flask", shortDesc: "Dr. Fixit, Fosroc, Sika, concrete admixtures, non-shrink grouts, epoxy tile adhesives.", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" },
+    { id: "paints", slug: "paints", name: "Paints, Primers & Wall Care", count: "Fresh Batches", icon: "feather", shortDesc: "Asian Paints Apex Ultima, Royale, exterior damp proof primers, waterproof wall putty.", image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" },
+    { id: "doors-windows", slug: "doors-windows", name: "Doors, Windows & Hardware", count: "Custom Sizing", icon: "maximize", shortDesc: "Teakwood frames, solid core flush doors, architectural UPVC sliding windows, SS fittings.", image: "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=600&q=80" }
   ],
 
-  // Heavy Construction SKUs matching Stitch Screen 2
+  // Heavy Construction & Machinery SKUs (NO PRICES SHOWN - Price on Enquiry Policy)
   heavySKUs: [
+    {
+      id: "sku-jcb-3dx",
+      name: "JCB 3DX Super Backhoe Loader (Machinery Fleet)",
+      category: "Heavy Earthmoving Machinery",
+      catSlug: "earthmoving-machinery",
+      tag: "Site Mobilization Ready",
+      specSummary: "76 HP Turbo Engine | 4.77m Max Dig Depth | 1.0 cu.m Shovel Bucket",
+      specs: [
+        { label: "Engine Power", val: "76 HP EcoMax Fuel Efficient" },
+        { label: "Max Digging Depth", val: "4.77 Meters" },
+        { label: "Loader Bucket Capacity", val: "1.0 cu.m Heavy Duty" },
+        { label: "Operator Included", val: "Certified Experienced Driver" }
+      ],
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      availability: "Available for Daily / Shift / Project Contract",
+      testReportId: "TR-JCB-3DX-09",
+      image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: "sku-excavator-20t",
+      name: "Tata Hitachi / Hyundai 20-Ton Heavy Hydraulic Excavator",
+      category: "Heavy Earthmoving Machinery",
+      catSlug: "earthmoving-machinery",
+      tag: "Basements & Rock Breaking",
+      specSummary: "20-Ton Heavy Class | 1.0 cu.m Rock Bucket | Hydraulic Rock Breaker Compatible",
+      specs: [
+        { label: "Operating Weight", val: "20,500 kg" },
+        { label: "Reach at Ground", val: "9.9 Meters" },
+        { label: "Attachments", val: "Bucket & Rock Breaker" },
+        { label: "Application", val: "Hard Rock, Deep Basements, Demolition" }
+      ],
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      availability: "Immediate Site Mobilization",
+      testReportId: "TR-EXC-20T-01",
+      image: "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=600&q=80"
+    },
     {
       id: "sku-tata-550d",
       name: "Tata Tiscon 550D Super Ductile TMT Rebar",
@@ -173,8 +317,9 @@ export const DEFAULT_DATA = {
         { label: "Elongation", val: ">= 16.5%" },
         { label: "Carbon Equivalent", val: "<= 0.42%" }
       ],
-      priceGuide: "₹61,500 - ₹64,200 / MT (Tier-1 Direct)",
-      availability: "1,200 MT In Stock",
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      availability: "1,200 MT In Stock (Yard Weighed)",
       testReportId: "TR-TISCON-9821",
       image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=600&q=80"
     },
@@ -184,39 +329,60 @@ export const DEFAULT_DATA = {
       category: "Cement & Binders",
       catSlug: "cement",
       tag: "Fresh Batch / Dry Silo",
-      specSummary: "IS 12269:2013 | 50 kg HDPE Bags | Initial Setting >= 30m",
+      specSummary: "IS 12269:2013 | 50 kg Moisture-Proof HDPE Bags",
       specs: [
         { label: "Grade", val: "OPC 53 Structural" },
         { label: "28-Day Strength", val: ">= 58.0 MPa" },
         { label: "Soundness", val: "<= 1.5 mm (Le-Chat)" },
         { label: "Fineness", val: ">= 280 m2/kg" }
       ],
-      priceGuide: "₹385 - ₹415 / Bag (Direct site rake discount)",
-      availability: "18,000 Bags Ready",
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      availability: "18,000 Bags Ready for Dispatch",
       testReportId: "TR-ULTRA-4412",
       image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: "sku-rmc-transit",
+      name: "Ready-Mix Concrete (RMC) M25 / M30 Design Mix",
+      category: "Ready-Mix Concrete (RMC)",
+      catSlug: "rmc",
+      tag: "Automated Batching Plant",
+      specSummary: "IS 456 / IS 10262 Mix Design | With Admixtures & Transit Mixer Supply",
+      specs: [
+        { label: "Mix Grades", val: "M20, M25, M30, M35, M40" },
+        { label: "Delivery Mode", val: "6-8 cu.m Transit Mixers" },
+        { label: "Pumping Support", val: "Static & Mobile Boom Pumps" },
+        { label: "Slump Value", val: "120 +/- 25 mm at Discharge" }
+      ],
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      availability: "Continuous Plant Pouring Available",
+      testReportId: "TR-RMC-2026-M25",
+      image: "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: "sku-jsw-crs",
       name: "JSW Neosteel Fe 550D Corrosion Resistant Steel (CRS)",
       category: "Steel & TMT Rebar",
       catSlug: "steel",
-      tag: "Coastal & Sunken Slabs",
-      specSummary: "Copper & Chromium Alloyed | Extreme Marine Grade",
+      tag: "Coastal & Underground Slabs",
+      specSummary: "Copper & Chromium Alloyed | Extreme Corrosion Resistance",
       specs: [
         { label: "Corrosion Index", val: "1.45x Standard" },
         { label: "Yield Strength", val: ">= 575 N/mm2" },
         { label: "Bend Test", val: "180 deg Mandrel Pass" },
         { label: "Sizes", val: "10mm to 25mm" }
       ],
-      priceGuide: "₹63,200 - ₹65,800 / MT",
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
       availability: "450 MT Available",
       testReportId: "TR-JSW-7730",
       image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: "sku-aerocon-aac",
-      name: "Aerocon Precision Autoclaved Aerated Blocks",
+      name: "Aerocon Precision Autoclaved Aerated Blocks (AAC)",
       category: "Bricks & Blocks",
       catSlug: "bricks-blocks",
       tag: "High Thermal Insulation",
@@ -227,28 +393,30 @@ export const DEFAULT_DATA = {
         { label: "Thermal Conductivity", val: "0.16 W/m-K" },
         { label: "Dead Load Red.", val: "50% vs Clay Brick" }
       ],
-      priceGuide: "₹58 - ₹68 / Piece (Volume tiered rates)",
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
       availability: "35,000 Units Stocked",
       testReportId: "TR-AAC-1092",
       image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=600&q=80"
     },
     {
-      id: "sku-astral-silencio",
-      name: "Astral Silencio 3-Layer Acoustic Drainage System",
-      category: "Plumbing & Pipes",
-      catSlug: "plumbing",
-      tag: "Ultra-Quiet SWR",
-      specSummary: "Mineral-Reinforced Polypropylene | Sound Level < 13 dB",
+      id: "sku-red-clay-bricks",
+      name: "Premium Wire-Cut Kiln-Baked Red Clay Bricks",
+      category: "Bricks & Blocks",
+      catSlug: "bricks-blocks",
+      tag: "High Compressive Load",
+      specSummary: "Standard 9x4x3 Inch | Water Absorption < 15% | High Ring Sound",
       specs: [
-        { label: "Sizes", val: "75mm, 110mm, 160mm" },
-        { label: "Impact Resistance", val: "-10 deg C Certified" },
-        { label: "Hot Water Resist", val: "Up to 95 deg C" },
-        { label: "Joint Type", val: "Factory Push-fit Ring" }
+        { label: "Dimensions", val: "9 x 4.25 x 2.75 Inches" },
+        { label: "Strength", val: ">= 7.5 to 10 N/mm2" },
+        { label: "Efflorescence", val: "Nil to Slight" },
+        { label: "Packing", val: "Stack Loaded Tippers" }
       ],
-      priceGuide: "Contractor Rake Discount Available",
-      availability: "Immediate Logistics",
-      testReportId: "TR-ASTRAL-882",
-      image: "https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=600&q=80"
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      availability: "50,000+ Units Ready for Site Tipping",
+      testReportId: "TR-BRK-RED-55",
+      image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: "sku-vsi-msand",
@@ -256,72 +424,133 @@ export const DEFAULT_DATA = {
       category: "Sand & Aggregates",
       catSlug: "sand-aggregates",
       tag: "Zero-Silt Concrete Grade",
-      specSummary: "Zone II Fine Aggregate | IS 383:2016 | 100% Cubical",
+      specSummary: "Zone II Fine Aggregate | IS 383:2016 | 100% Cubical Grain",
       specs: [
-        { label: "Grading Zone", val: "Zone II Standard" },
-        { label: "Silt Content", val: "< 0.8% (Double Hydro)" },
-        { label: "Bulk Density", val: "1,550 kg/m3" },
-        { label: "Specific Gravity", val: "2.65" }
+        { label: "Zone Classification", val: "Zone II (Concrete Mixes)" },
+        { label: "Silt Content", val: "< 3.0% (Washed)" },
+        { label: "Specific Gravity", val: "2.65" },
+        { label: "Weighbridge Delivery", val: "Electronic Computer Slip" }
       ],
-      priceGuide: "₹1,150 - ₹1,250 / Tonne (Bulk site tipping)",
-      availability: "Daily 800 Tonne Dispatch",
-      testReportId: "TR-SAND-304",
-      image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=600&q=80"
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      availability: "Continuous Tipper Supply (10 & 16 Wheelers)",
+      testReportId: "TR-MSAND-5521",
+      image: "https://images.unsplash.com/photo-160058515526-990dced4db0d?auto=format&fit=crop&w=600&q=80"
     },
     {
-      id: "sku-fosroc-grout",
-      name: "Fosroc Conbextra GP High-Flow Non-Shrink Grout",
-      category: "Construction Chemicals",
-      catSlug: "construction-chemicals",
-      tag: "Pre-Bagged Chemical",
-      specSummary: "Free-Flowing Precision Grout for Stanchions & Machine Bases",
+      id: "sku-blue-metal-20mm",
+      name: "Graded 20mm Blue Metal Coarse Aggregate",
+      category: "Sand & Aggregates",
+      catSlug: "sand-aggregates",
+      tag: "Structural RCC Mixes",
+      specSummary: "IS 383 Clean Hard Granite Metal | High Impact Strength",
       specs: [
-        { label: "Packaging", val: "25 kg Bag" },
-        { label: "Compressive 28D", val: ">= 65 N/mm2" },
-        { label: "Expansion", val: "+0.5% to +2.0%" },
-        { label: "Flow Cone", val: "10-12 Seconds" }
+        { label: "Nominal Size", val: "20mm Angular Cubical" },
+        { label: "Aggregate Crushing Val.", val: "< 24%" },
+        { label: "Flakiness Index", val: "< 15%" },
+        { label: "Bulk Density", val: "1,550 kg/m3" }
       ],
-      priceGuide: "₹540 - ₹585 / 25kg Bag",
-      availability: "850 Bags In Stock",
-      testReportId: "TR-FOSROC-664",
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      availability: "Large Yard Stockpiles",
+      testReportId: "TR-AGG-20MM-99",
+      image: "https://images.unsplash.com/photo-160058515526-990dced4db0d?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: "sku-shuttering-plywood",
+      name: "Film-Faced Shuttering Plywood & MS Prop Sets",
+      category: "Shuttering & Scaffolding",
+      catSlug: "formwork-hardware",
+      tag: "Multi-Repetition Slabs",
+      specSummary: "12mm & 18mm Density 34kg | Mirror Finish Phenolic Film | Heavy MS Props",
+      specs: [
+        { label: "Thickness", val: "12mm / 18mm" },
+        { label: "Repeated Uses", val: "25+ Repetitions" },
+        { label: "Boiling Waterproof", val: "72 Hours Boiling Pass" },
+        { label: "Props & Spans", val: "Adjustable 2m to 4m" }
+      ],
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      availability: "Direct Warehouse Dispatch",
+      testReportId: "TR-PLY-SHUT-08",
+      image: "https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: "sku-astral-silencio",
+      name: "Astral Silencio & CPVC High-Pressure Pipe Lines",
+      category: "Plumbing, Pipes & Tanks",
+      catSlug: "plumbing",
+      tag: "Hot & Cold Water + Acoustic",
+      specSummary: "Lead-Free CPVC Pro & SWR Drainage | Temperature up to 93°C",
+      specs: [
+        { label: "Sizes", val: "1/2 inch to 4 inch" },
+        { label: "Pressure Class", val: "SDR 11 & SDR 13.5" },
+        { label: "Standards", val: "ASTM D2846 & IS 15778" },
+        { label: "Jointing", val: "Solvent Cement Welded" }
+      ],
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      availability: "Full Wholesale Stock",
+      testReportId: "TR-ASTRAL-882",
+      image: "https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: "sku-fosroc-chemicals",
+      name: "Fosroc & Dr. Fixit Structural Waterproofing & Admixtures",
+      category: "Waterproofing & Chemicals",
+      catSlug: "construction-chemicals",
+      tag: "High Performance Waterproofing",
+      specSummary: "Conplast SP430, Nitobond SBR, Brushbond & Fast-Setting Grouts",
+      specs: [
+        { label: "Plasticizer", val: "Conplast SP430 Superplasticizer" },
+        { label: "Bonding Agent", val: "Nitobond SBR Latex" },
+        { label: "Tile Adhesive", val: "Polymer Modified Type 2" },
+        { label: "Pack Sizes", val: "5L, 20L, 200L Barrels" }
+      ],
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      availability: "Fresh Stock Sealed Buckets",
+      testReportId: "TR-FOSROC-661",
       image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
     },
     {
-      id: "sku-schneider-acti9",
-      name: "Schneider Electric Acti9 Heavy Distribution Panels",
+      id: "sku-polycab-cables",
+      name: "Polycab Green Wire FRLS Heavy Duty Copper Building Wires",
       category: "Electrical Materials",
       catSlug: "electrical",
-      tag: "Industrial Sub-Panels",
-      specSummary: "IP43 Enclosures | VisiTrip & VisiSafe | 10kA Breaking Capacity",
+      tag: "Flame Retardant Low Smoke",
+      specSummary: "IS 694 | 1.0 sq.mm to 16 sq.mm | 100% Electrolytic Pure Copper",
       specs: [
-        { label: "Incomer Range", val: "40A to 125A 4P" },
-        { label: "Way Capacity", val: "4, 8, 12, 16 Way TPN" },
-        { label: "Standard", val: "IS/IEC 61439-3" },
-        { label: "Sheet Metal", val: "1.2mm Galvanized" }
+        { label: "Conductor", val: "99.97% Pure Electrolytic Copper" },
+        { label: "Insulation", val: "FRLS PVC Compound" },
+        { label: "Voltage Grade", val: "Up to 1100V" },
+        { label: "Standard Length", val: "90 Meter Project Box" }
       ],
-      priceGuide: "Project Net Discount Available",
-      availability: "In Stock",
-      testReportId: "TR-SCHN-112",
+      priceGuide: "Price on Enquiry",
+      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      availability: "Full Electrical Inventory",
+      testReportId: "TR-POLYCAB-42",
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80"
     }
   ],
 
   // Mill Heat Sheets & Certified Reports Table
   millReports: [
-    { date: "04 Sep 2026", material: "Tata Tiscon Fe 550D Rebar", mill: "Jamshedpur Primary Rolling", heatNo: "HEAT-26/517-A", yieldStrength: "592 N/mm2", chemicalCheck: "Carbon 0.18%", status: "NABL Passed" },
-    { date: "03 Sep 2026", material: "UltraTech 53-Grade OPC", mill: "Awarpur Unit", heatNo: "SILO-08/BATCH-14", yieldStrength: "59.4 MPa (28D)", chemicalCheck: "SO3 2.1%", status: "NABL Passed" },
-    { date: "02 Sep 2026", material: "JSW Neosteel CRS 16mm", mill: "Vijayanagar Works", heatNo: "HEAT-NEO-8812", yieldStrength: "588 N/mm2", chemicalCheck: "Chromium 0.42%", status: "NABL Passed" },
-    { date: "01 Sep 2026", material: "Aerocon AAC 150mm Blocks", mill: "Hinjawadi Plant", heatNo: "AUTOCLAVE-04-B", yieldStrength: "4.4 N/mm2", chemicalCheck: "Density 590 kg/m3", status: "NABL Passed" }
+    { date: "10 Sep 2026", material: "Tata Tiscon Fe 550D Rebar", mill: "Jamshedpur Primary Rolling", heatNo: "HEAT-26/517-A", yieldStrength: "592 N/mm2", chemicalCheck: "Carbon 0.18%", status: "NABL Passed" },
+    { date: "09 Sep 2026", material: "UltraTech 53-Grade OPC", mill: "Awarpur Unit", heatNo: "SILO-08/BATCH-14", yieldStrength: "59.4 MPa (28D)", chemicalCheck: "SO3 2.1%", status: "NABL Passed" },
+    { date: "08 Sep 2026", material: "JSW Neosteel CRS 16mm", mill: "Vijayanagar Works", heatNo: "HEAT-NEO-8812", yieldStrength: "588 N/mm2", chemicalCheck: "Chromium 0.42%", status: "NABL Passed" },
+    { date: "07 Sep 2026", material: "VSI Triple-Washed M-Sand", mill: "Crusher Unit B-4", heatNo: "SAND-VSI-2026-09", yieldStrength: "Zone II Sieve Pass", chemicalCheck: "Silt 2.4%", status: "NABL Passed" },
+    { date: "06 Sep 2026", material: "Aerocon AAC 150mm Blocks", mill: "Hinjawadi Plant", heatNo: "AUTOCLAVE-04-B", yieldStrength: "4.4 N/mm2", chemicalCheck: "Density 590 kg/m3", status: "NABL Passed" }
   ],
 
-  // BOQ Estimation Constants (per sq ft of standard RCC residential/commercial build)
+  // BOQ Estimation Physical Material Takeoff Constants (per sq ft)
   boqRatios: {
-    steelKgPerSqFt: 3.8,      // ~3.8 kg TMT steel per sq ft
-    cementBagsPerSqFt: 0.38,  // ~0.38 bags cement per sq ft
-    aacBlocksPerSqFt: 0.83,   // ~0.83 AAC block units per sq ft
-    sandTonnesPerSqFt: 0.036, // ~0.036 tonnes sand per sq ft
-    baselineCostMin: 420,     // basic core material rate per sq ft
-    baselineCostMax: 470
+    steelKgPerSqFt: 3.8,        // ~3.8 kg TMT steel per sq ft
+    cementBagsPerSqFt: 0.38,    // ~0.38 bags cement per sq ft
+    sandTonnesPerSqFt: 0.036,   // ~0.036 tonnes sand per sq ft
+    aggregatesTonnesPerSqFt: 0.045, // ~0.045 tonnes blue metal per sq ft
+    bricksPerSqFt: 8.5,         // ~8.5 bricks or 0.82 AAC blocks per sq ft
+    jcbHoursPer1000SqFt: 14     // ~14 machine hours of JCB excavation per 1000 sq ft
   },
 
   projects: [
@@ -343,29 +572,29 @@ export const DEFAULT_DATA = {
         "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"
       ],
-      scope: ["Soil Investigation & Deep Isolated RCC Footings", "Fe 550D TMT Superstructure Framework", "Waterproof Sunken Slabs & Terrace Barrier", "Turnkey Interior Woodwork & Finishes"],
+      scope: ["JCB Deep Basement Excavation & Soil Compaction", "Isolated RCC Footings & Fe 550D TMT Reinforcement", "Waterproof Sunken Slabs & Terrace Barrier", "Turnkey Interior Woodwork & Finishes"],
       stats: ["4,800 sq ft Built-up", "Fe 550D TMT Reinforcement", "Turnkey Finish"]
     },
     {
       id: "proj-2",
       slug: "apex-corporate-tech-park",
       title: "Apex Corporate Technology Park",
-      type: "Commercial Construction",
+      type: "Commercial & Industrial",
       category: "commercial",
       location: "Whitefield, Bengaluru",
       area: "36,000 sq ft",
       duration: "20 Months",
       client: "Apex Infra & Technologies",
       architect: "Urban Form Consultants",
-      desc: "Multi-level commercial tech facility featuring deep raft piling, structural steel span roofs, automated HVAC ducting, high-traffic vitrified floor installation, and complete fire suppression integration.",
+      desc: "Multi-level commercial tech facility featuring deep raft piling, heavy hydraulic excavator earthworks, structural steel span roofs, automated HVAC ducting, and complete fire suppression integration.",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
       gallery: [
         "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80"
       ],
-      scope: ["G+4 Concrete Superstructure", "Post-Tensioned Flat Slabs", "Underground Fire Water Tank & Risers", "Institutional Facade Glazing"],
-      stats: ["G+4 Commercial Complex", "Post-Tensioned Slabs", "Complete MEP Works"]
+      scope: ["Mechanized Bulk Excavation with Poclain Fleet", "G+4 Concrete Superstructure & Post-Tensioned Slabs", "Underground Fire Water Tank & Risers", "Institutional Facade Glazing"],
+      stats: ["G+4 Commercial Complex", "Poclain Fleet Excavation", "Complete MEP Works"]
     },
     {
       id: "proj-3",
@@ -378,13 +607,13 @@ export const DEFAULT_DATA = {
       duration: "11 Months",
       client: "R. Chandrashekar",
       architect: "GreenLine Design Studio",
-      desc: "Eco-conscious private residence engineered using lightweight AAC block masonry, rainwater harvesting systems, and terrace thermal barrier waterproofing coatings.",
+      desc: "Eco-conscious private residence engineered using lightweight AAC block masonry, rainwater harvesting sumps, and terrace thermal barrier waterproofing coatings.",
       image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
       gallery: [
         "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80"
       ],
-      scope: ["AAC Block Work", "Zero-Silt Concrete Pours", "Integrated Solar Conduit Infrastructure", "Rainwater Percolation Sump"],
+      scope: ["JCB Site Grading & Foundation Digging", "AAC Block Masonry", "Zero-Silt Concrete Pours", "Rainwater Percolation Sump"],
       stats: ["AAC Block Masonry", "Zero Silt M-Sand Pours", "Integrated Waterproofing"]
     },
     {
@@ -398,42 +627,42 @@ export const DEFAULT_DATA = {
       duration: "16 Months",
       client: "Mohan Kumar Holdings",
       architect: "Skyline Architects",
-      desc: "Commercial retail promenade with expansive column-free spans, reinforced mezzanine structures, architectural aluminium curtain walls, and heavy-duty vitrified floor tiling.",
+      desc: "Commercial retail promenade with expansive column-free spans, heavy earthfilling, reinforced mezzanine structures, architectural aluminium curtain walls, and heavy-duty vitrified floor tiling.",
       image: "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=800&q=80",
       gallery: [
         "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=800&q=80"
       ],
-      scope: ["Column-free Atrium Engineering", "Heavy Load Vitrified Tiling", "Industrial Electrical Substation"],
+      scope: ["Site Leveling & Earth Retaining Systems", "Column-free Atrium Engineering", "Heavy Load Vitrified Tiling", "Industrial Electrical Substation"],
       stats: ["Column-free Atrium", "Heavy Load Flooring", "Curtain Glazing"]
     }
   ],
 
   workflow: [
-    { step: "01", name: "UNDERSTAND", desc: "Understand the client's site parameters, architectural blueprint, and budget objectives." },
-    { step: "02", name: "PLAN & ESTIMATE", desc: "Develop the detailed structural specifications and comprehensive material requirement schedule." },
-    { step: "03", name: "SOURCE MATERIALS", desc: "Arrange certified NABL-tested construction materials directly from our trusted inventory depot." },
-    { step: "04", name: "BUILD & SUPERVISE", desc: "Execute construction with qualified civil site engineers and daily digital supervision." },
-    { step: "05", name: "QUALITY AUDIT", desc: "Complete utility pressure testing, concrete cube testing, and architectural quality audits." },
-    { step: "06", name: "HANDOVER", desc: "Deliver the completed project or bulk materials with full compliance documentation." }
+    { step: "01", name: "CONSULT & SCOPE", desc: "Understand your site parameters, earthmoving needs, architectural drawings, and material schedule." },
+    { step: "02", name: "ESTIMATE & QUOTE", desc: "Prepare a detailed Bill of Quantities (BOQ). Contact 8884238688 / gajananaconstructionsinfo@gmail.com for competitive rates." },
+    { step: "03", name: "MOBILIZE & SUPPLY", desc: "Dispatch in-house JCB machinery and NABL-certified building materials directly from our central yard." },
+    { step: "04", name: "CONSTRUCT & SUPERVISE", desc: "Execute civil works and structural casting with qualified site engineers and daily digital supervision." },
+    { step: "05", name: "QUALITY AUDIT", desc: "Conduct soil compaction tests, concrete cube testing, and structural safety sign-offs." },
+    { step: "06", name: "HANDOVER", desc: "Deliver the completed project or bulk material supply with full warranty documentation." }
   ],
 
   testimonials: [
     {
-      quote: "Gajanana Constructions & Materials built our 4-bedroom duplex from foundation to finishing. Having both their civil construction team and their direct material supply under one roof saved us immense coordination hassle and kept our project completely on budget.",
+      quote: "Gajanana Constructions & Materials provided their JCB 3DX machines for our plot excavation and supplied all the Fe 550D TMT and cement for our 4-bedroom villa. Their coordination, prompt delivery, and honest communication saved us weeks of headache.",
       author: "P. R. Hegde",
       role: "Homeowner",
       project: "Heritage Duplex Residence, Bengaluru",
       rating: 5
     },
     {
-      quote: "As a commercial builder, on-time material supply is make-or-break. Gajanana Constructions & Materials consistently delivers Fe 550D TMT steel and M-Sand on schedule with certified test reports. Their transparency and reliability have made them our default partner.",
+      quote: "For our commercial project in Whitefield, we needed continuous concrete pours and high-capacity tipper supply. Gajanana delivered without a single hour of delay. Their in-house machinery and material depot make them the most dependable construction partner in the region.",
       author: "V. Shankar",
       role: "Managing Director, Apex Infra & Projects",
       project: "Commercial Corporate Park, Whitefield",
       rating: 5
     },
     {
-      quote: "Exceptional engineering discipline and honest customer communication. From soil testing to roof waterproofing, their team maintained impeccable standards. Highly recommended for anyone seeking true quality construction.",
+      quote: "From foundation trenching with their JCB to roof slab casting and waterproofing, their engineering team was hands-on and transparent. Highly recommended for both turnkey construction and bulk materials.",
       author: "R. Chandrashekar",
       role: "Independent Villa Owner",
       project: "Greenwood Villa, Karnataka",
@@ -441,49 +670,28 @@ export const DEFAULT_DATA = {
     }
   ],
 
-  enquiries: [
-    {
-      id: "GCM-ENQ-901",
-      type: "Quote Request",
-      name: "Suresh Gowda",
-      phone: "+91 98441 23091",
-      email: "suresh.g@example.com",
-      location: "Bengaluru South",
-      projectType: "Residential Construction",
-      requirement: "Turnkey G+2 Independent Villa (approx 3,600 sq ft)",
-      materials: "Full Structural & Finishing Package",
-      quantity: "Turnkey Build",
-      message: "Looking to begin foundation works next month. Need comprehensive estimate and site visit.",
-      date: "2026-09-02",
-      status: "New"
-    }
-  ]
+  enquiries: []
 };
 
-const STORAGE_KEY = "GCM_REACT_PLATFORM_DATA_V1";
+// Storage helper functions
+const STORAGE_KEY = 'GCM_PLATFORM_DATA_V5';
 
 export function getPlatformData() {
   try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
-      const parsed = JSON.parse(saved);
-      if (parsed.company && parsed.services && parsed.materialCategories) {
-        return parsed;
-      }
-    }
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return DEFAULT_DATA;
+    const parsed = JSON.parse(raw);
+    return { ...DEFAULT_DATA, ...parsed };
   } catch (e) {
-    console.warn("Could not load from localStorage, using defaults", e);
+    return DEFAULT_DATA;
   }
-  return DEFAULT_DATA;
 }
 
 export function savePlatformData(data) {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-    return true;
   } catch (e) {
-    console.error("Failed to save to localStorage", e);
-    return false;
+    console.error('Could not save platform data to localStorage', e);
   }
 }
 
