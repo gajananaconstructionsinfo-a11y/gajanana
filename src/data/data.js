@@ -94,9 +94,9 @@ export const DEFAULT_DATA = {
         "Turnkey Execution from Foundation Excavation to Final Key Handover",
         "Full Direct Material Supply from Our Own Quality Stockyard"
       ],
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80",
       badge: "Turnkey Residential",
-      applications: ["Custom Luxury Villas", "Independent Duplex Residences", "Multi-Family Residential Apartments", "Row Houses & Gated Communities"],
+      applications: ["Custom Individual Villas", "Independent Duplex Residences", "Multi-Storey Individual Homes", "Custom Bungalows"],
       faqs: [
         { q: "How do you ensure material quality during construction?", a: "Because Gajanana Constructions & Materials operates its own certified material depot, all steel rebars, cement, and aggregates undergo rigorous batch testing with NABL mill test reports before site delivery." },
         { q: "How do we get a project quote for our residential plan?", a: "For an itemized BOQ estimation and turnkey pricing, contact 8884238688 or email your floor plan to gajananaconstructionsinfo@gmail.com." }
@@ -135,7 +135,7 @@ export const DEFAULT_DATA = {
         "Stormwater Drainage & Site Civil Infrastructure",
         "Concrete Cube Testing & Quality Certification at Every Stage"
       ],
-      image: "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=80",
       badge: "Core Civil Engineering",
       applications: ["High-Rise RCC Frames", "Factory & Heavy Machinery Foundations", "Bridge, Culvert & Retaining Wall Works", "Substation & Industrial Bases"],
       faqs: [
@@ -249,19 +249,19 @@ export const DEFAULT_DATA = {
     { id: "earthmoving-machinery", slug: "earthmoving-machinery", name: "JCB & Heavy Earthmoving Machinery", count: "Fleet Ready", icon: "truck", shortDesc: "JCB 3DX backhoes, 20T hydraulic excavators, rock breakers, road rollers and tippers.", image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=600&q=80" },
     { id: "steel", slug: "steel", name: "Steel & TMT Rebar", count: "Primary Mills", icon: "layers", shortDesc: "Tata Tiscon Fe 550D, JSW Neosteel, Kamdhenu, Jindal Panther (8mm to 32mm rebars).", image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=600&q=80" },
     { id: "cement", slug: "cement", name: "Cement & Binders", count: "Fresh Batches", icon: "box", shortDesc: "UltraTech, ACC, Birla Super, Dalmia, Ramco (OPC 53, PPC 43, White Cement).", image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" },
-    { id: "rmc", slug: "rmc", name: "Ready-Mix Concrete (RMC)", count: "Batching Plant Direct", icon: "cpu", shortDesc: "M20 to M45 design mix concrete with transit mixer and boom pump delivery.", image: "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=600&q=80" },
-    { id: "sand-aggregates", slug: "sand-aggregates", name: "Sand & Blue Metal Aggregates", count: "Calibrated Loads", icon: "disc", shortDesc: "VSI triple-washed M-Sand, Plastering P-Sand, 20mm Blue Metal, 40mm Jelly, GSB.", image: "https://images.unsplash.com/photo-160058515526-990dced4db0d?auto=format&fit=crop&w=600&q=80" },
-    { id: "bricks-blocks", slug: "bricks-blocks", name: "Bricks & Masonry Blocks", count: "Factory Bundled", icon: "grid", shortDesc: "Table-moulded red clay bricks, Aerocon AAC lightweight blocks, solid concrete blocks.", image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=600&q=80" },
+    { id: "rmc", slug: "rmc", name: "Ready-Mix Concrete (RMC)", count: "Batching Plant Direct", icon: "cpu", shortDesc: "M20 to M45 design mix concrete with transit mixer and boom pump delivery.", image: "https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=600&q=80" },
+    { id: "sand-aggregates", slug: "sand-aggregates", name: "Sand & Blue Metal Aggregates", count: "Calibrated Loads", icon: "disc", shortDesc: "VSI triple-washed M-Sand, Plastering P-Sand, 20mm Blue Metal, 40mm Jelly, GSB.", image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=600&q=80" },
+    { id: "bricks-blocks", slug: "bricks-blocks", name: "Bricks & Masonry Blocks", count: "Factory Bundled", icon: "grid", shortDesc: "Table-moulded red clay bricks, Aerocon AAC lightweight blocks, solid concrete blocks.", image: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=600&q=80" },
     { id: "sub-base-filling", slug: "sub-base-filling", name: "Earthfilling, Murrum & Gravel", count: "Bulk Tippers", icon: "activity", shortDesc: "Natural red earth, filling soil, graded murrum, quarry dust and boulder rocks.", image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=600&q=80" },
-    { id: "structural-steel-roofing", slug: "structural-steel-roofing", name: "Structural Steel & Roofing", count: "Heavy Sections", icon: "home", shortDesc: "MS angles, channels, beams, hollow square pipes, color coated roofing sheets.", image: "https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=600&q=80" },
-    { id: "tiles", slug: "tiles", name: "Tiles, Granite & Natural Stone", count: "Depot Display", icon: "layout", shortDesc: "Glazed vitrified tiles (GVT/PGVT), Black Galaxy granite, Tan Brown, Kota stone.", image: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=600&q=80" },
-    { id: "plumbing", slug: "plumbing", name: "Plumbing, Pipes & Tanks", count: "Certified", icon: "droplets", shortDesc: "Astral / Ashirvad CPVC, UPVC, SWR drainage lines, brass valves, overhead water tanks.", image: "https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=600&q=80" },
-    { id: "electrical", slug: "electrical", name: "Electrical Cables & Conduits", count: "ISI Marked", icon: "zap", shortDesc: "Polycab / Havells FRLS copper wires, heavy PVC conduits, distribution boards, MCBs.", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" },
-    { id: "formwork-hardware", slug: "formwork-hardware", name: "Shuttering Plywood & Scaffolding", count: "Full Yard Stock", icon: "tool", shortDesc: "Film-faced shuttering plywood, adjustable MS props, steel spans, scaffolding pipes, binding wire.", image: "https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=600&q=80" },
-    { id: "waterproofing", slug: "waterproofing", name: "Waterproofing Membranes", count: "Certified", icon: "umbrella", shortDesc: "Liquid polymer membranes, crystalline waterproofing, terrace heat barrier coatings.", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" },
+    { id: "structural-steel-roofing", slug: "structural-steel-roofing", name: "Structural Steel & Roofing", count: "Heavy Sections", icon: "home", shortDesc: "MS angles, channels, beams, hollow square pipes, color coated roofing sheets.", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" },
+    { id: "tiles", slug: "tiles", name: "Tiles, Granite & Natural Stone", count: "Depot Display", icon: "layout", shortDesc: "Glazed vitrified tiles (GVT/PGVT), Black Galaxy granite, Tan Brown, Kota stone.", image: "https://images.unsplash.com/photo-1607400201515-c2c41c07d307?auto=format&fit=crop&w=600&q=80" },
+    { id: "plumbing", slug: "plumbing", name: "Plumbing, Pipes & Tanks", count: "Certified", icon: "droplets", shortDesc: "Astral / Ashirvad CPVC, UPVC, SWR drainage lines, brass valves, overhead water tanks.", image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" },
+    { id: "electrical", slug: "electrical", name: "Electrical Cables & Conduits", count: "ISI Marked", icon: "zap", shortDesc: "Polycab / Havells FRLS copper wires, heavy PVC conduits, distribution boards, MCBs.", image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" },
+    { id: "formwork-hardware", slug: "formwork-hardware", name: "Shuttering Plywood & Scaffolding", count: "Full Yard Stock", icon: "tool", shortDesc: "Film-faced shuttering plywood, adjustable MS props, steel spans, scaffolding pipes, binding wire.", image: "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=600&q=80" },
+    { id: "waterproofing", slug: "waterproofing", name: "Waterproofing Membranes", count: "Certified", icon: "umbrella", shortDesc: "Liquid polymer membranes, crystalline waterproofing, terrace heat barrier coatings.", image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" },
     { id: "construction-chemicals", slug: "construction-chemicals", name: "Construction Chemicals & Adhesives", count: "Authorized", icon: "flask", shortDesc: "Dr. Fixit, Fosroc, Sika, concrete admixtures, non-shrink grouts, epoxy tile adhesives.", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" },
     { id: "paints", slug: "paints", name: "Paints, Primers & Wall Care", count: "Fresh Batches", icon: "feather", shortDesc: "Asian Paints Apex Ultima, Royale, exterior damp proof primers, waterproof wall putty.", image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" },
-    { id: "doors-windows", slug: "doors-windows", name: "Doors, Windows & Hardware", count: "Custom Sizing", icon: "maximize", shortDesc: "Teakwood frames, solid core flush doors, architectural UPVC sliding windows, SS fittings.", image: "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=600&q=80" }
+    { id: "doors-windows", slug: "doors-windows", name: "Doors, Windows & Hardware", count: "Custom Sizing", icon: "maximize", shortDesc: "Teakwood frames, solid core flush doors, architectural UPVC sliding windows, SS fittings.", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" }
   ],
 
   // Heavy Construction & Machinery SKUs (NO PRICES SHOWN - Price on Enquiry Policy)
@@ -302,7 +302,7 @@ export const DEFAULT_DATA = {
       priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
       availability: "Immediate Site Mobilization",
       testReportId: "TR-EXC-20T-01",
-      image: "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: "sku-tata-550d",
@@ -359,7 +359,7 @@ export const DEFAULT_DATA = {
       priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
       availability: "Continuous Plant Pouring Available",
       testReportId: "TR-RMC-2026-M25",
-      image: "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: "sku-jsw-crs",
@@ -378,7 +378,7 @@ export const DEFAULT_DATA = {
       priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
       availability: "450 MT Available",
       testReportId: "TR-JSW-7730",
-      image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: "sku-aerocon-aac",
@@ -555,85 +555,166 @@ export const DEFAULT_DATA = {
 
   projects: [
     {
-      id: "proj-1",
-      slug: "heritage-duplex-residence",
-      title: "The Heritage Duplex Residence",
-      type: "Residential Construction",
+      id: "proj-individual-1",
+      slug: "individual-residential-wall-construction",
+      title: "Individual Residential Build - Bricklaying & Masonry Stage",
+      type: "Individual Residential Build",
       category: "residential",
-      location: "Koramangala, Bengaluru",
-      area: "4,800 sq ft",
-      duration: "14 Months",
-      client: "P. R. Hegde & Family",
-      architect: "Studio Earth Architecture",
-      desc: "Turnkey luxury villa built with reinforced seismic-resistant RCC framework, Italian marble flooring, insulated glass facade, and custom woodwork. Completed on schedule with full direct material sourcing under one roof.",
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      stage: "Wall Construction & Brick Masonry",
+      area: "2,800 sq ft Built-up",
+      duration: "Stage 3: Active Masonry",
+      structuralType: "Isolated RCC Footings with Fe 550D TMT Reinforcement",
+      machinery: "JCB 3DX (Trenching), Mini Concrete Mixer",
+      materialsSupplied: "Primary Wire-Cut Red Clay Bricks, UltraTech 53G Cement, VSI Washed M-Sand",
+      desc: "On-site construction progress of an individual residential home. Active perimeter and internal wall masonry using kiln-baked wire-cut red clay bricks and rich 1:4 cement mortar, with RCC lintel beds and continuous curing in progress.",
+      image: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80",
       gallery: [
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
       ],
-      scope: ["JCB Deep Basement Excavation & Soil Compaction", "Isolated RCC Footings & Fe 550D TMT Reinforcement", "Waterproof Sunken Slabs & Terrace Barrier", "Turnkey Interior Woodwork & Finishes"],
-      stats: ["4,800 sq ft Built-up", "Fe 550D TMT Reinforcement", "Turnkey Finish"]
+      scope: [
+        "Kiln-baked table moulded red brick wall masonry (9-inch outer, 4.5-inch partition walls)",
+        "RCC lintels casting with integrated sunshades over all door and window openings",
+        "Daily water ponding and curing on freshly laid brick joints",
+        "Electrical conduit pipe routing grooving prior to plastering stage"
+      ],
+      stats: ["Wall Construction Stage", "Red Clay Wire-Cut Bricks", "Continuous Mortar Curing"]
     },
     {
-      id: "proj-2",
-      slug: "apex-corporate-tech-park",
-      title: "Apex Corporate Technology Park",
-      type: "Commercial & Industrial",
-      category: "commercial",
-      location: "Whitefield, Bengaluru",
-      area: "36,000 sq ft",
-      duration: "20 Months",
-      client: "Apex Infra & Technologies",
-      architect: "Urban Form Consultants",
-      desc: "Multi-level commercial tech facility featuring deep raft piling, heavy hydraulic excavator earthworks, structural steel span roofs, automated HVAC ducting, and complete fire suppression integration.",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+      id: "proj-individual-2",
+      slug: "individual-house-foundation-earthmoving",
+      title: "Individual House Construction - Foundation & JCB Earthmoving Stage",
+      type: "Individual House Build",
+      category: "civil",
+      stage: "Foundation Excavation & Sub-Base Prep",
+      area: "3,400 sq ft Site Area",
+      duration: "Stage 1: Groundworks Active",
+      structuralType: "Deep Column Footings & RCC Raft Trenching",
+      machinery: "JCB 3DX Backhoe Loader, 10-Ton Vibratory Compactor, High-Capacity Tippers",
+      materialsSupplied: "40mm Hard Granite Metal, Graded Quarry Sand, Anti-Termite Chemical Treatment",
+      desc: "Groundworks and excavation phase for an individual standalone residential plot. Mobilized our in-house JCB 3DX backhoe loader for site grading, boundary clearing, deep column pit excavation, and anti-termite chemical soil barrier treatment.",
+      image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=800&q=80",
       gallery: [
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=800&q=80"
       ],
-      scope: ["Mechanized Bulk Excavation with Poclain Fleet", "G+4 Concrete Superstructure & Post-Tensioned Slabs", "Underground Fire Water Tank & Risers", "Institutional Facade Glazing"],
-      stats: ["G+4 Commercial Complex", "Poclain Fleet Excavation", "Complete MEP Works"]
+      scope: [
+        "Full site leveling and boundary clearing using in-house JCB 3DX",
+        "Isolated footing trench excavation down to hard rock stratum (7.5 ft depth)",
+        "PCC 1:4:8 base bed pouring with 40mm coarse aggregates",
+        "Fe 550D column rebar cage fabrication and vertical starter casting"
+      ],
+      stats: ["JCB 3DX Excavation", "Deep Column Footings", "PCC Base Bed Cast"]
     },
     {
-      id: "proj-3",
-      slug: "greenwood-contemporary-villa",
-      title: "Greenwood Contemporary Villa",
-      type: "Residential Construction",
+      id: "proj-individual-3",
+      slug: "individual-villa-rcc-framework",
+      title: "Individual Villa Project - RCC Column Frame & Shuttering Stage",
+      type: "Individual Villa Construction",
       category: "residential",
-      location: "Mysuru Road, Karnataka",
-      area: "3,200 sq ft",
-      duration: "11 Months",
-      client: "R. Chandrashekar",
-      architect: "GreenLine Design Studio",
-      desc: "Eco-conscious private residence engineered using lightweight AAC block masonry, rainwater harvesting sumps, and terrace thermal barrier waterproofing coatings.",
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      stage: "RCC Structural Columns & Beam Framing",
+      area: "4,200 sq ft Built-up",
+      duration: "Stage 2: Superstructure Active",
+      structuralType: "High-Strength Reinforced Concrete Framed Structure",
+      machinery: "Mobile Concrete Mixer, Needle Vibrators, MS Prop Scaffolding Sets",
+      materialsSupplied: "Tata Tiscon Fe 550D TMT, 20mm Blue Metal, Film-Faced Shuttering Plywood",
+      desc: "Structural framework construction for an individual custom villa. Heavy reinforcement steel cage binding for ground-to-first-floor columns, film-faced phenolic shuttering formwork, and precision concrete vibration.",
+      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
       gallery: [
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80"
       ],
-      scope: ["JCB Site Grading & Foundation Digging", "AAC Block Masonry", "Zero-Silt Concrete Pours", "Rainwater Percolation Sump"],
-      stats: ["AAC Block Masonry", "Zero Silt M-Sand Pours", "Integrated Waterproofing"]
+      scope: [
+        "Erection of 18 RCC vertical structural columns with 16mm/20mm Fe 550D rebars",
+        "Phenolic film-faced shuttering installation with laser plumb alignment",
+        "Design mix M25 structural concrete casting using needle vibrators to eliminate honeycombing",
+        "Hessian cloth wrapping and continuous pond curing for 21 days"
+      ],
+      stats: ["RCC Column Framing", "Tata Tiscon Fe 550D", "Laser Plumb Alignment"]
     },
     {
-      id: "proj-4",
-      slug: "grand-horizon-retail-plaza",
-      title: "Grand Horizon Retail Promenade",
-      type: "Commercial & Structural",
-      category: "commercial",
-      location: "Hubballi, Karnataka",
-      area: "22,500 sq ft",
-      duration: "16 Months",
-      client: "Mohan Kumar Holdings",
-      architect: "Skyline Architects",
-      desc: "Commercial retail promenade with expansive column-free spans, heavy earthfilling, reinforced mezzanine structures, architectural aluminium curtain walls, and heavy-duty vitrified floor tiling.",
-      image: "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=800&q=80",
+      id: "proj-individual-4",
+      slug: "individual-residence-slab-casting",
+      title: "Individual Residence - Roof Slab Shuttering & Concrete Pouring Stage",
+      type: "Individual Residence Build",
+      category: "residential",
+      stage: "First Floor Roof Slab Casting",
+      area: "3,100 sq ft Built-up",
+      duration: "Stage 3: Slab Pour Active",
+      structuralType: "Two-Way Solid RCC Slab with Integrated Concealed Beams",
+      machinery: "Ready-Mix Concrete Transit Mixers, 36m Boom Placer Pump, Power Trowels",
+      materialsSupplied: "M25 Design Mix Concrete, Fosroc SP430 Plasticizer, Concealed Electrical Conduits",
+      desc: "Pouring phase of a monolithic first-floor roof slab for an individual home. Two-way reinforcement mat tying with PVC cover blocks, fan hook anchoring, concealed Polycab electrical conduit layout, and continuous mechanized concrete placement.",
+      image: "https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=800&q=80",
       gallery: [
-        "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
       ],
-      scope: ["Site Leveling & Earth Retaining Systems", "Column-free Atrium Engineering", "Heavy Load Vitrified Tiling", "Industrial Electrical Substation"],
-      stats: ["Column-free Atrium", "Heavy Load Flooring", "Curtain Glazing"]
+      scope: [
+        "Heavy MS pipe scaffolding and telescopic prop staging setup",
+        "Top and bottom 10mm/12mm two-way reinforcement mat tying with 20mm cover blocks",
+        "Concealed FRLS electrical conduit boxes placement with structural civil inspection",
+        "Monolithic M25 concrete pour with power screed floating and water bund curing"
+      ],
+      stats: ["M25 Monolithic Pour", "Concealed Beam Detailing", "21-Day Pond Curing"]
+    },
+    {
+      id: "proj-individual-5",
+      slug: "individual-house-upper-floor-extension",
+      title: "Individual House Addition - Upper Floor Extension & AAC Blockwork",
+      type: "Individual House Extension",
+      category: "residential",
+      stage: "Second Floor Extension & AAC Masonry",
+      area: "1,850 sq ft Extension",
+      duration: "Stage 4: Upper Floor Active",
+      structuralType: "Load-Relieved Structural Frame with Lightweight AAC Block Masonry",
+      machinery: "Material Lifting Hoist Winch, Scaffolding Rigs, Block Cutting Saws",
+      materialsSupplied: "Aerocon 150mm AAC Blocks, Polymer Thin-Bed Mortar Adhesive, MS Props",
+      desc: "Vertical expansion work on an existing individual house. Upper floor extension utilizing lightweight AAC masonry blocks to reduce foundation dead load, supported by external perimeter steel scaffolding and precision polymer adhesive jointing.",
+      image: "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=800&q=80",
+      gallery: [
+        "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80"
+      ],
+      scope: [
+        "Structural integrity load audit and column starter rebar anchoring",
+        "Exterior steel cup-lock scaffolding and safety netting installation",
+        "Precision Aerocon AAC block wall construction with 3mm polymer joint mortar",
+        "Coping beam casting along balcony and parapet walls"
+      ],
+      stats: ["AAC Lightweight Masonry", "Cup-Lock Scaffolding", "Dead-Load Reduced 50%"]
+    },
+    {
+      id: "proj-individual-6",
+      slug: "individual-commercial-unit-framing",
+      title: "Individual Commercial Unit - Ground Floor Framing & Retaining Wall",
+      type: "Individual Commercial Build",
+      category: "commercial",
+      stage: "RCC Retaining Wall & Column Shuttering",
+      area: "5,200 sq ft Ground Footprint",
+      duration: "Stage 2: Heavy Civil Structure",
+      structuralType: "Heavy-Duty RCC Framed Unit with Raft Foundation & Cantilever Slabs",
+      machinery: "JCB 3DX, 20-Ton Excavator, Hydra Mobile Crane 14T, Transit Mixers",
+      materialsSupplied: "JSW Neosteel Fe 550D CRS Rebars, Fosroc Waterproofing Admixtures, M30 Concrete",
+      desc: "Structural phase photos of a standalone individual commercial retail showroom. Execution includes heavy reinforced concrete retaining walls against rear soil embankments, wide-span column framing for open retail floor area, and heavy subgrade compaction.",
+      image: "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=80",
+      gallery: [
+        "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80"
+      ],
+      scope: [
+        "JCB deep trenching and soil embankment retaining wall formwork",
+        "Heavy RCC wide-span column casting for column-free commercial retail floor layout",
+        "M30 design mix concrete with integrated water-reducing plasticizers",
+        "Underground storm drainage connection and subgrade compaction"
+      ],
+      stats: ["Wide-Span Columns", "RCC Soil Retaining Wall", "Heavy Load Sub-Base"]
     }
   ],
 
@@ -648,24 +729,24 @@ export const DEFAULT_DATA = {
 
   testimonials: [
     {
-      quote: "Gajanana Constructions & Materials provided their JCB 3DX machines for our plot excavation and supplied all the Fe 550D TMT and cement for our 4-bedroom villa. Their coordination, prompt delivery, and honest communication saved us weeks of headache.",
+      quote: "Gajanana Constructions & Materials provided their JCB 3DX machines for our plot excavation and supplied all the Fe 550D TMT and cement for our residential house. Their coordination, prompt delivery, and honest communication saved us weeks of headache.",
       author: "P. R. Hegde",
       role: "Homeowner",
-      project: "Heritage Duplex Residence, Bengaluru",
+      project: "Individual Residential Build #101",
       rating: 5
     },
     {
-      quote: "For our commercial project in Whitefield, we needed continuous concrete pours and high-capacity tipper supply. Gajanana delivered without a single hour of delay. Their in-house machinery and material depot make them the most dependable construction partner in the region.",
+      quote: "For our individual commercial project, we needed continuous concrete pours and high-capacity tipper supply. Gajanana delivered without a single hour of delay. Their in-house machinery and material depot make them the most dependable construction partner in the region.",
       author: "V. Shankar",
-      role: "Managing Director, Apex Infra & Projects",
-      project: "Commercial Corporate Park, Whitefield",
+      role: "Commercial Developer",
+      project: "Individual Commercial Unit #106",
       rating: 5
     },
     {
-      quote: "From foundation trenching with their JCB to roof slab casting and waterproofing, their engineering team was hands-on and transparent. Highly recommended for both turnkey construction and bulk materials.",
+      quote: "From foundation trenching with their JCB to wall masonry, roof slab casting, and waterproofing, their engineering team was hands-on and transparent. Highly recommended for both turnkey individual construction and bulk materials.",
       author: "R. Chandrashekar",
       role: "Independent Villa Owner",
-      project: "Greenwood Villa, Karnataka",
+      project: "Individual Villa Project #103",
       rating: 5
     }
   ],
@@ -674,7 +755,7 @@ export const DEFAULT_DATA = {
 };
 
 // Storage helper functions
-const STORAGE_KEY = 'GCM_PLATFORM_DATA_V5';
+const STORAGE_KEY = 'GCM_PLATFORM_DATA_V6';
 
 export function getPlatformData() {
   try {

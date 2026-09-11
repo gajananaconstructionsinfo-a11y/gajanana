@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import Breadcrumb from '../components/Breadcrumb';
-import { ArrowRight, MapPin, Clock } from 'lucide-react';
+import { ArrowRight, Clock, HardHat, Layers } from 'lucide-react';
 
 export default function Projects() {
   const { data } = useApp();
@@ -15,34 +15,34 @@ export default function Projects() {
 
   return (
     <div>
-      <Breadcrumb items={[{ label: 'Projects Portfolio' }]} />
+      <Breadcrumb items={[{ label: 'Individual Projects' }]} />
 
       {/* Hero */}
       <section className="py-16 sm:py-20 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
-              ENGINEERING PORTFOLIO &amp; CASE STUDIES
+              ON-SITE CONSTRUCTION PROGRESS &amp; MASONRY
             </span>
             <h1 className="text-4xl sm:text-6xl font-extrabold text-slate-950 font-heading tracking-tight mb-4">
-              PROVEN EXECUTION. <br />
+              INDIVIDUAL BUILDS. <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-700">
-                MEASURABLE STRENGTH.
+                REAL ON-SITE PROGRESS.
               </span>
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed font-light mb-8">
-              Every project delivered by Gajanana Constructions &amp; Materials represents strict structural compliance, certified civil engineering, and uncompromised material quality.
+              Explore authentic on-site construction progress across individual residential homes, standalone villas, and commercial units — featuring live wall bricklaying, column shuttering, slab pouring, and JCB earthmoving.
             </p>
 
             {/* Metrics */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-100 font-mono text-xs">
               <div>
-                <div className="text-3xl font-extrabold text-slate-950 font-heading">240+</div>
-                <div className="text-slate-500 font-medium">Completed Builds</div>
+                <div className="text-3xl font-extrabold text-slate-950 font-heading">100%</div>
+                <div className="text-slate-500 font-medium">Individual Builds</div>
               </div>
               <div>
-                <div className="text-3xl font-extrabold text-amber-600 font-heading">100%</div>
-                <div className="text-slate-500 font-medium">On-Time Milestones</div>
+                <div className="text-3xl font-extrabold text-amber-600 font-heading">On-Site</div>
+                <div className="text-slate-500 font-medium">Stage Photos</div>
               </div>
               <div>
                 <div className="text-3xl font-extrabold text-slate-950 font-heading">Fe 550D</div>
@@ -65,10 +65,10 @@ export default function Projects() {
           <div className="flex flex-wrap items-center justify-between gap-4 mb-10 pb-6 border-b border-slate-200">
             <div className="flex flex-wrap gap-2">
               {[
-                { id: 'all', label: `All Projects (${projects.length})` },
-                { id: 'residential', label: 'Residential' },
-                { id: 'commercial', label: 'Commercial' },
-                { id: 'civil', label: 'Civil & Infra' }
+                { id: 'all', label: `All Individual Builds (${projects.length})` },
+                { id: 'residential', label: 'Residential Construction' },
+                { id: 'civil', label: 'Foundation & Groundworks' },
+                { id: 'commercial', label: 'Commercial Units' }
               ].map((tab) => (
                 <button
                   key={tab.id}
@@ -86,7 +86,7 @@ export default function Projects() {
 
             <div className="text-xs text-slate-500 font-mono flex items-center">
               <span className="w-2 h-2 rounded-full bg-emerald-500 mr-2"></span>
-              Showing verified on-site construction deliveries
+              Showing verified on-site construction &amp; wall masonry progress
             </div>
           </div>
 
@@ -106,7 +106,7 @@ export default function Projects() {
                       onError={(e) => { e.currentTarget.src = '/fallback.svg'; }}
                     />
                     <div className="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold font-mono">
-                      {proj.category.toUpperCase()}
+                      INDIVIDUAL BUILD
                     </div>
                     <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-md text-slate-900 px-3 py-1 rounded-lg text-xs font-bold font-mono shadow">
                       {proj.area}
@@ -114,12 +114,14 @@ export default function Projects() {
                   </div>
 
                   <div className="p-6">
-                    <div className="flex items-center text-xs text-slate-500 mb-2 space-x-2">
-                      <MapPin className="w-3.5 h-3.5 text-amber-500 shrink-0" />
-                      <span>{proj.location}</span>
-                      <span>•</span>
-                      <Clock className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-                      <span>{proj.duration}</span>
+                    <div className="flex flex-wrap items-center text-xs text-slate-500 mb-2 gap-2">
+                      <span className="px-2 py-0.5 rounded-md bg-amber-50 text-amber-800 font-semibold font-mono text-[11px] border border-amber-200/60">
+                        {proj.stage}
+                      </span>
+                      <div className="flex items-center space-x-1 font-mono text-slate-400">
+                        <Clock className="w-3.5 h-3.5 shrink-0" />
+                        <span>{proj.duration}</span>
+                      </div>
                     </div>
                     <h3 className="text-xl font-extrabold text-slate-950 font-heading mb-2 group-hover:text-amber-600 transition-colors">
                       {proj.title}
@@ -145,7 +147,7 @@ export default function Projects() {
                     to={`/projects/${proj.id}`}
                     className="text-amber-600 hover:text-amber-700 font-extrabold text-xs tracking-wider uppercase flex items-center group-hover:translate-x-1 transition-transform font-mono"
                   >
-                    <span>VIEW CASE STUDY</span>
+                    <span>VIEW ON-SITE PHOTOS</span>
                     <ArrowRight className="w-4 h-4 ml-1.5" />
                   </Link>
                   <span className="text-[11px] font-mono text-slate-400">Ref: {proj.id.toUpperCase()}</span>

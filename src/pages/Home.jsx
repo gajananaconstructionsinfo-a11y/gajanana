@@ -71,12 +71,12 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Column: Hero Showcase Villa Card (5 cols) */}
+            {/* Right Column: Hero Showcase Individual Build Card (5 cols) */}
             <div className="lg:col-span-5">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
                 <img
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
-                  alt="Modern Luxury Villa Construction"
+                  src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1000&q=80"
+                  alt="On-Site Wall Construction and Bricklaying"
                   className="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-700"
                   onError={(e) => { e.currentTarget.src = '/fallback.svg'; }}
                 />
@@ -84,18 +84,18 @@ export default function Home() {
                 
                 <div className="absolute bottom-6 left-6 right-6 text-white space-y-2">
                   <span className="px-3 py-1 rounded-full bg-amber-500 text-slate-950 font-mono text-[11px] font-extrabold uppercase">
-                    FEATURED TURNKEY BUILD
+                    ON-SITE CONSTRUCTION PROGRESS
                   </span>
-                  <h3 className="text-xl font-bold font-heading">Skyline Waterfront Villa</h3>
+                  <h3 className="text-xl font-bold font-heading">Individual Residential Build #101</h3>
                   <p className="text-xs text-slate-300 font-mono">
-                    5,600 sq ft • Post-tensioned cantilevers &amp; Fe 550D reinforcement
+                    Wall Construction &amp; Brick Masonry • 2,800 sq ft • Wire-Cut Bricks &amp; Fe 550D
                   </p>
                   <div className="pt-2">
                     <Link
                       to="/projects"
                       className="inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 font-mono uppercase tracking-wider"
                     >
-                      <span>Explore Portfolio Case Studies →</span>
+                      <span>Explore Individual Projects →</span>
                     </Link>
                   </div>
                 </div>
@@ -165,7 +165,7 @@ export default function Home() {
             <div className="lg:col-span-6">
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=600&q=80"
+                  src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=600&q=80"
                   alt="Construction Site Engineering"
                   className="rounded-2xl object-cover h-64 w-full shadow-md"
                   onError={(e) => { e.currentTarget.src = '/fallback.svg'; }}
@@ -399,17 +399,17 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
             <div>
               <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-1">
-                VERIFIED PORTFOLIO
+                ON-SITE PROGRESS
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
-                Proven Execution &amp; Case Studies
+                Individual Construction Builds &amp; Photos
               </h2>
             </div>
             <Link
               to="/projects"
               className="inline-flex items-center text-xs font-extrabold text-amber-600 hover:text-amber-700 uppercase tracking-wider font-mono"
             >
-              <span>VIEW ALL PROJECTS →</span>
+              <span>VIEW ALL INDIVIDUAL BUILDS →</span>
             </Link>
           </div>
 
@@ -428,12 +428,12 @@ export default function Home() {
                       onError={(e) => { e.currentTarget.src = '/fallback.svg'; }}
                     />
                     <div className="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold font-mono">
-                      {proj.category.toUpperCase()}
+                      INDIVIDUAL BUILD
                     </div>
                   </div>
                   <div className="p-6">
                     <div className="text-xs text-slate-500 font-mono mb-2">
-                      {proj.location} • {proj.area}
+                      <span className="text-amber-600 font-bold">{proj.stage}</span> • {proj.area}
                     </div>
                     <h3 className="text-lg font-bold text-slate-950 font-heading mb-2 group-hover:text-amber-600 transition-colors">
                       {proj.title}
@@ -448,7 +448,7 @@ export default function Home() {
                     to={`/projects/${proj.id}`}
                     className="text-xs font-extrabold text-amber-600 hover:text-amber-700 uppercase tracking-wider font-mono flex items-center space-x-1"
                   >
-                    <span>VIEW CASE STUDY</span>
+                    <span>VIEW ON-SITE PHOTOS</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>

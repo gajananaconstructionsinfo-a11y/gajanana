@@ -81,14 +81,14 @@ export default function ProjectDetail() {
               {project.gallery && (
                 <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
                   <h3 className="text-xl font-extrabold text-slate-950 font-heading mb-6">
-                    Construction Photo Gallery
+                    Construction-Time Photo Progress (Wall Construction, Masonry &amp; Framing)
                   </h3>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                     {project.gallery.map((img, i) => (
                       <div key={i} className="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200">
                         <img
                           src={img}
-                          alt="Gallery"
+                          alt="Construction progress"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => { e.currentTarget.src = '/fallback.svg'; }}
                         />
@@ -103,29 +103,37 @@ export default function ProjectDetail() {
             <div className="lg:col-span-4 space-y-6">
               <div className="bg-white p-7 rounded-3xl border border-slate-200 shadow-sm sticky top-28">
                 <h3 className="font-extrabold text-slate-950 text-base font-heading mb-4 pb-3 border-b border-slate-100">
-                  Project Technical Data
+                  Project Technical Specifications
                 </h3>
 
                 <div className="space-y-3.5 text-xs font-mono">
                   <div className="flex justify-between py-1 border-b border-slate-100">
-                    <span className="text-slate-500">Location:</span>
-                    <span className="font-bold text-slate-900">{project.location}</span>
+                    <span className="text-slate-500">Classification:</span>
+                    <span className="font-bold text-amber-600">Individual Project</span>
+                  </div>
+                  <div className="flex justify-between py-1 border-b border-slate-100">
+                    <span className="text-slate-500">Current Stage:</span>
+                    <span className="font-bold text-slate-900">{project.stage}</span>
                   </div>
                   <div className="flex justify-between py-1 border-b border-slate-100">
                     <span className="text-slate-500">Built-Up Area:</span>
                     <span className="font-bold text-slate-900">{project.area}</span>
                   </div>
                   <div className="flex justify-between py-1 border-b border-slate-100">
-                    <span className="text-slate-500">Timeline:</span>
+                    <span className="text-slate-500">Timeline / Status:</span>
                     <span className="font-bold text-slate-900">{project.duration}</span>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-slate-100">
-                    <span className="text-slate-500">Client:</span>
-                    <span className="font-bold text-slate-900">{project.client}</span>
+                  <div className="py-1 border-b border-slate-100">
+                    <div className="text-slate-500 mb-1">Structural Framework:</div>
+                    <div className="font-bold text-slate-900 leading-snug">{project.structuralType}</div>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-slate-100">
-                    <span className="text-slate-500">Architect:</span>
-                    <span className="font-bold text-slate-900">{project.architect}</span>
+                  <div className="py-1 border-b border-slate-100">
+                    <div className="text-slate-500 mb-1">Machinery Deployed:</div>
+                    <div className="font-bold text-slate-900 leading-snug">{project.machinery}</div>
+                  </div>
+                  <div className="py-1 border-b border-slate-100">
+                    <div className="text-slate-500 mb-1">Materials Supplied:</div>
+                    <div className="font-bold text-slate-900 leading-snug">{project.materialsSupplied}</div>
                   </div>
                 </div>
 
@@ -141,7 +149,7 @@ export default function ProjectDetail() {
                 {/* Other Projects */}
                 <div className="mt-8 pt-6 border-t border-slate-100">
                   <h4 className="font-bold text-slate-900 text-xs font-mono uppercase tracking-wider mb-3">
-                    Other Case Studies
+                    Other Individual Builds
                   </h4>
                   <div className="space-y-2">
                     {projects
