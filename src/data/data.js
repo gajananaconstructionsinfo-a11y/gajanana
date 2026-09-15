@@ -2,6 +2,11 @@
 // Brand Positioning: "Building Dreams. Supplying Quality. Delivering Strength."
 // Pricing Policy: Direct quotes on enquiry - Contact 8884238688 | gajananaconstructionsinfo@gmail.com
 
+import jcb3dxImg from '../assets/products/jcb-3dx.jpg';
+import excavator20tImg from '../assets/products/excavator-20t.jpg';
+import tataTisconImg from '../assets/products/tata-tiscon-tmt.jpg';
+import ultratechImg from '../assets/products/ultratech-cement.jpg';
+
 export const DEFAULT_DATA = {
   company: {
     name: "GAJANANA CONSTRUCTIONS & MATERIALS",
@@ -42,7 +47,7 @@ export const DEFAULT_DATA = {
         "Pipeline, Drainage & Retaining Wall Trench Digging",
         "Certified Heavy Machinery Operators with Strict Safety Protocols"
       ],
-      image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=800&q=80",
+      image: jcb3dxImg,
       badge: "In-House Machinery Fleet",
       applications: [
         "Basement Excavation for Multi-Storey Buildings",
@@ -246,9 +251,9 @@ export const DEFAULT_DATA = {
 
   // 16 Comprehensive Building Material & Equipment Categories
   materialCategories: [
-    { id: "earthmoving-machinery", slug: "earthmoving-machinery", name: "JCB & Heavy Earthmoving Machinery", count: "Fleet Ready", icon: "truck", shortDesc: "JCB 3DX backhoes, 20T hydraulic excavators, rock breakers, road rollers and tippers.", image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=600&q=80" },
-    { id: "steel", slug: "steel", name: "Steel & TMT Rebar", count: "Primary Mills", icon: "layers", shortDesc: "Tata Tiscon Fe 550D, JSW Neosteel, Kamdhenu, Jindal Panther (8mm to 32mm rebars).", image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=600&q=80" },
-    { id: "cement", slug: "cement", name: "Cement & Binders", count: "Fresh Batches", icon: "box", shortDesc: "UltraTech, ACC, Birla Super, Dalmia, Ramco (OPC 53, PPC 43, White Cement).", image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" },
+    { id: "earthmoving-machinery", slug: "earthmoving-machinery", name: "JCB & Heavy Earthmoving Machinery", count: "Fleet Ready", icon: "truck", shortDesc: "JCB 3DX backhoes, 20T hydraulic excavators, rock breakers, road rollers and tippers.", image: jcb3dxImg },
+    { id: "steel", slug: "steel", name: "Steel & TMT Rebar", count: "Primary Mills", icon: "layers", shortDesc: "Tata Tiscon Fe 550D, JSW Neosteel, Kamdhenu, Jindal Panther (8mm to 32mm rebars).", image: tataTisconImg },
+    { id: "cement", slug: "cement", name: "Cement & Binders", count: "Fresh Batches", icon: "box", shortDesc: "UltraTech, ACC, Birla Super, Dalmia, Ramco (OPC 53, PPC 43, White Cement).", image: ultratechImg },
     { id: "rmc", slug: "rmc", name: "Ready-Mix Concrete (RMC)", count: "Batching Plant Direct", icon: "cpu", shortDesc: "M20 to M45 design mix concrete with transit mixer and boom pump delivery.", image: "https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=600&q=80" },
     { id: "sand-aggregates", slug: "sand-aggregates", name: "Sand & Blue Metal Aggregates", count: "Calibrated Loads", icon: "disc", shortDesc: "VSI triple-washed M-Sand, Plastering P-Sand, 20mm Blue Metal, 40mm Jelly, GSB.", image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=600&q=80" },
     { id: "bricks-blocks", slug: "bricks-blocks", name: "Bricks & Masonry Blocks", count: "Factory Bundled", icon: "grid", shortDesc: "Table-moulded red clay bricks, Aerocon AAC lightweight blocks, solid concrete blocks.", image: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=600&q=80" },
@@ -283,7 +288,7 @@ export const DEFAULT_DATA = {
       priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
       availability: "Available for Daily / Shift / Project Contract",
       testReportId: "TR-JCB-3DX-09",
-      image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=600&q=80"
+      image: jcb3dxImg
     },
     {
       id: "sku-excavator-20t",
@@ -302,7 +307,7 @@ export const DEFAULT_DATA = {
       priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
       availability: "Immediate Site Mobilization",
       testReportId: "TR-EXC-20T-01",
-      image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=600&q=80"
+      image: excavator20tImg
     },
     {
       id: "sku-tata-550d",
@@ -321,7 +326,7 @@ export const DEFAULT_DATA = {
       priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
       availability: "1,200 MT In Stock (Yard Weighed)",
       testReportId: "TR-TISCON-9821",
-      image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=600&q=80"
+      image: tataTisconImg
     },
     {
       id: "sku-ultratech-53",
@@ -340,7 +345,7 @@ export const DEFAULT_DATA = {
       priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
       availability: "18,000 Bags Ready for Dispatch",
       testReportId: "TR-ULTRA-4412",
-      image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80"
+      image: ultratechImg
     },
     {
       id: "sku-rmc-transit",
@@ -755,7 +760,7 @@ export const DEFAULT_DATA = {
 };
 
 // Storage helper functions
-const STORAGE_KEY = 'GCM_PLATFORM_DATA_V6';
+const STORAGE_KEY = 'GCM_PLATFORM_DATA_V7';
 
 export function getPlatformData() {
   try {
