@@ -6,6 +6,9 @@ import jcb3dxImg from '../assets/products/jcb-3dx.jpg';
 import excavator20tImg from '../assets/products/excavator-20t.jpg';
 import tataTisconImg from '../assets/products/tata-tiscon-tmt.jpg';
 import ultratechImg from '../assets/products/ultratech-cement.jpg';
+import roofSlabPouringImg from '../assets/projects/roof-slab-pouring.jpg';
+import slabShutteringRebarImg from '../assets/projects/slab-shuttering-rebar.jpg';
+import slabLevelingImg from '../assets/projects/slab-concrete-leveling.jpg';
 
 export const DEFAULT_DATA = {
   company: {
@@ -254,7 +257,7 @@ export const DEFAULT_DATA = {
     { id: "earthmoving-machinery", slug: "earthmoving-machinery", name: "JCB & Heavy Earthmoving Machinery", count: "Fleet Ready", icon: "truck", shortDesc: "JCB 3DX backhoes, 20T hydraulic excavators, rock breakers, road rollers and tippers.", image: jcb3dxImg },
     { id: "steel", slug: "steel", name: "Steel & TMT Rebar", count: "Primary Mills", icon: "layers", shortDesc: "Tata Tiscon Fe 550D, JSW Neosteel, Kamdhenu, Jindal Panther (8mm to 32mm rebars).", image: tataTisconImg },
     { id: "cement", slug: "cement", name: "Cement & Binders", count: "Fresh Batches", icon: "box", shortDesc: "UltraTech, ACC, Birla Super, Dalmia, Ramco (OPC 53, PPC 43, White Cement).", image: ultratechImg },
-    { id: "rmc", slug: "rmc", name: "Ready-Mix Concrete (RMC)", count: "Batching Plant Direct", icon: "cpu", shortDesc: "M20 to M45 design mix concrete with transit mixer and boom pump delivery.", image: "https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=600&q=80" },
+    { id: "rmc", slug: "rmc", name: "Ready-Mix Concrete (RMC)", count: "Batching Plant Direct", icon: "cpu", shortDesc: "M20 to M45 design mix concrete with transit mixer and boom pump delivery.", image: roofSlabPouringImg },
     { id: "sand-aggregates", slug: "sand-aggregates", name: "Sand & Blue Metal Aggregates", count: "Calibrated Loads", icon: "disc", shortDesc: "VSI triple-washed M-Sand, Plastering P-Sand, 20mm Blue Metal, 40mm Jelly, GSB.", image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=600&q=80" },
     { id: "bricks-blocks", slug: "bricks-blocks", name: "Bricks & Masonry Blocks", count: "Factory Bundled", icon: "grid", shortDesc: "Table-moulded red clay bricks, Aerocon AAC lightweight blocks, solid concrete blocks.", image: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=600&q=80" },
     { id: "sub-base-filling", slug: "sub-base-filling", name: "Earthfilling, Murrum & Gravel", count: "Bulk Tippers", icon: "activity", shortDesc: "Natural red earth, filling soil, graded murrum, quarry dust and boulder rocks.", image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=600&q=80" },
@@ -264,7 +267,7 @@ export const DEFAULT_DATA = {
     { id: "electrical", slug: "electrical", name: "Electrical Cables & Conduits", count: "ISI Marked", icon: "zap", shortDesc: "Polycab / Havells FRLS copper wires, heavy PVC conduits, distribution boards, MCBs.", image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" },
     { id: "formwork-hardware", slug: "formwork-hardware", name: "Shuttering Plywood & Scaffolding", count: "Full Yard Stock", icon: "tool", shortDesc: "Film-faced shuttering plywood, adjustable MS props, steel spans, scaffolding pipes, binding wire.", image: "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=600&q=80" },
     { id: "waterproofing", slug: "waterproofing", name: "Waterproofing Membranes", count: "Certified", icon: "umbrella", shortDesc: "Liquid polymer membranes, crystalline waterproofing, terrace heat barrier coatings.", image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" },
-    { id: "construction-chemicals", slug: "construction-chemicals", name: "Construction Chemicals & Adhesives", count: "Authorized", icon: "flask", shortDesc: "Dr. Fixit, Fosroc, Sika, concrete admixtures, non-shrink grouts, epoxy tile adhesives.", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" },
+    { id: "construction-chemicals", slug: "construction-chemicals", name: "Construction Chemicals & Adhesives", count: "Authorized", icon: "flask", shortDesc: "Dr. Fixit, Fosroc, Sika, concrete admixtures, non-shrink grouts, epoxy tile adhesives.", image: slabLevelingImg },
     { id: "paints", slug: "paints", name: "Paints, Primers & Wall Care", count: "Fresh Batches", icon: "feather", shortDesc: "Asian Paints Apex Ultima, Royale, exterior damp proof primers, waterproof wall putty.", image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" },
     { id: "doors-windows", slug: "doors-windows", name: "Doors, Windows & Hardware", count: "Custom Sizing", icon: "maximize", shortDesc: "Teakwood frames, solid core flush doors, architectural UPVC sliding windows, SS fittings.", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" }
   ],
@@ -364,7 +367,7 @@ export const DEFAULT_DATA = {
       priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
       availability: "Continuous Plant Pouring Available",
       testReportId: "TR-RMC-2026-M25",
-      image: "https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=600&q=80"
+      image: roofSlabPouringImg
     },
     {
       id: "sku-jsw-crs",
@@ -516,7 +519,7 @@ export const DEFAULT_DATA = {
       priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
       availability: "Fresh Stock Sealed Buckets",
       testReportId: "TR-FOSROC-661",
-      image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
+      image: slabLevelingImg
     },
     {
       id: "sku-polycab-cables",
@@ -653,11 +656,11 @@ export const DEFAULT_DATA = {
       machinery: "Ready-Mix Concrete Transit Mixers, 36m Boom Placer Pump, Power Trowels",
       materialsSupplied: "M25 Design Mix Concrete, Fosroc SP430 Plasticizer, Concealed Electrical Conduits",
       desc: "Pouring phase of a monolithic first-floor roof slab for an individual home. Two-way reinforcement mat tying with PVC cover blocks, fan hook anchoring, concealed Polycab electrical conduit layout, and continuous mechanized concrete placement.",
-      image: "https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=800&q=80",
+      image: roofSlabPouringImg,
       gallery: [
-        "https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+        roofSlabPouringImg,
+        slabShutteringRebarImg,
+        slabLevelingImg
       ],
       scope: [
         "Heavy MS pipe scaffolding and telescopic prop staging setup",
@@ -684,7 +687,7 @@ export const DEFAULT_DATA = {
       gallery: [
         "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80"
+        slabShutteringRebarImg
       ],
       scope: [
         "Structural integrity load audit and column starter rebar anchoring",
@@ -760,7 +763,7 @@ export const DEFAULT_DATA = {
 };
 
 // Storage helper functions
-const STORAGE_KEY = 'GCM_PLATFORM_DATA_V8';
+const STORAGE_KEY = 'GCM_PLATFORM_DATA_V9';
 
 export function getPlatformData() {
   try {
