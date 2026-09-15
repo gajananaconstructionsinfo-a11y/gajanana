@@ -760,14 +760,18 @@ export const DEFAULT_DATA = {
 };
 
 // Storage helper functions
-const STORAGE_KEY = 'GCM_PLATFORM_DATA_V7';
+const STORAGE_KEY = 'GCM_PLATFORM_DATA_V8';
 
 export function getPlatformData() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return DEFAULT_DATA;
     const parsed = JSON.parse(raw);
-    return { ...DEFAULT_DATA, ...parsed };
+    // Ensure catalog, services, projects & their authentic images always come from DEFAULT_DATA
+    return {
+      ...DEFAULT_DATA,
+      enquiries: parsed.enquiries || []
+    };
   } catch (e) {
     return DEFAULT_DATA;
   }
@@ -775,7 +779,7 @@ export function getPlatformData() {
 
 export function savePlatformData(data) {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({ enquiries: data.enquiries || [] }));
   } catch (e) {
     console.error('Could not save platform data to localStorage', e);
   }
