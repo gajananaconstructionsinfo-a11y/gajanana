@@ -10,6 +10,25 @@ import roofSlabPouringImg from '../assets/projects/roof-slab-pouring.jpg';
 import slabShutteringRebarImg from '../assets/projects/slab-shuttering-rebar.jpg';
 import slabLevelingImg from '../assets/projects/slab-concrete-leveling.jpg';
 
+import stage01Img from '../assets/construction-works/stage-01-site-foundation.jpg';
+import stage02Img from '../assets/construction-works/stage-02-structural-work.jpg';
+import stage03Img from '../assets/construction-works/stage-03-roofing.jpg';
+import stage04Img from '../assets/construction-works/stage-04-electrical.jpg';
+import stage05Img from '../assets/construction-works/stage-05-plumbing-sanitary.jpg';
+import stage06Img from '../assets/construction-works/stage-06-flooring-tiling.jpg';
+import stage07Img from '../assets/construction-works/stage-07-doors-windows.jpg';
+import stage08Img from '../assets/construction-works/stage-08-kitchen.jpg';
+import stage09Img from '../assets/construction-works/stage-09-bathrooms.jpg';
+import stage10Img from '../assets/construction-works/stage-10-painting-finishing.jpg';
+import stage11Img from '../assets/construction-works/stage-11-carpentry-woodwork.jpg';
+import stage12Img from '../assets/construction-works/stage-12-false-ceiling.jpg';
+import stage13Img from '../assets/construction-works/stage-13-metal-fabrication.jpg';
+import stage14Img from '../assets/construction-works/stage-14-waterproofing.jpg';
+import stage15Img from '../assets/construction-works/stage-15-exterior-outdoor.jpg';
+import stage16Img from '../assets/construction-works/stage-16-hvac-cooling.jpg';
+import stage17Img from '../assets/construction-works/stage-17-security-smart-home.jpg';
+import stage18Img from '../assets/construction-works/stage-18-cleaning-handover.jpg';
+
 export const DEFAULT_DATA = {
   company: {
     name: "GAJANANA TRADERS & CONSTRUCTIONS & MATERIALS",
@@ -36,6 +55,60 @@ export const DEFAULT_DATA = {
   },
 
   services: [
+    {
+      id: "tmt-steel-procurement-supply",
+      slug: "tmt-steel-procurement-supply",
+      category: "materials",
+      title: "TMT Steel Procurement & Structural Rebar Supply",
+      subtitle: "Primary Fe 550D / Fe 500D TMT bars (Tata Tiscon, JSW Neosteel, Jindal Panther) with test certificates.",
+      desc: "Direct stockyard distribution and cut-and-bend rebar procurement for residential and commercial RCC frames. We supply primary brand Fe 550D TMT reinforcement bars ranging from 8mm stirrup coils to 32mm heavy column rods with mill test certificates and weighbridge accuracy.",
+      deliverables: [
+        "Primary Mill Certified: Tata Tiscon, JSW Neosteel, Jindal Panther & SAIL Fe 550D",
+        "Full Diameter Stock: 8mm, 10mm, 12mm, 16mm, 20mm, 25mm, 32mm",
+        "NABL-Certified Batch Mill Test Reports with Every Delivery Consignment",
+        "Crane-Operated Bundling, Electronic Weighbridge Slip & Direct Site Offloading",
+        "Custom Bar Bending Schedule (BBS) Cutting, Bending & Stirrup Prefabrication"
+      ],
+      image: tataTisconImg,
+      badge: "Primary TMT Steel Supply",
+      applications: [
+        "RCC Footings, Piles & Raft Foundations",
+        "Structural Columns, Beams & Lintels",
+        "Roof Slabs & Cantilever Projections",
+        "Retaining Walls & Soil Anchoring"
+      ],
+      faqs: [
+        { q: "Do you supply primary brand steel with test certificates?", a: "Yes, every delivery of Tata Tiscon, JSW Neosteel, or Jindal Panther comes with a manufacturer batch mill test certificate proving Fe 550D yield strength and elongation." },
+        { q: "What is the minimum quantity for site delivery?", a: "We cater to individual villa requirements (1 to 10 tons) as well as multi-ton commercial consignments with direct trailer transport." }
+      ]
+    },
+    {
+      id: "cement-bulk-supply-depot",
+      slug: "cement-bulk-supply-depot",
+      category: "materials",
+      title: "Cement Bulk Supply & Direct Stockyard Depot",
+      subtitle: "UltraTech, ACC, Birla Super, Dalmia & Ramco (OPC 53, OPC 43 & PPC) fresh factory consignments.",
+      desc: "Direct authorized depot supply of fresh, tamper-proof 53 Grade Ordinary Portland Cement (OPC) and Portland Pozzolana Cement (PPC). Unloaded directly from factory railway rakes and stored in elevated, moisture-sealed warehouses to guarantee peak compressive strength.",
+      deliverables: [
+        "Leading Primary Brands: UltraTech, ACC, Birla Super, Dalmia, Ramco & Penna",
+        "Grade Options: OPC 53 Grade for High-Strength RCC, OPC 43 Grade, and PPC Weather Plus",
+        "Guaranteed Fresh Stock: Less than 15-day manufacturer bagging dates with zero hydration lumps",
+        "Moisture-Proof Closed Fleet Logistics with Direct Unloading at Site",
+        "Direct Yard Wholesale Rates for Contractors, Turnkey Builders & Homeowners"
+      ],
+      image: ultratechImg,
+      badge: "Authorized Cement Depot",
+      applications: [
+        "M20 to M50 Structural RCC Slab & Column Casting",
+        "Precision Solid Block & Clay Brick Masonry Mortar",
+        "Smooth Internal & Weather-Shield External Wall Plastering",
+        "Underground Water Sump & Terrace Waterproofing Concrete"
+      ],
+      faqs: [
+        { q: "How can I verify the freshness of the cement bags?", a: "Every bag displays manufacturer week and month batch codes. All our consignments are factory-fresh and dispatched within days of arrival." },
+        { q: "Can we combine OPC 53 for RCC and PPC for plastering in one delivery?", a: "Yes, we coordinate mixed truckloads based on your construction phase so you get the exact grades needed without storage wastage." }
+      ]
+    },
     {
       id: "earthmoving-machinery-jcb",
       slug: "earthmoving-machinery-jcb",
@@ -759,6 +832,328 @@ export const DEFAULT_DATA = {
     }
   ],
 
+  houseConstructionWorks: [
+    {
+      id: "stage-01",
+      number: 1,
+      title: "Site & Foundation",
+      category: "Civil & Structure",
+      badge: "Stage 01 • Earth & Sub-Structure",
+      image: stage01Img,
+      summary: "Site clearing, excavation, footings, basement structure, and soil compaction.",
+      items: [
+        "Site clearing",
+        "Excavation",
+        "Earthwork",
+        "Foundation work",
+        "Footings",
+        "Basement work",
+        "Soil filling & compaction"
+      ]
+    },
+    {
+      id: "stage-02",
+      number: 2,
+      title: "Structural Work",
+      category: "Civil & Structure",
+      badge: "Stage 02 • RCC Framework",
+      image: stage02Img,
+      summary: "RCC framing, columns, beams, slabs, reinforcement, masonry, and staircase construction.",
+      items: [
+        "RCC work",
+        "Columns",
+        "Beams",
+        "Slabs",
+        "Reinforcement/steel work",
+        "Brick/block masonry",
+        "Concrete work",
+        "Staircase construction"
+      ]
+    },
+    {
+      id: "stage-03",
+      number: 3,
+      title: "Roofing",
+      category: "Civil & Structure",
+      badge: "Stage 03 • Roof & Terrace",
+      image: stage03Img,
+      summary: "Roof slab pouring, terrace waterproofing, slope finishing, roof tiles, and rainwater drainage.",
+      items: [
+        "Roof slab",
+        "Waterproofing",
+        "Terrace finishing",
+        "Roof tiles",
+        "Gutters & rainwater drainage"
+      ]
+    },
+    {
+      id: "stage-04",
+      number: 4,
+      title: "Electrical",
+      category: "MEP & Utilities",
+      badge: "Stage 04 • Electrical & Power",
+      image: stage04Img,
+      summary: "Concealed wiring, distribution boards, lighting, earthing, inverter, solar, and smart lines.",
+      items: [
+        "Electrical wiring",
+        "Switches & sockets",
+        "Distribution boards",
+        "Lighting installation",
+        "Fans",
+        "Earthing",
+        "Inverter/UPS wiring",
+        "Solar installation",
+        "CCTV wiring",
+        "Internet/network wiring"
+      ]
+    },
+    {
+      id: "stage-05",
+      number: 5,
+      title: "Plumbing & Sanitary",
+      category: "MEP & Utilities",
+      badge: "Stage 05 • Water & Drainage",
+      image: stage05Img,
+      summary: "Hot and cold water supply, drainage lines, sanitaryware fittings, overhead tanks, and pressure pumps.",
+      items: [
+        "Water pipelines",
+        "Drainage pipelines",
+        "Bathroom plumbing",
+        "Kitchen plumbing",
+        "Sanitary fittings",
+        "Water tanks",
+        "Pumps"
+      ]
+    },
+    {
+      id: "stage-06",
+      number: 6,
+      title: "Flooring & Tiling",
+      category: "Surfaces & Joinery",
+      badge: "Stage 06 • Floor & Wall Finishes",
+      image: stage06Img,
+      summary: "Vitrified tiles, Italian marble, granite, outdoor pavers, and anti-skid staircase stones.",
+      items: [
+        "Floor tiles",
+        "Wall tiles",
+        "Marble",
+        "Granite",
+        "Vitrified flooring",
+        "Outdoor paving",
+        "Staircase tiles/stone"
+      ]
+    },
+    {
+      id: "stage-07",
+      number: 7,
+      title: "Doors & Windows",
+      category: "Surfaces & Joinery",
+      badge: "Stage 07 • Fenestration",
+      image: stage07Img,
+      summary: "Teakwood main door, internal flush doors, UPVC/Aluminium windows, toughened glass, and hardware.",
+      items: [
+        "Main door",
+        "Internal doors",
+        "UPVC windows",
+        "Aluminium windows",
+        "Glass work",
+        "Door frames",
+        "Locks & handles"
+      ]
+    },
+    {
+      id: "stage-08",
+      number: 8,
+      title: "Kitchen",
+      category: "Interiors & Woodwork",
+      badge: "Stage 08 • Modular Kitchen",
+      image: stage08Img,
+      summary: "Modern modular cabinets, quartz/granite countertops, sinks, concealed gas piping, and chimney exhaust.",
+      items: [
+        "Modular kitchen",
+        "Kitchen countertops",
+        "Kitchen sink",
+        "Gas pipeline",
+        "Kitchen cabinets",
+        "Chimney & exhaust"
+      ]
+    },
+    {
+      id: "stage-09",
+      number: 9,
+      title: "Bathrooms",
+      category: "Interiors & Woodwork",
+      badge: "Stage 09 • Modern Bathrooms",
+      image: stage09Img,
+      summary: "Designer wall tiles, thermostatic shower mixers, sanitaryware, glass shower enclosures, and geysers.",
+      items: [
+        "Bathroom tiles",
+        "Shower fittings",
+        "Sanitaryware (toilet, washbasin)",
+        "Taps & mixers",
+        "Geyser installation",
+        "Glass partition"
+      ]
+    },
+    {
+      id: "stage-10",
+      number: 10,
+      title: "Painting & Finishing",
+      category: "Interiors & Woodwork",
+      badge: "Stage 10 • Wall Painting",
+      image: stage10Img,
+      summary: "Smooth wall putty, primer coats, interior luxury emulsions, weatherproof exterior paints, and wood polish.",
+      items: [
+        "Interior wall painting",
+        "Exterior painting",
+        "Putty work",
+        "Primer coating",
+        "Texture paint",
+        "Wood polish",
+        "Enamel paint"
+      ]
+    },
+    {
+      id: "stage-11",
+      number: 11,
+      title: "Carpentry & Woodwork",
+      category: "Interiors & Woodwork",
+      badge: "Stage 11 • Custom Furniture",
+      image: stage11Img,
+      summary: "Bespoke floor-to-ceiling wardrobes, TV entertainment consoles, master beds, and acoustic wall paneling.",
+      items: [
+        "Wardrobes",
+        "TV unit",
+        "Bed & headboard",
+        "Wooden partitions",
+        "Study table",
+        "Shoe rack",
+        "Wooden panelling"
+      ]
+    },
+    {
+      id: "stage-12",
+      number: 12,
+      title: "False Ceiling & Interior",
+      category: "Interiors & Woodwork",
+      badge: "Stage 12 • Ceiling & Lighting",
+      image: stage12Img,
+      summary: "Gypsum false ceilings, architectural cove lighting, magnetic profile channels, and designer wall panels.",
+      items: [
+        "Gypsum ceiling",
+        "POP ceiling",
+        "Wooden ceiling",
+        "Cove lighting",
+        "Profile lights",
+        "Wall paneling",
+        "Wallpaper"
+      ]
+    },
+    {
+      id: "stage-13",
+      number: 13,
+      title: "Metal & Fabrication",
+      category: "Fabrication & Outdoor",
+      badge: "Stage 13 • Steel & Metalwork",
+      image: stage13Img,
+      summary: "Balcony safety railings, staircase railings, automated main gates, window safety grills, and parking shed.",
+      items: [
+        "Balcony railings",
+        "Staircase railings",
+        "Main gate / entrance gate",
+        "Window grills",
+        "MS / SS fabrication",
+        "Car parking shed"
+      ]
+    },
+    {
+      id: "stage-14",
+      number: 14,
+      title: "Waterproofing",
+      category: "Protection & Isolation",
+      badge: "Stage 14 • Complete Waterproofing",
+      image: stage14Img,
+      summary: "Multi-layer elastomeric terrace coating, sunken bathroom waterproofing, basement tanking, and wall barrier.",
+      items: [
+        "Terrace waterproofing",
+        "Bathroom waterproofing",
+        "Basement waterproofing",
+        "Balcony waterproofing",
+        "External wall waterproofing",
+        "Water tank waterproofing"
+      ]
+    },
+    {
+      id: "stage-15",
+      number: 15,
+      title: "Exterior & Outdoor",
+      category: "Fabrication & Outdoor",
+      badge: "Stage 15 • Exterior Hardscape",
+      image: stage15Img,
+      summary: "Compound wall construction, main gate installation, heavy-duty paver driveway, landscaping, and exterior lights.",
+      items: [
+        "Compound wall",
+        "Main gate installation",
+        "Driveway / parking area",
+        "Landscaping / garden",
+        "Paver blocks",
+        "Outdoor lighting"
+      ]
+    },
+    {
+      id: "stage-16",
+      number: 16,
+      title: "HVAC & Cooling",
+      category: "MEP & Utilities",
+      badge: "Stage 16 • HVAC & Ventilation",
+      image: stage16Img,
+      summary: "Concealed copper AC piping, split and multi-split AC installation, ventilation ducting, and exhaust systems.",
+      items: [
+        "AC installation",
+        "AC piping & conduit",
+        "Ducting (for centralized AC)",
+        "Ventilation systems",
+        "Exhaust fans"
+      ]
+    },
+    {
+      id: "stage-17",
+      number: 17,
+      title: "Security & Smart Home",
+      category: "Protection & Isolation",
+      badge: "Stage 17 • Security & Automation",
+      image: stage17Img,
+      summary: "IP CCTV surveillance cameras, smart biometric door locks, video door phone, intrusion alarm, and smart lighting.",
+      items: [
+        "CCTV installation",
+        "Video doorbell",
+        "Intercom system",
+        "Smart door locks",
+        "Burglar / fire alarm",
+        "Home automation",
+        "Smart lighting"
+      ]
+    },
+    {
+      id: "stage-18",
+      number: 18,
+      title: "Cleaning & Handover",
+      category: "Execution & Handover",
+      badge: "Stage 18 • Snagging & Handover",
+      image: stage18Img,
+      summary: "Post-construction deep cleaning, floor scrubbing, anti-termite pest treatment, snag correction, and key handover.",
+      items: [
+        "Post-construction deep cleaning",
+        "Debris removal",
+        "Glass cleaning",
+        "Floor scrubbing & polishing",
+        "Pest control / anti-termite treatment",
+        "Final inspection & snag list correction",
+        "Keys handover"
+      ]
+    }
+  ],
+
   enquiries: []
 };
 
@@ -792,3 +1187,5 @@ export function resetPlatformData() {
   localStorage.removeItem(STORAGE_KEY);
   return DEFAULT_DATA;
 }
+
+export const houseConstructionWorks = DEFAULT_DATA.houseConstructionWorks;
