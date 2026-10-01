@@ -135,7 +135,7 @@ export default function Home() {
                 Civil Engineering Precision Meets Direct Material Sourcing
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-light">
-                Unlike traditional construction firms who rely on fragmented third-party brokers, Gajanana Constructions &amp; Materials operates our own central 15,000 MT stockyard.
+                Unlike traditional construction firms who rely on fragmented third-party brokers, Gajanana Traders &amp; Constructions &amp; Materials operates our own central 15,000 MT stockyard and direct trading network.
               </p>
               <div className="space-y-2.5 text-xs text-slate-700 font-medium">
                 <div className="flex items-center space-x-2">

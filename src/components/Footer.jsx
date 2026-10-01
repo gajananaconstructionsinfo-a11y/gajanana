@@ -15,15 +15,15 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-amber-500 rounded-xl flex items-center justify-center text-slate-950 font-extrabold text-xl shadow-md font-heading">
-                GC
+              <div className="w-10 h-10 bg-amber-500 rounded-xl flex items-center justify-center text-slate-950 font-extrabold text-base shadow-md font-heading shrink-0">
+                GTCM
               </div>
-              <div>
-                <div className="text-white font-heading font-extrabold text-lg tracking-wider">
+              <div className="flex flex-col">
+                <div className="text-white font-heading font-extrabold text-lg tracking-wider leading-tight">
                   GAJANANA
                 </div>
-                <div className="text-amber-400 text-[10px] font-bold tracking-widest uppercase">
-                  CONSTRUCTIONS &amp; MATERIALS
+                <div className="text-amber-400 text-[9px] sm:text-[10px] font-bold tracking-wider uppercase leading-tight mt-0.5">
+                  TRADERS &amp; CONSTRUCTIONS &amp; MATERIALS
                 </div>
               </div>
             </div>

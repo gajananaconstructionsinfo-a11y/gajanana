@@ -12,11 +12,11 @@ import slabLevelingImg from '../assets/projects/slab-concrete-leveling.jpg';
 
 export const DEFAULT_DATA = {
   company: {
-    name: "GAJANANA CONSTRUCTIONS & MATERIALS",
-    shortName: "GCM",
+    name: "GAJANANA TRADERS & CONSTRUCTIONS & MATERIALS",
+    shortName: "GTCM",
     tagline: "Building Dreams. Supplying Quality. Delivering Strength.",
     subheading: "Complete Construction Solutions, Earthmoving Machinery & One-Stop Building Materials Destination",
-    trustStatement: "Construction • Earthmoving & JCB Fleet • All Building Materials • Engineering Solutions",
+    trustStatement: "Trading • Construction • Earthmoving & JCB Fleet • All Building Materials",
     phone: "8884238688",
     phoneDisplay: "+91 88842 38688",
     whatsapp: "8884238688",
@@ -763,7 +763,7 @@ export const DEFAULT_DATA = {
 };
 
 // Storage helper functions
-const STORAGE_KEY = 'GCM_PLATFORM_DATA_V9';
+const STORAGE_KEY = 'GCM_PLATFORM_DATA_V10';
 
 export function getPlatformData() {
   try {

@@ -12,7 +12,7 @@ export default function TopUtilityBar() {
         <div className="flex items-center space-x-6">
           <span className="flex items-center text-amber-400 font-semibold tracking-wide">
             <span className="w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>
-            Building Materials, JCB Earthmoving &amp; Turnkey Construction
+            Trading, Building Materials, JCB Earthmoving &amp; Turnkey Construction
           </span>
           <span className="text-slate-400 flex items-center">
             <Clock className="w-3.5 h-3.5 mr-1.5 text-amber-500" />

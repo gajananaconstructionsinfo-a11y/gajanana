@@ -77,7 +77,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Registered Facility</div>
-                  <h3 className="font-bold text-slate-900 text-base mb-1">GAJANANA CONSTRUCTIONS & materials</h3>
+                  <h3 className="font-bold text-slate-900 text-base mb-1">GAJANANA TRADERS &amp; CONSTRUCTIONS &amp; MATERIALS</h3>
                   <p className="text-sm text-slate-600 leading-relaxed">
                     Plot #42-45, Industrial Ring Road Bypass,<br />
                     Opp. Toll Freight Terminal, Sector 4,<br />

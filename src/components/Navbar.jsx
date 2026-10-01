@@ -20,16 +20,16 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           
           {/* Brand Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-11 h-11 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center text-slate-950 shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
+          <Link to="/" className="flex items-center space-x-3 group shrink-0">
+            <div className="w-11 h-11 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center text-slate-950 shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform shrink-0">
               <Building2 className="w-6 h-6 stroke-[2.2]" />
             </div>
-            <div>
+            <div className="flex flex-col">
               <div className="text-slate-900 font-extrabold text-lg sm:text-xl tracking-wider font-heading leading-tight group-hover:text-amber-600 transition-colors">
                 GAJANANA
               </div>
-              <div className="text-amber-600 text-[10px] font-extrabold tracking-widest uppercase">
-                CONSTRUCTIONS &amp; MATERIALS
+              <div className="text-amber-600 text-[9px] sm:text-[10px] font-extrabold tracking-wider uppercase leading-tight">
+                TRADERS &amp; CONSTRUCTIONS &amp; MATERIALS
               </div>
             </div>
           </Link>

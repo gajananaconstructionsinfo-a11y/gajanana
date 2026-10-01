@@ -17,7 +17,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
-              ABOUT GAJANANA CONSTRUCTIONS &amp; MATERIALS
+              ABOUT GAJANANA TRADERS &amp; CONSTRUCTIONS &amp; MATERIALS
             </span>
             <h1 className="text-4xl sm:text-6xl font-extrabold text-slate-950 font-heading tracking-tight mb-4">
               BUILDING WITH PURPOSE. <br />
@@ -26,7 +26,7 @@ export default function About() {
               </span>
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed font-light mb-8">
-              Founded on unyielding civil engineering principles, Gajanana Constructions &amp; Materials brings together full-scale architectural turnkey construction with a central 15,000 MT primary materials depot.
+              Founded on unyielding civil engineering principles, Gajanana Traders &amp; Constructions &amp; Materials brings together full-scale architectural turnkey construction with trading and a central 15,000 MT primary materials depot.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -61,7 +61,7 @@ export default function About() {
                 In traditional construction, building contractors purchase materials through local retail intermediaries with markups, lack batch mill certificates, and often delay concrete pours waiting for cement or steel trucks.
               </p>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-light">
-                At Gajanana Constructions &amp; Materials, our construction division draws directly from our primary railway rake stockyard. This guarantees 100% NABL-certified steel rebars, freshly bagged OPC 53 cement, and uninterrupted on-site pouring schedules.
+                At Gajanana Traders &amp; Constructions &amp; Materials, our construction and trading divisions draw directly from our primary railway rake stockyard. This guarantees 100% NABL-certified steel rebars, freshly bagged OPC 53 cement, and uninterrupted on-site pouring schedules.
               </p>
               <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm font-mono text-xs text-slate-700 space-y-2">
                 <div className="flex justify-between">
@@ -161,7 +161,7 @@ export default function About() {
       <section className="py-16 bg-slate-950 text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-extrabold font-heading mb-4">
-            Partner With Gajanana Constructions &amp; Materials
+            Partner With Gajanana Traders &amp; Constructions &amp; Materials
           </h2>
           <p className="text-slate-400 text-sm mb-8">
             Let's discuss your upcoming residential villa, commercial complex, or bulk material supply requirements.

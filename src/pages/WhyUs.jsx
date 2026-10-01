@@ -25,7 +25,7 @@ export default function WhyUs() {
               </span>
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed font-light mb-8">
-              In an industry plagued by fragmented contractors, unreliable material middlemen, and hidden cost escalations, Gajanana Constructions &amp; Materials bridges the gap by operating both an in-house civil engineering division and a central 15,000 MT certified material depot.
+              In an industry plagued by fragmented contractors, unreliable material middlemen, and hidden cost escalations, Gajanana Traders &amp; Constructions &amp; Materials bridges the gap by operating both an in-house civil engineering division, a trading arm, and a central 15,000 MT certified material depot.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
