@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
 import { useApp } from '../context/AppContext';
+import { buildMailtoUrl, buildWhatsAppUrl } from '../lib/email';
 
 export default function Contact() {
   const { submitInquiry } = useApp();
@@ -16,6 +17,7 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [ticketId, setTicketId] = useState('');
+  const [emailDispatchResult, setEmailDispatchResult] = useState(null);
 
   const handleChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -26,9 +28,11 @@ export default function Contact() {
     if (!formData.name || !formData.phone) return;
     setIsSubmitting(true);
     const tid = 'GC-INQ-' + Math.floor(100000 + Math.random() * 900000);
+    const payload = { ...formData, ticketId: tid, type: 'Contact Page Inquiry' };
     try {
-      await submitInquiry({ ...formData, ticketId: tid, type: 'Contact Page Inquiry' });
+      const res = await submitInquiry(payload);
       setTicketId(tid);
+      setEmailDispatchResult(res?.emailResult || null);
       setSubmitted(true);
     } catch (err) {
       console.error('Error submitting form:', err);
@@ -177,64 +181,105 @@ export default function Contact() {
               </div>
 
               {submitted ? (
-                <div className="py-10 px-6 text-center bg-emerald-50 rounded-xl border border-emerald-200">
-                  <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-sm">
+                <div className="py-8 px-5 sm:px-8 bg-emerald-50/70 rounded-2xl border border-emerald-200">
+                  <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl shadow-sm">
                     <i className="fa-solid fa-check"></i>
                   </div>
-                  <h4 className="text-2xl font-bold text-slate-900 font-heading mb-2">Message Dispatched Successfully!</h4>
-                  <p className="text-sm text-slate-600 max-w-md mx-auto mb-3">
-                    Thank you, <span className="font-bold text-slate-800">{formData.name}</span>. Your details have been emailed directly to our central coordination desk:
+                  <h4 className="text-2xl font-bold text-slate-900 font-heading text-center mb-1">
+                    Inquiry Details Recorded!
+                  </h4>
+                  <p className="text-sm text-slate-600 text-center max-w-md mx-auto mb-3">
+                    Thank you, <span className="font-bold text-slate-800">{formData.name}</span>. Your ticket reference ID is:
                   </p>
-                  <div className="inline-flex items-center gap-2 bg-emerald-100/70 border border-emerald-300 text-emerald-900 px-4 py-2 rounded-xl text-xs font-mono font-bold mb-4">
-                    <i className="fa-solid fa-envelope text-emerald-700"></i>
-                    <span>gajananaconstructionsinfo@gmail.com</span>
-                  </div>
-                  <div className="block mb-4">
-                    <span className="text-xs text-slate-500 block mb-1">Ticket Reference ID:</span>
-                    <span className="inline-block bg-white px-4 py-2 rounded-lg border border-emerald-300 font-mono text-base font-bold text-emerald-700 shadow-sm">
+                  <div className="text-center mb-4">
+                    <span className="inline-block bg-white px-4 py-1.5 rounded-lg border border-emerald-300 font-mono text-base font-bold text-emerald-700 shadow-sm">
                       {ticketId}
                     </span>
                   </div>
-                  <p className="text-xs text-slate-600 max-w-md mx-auto mb-6 leading-relaxed">
-                    Our team has received your submission and will review the specifications. We will call you on <span className="font-bold text-slate-800 font-mono">{formData.phone}</span> within 2 business hours.
-                  </p>
-                  
-                  <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
-                    <a
-                      href={`https://wa.me/918884238688?text=Hello%20Gajanana%20Constructions,%20I%20submitted%20Inquiry%20${ticketId}.%20Please%20assist.`}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold transition shadow"
-                    >
-                      <i className="fa-brands fa-whatsapp text-sm"></i>
-                      <span>Fast-Track on WhatsApp</span>
-                    </a>
+
+                  {/* Status Banner */}
+                  {emailDispatchResult?.needsActivation ? (
+                    <div className="mb-5 p-4 rounded-xl bg-amber-50 border border-amber-300 text-left text-xs text-amber-950 space-y-2">
+                      <div className="font-bold flex items-center gap-1.5 text-amber-900">
+                        <i className="fa-solid fa-bell text-amber-600"></i>
+                        <span>First-Time Setup Notice for gajananaconstructionsinfo@gmail.com</span>
+                      </div>
+                      <p className="leading-relaxed">
+                        FormSubmit requires an initial 1-time activation: Please check your <strong>Primary, Spam, or Promotions</strong> folder in <strong>gajananaconstructionsinfo@gmail.com</strong> and click the <strong>&quot;Activate Form&quot;</strong> button.
+                      </p>
+                      <p className="font-semibold text-amber-900">
+                        To ensure your message is delivered right now without waiting, click the buttons below:
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="mb-5 p-3.5 rounded-xl bg-emerald-100/80 border border-emerald-300 text-xs text-emerald-950 text-left space-y-1">
+                      <div className="flex items-center gap-2 font-bold text-emerald-900">
+                        <i className="fa-solid fa-paper-plane text-emerald-700"></i>
+                        <span>Automated Dispatch Sent to gajananaconstructionsinfo@gmail.com</span>
+                      </div>
+                      <p className="text-[11px] text-emerald-800 leading-relaxed">
+                        Incoming automated webform emails may land in your <strong>Spam / Junk folder</strong> or <strong>Promotions tab</strong> until you mark them as &quot;Not Spam&quot;.
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Direct 1-Click Fast Actions */}
+                  <div className="space-y-2.5 mb-6">
+                    <div className="text-[11px] font-bold uppercase tracking-wider text-slate-500 font-mono text-center">
+                      Guaranteed Instant Contact Channels:
+                    </div>
+                    
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {/* 1. Direct Email App Link */}
+                      <a
+                        href={buildMailtoUrl({ ...formData, ticketId, type: 'Contact Page Inquiry' })}
+                        className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition shadow"
+                      >
+                        <i className="fa-solid fa-envelope text-sm"></i>
+                        <span>Send via Gmail / Mail App</span>
+                      </a>
+
+                      {/* 2. Direct WhatsApp Link */}
+                      <a
+                        href={buildWhatsAppUrl({ ...formData, ticketId, type: 'Contact Page Inquiry' })}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition shadow"
+                      >
+                        <i className="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Send via WhatsApp (8884238688)</span>
+                      </a>
+                    </div>
+
                     <a
                       href="tel:8884238688"
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold transition font-mono shadow"
+                      className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition font-mono shadow"
                     >
                       <i className="fa-solid fa-phone text-xs"></i>
-                      <span>Call Dispatch Desk: 8884238688</span>
+                      <span>Call Central Dispatch: 8884238688</span>
                     </a>
                   </div>
 
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setSubmitted(false);
-                      setFormData({
-                        name: '',
-                        phone: '',
-                        email: '',
-                        interest: 'General Construction Enquiry',
-                        location: '',
-                        message: ''
-                      });
-                    }}
-                    className="text-xs text-slate-500 hover:text-slate-900 underline font-medium"
-                  >
-                    ← Submit Another Inquiry
-                  </button>
+                  <div className="text-center">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setSubmitted(false);
+                        setEmailDispatchResult(null);
+                        setFormData({
+                          name: '',
+                          phone: '',
+                          email: '',
+                          interest: 'General Construction Enquiry',
+                          location: '',
+                          message: ''
+                        });
+                      }}
+                      className="text-xs text-slate-500 hover:text-slate-900 underline font-medium"
+                    >
+                      ← Submit Another Inquiry
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">

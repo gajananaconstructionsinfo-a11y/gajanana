@@ -1,13 +1,106 @@
 // Utility to send form submissions directly to gajananaconstructionsinfo@gmail.com
-// Uses FormSubmit AJAX API which runs serverlessly on static clients like GitHub Pages.
+// Uses FormSubmit AJAX API with reliable response verification, mailto fallback, and WhatsApp deep-links.
 
 export const RECIPIENT_EMAIL = 'gajananaconstructionsinfo@gmail.com';
+export const WHATSAPP_NUMBER = '918884238688';
 const FORMSUBMIT_URL = `https://formsubmit.co/ajax/${RECIPIENT_EMAIL}`;
+
+/**
+ * Builds a direct mailto: link prefilled with complete form data
+ */
+export function buildMailtoUrl(payload) {
+  const isQuote = payload.type === 'Engineering Takeoff & BOQ Estimation' || Boolean(payload.builtUpArea);
+  const isQuickQuote = payload.type === 'Quick Material Quotation';
+
+  const customerName = payload.name || payload.customer?.name || 'Customer';
+  const customerPhone = payload.phone || payload.customer?.phone || 'Not Provided';
+  const customerEmail = payload.email || payload.customer?.email || 'Not Provided';
+  const customerLocation = payload.location || payload.customer?.location || 'Not Specified';
+  const ticketId = payload.ticketId || payload.id || `GC-${Date.now().toString().slice(-6)}`;
+
+  let subject = `[Gajanana Website Inquiry] ${customerName} (${ticketId})`;
+  if (isQuote) {
+    subject = `[Gajanana Quotation Request] ${payload.builtUpArea || ''} sq.ft - ${customerName} (${ticketId})`;
+  } else if (isQuickQuote) {
+    subject = `[Gajanana Material Quote] ${payload.requirement || payload.materials || 'SKU'} - ${customerName} (${ticketId})`;
+  }
+
+  let body = `Hello Gajanana Traders & Constructions Team,\n\n`;
+  body += `Here are the details submitted from your website form:\n\n`;
+  body += `----------------------------------------\n`;
+  body += `Ticket Reference: ${ticketId}\n`;
+  body += `Type: ${payload.type || 'General Inquiry'}\n`;
+  body += `Customer Name: ${customerName}\n`;
+  body += `Phone Number: ${customerPhone}\n`;
+  body += `Email: ${customerEmail}\n`;
+  body += `Site Location: ${customerLocation}\n`;
+
+  if (payload.interest) {
+    body += `Area of Interest: ${payload.interest}\n`;
+  }
+  if (payload.projectType) {
+    body += `Project Category: ${payload.projectType}\n`;
+  }
+  if (payload.builtUpArea) {
+    body += `Built-Up Area: ${payload.builtUpArea} sq.ft\n`;
+  }
+  if (payload.qualityGrade) {
+    body += `Specification Grade: ${payload.qualityGrade}\n`;
+  }
+  if (payload.timeline) {
+    body += `Timeline: ${payload.timeline}\n`;
+  }
+  if (payload.requirement || payload.materials) {
+    body += `Requested Item/SKU: ${payload.requirement || payload.materials}\n`;
+  }
+  if (payload.quantity) {
+    body += `Quantity: ${payload.quantity}\n`;
+  }
+  if (payload.estimationTakeoff) {
+    const t = payload.estimationTakeoff;
+    body += `\nEstimated Physical Consumption:\n`;
+    body += `- TMT Steel Fe 550D: ${t.estSteelQty} MT\n`;
+    body += `- 53G Cement: ${t.estCementQty} Bags\n`;
+    body += `- M-Sand & Coarse: ${t.estSandQty} Tons\n`;
+    body += `- JCB & Excavator Fleet: ~${t.estJcbHours} Hours\n`;
+    body += `- RMC Concrete: ${t.estRmcQty} cu.m\n`;
+    body += `- AAC Masonry Blocks: ${t.estBlocksQty} Units\n`;
+  }
+
+  const notes = payload.message || payload.customer?.notes || payload.notes;
+  if (notes) {
+    body += `\nMessage / Notes:\n${notes}\n`;
+  }
+
+  body += `----------------------------------------\n`;
+  body += `Submitted on: ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}\n`;
+
+  return `mailto:${RECIPIENT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+/**
+ * Builds a direct WhatsApp chat link with prefilled message
+ */
+export function buildWhatsAppUrl(payload) {
+  const customerName = payload.name || payload.customer?.name || 'Customer';
+  const customerPhone = payload.phone || payload.customer?.phone || '';
+  const ticketId = payload.ticketId || payload.id || `GC-${Date.now().toString().slice(-6)}`;
+  const area = payload.builtUpArea ? ` for ${payload.builtUpArea} sq.ft` : '';
+  const item = payload.requirement || payload.materials ? ` for ${payload.requirement || payload.materials}` : '';
+
+  let text = `Hello Gajanana Constructions & Materials,\nI submitted inquiry *${ticketId}*${area}${item}.\nName: ${customerName}\nPhone: ${customerPhone}`;
+  if (payload.location || payload.customer?.location) {
+    text += `\nLocation: ${payload.location || payload.customer?.location}`;
+  }
+  text += `\nPlease connect with me regarding pricing and specifications.`;
+
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+}
 
 /**
  * Dispatches inquiry and quotation data directly to gajananaconstructionsinfo@gmail.com
  * @param {Object} payload 
- * @returns {Promise<{success: boolean, message?: string}>}
+ * @returns {Promise<{success: boolean, needsActivation?: boolean, message?: string, data?: any}>}
  */
 export async function sendEmailNotification(payload) {
   try {
@@ -124,14 +217,32 @@ export async function sendEmailNotification(payload) {
 
     const resJson = await response.json().catch(() => null);
 
-    if (response.ok) {
-      return { success: true, message: 'Delivered to gajananaconstructionsinfo@gmail.com', data: resJson };
+    // FormSubmit returns HTTP 200 even when success is "false" (e.g. activation pending)
+    const isSuccess = Boolean(resJson && (resJson.success === true || resJson.success === 'true'));
+    const needsActivation = Boolean(resJson?.message && resJson.message.toLowerCase().includes('activation'));
+
+    if (isSuccess) {
+      return {
+        success: true,
+        needsActivation: false,
+        message: 'Delivered to gajananaconstructionsinfo@gmail.com',
+        data: resJson
+      };
     } else {
-      console.warn('FormSubmit returned status:', response.status, resJson);
-      return { success: false, message: resJson?.message || 'Dispatch error', data: resJson };
+      console.warn('FormSubmit dispatch status note:', resJson);
+      return {
+        success: false,
+        needsActivation,
+        message: resJson?.message || 'Email dispatch pending verification.',
+        data: resJson
+      };
     }
   } catch (error) {
     console.error('Error in sendEmailNotification:', error);
-    return { success: false, message: error.message };
+    return {
+      success: false,
+      needsActivation: false,
+      message: error.message
+    };
   }
 }

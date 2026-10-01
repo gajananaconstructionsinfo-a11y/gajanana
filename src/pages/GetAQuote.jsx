@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
 import { useApp } from '../context/AppContext';
+import { buildMailtoUrl, buildWhatsAppUrl } from '../lib/email';
 
 export default function GetAQuote() {
   const { submitInquiry, data } = useApp();
@@ -37,6 +38,7 @@ export default function GetAQuote() {
 
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [emailDispatchResult, setEmailDispatchResult] = useState(null);
   const [generatedTicket, setGeneratedTicket] = useState(null);
 
   // Dynamic engineering physical takeoffs based on IS 456 standards (Strictly physical units, ZERO numeric prices)
@@ -80,8 +82,9 @@ export default function GetAQuote() {
     };
 
     try {
-      await submitInquiry(quotePayload);
+      const res = await submitInquiry(quotePayload);
       setGeneratedTicket(quotePayload);
+      setEmailDispatchResult(res?.emailResult || null);
       setSubmitted(true);
     } catch (err) {
       console.error('Error submitting quote:', err);
@@ -382,41 +385,65 @@ export default function GetAQuote() {
                 </div>
 
                 {submitted ? (
-                  <div className="p-5 rounded-xl bg-emerald-950/60 border border-emerald-500/50 text-center space-y-3">
+                  <div className="p-5 rounded-xl bg-emerald-950/80 border border-emerald-500/50 text-center space-y-3">
                     <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto text-xl shadow-inner">
                       <i className="fa-solid fa-check"></i>
                     </div>
-                    <div className="font-bold text-white text-base">Quotation Ticket Created &amp; Dispatched!</div>
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-emerald-900/60 border border-emerald-500/40 text-emerald-300 text-[11px] font-mono">
-                      <i className="fa-solid fa-envelope"></i>
-                      <span>Emailed to gajananaconstructionsinfo@gmail.com</span>
-                    </div>
+                    <div className="font-bold text-white text-base">Quotation Specifications Recorded!</div>
                     <div className="text-xs text-slate-300">Ticket Reference:</div>
                     <div className="font-mono text-amber-400 font-bold text-base bg-slate-900/80 py-1 px-3 rounded border border-slate-700 inline-block">{generatedTicket?.ticketId}</div>
+
+                    {emailDispatchResult?.needsActivation ? (
+                      <div className="p-3 rounded-lg bg-amber-500/20 border border-amber-500/40 text-[11px] text-amber-200 text-left space-y-1">
+                        <div className="font-bold text-amber-400 flex items-center gap-1.5">
+                          <i className="fa-solid fa-triangle-exclamation"></i>
+                          <span>One-time activation required for gajananaconstructionsinfo@gmail.com</span>
+                        </div>
+                        <p>Check Spam or Inbox for &quot;Activate Form&quot; from FormSubmit. You can also send the BOQ directly via the buttons below.</p>
+                      </div>
+                    ) : (
+                      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-emerald-900/60 border border-emerald-500/40 text-emerald-300 text-[11px] font-mono">
+                        <i className="fa-solid fa-envelope"></i>
+                        <span>Dispatched to gajananaconstructionsinfo@gmail.com (Check Spam if not in Inbox)</span>
+                      </div>
+                    )}
+
                     <p className="text-xs text-slate-300 leading-relaxed">
-                      Our commercial estimating lead has received your specifications for {builtUpArea.toLocaleString('en-IN')} sq.ft. A full physical quantity takeoff summary has been delivered to our official inbox.
+                      Specifications for {builtUpArea.toLocaleString('en-IN')} sq.ft are ready. Tap below to send directly or connect with our estimating engineers:
                     </p>
+
                     <div className="pt-2 flex flex-col gap-2">
                       <a
-                        href={`https://wa.me/918884238688?text=Hello%20GCM,%20I%20generated%20Estimate%20${generatedTicket?.ticketId}%20for%20${builtUpArea}%20sqft.%20Please%20send%20signed%20rate%20card.`}
+                        href={buildMailtoUrl(generatedTicket || { customer, builtUpArea, ticketId: generatedTicket?.ticketId })}
+                        className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-xs font-bold transition shadow"
+                      >
+                        <i className="fa-solid fa-envelope text-sm"></i>
+                        <span>Send BOQ via Gmail / Mail App</span>
+                      </a>
+
+                      <a
+                        href={buildWhatsAppUrl(generatedTicket || { customer, builtUpArea, ticketId: generatedTicket?.ticketId })}
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold transition shadow"
                       >
                         <i className="fa-brands fa-whatsapp text-sm"></i>
-                        <span>Fast-Track on WhatsApp (8884238688)</span>
+                        <span>Send BOQ via WhatsApp (8884238688)</span>
                       </a>
+
                       <a
                         href="tel:8884238688"
-                        className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-xl text-xs font-bold transition font-mono"
+                        className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-xl text-xs font-bold transition font-mono"
                       >
                         <i className="fa-solid fa-phone text-sm"></i>
                         <span>Call Dispatch Desk: 8884238688</span>
                       </a>
+
                       <button
                         type="button"
                         onClick={() => {
                           setSubmitted(false);
+                          setEmailDispatchResult(null);
                           setCustomer({ name: '', phone: '', email: '', location: '', notes: '' });
                         }}
                         className="text-[11px] text-slate-400 hover:text-white underline pt-1"

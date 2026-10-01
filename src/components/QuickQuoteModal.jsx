@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { X, CheckCircle, Send } from 'lucide-react';
+import { buildMailtoUrl, buildWhatsAppUrl } from '../lib/email';
 
 export default function QuickQuoteModal() {
   const { quickQuoteModal, closeQuickQuote, addEnquiry } = useApp();
   const [submittedId, setSubmittedId] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [emailDispatchResult, setEmailDispatchResult] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -22,24 +24,27 @@ export default function QuickQuoteModal() {
     setIsSubmitting(true);
     const reqId = 'GCM-REQ-' + Math.floor(100000 + Math.random() * 900000);
     
+    const payload = {
+      id: reqId,
+      ticketId: reqId,
+      type: 'Quick Material Quotation',
+      name: formData.name,
+      phone: formData.phone,
+      email: 'Not provided',
+      location: formData.location || 'Local Area',
+      projectType: 'Material Sourcing',
+      requirement: quickQuoteModal.initialTitle || 'General Material Inquiry',
+      materials: quickQuoteModal.initialTitle,
+      quantity: formData.quantity || 'Standard',
+      message: formData.notes || 'Instant price check requested.',
+      date: new Date().toISOString().split('T')[0],
+      status: 'New'
+    };
+
     try {
-      await addEnquiry({
-        id: reqId,
-        ticketId: reqId,
-        type: 'Quick Material Quotation',
-        name: formData.name,
-        phone: formData.phone,
-        email: 'Not provided',
-        location: formData.location || 'Local Area',
-        projectType: 'Material Sourcing',
-        requirement: quickQuoteModal.initialTitle || 'General Material Inquiry',
-        materials: quickQuoteModal.initialTitle,
-        quantity: formData.quantity || 'Standard',
-        message: formData.notes || 'Instant price check requested.',
-        date: new Date().toISOString().split('T')[0],
-        status: 'New'
-      });
+      const res = await addEnquiry(payload);
       setSubmittedId(reqId);
+      setEmailDispatchResult(res?.emailResult || null);
     } catch (err) {
       console.error('Error submitting quick quote:', err);
     } finally {
@@ -176,39 +181,71 @@ export default function QuickQuoteModal() {
               <CheckCircle className="w-8 h-8" />
             </div>
             <div className="text-xs font-mono font-bold text-amber-600 uppercase tracking-widest mb-1">
-              REQUEST RECORDED &amp; DISPATCHED
-            </div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-mono mb-2">
-              <i className="fa-solid fa-envelope text-emerald-600"></i>
-              <span>Emailed to gajananaconstructionsinfo@gmail.com</span>
+              REQUEST RECORDED
             </div>
             <h3 className="text-xl font-extrabold text-slate-950 font-heading mb-2">
               Reference: {submittedId}
             </h3>
-            <p className="text-xs text-slate-600 mb-5 leading-relaxed">
+
+            {emailDispatchResult?.needsActivation ? (
+              <div className="mb-3 p-3 rounded-xl bg-amber-50 border border-amber-300 text-left text-[11px] text-amber-950 space-y-1">
+                <div className="font-bold flex items-center gap-1.5 text-amber-900">
+                  <i className="fa-solid fa-triangle-exclamation text-amber-600"></i>
+                  <span>One-time setup notice for gajananaconstructionsinfo@gmail.com</span>
+                </div>
+                <p>Check Spam or Inbox for &quot;Activate Form&quot; from FormSubmit. You can also send this quote directly via the buttons below.</p>
+              </div>
+            ) : (
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-mono mb-2">
+                <i className="fa-solid fa-envelope text-emerald-600"></i>
+                <span>Emailed to gajananaconstructionsinfo@gmail.com</span>
+              </div>
+            )}
+
+            <p className="text-xs text-slate-600 mb-4 leading-relaxed">
               Thank you, <strong className="text-slate-900">{formData.name}</strong>. Your inquiry for{' '}
-              <strong className="text-slate-900">{quickQuoteModal.initialTitle}</strong> has been transmitted directly to our official inbox. Our dispatch coordinator will contact you shortly.
+              <strong className="text-slate-900">{quickQuoteModal.initialTitle}</strong> is logged. Send directly or connect with dispatch:
             </p>
-            <div className="space-y-2.5">
+
+            <div className="space-y-2">
               <a
-                href={`https://wa.me/918884238688?text=Hello%20GCM,%20I%20just%20submitted%20Quote%20Request%20${submittedId}%20for%20${encodeURIComponent(
-                  quickQuoteModal.initialTitle
-                )}`}
+                href={buildMailtoUrl({
+                  ...formData,
+                  ticketId: submittedId,
+                  type: 'Quick Material Quotation',
+                  requirement: quickQuoteModal.initialTitle,
+                  materials: quickQuoteModal.initialTitle
+                })}
+                className="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center space-x-2 shadow"
+              >
+                <i className="fa-solid fa-envelope text-xs"></i>
+                <span>Send via Gmail / Mail App</span>
+              </a>
+
+              <a
+                href={buildWhatsAppUrl({
+                  ...formData,
+                  ticketId: submittedId,
+                  requirement: quickQuoteModal.initialTitle,
+                  materials: quickQuoteModal.initialTitle
+                })}
                 target="_blank"
                 rel="noreferrer"
-                className="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center space-x-2 shadow"
+                className="w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center space-x-2 shadow"
               >
-                <span>Chat on WhatsApp (8884238688)</span>
+                <span>Send on WhatsApp (8884238688)</span>
               </a>
+
               <a
                 href="tel:8884238688"
-                className="w-full py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-all flex items-center justify-center space-x-2 font-mono"
+                className="w-full py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-all flex items-center justify-center space-x-2 font-mono"
               >
                 <span>Call Dispatch: 8884238688</span>
               </a>
+
               <button
                 onClick={handleClose}
-                className="w-full py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs uppercase tracking-wider rounded-xl transition-all"
+                className="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs uppercase tracking-wider rounded-xl transition-all"
               >
                 Close Window
               </button>
