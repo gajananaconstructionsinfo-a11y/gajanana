@@ -187,20 +187,10 @@ export default function QuickQuoteModal() {
               Reference: {submittedId}
             </h3>
 
-            {emailDispatchResult?.needsActivation ? (
-              <div className="mb-3 p-3 rounded-xl bg-amber-50 border border-amber-300 text-left text-[11px] text-amber-950 space-y-1">
-                <div className="font-bold flex items-center gap-1.5 text-amber-900">
-                  <i className="fa-solid fa-triangle-exclamation text-amber-600"></i>
-                  <span>One-time setup notice for gajananaconstructionsinfo@gmail.com</span>
-                </div>
-                <p>Check Spam or Inbox for &quot;Activate Form&quot; from FormSubmit. You can also send this quote directly via the buttons below.</p>
-              </div>
-            ) : (
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-mono mb-2">
-                <i className="fa-solid fa-envelope text-emerald-600"></i>
-                <span>Emailed to gajananaconstructionsinfo@gmail.com</span>
-              </div>
-            )}
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-mono mb-2">
+              <i className="fa-solid fa-envelope text-emerald-600"></i>
+              <span>Delivered to gajananaconstructionsinfo@gmail.com</span>
+            </div>
 
             <p className="text-xs text-slate-600 mb-4 leading-relaxed">
               Thank you, <strong className="text-slate-900">{formData.name}</strong>. Your inquiry for{' '}

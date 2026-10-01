@@ -393,20 +393,10 @@ export default function GetAQuote() {
                     <div className="text-xs text-slate-300">Ticket Reference:</div>
                     <div className="font-mono text-amber-400 font-bold text-base bg-slate-900/80 py-1 px-3 rounded border border-slate-700 inline-block">{generatedTicket?.ticketId}</div>
 
-                    {emailDispatchResult?.needsActivation ? (
-                      <div className="p-3 rounded-lg bg-amber-500/20 border border-amber-500/40 text-[11px] text-amber-200 text-left space-y-1">
-                        <div className="font-bold text-amber-400 flex items-center gap-1.5">
-                          <i className="fa-solid fa-triangle-exclamation"></i>
-                          <span>One-time activation required for gajananaconstructionsinfo@gmail.com</span>
-                        </div>
-                        <p>Check Spam or Inbox for &quot;Activate Form&quot; from FormSubmit. You can also send the BOQ directly via the buttons below.</p>
-                      </div>
-                    ) : (
-                      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-emerald-900/60 border border-emerald-500/40 text-emerald-300 text-[11px] font-mono">
-                        <i className="fa-solid fa-envelope"></i>
-                        <span>Dispatched to gajananaconstructionsinfo@gmail.com (Check Spam if not in Inbox)</span>
-                      </div>
-                    )}
+                    <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded bg-emerald-900/60 border border-emerald-500/40 text-emerald-300 text-[11px] font-mono">
+                      <i className="fa-solid fa-envelope"></i>
+                      <span>Forwarded to gajananaconstructionsinfo@gmail.com</span>
+                    </div>
 
                     <p className="text-xs text-slate-300 leading-relaxed">
                       Specifications for {builtUpArea.toLocaleString('en-IN')} sq.ft are ready. Tap below to send directly or connect with our estimating engineers:

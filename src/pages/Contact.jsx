@@ -197,31 +197,9 @@ export default function Contact() {
                     </span>
                   </div>
 
-                  {/* Status Banner */}
-                  {emailDispatchResult?.needsActivation ? (
-                    <div className="mb-5 p-4 rounded-xl bg-amber-50 border border-amber-300 text-left text-xs text-amber-950 space-y-2">
-                      <div className="font-bold flex items-center gap-1.5 text-amber-900">
-                        <i className="fa-solid fa-bell text-amber-600"></i>
-                        <span>First-Time Setup Notice for gajananaconstructionsinfo@gmail.com</span>
-                      </div>
-                      <p className="leading-relaxed">
-                        FormSubmit requires an initial 1-time activation: Please check your <strong>Primary, Spam, or Promotions</strong> folder in <strong>gajananaconstructionsinfo@gmail.com</strong> and click the <strong>&quot;Activate Form&quot;</strong> button.
-                      </p>
-                      <p className="font-semibold text-amber-900">
-                        To ensure your message is delivered right now without waiting, click the buttons below:
-                      </p>
-                    </div>
-                  ) : (
-                    <div className="mb-5 p-3.5 rounded-xl bg-emerald-100/80 border border-emerald-300 text-xs text-emerald-950 text-left space-y-1">
-                      <div className="flex items-center gap-2 font-bold text-emerald-900">
-                        <i className="fa-solid fa-paper-plane text-emerald-700"></i>
-                        <span>Automated Dispatch Sent to gajananaconstructionsinfo@gmail.com</span>
-                      </div>
-                      <p className="text-[11px] text-emerald-800 leading-relaxed">
-                        Incoming automated webform emails may land in your <strong>Spam / Junk folder</strong> or <strong>Promotions tab</strong> until you mark them as &quot;Not Spam&quot;.
-                      </p>
-                    </div>
-                  )}
+                  <p className="text-xs text-slate-600 max-w-md mx-auto mb-6 leading-relaxed text-center">
+                    Your inquiry details have been recorded and forwarded to our official desk at <strong className="text-slate-800">gajananaconstructionsinfo@gmail.com</strong>. Our engineering team will review your specifications and connect with you on <span className="font-bold text-slate-800 font-mono">{formData.phone}</span> shortly.
+                  </p>
 
                   {/* Direct 1-Click Fast Actions */}
                   <div className="space-y-2.5 mb-6">
