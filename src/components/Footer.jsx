@@ -10,10 +10,10 @@ export default function Footer() {
   return (
     <footer className="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 mb-12">
           
           {/* Brand Info */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-3">
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-10 h-10 bg-amber-500 rounded-xl flex items-center justify-center text-slate-950 font-extrabold text-base shadow-md font-heading shrink-0">
                 GTCM
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
 
           {/* Navigation Links */}
-          <div>
+          <div className="lg:col-span-2">
             <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Navigation</h4>
             <ul className="space-y-2.5 text-xs text-slate-400">
               <li><Link to="/" className="hover:text-amber-400 transition-colors">Home</Link></li>
@@ -67,54 +67,56 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Construction Services */}
-          <div>
-            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Key Services</h4>
+          {/* Fleet & Services Links */}
+          <div className="lg:col-span-3">
+            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Fleet &amp; Materials</h4>
             <ul className="space-y-2.5 text-xs text-slate-400">
-              {data.services.slice(0, 5).map((service) => (
-                <li key={service.slug}>
-                  <Link to={`/services/${service.slug}`} className="hover:text-amber-400 transition-colors">
-                    {service.title}
-                  </Link>
-                </li>
-              ))}
+              <li><Link to="/services/earthmoving-machinery-jcb" className="hover:text-amber-400 transition-colors">JCB 3DX &amp; Excavator Fleet</Link></li>
+              <li><Link to="/materials/earthmoving-machinery" className="hover:text-amber-400 transition-colors">Heavy Machinery Fleet</Link></li>
+              <li><Link to="/materials/steel" className="hover:text-amber-400 transition-colors">Tata Tiscon Fe 550D TMT</Link></li>
+              <li><Link to="/materials/cement" className="hover:text-amber-400 transition-colors">UltraTech Grade 53 OPC</Link></li>
+              <li><Link to="/materials/sand-aggregates" className="hover:text-amber-400 transition-colors">Washed M-Sand &amp; 20mm Metal</Link></li>
+              <li><Link to="/materials/rmc" className="hover:text-amber-400 transition-colors">Ready-Mix Concrete (RMC)</Link></li>
+              <li><Link to="/services/residential-construction" className="hover:text-amber-400 transition-colors">Turnkey Residential Civil</Link></li>
             </ul>
           </div>
 
-          {/* Machinery & Materials */}
-          <div>
-            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Fleet & Materials</h4>
-            <ul className="space-y-2.5 text-xs text-slate-400">
-              <li><Link to="/services/earthmoving-machinery-jcb" className="hover:text-amber-400 transition-colors">JCB 3DX & Excavators</Link></li>
-              <li><Link to="/materials/earthmoving-machinery" className="hover:text-amber-400 transition-colors">Earthmoving Machinery</Link></li>
-              <li><Link to="/materials/steel" className="hover:text-amber-400 transition-colors">Fe 550D TMT Steel</Link></li>
-              <li><Link to="/materials/cement" className="hover:text-amber-400 transition-colors">Grade 53 OPC Cement</Link></li>
-              <li><Link to="/materials/aggregates" className="hover:text-amber-400 transition-colors">Washed M-Sand & Metal</Link></li>
-              <li><Link to="/materials/concrete" className="hover:text-amber-400 transition-colors">Ready Mix Concrete (RMC)</Link></li>
-            </ul>
-          </div>
-
-          {/* Contact Yard & Price Queries */}
-          <div>
-            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Contact & Quotes</h4>
-            <div className="space-y-3 text-xs text-slate-400">
-              <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-300 text-[11px] leading-relaxed">
-                <span className="font-bold block text-amber-400 uppercase font-mono">Pricing Queries:</span>
-                Call <a href="tel:8884238688" className="font-bold underline text-white">8884238688</a> or email <a href="mailto:gajananaconstructionsinfo@gmail.com" className="underline text-white">gajananaconstructionsinfo@gmail.com</a>
+          {/* Contact Yard & Price Queries - WIDE AND SPACIOUS (4 columns on lg) */}
+          <div className="lg:col-span-4">
+            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Contact &amp; Quotes</h4>
+            <div className="space-y-4 text-xs text-slate-400">
+              
+              {/* Wide Pricing Queries Card with Generous Margins */}
+              <div className="p-4 sm:p-4.5 bg-amber-500/10 border border-amber-500/40 rounded-2xl text-amber-300 text-xs leading-relaxed w-full shadow-md">
+                <span className="font-extrabold block text-amber-400 uppercase font-mono tracking-wider text-xs mb-1.5">
+                  PRICING QUERIES:
+                </span>
+                <p className="text-slate-200 text-xs">
+                  Call <a href="tel:8884238688" className="font-bold underline text-white hover:text-amber-400 font-mono">8884238688</a> or email
+                </p>
+                <p className="mt-1">
+                  <a
+                    href="mailto:gajananaconstructionsinfo@gmail.com"
+                    className="underline text-amber-300 hover:text-white font-mono text-[11px] sm:text-xs tracking-tight break-all inline-block font-semibold"
+                  >
+                    gajananaconstructionsinfo@gmail.com
+                  </a>
+                </p>
               </div>
-              <p className="leading-relaxed flex items-start space-x-2">
+
+              <p className="leading-relaxed flex items-start space-x-2.5 text-xs text-slate-300">
                 <MapPin className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
                 <span>{company.address}</span>
               </p>
-              <p className="flex items-center space-x-2">
+              <p className="flex items-center space-x-2.5 text-xs text-slate-300">
                 <Phone className="w-4 h-4 text-amber-500 shrink-0" />
-                <a href={`tel:${company.phone.replace(/\s+/g, '')}`} className="hover:text-amber-400 font-mono font-bold">
+                <a href={`tel:${company.phone.replace(/\s+/g, '')}`} className="hover:text-amber-400 font-mono font-bold text-white">
                   {company.phoneDisplay}
                 </a>
               </p>
-              <p className="flex items-center space-x-2">
+              <p className="flex items-center space-x-2.5 text-xs text-slate-300">
                 <Mail className="w-4 h-4 text-amber-500 shrink-0" />
-                <a href={`mailto:${company.email}`} className="hover:text-amber-400 font-mono text-[11px]">
+                <a href={`mailto:${company.email}`} className="hover:text-amber-400 font-mono text-white text-xs break-all">
                   {company.email}
                 </a>
               </p>
