@@ -36,6 +36,7 @@ export default function GetAQuote() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [generatedTicket, setGeneratedTicket] = useState(null);
 
   // Dynamic engineering physical takeoffs based on IS 456 standards (Strictly physical units, ZERO numeric prices)
@@ -54,26 +55,39 @@ export default function GetAQuote() {
     setSelectedMaterials(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!customer.name || !customer.phone) return;
+    setIsSubmitting(true);
 
     const ticketId = 'GC-EST-' + Math.floor(100000 + Math.random() * 900000);
     const quotePayload = {
       ticketId,
       customer,
+      name: customer.name,
+      phone: customer.phone,
+      email: customer.email,
+      location: customer.location,
       projectType,
       builtUpArea,
       qualityGrade,
+      selectedMaterials,
+      timeline,
       estimatedTotal: 'Price on Enquiry',
       estimationTakeoff: estimation,
       date: new Date().toISOString(),
       type: 'Engineering Takeoff & BOQ Estimation'
     };
 
-    submitInquiry(quotePayload);
-    setGeneratedTicket(quotePayload);
-    setSubmitted(true);
+    try {
+      await submitInquiry(quotePayload);
+      setGeneratedTicket(quotePayload);
+      setSubmitted(true);
+    } catch (err) {
+      console.error('Error submitting quote:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -369,14 +383,18 @@ export default function GetAQuote() {
 
                 {submitted ? (
                   <div className="p-5 rounded-xl bg-emerald-950/60 border border-emerald-500/50 text-center space-y-3">
-                    <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto text-xl">
+                    <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto text-xl shadow-inner">
                       <i className="fa-solid fa-check"></i>
                     </div>
-                    <div className="font-bold text-white text-base">Quotation Ticket Created!</div>
+                    <div className="font-bold text-white text-base">Quotation Ticket Created &amp; Dispatched!</div>
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-emerald-900/60 border border-emerald-500/40 text-emerald-300 text-[11px] font-mono">
+                      <i className="fa-solid fa-envelope"></i>
+                      <span>Emailed to gajananaconstructionsinfo@gmail.com</span>
+                    </div>
                     <div className="text-xs text-slate-300">Ticket Reference:</div>
-                    <div className="font-mono text-amber-400 font-bold text-base">{generatedTicket?.ticketId}</div>
+                    <div className="font-mono text-amber-400 font-bold text-base bg-slate-900/80 py-1 px-3 rounded border border-slate-700 inline-block">{generatedTicket?.ticketId}</div>
                     <p className="text-xs text-slate-300 leading-relaxed">
-                      Our commercial estimating lead has received your specifications for {builtUpArea.toLocaleString('en-IN')} sq.ft.
+                      Our commercial estimating lead has received your specifications for {builtUpArea.toLocaleString('en-IN')} sq.ft. A full physical quantity takeoff summary has been delivered to our official inbox.
                     </p>
                     <div className="pt-2 flex flex-col gap-2">
                       <a
@@ -395,6 +413,16 @@ export default function GetAQuote() {
                         <i className="fa-solid fa-phone text-sm"></i>
                         <span>Call Dispatch Desk: 8884238688</span>
                       </a>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setSubmitted(false);
+                          setCustomer({ name: '', phone: '', email: '', location: '', notes: '' });
+                        }}
+                        className="text-[11px] text-slate-400 hover:text-white underline pt-1"
+                      >
+                        ← Calculate Another Estimate
+                      </button>
                     </div>
                   </div>
                 ) : (
@@ -438,10 +466,20 @@ export default function GetAQuote() {
 
                     <button
                       type="submit"
-                      className="w-full py-3.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 shadow-lg"
+                      disabled={isSubmitting}
+                      className="w-full py-3.5 bg-amber-500 hover:bg-amber-400 disabled:bg-slate-700 disabled:text-slate-400 text-slate-950 font-bold rounded-lg text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 shadow-lg cursor-pointer disabled:cursor-not-allowed"
                     >
-                      <span>Lock In Specifications &amp; Request BOQ</span>
-                      <i className="fa-solid fa-arrow-right"></i>
+                      {isSubmitting ? (
+                        <>
+                          <i className="fa-solid fa-circle-notch fa-spin text-slate-950"></i>
+                          <span>Transmitting to gajananaconstructionsinfo@gmail.com...</span>
+                        </>
+                      ) : (
+                        <>
+                          <span>Lock In Specifications &amp; Request BOQ</span>
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </>
+                      )}
                     </button>
                     <p className="text-[11px] text-slate-400 text-center">
                       Rates provided directly without broker markup. For price queries call 8884238688.

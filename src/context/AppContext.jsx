@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { getPlatformData, savePlatformData, resetPlatformData } from '../data/data';
 import { insertInquiry, insertQuoteEstimate } from '../lib/supabase';
+import { sendEmailNotification } from '../lib/email';
 
 const AppContext = createContext();
 
@@ -42,11 +43,18 @@ export function AppProvider({ children }) {
       ...prev,
       enquiries: [enquiry, ...(prev.enquiries || [])]
     }));
+    let emailResult = null;
+    try {
+      emailResult = await sendEmailNotification(enquiry);
+    } catch (err) {
+      console.warn('Email dispatch note:', err);
+    }
     try {
       await insertInquiry(enquiry);
     } catch (err) {
       console.warn('Supabase sync background note:', err);
     }
+    return { success: true, emailResult };
   };
 
   const submitInquiry = async (payload) => {
@@ -54,6 +62,12 @@ export function AppProvider({ children }) {
       ...prev,
       enquiries: [payload, ...(prev.enquiries || [])]
     }));
+    let emailResult = null;
+    try {
+      emailResult = await sendEmailNotification(payload);
+    } catch (err) {
+      console.warn('Email dispatch note:', err);
+    }
     try {
       if (payload.type === 'Comprehensive Rate Estimation' || payload.builtUpArea) {
         await insertQuoteEstimate(payload);
@@ -63,6 +77,7 @@ export function AppProvider({ children }) {
     } catch (err) {
       console.warn('Supabase sync background note:', err);
     }
+    return { success: true, emailResult };
   };
 
   const updateSKU = (skuId, updatedFields) => {

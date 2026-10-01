@@ -5,6 +5,7 @@ import { X, CheckCircle, Send } from 'lucide-react';
 export default function QuickQuoteModal() {
   const { quickQuoteModal, closeQuickQuote, addEnquiry } = useApp();
   const [submittedId, setSubmittedId] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -15,27 +16,35 @@ export default function QuickQuoteModal() {
 
   if (!quickQuoteModal.isOpen) return null;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!formData.name || !formData.phone) return;
+    setIsSubmitting(true);
     const reqId = 'GCM-REQ-' + Math.floor(100000 + Math.random() * 900000);
     
-    addEnquiry({
-      id: reqId,
-      type: 'Quick Material Quotation',
-      name: formData.name,
-      phone: formData.phone,
-      email: 'Not provided',
-      location: formData.location || 'Local Area',
-      projectType: 'Material Sourcing',
-      requirement: quickQuoteModal.initialTitle || 'General Material Inquiry',
-      materials: quickQuoteModal.initialTitle,
-      quantity: formData.quantity || 'Standard',
-      message: formData.notes || 'Instant price check requested.',
-      date: new Date().toISOString().split('T')[0],
-      status: 'New'
-    });
-
-    setSubmittedId(reqId);
+    try {
+      await addEnquiry({
+        id: reqId,
+        ticketId: reqId,
+        type: 'Quick Material Quotation',
+        name: formData.name,
+        phone: formData.phone,
+        email: 'Not provided',
+        location: formData.location || 'Local Area',
+        projectType: 'Material Sourcing',
+        requirement: quickQuoteModal.initialTitle || 'General Material Inquiry',
+        materials: quickQuoteModal.initialTitle,
+        quantity: formData.quantity || 'Standard',
+        message: formData.notes || 'Instant price check requested.',
+        date: new Date().toISOString().split('T')[0],
+        status: 'New'
+      });
+      setSubmittedId(reqId);
+    } catch (err) {
+      console.error('Error submitting quick quote:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleClose = () => {
@@ -144,27 +153,41 @@ export default function QuickQuoteModal() {
 
               <button
                 type="submit"
-                className="w-full py-3.5 bg-slate-950 hover:bg-amber-600 text-white font-extrabold text-xs uppercase tracking-wider rounded-xl transition-all shadow flex items-center justify-center space-x-2"
+                disabled={isSubmitting}
+                className="w-full py-3.5 bg-slate-950 hover:bg-amber-600 disabled:bg-slate-700 text-white font-extrabold text-xs uppercase tracking-wider rounded-xl transition-all shadow flex items-center justify-center space-x-2 cursor-pointer disabled:cursor-not-allowed"
               >
-                <span>REQUEST IMMEDIATE DISPATCH QUOTE</span>
-                <Send className="w-4 h-4" />
+                {isSubmitting ? (
+                  <>
+                    <i className="fa-solid fa-circle-notch fa-spin text-amber-400"></i>
+                    <span>DISPATCHING TO GAJANANACONSTRUCTIONSINFO@GMAIL.COM...</span>
+                  </>
+                ) : (
+                  <>
+                    <span>REQUEST IMMEDIATE DISPATCH QUOTE</span>
+                    <Send className="w-4 h-4" />
+                  </>
+                )}
               </button>
             </form>
           </div>
         ) : (
           <div className="text-center py-4">
-            <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3">
               <CheckCircle className="w-8 h-8" />
             </div>
             <div className="text-xs font-mono font-bold text-amber-600 uppercase tracking-widest mb-1">
-              REQUEST RECORDED
+              REQUEST RECORDED &amp; DISPATCHED
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-mono mb-2">
+              <i className="fa-solid fa-envelope text-emerald-600"></i>
+              <span>Emailed to gajananaconstructionsinfo@gmail.com</span>
             </div>
             <h3 className="text-xl font-extrabold text-slate-950 font-heading mb-2">
               Reference: {submittedId}
             </h3>
-            <p className="text-xs text-slate-600 mb-6">
-              Thank you, <strong className="text-slate-900">{formData.name}</strong>. Our logistics manager has received your inquiry for{' '}
-              <strong className="text-slate-900">{quickQuoteModal.initialTitle}</strong>.
+            <p className="text-xs text-slate-600 mb-5 leading-relaxed">
+              Thank you, <strong className="text-slate-900">{formData.name}</strong>. Your inquiry for{' '}
+              <strong className="text-slate-900">{quickQuoteModal.initialTitle}</strong> has been transmitted directly to our official inbox. Our dispatch coordinator will contact you shortly.
             </p>
             <div className="space-y-2.5">
               <a

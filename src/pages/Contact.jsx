@@ -13,6 +13,7 @@ export default function Contact() {
     location: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [ticketId, setTicketId] = useState('');
 
@@ -20,13 +21,20 @@ export default function Contact() {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.name || !formData.phone) return;
+    setIsSubmitting(true);
     const tid = 'GC-INQ-' + Math.floor(100000 + Math.random() * 900000);
-    submitInquiry({ ...formData, ticketId: tid, type: 'Contact Page Inquiry' });
-    setTicketId(tid);
-    setSubmitted(true);
+    try {
+      await submitInquiry({ ...formData, ticketId: tid, type: 'Contact Page Inquiry' });
+      setTicketId(tid);
+      setSubmitted(true);
+    } catch (err) {
+      console.error('Error submitting form:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -169,20 +177,47 @@ export default function Contact() {
               </div>
 
               {submitted ? (
-                <div className="py-12 px-6 text-center bg-emerald-50 rounded-xl border border-emerald-200">
-                  <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                <div className="py-10 px-6 text-center bg-emerald-50 rounded-xl border border-emerald-200">
+                  <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-sm">
                     <i className="fa-solid fa-check"></i>
                   </div>
                   <h4 className="text-2xl font-bold text-slate-900 font-heading mb-2">Message Dispatched Successfully!</h4>
-                  <p className="text-sm text-slate-600 max-w-md mx-auto mb-4">
-                    Thank you, <span className="font-bold text-slate-800">{formData.name}</span>. Your correspondence reference ID is:
+                  <p className="text-sm text-slate-600 max-w-md mx-auto mb-3">
+                    Thank you, <span className="font-bold text-slate-800">{formData.name}</span>. Your details have been emailed directly to our central coordination desk:
                   </p>
-                  <div className="inline-block bg-white px-4 py-2 rounded-lg border border-emerald-300 font-mono text-base font-bold text-emerald-700 mb-6 shadow-sm">
-                    {ticketId}
+                  <div className="inline-flex items-center gap-2 bg-emerald-100/70 border border-emerald-300 text-emerald-900 px-4 py-2 rounded-xl text-xs font-mono font-bold mb-4">
+                    <i className="fa-solid fa-envelope text-emerald-700"></i>
+                    <span>gajananaconstructionsinfo@gmail.com</span>
                   </div>
-                  <p className="text-xs text-slate-500 mb-6">
-                    A copy has been recorded on our central system. Our engineering desk will connect with you on <span className="font-bold text-slate-700">{formData.phone}</span> shortly.
+                  <div className="block mb-4">
+                    <span className="text-xs text-slate-500 block mb-1">Ticket Reference ID:</span>
+                    <span className="inline-block bg-white px-4 py-2 rounded-lg border border-emerald-300 font-mono text-base font-bold text-emerald-700 shadow-sm">
+                      {ticketId}
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-600 max-w-md mx-auto mb-6 leading-relaxed">
+                    Our team has received your submission and will review the specifications. We will call you on <span className="font-bold text-slate-800 font-mono">{formData.phone}</span> within 2 business hours.
                   </p>
+                  
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
+                    <a
+                      href={`https://wa.me/918884238688?text=Hello%20Gajanana%20Constructions,%20I%20submitted%20Inquiry%20${ticketId}.%20Please%20assist.`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold transition shadow"
+                    >
+                      <i className="fa-brands fa-whatsapp text-sm"></i>
+                      <span>Fast-Track on WhatsApp</span>
+                    </a>
+                    <a
+                      href="tel:8884238688"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold transition font-mono shadow"
+                    >
+                      <i className="fa-solid fa-phone text-xs"></i>
+                      <span>Call Dispatch Desk: 8884238688</span>
+                    </a>
+                  </div>
+
                   <button
                     type="button"
                     onClick={() => {
@@ -196,9 +231,9 @@ export default function Contact() {
                         message: ''
                       });
                     }}
-                    className="px-6 py-2.5 bg-slate-900 text-white rounded-lg text-sm font-semibold hover:bg-slate-800 transition"
+                    className="text-xs text-slate-500 hover:text-slate-900 underline font-medium"
                   >
-                    Send Another Communication
+                    ← Submit Another Inquiry
                   </button>
                 </div>
               ) : (
@@ -308,10 +343,20 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full py-4 bg-slate-900 hover:bg-amber-600 text-white font-bold rounded-lg text-sm transition-colors duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg"
+                    disabled={isSubmitting}
+                    className="w-full py-4 bg-slate-900 hover:bg-amber-600 disabled:bg-slate-700 disabled:cursor-not-allowed text-white font-bold rounded-lg text-sm transition-colors duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg"
                   >
-                    <span>Transmit Inquiry to Engineering Desk</span>
-                    <i className="fa-solid fa-paper-plane"></i>
+                    {isSubmitting ? (
+                      <>
+                        <i className="fa-solid fa-circle-notch fa-spin text-amber-400"></i>
+                        <span>Transmitting to gajananaconstructionsinfo@gmail.com...</span>
+                      </>
+                    ) : (
+                      <>
+                        <span>Transmit Inquiry to Official Desk (Email Dispatch)</span>
+                        <i className="fa-solid fa-paper-plane text-amber-400"></i>
+                      </>
+                    )}
                   </button>
                 </form>
               )}
