@@ -396,44 +396,157 @@ export default function Contact() {
               )}
             </div>
 
-            {/* Map & GPS Logistics Details */}
-            <div className="mt-8 p-6 rounded-2xl border border-slate-200 bg-slate-50">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
-                <div>
-                  <h4 className="font-bold text-slate-900 text-base">GPS Logistics & Heavy Vehicle Access</h4>
-                  <p className="text-xs text-slate-500">Coordinates: 12.9249° N, 77.6834° E | Entry Gate #2 for Multi-Axle Trailers</p>
-                </div>
-                <a
-                  href="https://maps.google.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-slate-300 bg-white text-slate-800 text-xs font-bold hover:border-slate-900 transition"
-                >
-                  <i className="fa-solid fa-map-location-dot text-amber-500"></i>
-                  <span>Open in Google Maps</span>
-                </a>
+            {/* Quick Map & Directions Callout */}
+            <div className="mt-8 p-5 rounded-2xl border border-slate-200 bg-slate-50 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <div className="text-[11px] font-bold uppercase tracking-wider text-amber-600 font-mono mb-0.5">Yard &amp; Office Coordinates</div>
+                <h4 className="font-bold text-slate-900 text-sm">Outer Ring Road Industrial Corridor</h4>
+                <p className="text-xs text-slate-500 font-mono">12.9249° N, 77.6834° E • Entry Gate #2 for Multi-Axle Trucks</p>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-                <div className="p-3 bg-white rounded-lg border border-slate-200">
-                  <span className="text-xs text-slate-400 block font-bold uppercase">Yard Size</span>
-                  <span className="text-sm font-bold text-slate-900">4.5 Acres</span>
+              <a
+                href="#interactive-map"
+                className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-amber-600 text-white text-xs font-bold transition shadow-sm"
+              >
+                <i className="fa-solid fa-map-location-dot text-amber-400"></i>
+                <span>View Google Map Below</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Interactive Google Maps & Facility Location Section */}
+      <section id="interactive-map" className="py-16 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-700 text-xs font-semibold uppercase tracking-wider mb-2 border border-amber-500/20 font-mono">
+                <i className="fa-solid fa-location-dot text-amber-600"></i> Interactive Google Maps Navigation
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-extrabold font-heading text-slate-900 tracking-tight">
+                Locate Us on Google Maps
+              </h2>
+              <p className="text-slate-600 text-sm max-w-2xl mt-1">
+                Visit our central corporate office, engineering conference suites, and live 4.5-acre building materials depot in Bengaluru.
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-3">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Outer+Ring+Road+Bengaluru+Karnataka+India"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-950 hover:bg-amber-600 text-white text-xs font-bold uppercase tracking-wider transition shadow"
+              >
+                <i className="fa-solid fa-diamond-turn-right text-amber-400"></i>
+                <span>Get Driving Directions</span>
+              </a>
+              <a
+                href="https://maps.google.com/?q=12.9249,77.6834"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white hover:bg-slate-100 text-slate-800 text-xs font-bold border border-slate-300 transition shadow-sm font-mono"
+              >
+                <i className="fa-solid fa-location-crosshairs text-blue-600"></i>
+                <span>12.9249° N, 77.6834° E</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Map Container + Overlay Info Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            {/* Embedded Google Map (8 Cols) */}
+            <div className="lg:col-span-8 rounded-3xl overflow-hidden border border-slate-300 shadow-xl bg-white relative min-h-[420px] sm:min-h-[480px]">
+              <iframe
+                title="GAJANANA TRADERS & CONSTRUCTIONS & MATERIALS Google Map"
+                src="https://maps.google.com/maps?q=Outer+Ring+Road,+Bengaluru,+Karnataka,+India&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: '460px' }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full"
+              ></iframe>
+            </div>
+
+            {/* Depot & Logistics Information Card (4 Cols) */}
+            <div className="lg:col-span-4 flex flex-col justify-between space-y-4">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
+                <div className="flex items-center gap-3 pb-3 border-b border-slate-100">
+                  <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
+                    <i className="fa-solid fa-building-wheat text-lg"></i>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-900 text-sm">Central Depot &amp; Head Office</h3>
+                    <p className="text-[11px] text-slate-500">Sri Gajanana Facility Complex</p>
+                  </div>
                 </div>
-                <div className="p-3 bg-white rounded-lg border border-slate-200">
-                  <span className="text-xs text-slate-400 block font-bold uppercase">Weighbridge</span>
-                  <span className="text-sm font-bold text-emerald-600">100 Ton NABL</span>
+
+                <div className="text-xs text-slate-600 space-y-2 leading-relaxed">
+                  <p className="font-semibold text-slate-900">
+                    Plot No. 42-45, Heavy Industrial &amp; Construction Supply Zone, Outer Ring Road, Bengaluru, Karnataka, India
+                  </p>
+                  <p className="text-[11px] text-slate-500">
+                    Direct multi-axle trailer bypass entry via Gate #2. 24-hour weighbridge and security clearance.
+                  </p>
                 </div>
-                <div className="p-3 bg-white rounded-lg border border-slate-200">
-                  <span className="text-xs text-slate-400 block font-bold uppercase">Transit Fleet</span>
-                  <span className="text-sm font-bold text-slate-900">42 GPS Trucks</span>
+
+                <div className="pt-2 border-t border-slate-100 space-y-2 text-xs">
+                  <div className="flex items-center justify-between">
+                    <span className="text-slate-500">Sales &amp; Consultations:</span>
+                    <a href="tel:8884238688" className="font-bold text-slate-900 hover:text-amber-600 font-mono">
+                      8884238688
+                    </a>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-slate-500">Yard &amp; JCB Fleet:</span>
+                    <a href="tel:9535828286" className="font-bold text-slate-900 hover:text-amber-600 font-mono">
+                      9535828286
+                    </a>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-slate-500">Official Email:</span>
+                    <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold text-slate-900 hover:text-amber-600">
+                      gajananaconstructionsinfo@gmail.com
+                    </a>
+                  </div>
                 </div>
-                <div className="p-3 bg-white rounded-lg border border-slate-200">
-                  <span className="text-xs text-slate-400 block font-bold uppercase">Loading Bays</span>
-                  <span className="text-sm font-bold text-slate-900">8 High-Speed</span>
+              </div>
+
+              {/* Transit & Infrastructure Stats */}
+              <div className="grid grid-cols-2 gap-3 text-center">
+                <div className="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                  <span className="text-[10px] text-slate-400 block font-bold uppercase tracking-wider">Yard Size</span>
+                  <span className="text-base font-extrabold text-slate-900">4.5 Acres</span>
+                  <span className="text-[10px] text-slate-500 block mt-0.5">Heavy Storage Area</span>
+                </div>
+                <div className="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                  <span className="text-[10px] text-slate-400 block font-bold uppercase tracking-wider">Weighbridge</span>
+                  <span className="text-base font-extrabold text-emerald-600">100-Ton</span>
+                  <span className="text-[10px] text-slate-500 block mt-0.5">NABL Certified</span>
+                </div>
+                <div className="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                  <span className="text-[10px] text-slate-400 block font-bold uppercase tracking-wider">Transit Fleet</span>
+                  <span className="text-base font-extrabold text-slate-900">42 GPS Trucks</span>
+                  <span className="text-[10px] text-slate-500 block mt-0.5">Live Tracked</span>
+                </div>
+                <div className="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                  <span className="text-[10px] text-slate-400 block font-bold uppercase tracking-wider">Loading Bays</span>
+                  <span className="text-base font-extrabold text-amber-600">8 Bays</span>
+                  <span className="text-[10px] text-slate-500 block mt-0.5">Fast Turnaround</span>
+                </div>
+              </div>
+
+              <div className="p-4 bg-emerald-50 rounded-2xl border border-emerald-200 text-emerald-900 text-xs flex items-center gap-3">
+                <i className="fa-solid fa-truck-moving text-emerald-600 text-lg shrink-0"></i>
+                <div className="leading-tight">
+                  <span className="font-bold block">Heavy Commercial Vehicle Clearance</span>
+                  <span className="text-[11px] text-emerald-700">Open 24/7 for raw material rake offloading &amp; bulk dispatches.</span>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </div>

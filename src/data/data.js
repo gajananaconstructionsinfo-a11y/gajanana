@@ -49,6 +49,23 @@ export const DEFAULT_DATA = {
     workingHours: "Monday - Saturday: 8:00 AM – 7:30 PM | Sunday: 9:00 AM – 2:00 PM (Yard & Machinery Dispatch Open)",
     establishedYear: 2005,
     experienceYears: "20+",
+    founder: {
+      name: "Mr. Gajanana",
+      title: "Founder & Chief Executive Officer",
+      role: "Founder & Managing Director",
+      company: "GAJANANA TRADERS & CONSTRUCTIONS & MATERIALS",
+      experience: "20+ Years Industry Leadership",
+      since: 2005,
+      quote: "Our principle has remained unwavering since 2005: Every home and commercial structure we build must stand for generations, constructed with uncompromised primary steel, certified cement, and honest craftsmanship.",
+      bio: "With over two decades of dedicated civil engineering and material logistics leadership, Mr. Gajanana established GAJANANA TRADERS & CONSTRUCTIONS & MATERIALS in 2005 with a clear vision: eliminating middleman markups by uniting turnkey building construction with direct primary mill stockyards. Under his stewardship, the company has delivered hundreds of residential homes, commercial complexes, and heavy infrastructure earthworks across Karnataka with absolute structural integrity, transparency, and client trust.",
+      pillars: [
+        "Uncompromising Material Grade Compliance (IS Standards)",
+        "Direct Mill-to-Site Logistics with Zero Intermediary Cost",
+        "On-Time Turnkey Execution & Full Structural Accountability",
+        "Continuous Modernization of In-House Heavy Machinery Fleet"
+      ],
+      image: null // Real photo will be added later
+    },
     stats: [
       { id: "01", label: "Complete Construction Solutions", value: "Turnkey & Civil Engineering" },
       { id: "02", label: "Heavy Machinery & Fleet", value: "JCB 3DX, Excavators, Tippers & Cranes" },
@@ -1161,7 +1178,7 @@ export const DEFAULT_DATA = {
 };
 
 // Storage helper functions
-const STORAGE_KEY = 'GCM_PLATFORM_DATA_V11';
+const STORAGE_KEY = 'GCM_PLATFORM_DATA_V12';
 
 export function getPlatformData() {
   try {

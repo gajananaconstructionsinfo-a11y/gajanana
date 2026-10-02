@@ -93,6 +93,143 @@ export default function About() {
         </div>
       </section>
 
+      {/* Founder & CEO Leadership Spotlight */}
+      <section className="py-20 bg-slate-900 text-white relative overflow-hidden border-b border-slate-800">
+        {/* Subtle grid pattern background */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:24px_24px]"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="text-amber-400 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
+              EXECUTIVE LEADERSHIP &amp; VISION
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-white font-heading tracking-tight">
+              Meet Our Founder &amp; CEO
+            </h2>
+            <p className="text-slate-400 text-sm sm:text-base mt-3">
+              Guiding Sri Gajanana's civil engineering standards, primary material integrity, and turnkey project execution since 2005.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto bg-slate-950/80 rounded-3xl border border-slate-800 p-8 sm:p-12 shadow-2xl backdrop-blur-sm">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+              
+              {/* Executive Portrait Card / Crest Placeholder (No random photo) */}
+              <div className="lg:col-span-5 flex flex-col items-center">
+                <div className="w-full max-w-sm rounded-2xl border-2 border-amber-500/30 bg-gradient-to-b from-slate-900 via-slate-850 to-slate-950 p-6 flex flex-col items-center text-center shadow-xl relative overflow-hidden group">
+                  {/* Decorative ambient glows */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl"></div>
+                  <div className="absolute bottom-0 left-0 w-32 h-32 bg-amber-600/10 rounded-full blur-2xl"></div>
+
+                  {/* Monogram Seal / Executive Crest */}
+                  <div className="w-36 h-36 rounded-2xl bg-gradient-to-br from-amber-500/20 via-amber-600/10 to-slate-900 border-2 border-amber-500/50 flex flex-col items-center justify-center mb-5 relative shadow-inner">
+                    <div className="w-28 h-28 rounded-xl bg-slate-950/90 border border-amber-500/30 flex flex-col items-center justify-center">
+                      <span className="text-3xl sm:text-4xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200 tracking-wider">
+                        MG
+                      </span>
+                      <span className="text-[9px] font-mono font-bold uppercase tracking-widest text-amber-400/80 mt-0.5">
+                        FOUNDER
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Notice Badge: Real photo to be added */}
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-[11px] text-slate-400 font-mono mb-4">
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+                    <span>Official Portrait • To be updated</span>
+                  </div>
+
+                  <h3 className="text-2xl font-bold font-heading text-white tracking-wide">
+                    Mr. Gajanana
+                  </h3>
+                  <div className="text-amber-400 text-xs font-mono font-semibold uppercase tracking-wider mt-1">
+                    Founder &amp; Chief Executive Officer
+                  </div>
+                  <div className="text-slate-400 text-xs mt-1">
+                    GAJANANA TRADERS &amp; CONSTRUCTIONS &amp; MATERIALS
+                  </div>
+
+                  <div className="w-full mt-6 pt-5 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-center text-xs">
+                    <div className="bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
+                      <span className="text-[10px] uppercase font-mono text-slate-400 block">Experience</span>
+                      <span className="font-bold text-amber-400">20+ Years</span>
+                    </div>
+                    <div className="bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
+                      <span className="text-[10px] uppercase font-mono text-slate-400 block">Established</span>
+                      <span className="font-bold text-white">Since 2005</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bio & Vision Statement */}
+              <div className="lg:col-span-7 space-y-6">
+                {/* Quote Box */}
+                <div className="p-6 rounded-2xl bg-slate-900/90 border-l-4 border-amber-500 border border-slate-800/60 shadow-lg relative">
+                  <div className="text-amber-400 text-3xl font-serif leading-none mb-2">“</div>
+                  <p className="text-slate-200 text-sm sm:text-base italic leading-relaxed font-light">
+                    Our principle has remained unwavering since 2005: Every home and commercial structure we build must stand for generations, constructed with uncompromised primary steel, certified cement, and honest craftsmanship.
+                  </p>
+                  <div className="mt-3 text-right">
+                    <span className="text-xs font-bold text-amber-400 font-mono">— Mr. Gajanana</span>
+                    <span className="text-[11px] text-slate-400 ml-1">, Founder &amp; CEO</span>
+                  </div>
+                </div>
+
+                {/* Narrative Bio */}
+                <div className="space-y-3 text-slate-300 text-sm leading-relaxed font-light">
+                  <p>
+                    Founded in 2005 under the visionary leadership of <strong className="text-white font-semibold">Mr. Gajanana</strong>, GAJANANA TRADERS &amp; CONSTRUCTIONS &amp; MATERIALS was built on a direct, no-compromise civil engineering ethos.
+                  </p>
+                  <p>
+                    Recognizing early that quality delays and price escalations in residential and commercial builds were primarily caused by third-party broker supply chains, Mr. Gajanana pioneered the integration of turnkey contracting with direct primary railway rake material stockyards (Tata Tiscon, JSW, UltraTech, ACC) and a dedicated in-house JCB 3DX earthmoving fleet.
+                  </p>
+                </div>
+
+                {/* 4 Pillars */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
+                  {[
+                    "Direct Primary Mill Steel & Cement Stockyards",
+                    "Complete Turnkey Execution (Earthwork to Handover)",
+                    "100% Quality & IS-Standard Laboratory Compliance",
+                    "Two Decades of Client Trust & Transparent BOQs"
+                  ].map((pillar, idx) => (
+                    <div key={idx} className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300">
+                      <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                      <span>{pillar}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Call & Consultation */}
+                <div className="pt-2 flex flex-wrap items-center gap-3">
+                  <Link
+                    to="/contact"
+                    className="px-5 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition shadow"
+                  >
+                    CONNECT WITH EXECUTIVE DESK →
+                  </Link>
+                  <a
+                    href="tel:8884238688"
+                    className="px-4 py-3 bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold rounded-xl transition border border-slate-700 flex items-center gap-2"
+                  >
+                    <span>CALL 8884238688</span>
+                  </a>
+                  <a
+                    href="tel:9535828286"
+                    className="px-4 py-3 bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold rounded-xl transition border border-slate-700 flex items-center gap-2"
+                  >
+                    <span>CALL 9535828286</span>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 6 Core Values */}
       <section className="py-20 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
