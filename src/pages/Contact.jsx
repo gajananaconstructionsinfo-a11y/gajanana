@@ -109,15 +109,15 @@ export default function Contact() {
                   <i className="fa-solid fa-phone text-xl"></i>
                 </div>
                 <div className="flex-1">
-                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Direct Lines &amp; Price Queries</div>
-                  <div className="space-y-1">
+                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Contact Details</div>
+                  <div className="space-y-1.5">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs text-slate-500">Sales &amp; Price Queries:</span>
-                      <a href="tel:8884238688" className="text-sm font-bold text-slate-900 hover:text-amber-600 font-mono">8884238688</a>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs text-slate-500">Yard &amp; JCB Dispatch:</span>
-                      <a href="tel:9535828286" className="text-sm font-bold text-slate-900 hover:text-amber-600 font-mono">9535828286</a>
+                      <span className="text-xs text-slate-500">Phone Numbers:</span>
+                      <div className="flex items-center gap-2 font-mono font-bold text-slate-900 text-sm">
+                        <a href="tel:8884238688" className="hover:text-amber-600">8884238688</a>
+                        <span className="text-slate-400 font-normal">/</span>
+                        <a href="tel:9535828286" className="hover:text-amber-600">9535828286</a>
+                      </div>
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-xs text-slate-500">Direct WhatsApp:</span>
@@ -503,16 +503,12 @@ export default function Contact() {
 
                 <div className="pt-2 border-t border-slate-100 space-y-2 text-xs">
                   <div className="flex items-center justify-between">
-                    <span className="text-slate-500">Sales &amp; Consultations:</span>
-                    <a href="tel:8884238688" className="font-bold text-slate-900 hover:text-amber-600 font-mono">
-                      8884238688
-                    </a>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-slate-500">Yard &amp; JCB Fleet:</span>
-                    <a href="tel:9535828286" className="font-bold text-slate-900 hover:text-amber-600 font-mono">
-                      9535828286
-                    </a>
+                    <span className="text-slate-500">Contact Details:</span>
+                    <div className="flex items-center gap-2 font-mono font-bold text-slate-900">
+                      <a href="tel:8884238688" className="hover:text-amber-600">8884238688</a>
+                      <span className="text-slate-400 font-normal">/</span>
+                      <a href="tel:9535828286" className="hover:text-amber-600">9535828286</a>
+                    </div>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-slate-500">Official Email:</span>

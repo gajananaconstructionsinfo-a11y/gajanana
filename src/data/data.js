@@ -1181,7 +1181,7 @@ export const DEFAULT_DATA = {
 };
 
 // Storage helper functions
-const STORAGE_KEY = 'GCM_PLATFORM_DATA_V14';
+const STORAGE_KEY = 'GCM_PLATFORM_DATA_V15';
 
 export function getPlatformData() {
   try {
