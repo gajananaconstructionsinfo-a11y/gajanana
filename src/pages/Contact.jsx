@@ -93,12 +93,12 @@ export default function Contact() {
                   <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Registered Facility</div>
                   <h3 className="font-bold text-slate-900 text-base mb-1">GAJANANA TRADERS &amp; CONSTRUCTIONS &amp; MATERIALS</h3>
                   <p className="text-sm text-slate-600 leading-relaxed">
-                    Plot #42-45, Industrial Ring Road Bypass,<br />
-                    Opp. Toll Freight Terminal, Sector 4,<br />
-                    Bangalore / Hosur Industrial Corridor, Karnataka - 560099
+                    7013, 2nd Main Rd, Samrat Layout,<br />
+                    Sarvobhogam Nagar, Arekere,<br />
+                    Bengaluru, Karnataka - 560076
                   </p>
                   <p className="text-xs text-amber-700 font-medium mt-2">
-                    <i className="fa-solid fa-truck-moving mr-1"></i> Heavy commercial trailers clearance available 24x7
+                    <i className="fa-solid fa-truck-moving mr-1"></i> Heavy commercial trailers clearance &amp; central dispatch available
                   </p>
                 </div>
               </div>
@@ -399,9 +399,9 @@ export default function Contact() {
             {/* Quick Map & Directions Callout */}
             <div className="mt-8 p-5 rounded-2xl border border-slate-200 bg-slate-50 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
-                <div className="text-[11px] font-bold uppercase tracking-wider text-amber-600 font-mono mb-0.5">Yard &amp; Office Coordinates</div>
-                <h4 className="font-bold text-slate-900 text-sm">Outer Ring Road Industrial Corridor</h4>
-                <p className="text-xs text-slate-500 font-mono">12.9249° N, 77.6834° E • Entry Gate #2 for Multi-Axle Trucks</p>
+                <div className="text-[11px] font-bold uppercase tracking-wider text-amber-600 font-mono mb-0.5">Office &amp; Yard Location</div>
+                <h4 className="font-bold text-slate-900 text-sm">7013, 2nd Main Rd, Samrat Layout, Arekere</h4>
+                <p className="text-xs text-slate-500 font-mono">12.8878° N, 77.6017° E • Sarvobhogam Nagar, Bengaluru 560076</p>
               </div>
               <a
                 href="#interactive-map"
@@ -428,27 +428,36 @@ export default function Contact() {
                 Locate Us on Google Maps
               </h2>
               <p className="text-slate-600 text-sm max-w-2xl mt-1">
-                Visit our central corporate office, engineering conference suites, and live 4.5-acre building materials depot in Bengaluru.
+                7013, 2nd Main Rd, Samrat Layout, Sarvobhogam Nagar, Arekere, Bengaluru, Karnataka 560076
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-3">
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Outer+Ring+Road+Bengaluru+Karnataka+India"
+                href="https://www.google.com/maps/place/7013,+2nd+Main+Rd+Samrat+Layout,+Sarvobhogam+Nagar,+Arekere,+Bengaluru,+Karnataka+560076/@12.8877432,77.6017726,21z/data=!4m6!3m5!1s0x3bae152f523d38af:0x73dac50967405142!8m2!3d12.8878405!4d77.6017497!16s%2Fg%2F11lmp2c1d0?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-950 hover:bg-amber-600 text-white text-xs font-bold uppercase tracking-wider transition shadow"
               >
-                <i className="fa-solid fa-diamond-turn-right text-amber-400"></i>
+                <i className="fa-solid fa-map-location-dot text-amber-400"></i>
+                <span>Open in Google Maps</span>
+              </a>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=7013,+2nd+Main+Rd+Samrat+Layout,+Sarvobhogam+Nagar,+Arekere,+Bengaluru,+Karnataka+560076"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold uppercase tracking-wider transition shadow"
+              >
+                <i className="fa-solid fa-diamond-turn-right text-slate-950"></i>
                 <span>Get Driving Directions</span>
               </a>
               <a
-                href="https://maps.google.com/?q=12.9249,77.6834"
+                href="https://maps.google.com/?q=12.8878405,77.6017497"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white hover:bg-slate-100 text-slate-800 text-xs font-bold border border-slate-300 transition shadow-sm font-mono"
               >
                 <i className="fa-solid fa-location-crosshairs text-blue-600"></i>
-                <span>12.9249° N, 77.6834° E</span>
+                <span>12.8878° N, 77.6017° E</span>
               </a>
             </div>
           </div>
@@ -458,8 +467,8 @@ export default function Contact() {
             {/* Embedded Google Map (8 Cols) */}
             <div className="lg:col-span-8 rounded-3xl overflow-hidden border border-slate-300 shadow-xl bg-white relative min-h-[420px] sm:min-h-[480px]">
               <iframe
-                title="GAJANANA TRADERS & CONSTRUCTIONS & MATERIALS Google Map"
-                src="https://maps.google.com/maps?q=Outer+Ring+Road,+Bengaluru,+Karnataka,+India&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                title="GAJANANA TRADERS & CONSTRUCTIONS & MATERIALS Google Map - 7013 Samrat Layout Arekere"
+                src="https://maps.google.com/maps?q=7013,+2nd+Main+Rd+Samrat+Layout,+Sarvobhogam+Nagar,+Arekere,+Bengaluru,+Karnataka+560076&t=&z=17&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '460px' }}
@@ -478,17 +487,17 @@ export default function Contact() {
                     <i className="fa-solid fa-building-wheat text-lg"></i>
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">Central Depot &amp; Head Office</h3>
-                    <p className="text-[11px] text-slate-500">Sri Gajanana Facility Complex</p>
+                    <h3 className="font-bold text-slate-900 text-sm">Corporate Office &amp; Facility Complex</h3>
+                    <p className="text-[11px] text-slate-500">Sri Gajanana Headquarters</p>
                   </div>
                 </div>
 
                 <div className="text-xs text-slate-600 space-y-2 leading-relaxed">
                   <p className="font-semibold text-slate-900">
-                    Plot No. 42-45, Heavy Industrial &amp; Construction Supply Zone, Outer Ring Road, Bengaluru, Karnataka, India
+                    7013, 2nd Main Rd, Samrat Layout, Sarvobhogam Nagar, Arekere, Bengaluru, Karnataka - 560076
                   </p>
                   <p className="text-[11px] text-slate-500">
-                    Direct multi-axle trailer bypass entry via Gate #2. 24-hour weighbridge and security clearance.
+                    Centrally situated in Arekere with direct arterial road connectivity, heavy vehicle dispatch coordination, and dedicated visitor parking.
                   </p>
                 </div>
 
