@@ -49,6 +49,8 @@ export default function Contact() {
       <div className="bg-amber-500 text-slate-950 py-2.5 px-4 text-xs font-mono font-bold text-center border-b border-amber-600 shadow-inner">
         <span>📢 FOR ALL PRICING QUERIES, WHOLESALE RATES &amp; MACHINERY BOOKINGS: Contact </span>
         <a href="tel:8884238688" className="underline font-extrabold text-slate-950 hover:text-white ml-1">8884238688</a>
+        <span className="mx-1">/</span>
+        <a href="tel:9535828286" className="underline font-extrabold text-slate-950 hover:text-white">9535828286</a>
         <span className="mx-1.5">|</span>
         <a href="mailto:gajananaconstructionsinfo@gmail.com" className="underline font-extrabold text-slate-950 hover:text-white">gajananaconstructionsinfo@gmail.com</a>
       </div>
@@ -115,7 +117,7 @@ export default function Contact() {
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-xs text-slate-500">Yard &amp; JCB Dispatch:</span>
-                      <a href="tel:8884238688" className="text-sm font-bold text-slate-900 hover:text-amber-600 font-mono">8884238688</a>
+                      <a href="tel:9535828286" className="text-sm font-bold text-slate-900 hover:text-amber-600 font-mono">9535828286</a>
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-xs text-slate-500">Direct WhatsApp:</span>
@@ -229,13 +231,22 @@ export default function Contact() {
                       </a>
                     </div>
 
-                    <a
-                      href="tel:8884238688"
-                      className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition font-mono shadow"
-                    >
-                      <i className="fa-solid fa-phone text-xs"></i>
-                      <span>Call Central Dispatch: 8884238688</span>
-                    </a>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      <a
+                        href="tel:8884238688"
+                        className="inline-flex items-center justify-center gap-2 px-3 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition font-mono shadow"
+                      >
+                        <i className="fa-solid fa-phone text-xs text-amber-400"></i>
+                        <span>Call 8884238688</span>
+                      </a>
+                      <a
+                        href="tel:9535828286"
+                        className="inline-flex items-center justify-center gap-2 px-3 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition font-mono shadow"
+                      >
+                        <i className="fa-solid fa-phone text-xs text-amber-400"></i>
+                        <span>Call 9535828286</span>
+                      </a>
+                    </div>
                   </div>
 
                   <div className="text-center">

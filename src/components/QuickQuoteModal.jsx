@@ -83,7 +83,9 @@ export default function QuickQuoteModal() {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="p-2.5 rounded-xl bg-amber-50 border border-amber-200 text-[11px] font-mono text-amber-900">
                 <span>For immediate wholesale pricing: </span>
-                <a href="tel:8884238688" className="font-bold underline text-slate-900">Call 8884238688</a>
+                <a href="tel:8884238688" className="font-bold underline text-slate-900">8884238688</a>
+                <span className="mx-1">/</span>
+                <a href="tel:9535828286" className="font-bold underline text-slate-900">9535828286</a>
                 <span className="mx-1">•</span>
                 <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold underline text-slate-900">Email us</a>
               </div>
@@ -226,12 +228,20 @@ export default function QuickQuoteModal() {
                 <span>Send on WhatsApp (8884238688)</span>
               </a>
 
-              <a
-                href="tel:8884238688"
-                className="w-full py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-all flex items-center justify-center space-x-2 font-mono"
-              >
-                <span>Call Dispatch: 8884238688</span>
-              </a>
+              <div className="grid grid-cols-2 gap-2">
+                <a
+                  href="tel:8884238688"
+                  className="w-full py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-all flex items-center justify-center space-x-1 font-mono"
+                >
+                  <span>Call 8884238688</span>
+                </a>
+                <a
+                  href="tel:9535828286"
+                  className="w-full py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-all flex items-center justify-center space-x-1 font-mono"
+                >
+                  <span>Call 9535828286</span>
+                </a>
+              </div>
 
               <button
                 onClick={handleClose}

@@ -92,7 +92,7 @@ export default function Footer() {
                   PRICING QUERIES:
                 </span>
                 <p className="text-slate-200 text-xs">
-                  Call <a href="tel:8884238688" className="font-bold underline text-white hover:text-amber-400 font-mono">8884238688</a> or email
+                  Call <a href="tel:8884238688" className="font-bold underline text-white hover:text-amber-400 font-mono">8884238688</a> / <a href="tel:9535828286" className="font-bold underline text-white hover:text-amber-400 font-mono">9535828286</a> or email
                 </p>
                 <p className="mt-1">
                   <a
@@ -110,9 +110,11 @@ export default function Footer() {
               </p>
               <p className="flex items-center space-x-2.5 text-xs text-slate-300">
                 <Phone className="w-4 h-4 text-amber-500 shrink-0" />
-                <a href={`tel:${company.phone.replace(/\s+/g, '')}`} className="hover:text-amber-400 font-mono font-bold text-white">
-                  {company.phoneDisplay}
-                </a>
+                <span className="font-mono font-bold text-white flex items-center space-x-1.5">
+                  <a href="tel:8884238688" className="hover:text-amber-400">{company.phoneDisplay}</a>
+                  <span className="text-slate-500 font-normal">/</span>
+                  <a href="tel:9535828286" className="hover:text-amber-400">{company.phoneSecondaryDisplay}</a>
+                </span>
               </p>
               <p className="flex items-center space-x-2.5 text-xs text-slate-300">
                 <Mail className="w-4 h-4 text-amber-500 shrink-0" />

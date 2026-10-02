@@ -84,6 +84,8 @@ export default function Services() {
       <div className="bg-amber-500 text-slate-950 py-2.5 px-4 text-xs font-mono font-bold text-center border-b border-amber-600 shadow-inner">
         <span>📢 For service quotes, machinery dispatch (JCB 3DX &amp; excavators), cement/steel procurement, and turnkey house construction: Contact </span>
         <a href="tel:8884238688" className="underline font-extrabold text-slate-950 hover:text-white ml-1">8884238688</a>
+        <span className="mx-1">/</span>
+        <a href="tel:9535828286" className="underline font-extrabold text-slate-950 hover:text-white">9535828286</a>
         <span className="mx-1.5">|</span>
         <a href="mailto:gajananaconstructionsinfo@gmail.com" className="underline font-extrabold text-slate-950 hover:text-white">gajananaconstructionsinfo@gmail.com</a>
       </div>
@@ -374,13 +376,12 @@ export default function Services() {
                   >
                     <span>ESTIMATE STAGE</span>
                   </Link>
-                  <a
-                    href="tel:8884238688"
-                    className="py-2.5 bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold text-xs uppercase tracking-wider rounded-xl transition-all flex items-center justify-center space-x-1.5"
-                  >
-                    <PhoneCall className="w-3.5 h-3.5 text-amber-400" />
-                    <span>8884238688</span>
-                  </a>
+                  <div className="py-2.5 bg-slate-900 text-slate-200 border border-slate-700 font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center space-x-1.5 font-mono">
+                    <PhoneCall className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                    <a href="tel:8884238688" className="hover:text-amber-400">8884238688</a>
+                    <span className="text-slate-500">/</span>
+                    <a href="tel:9535828286" className="hover:text-amber-400">9535828286</a>
+                  </div>
                 </div>
               </div>
             ))}
@@ -444,7 +445,7 @@ export default function Services() {
                   REQUEST ESTIMATE FOR YOUR PLAN →
                 </Link>
                 <p className="text-xs text-slate-400 font-mono mt-3">
-                  Direct WhatsApp / Desk: <a href="tel:8884238688" className="text-white underline font-bold">8884238688</a>
+                  Direct WhatsApp / Desk: <a href="tel:8884238688" className="text-white underline font-bold">8884238688</a> / <a href="tel:9535828286" className="text-white underline font-bold">9535828286</a>
                 </p>
               </div>
             </div>
@@ -462,7 +463,7 @@ export default function Services() {
             Share your plot dimensions, architectural drawings, or material BOQ schedule for itemized pricing and timeline planning.
           </p>
           <div className="inline-flex flex-wrap items-center justify-center gap-4 px-6 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-amber-400 mb-8">
-            <span>Direct Queries: <a href="tel:8884238688" className="text-white font-bold underline">8884238688</a></span>
+            <span>Direct Queries: <a href="tel:8884238688" className="text-white font-bold underline">8884238688</a> / <a href="tel:9535828286" className="text-white font-bold underline">9535828286</a></span>
             <span>•</span>
             <span><a href="mailto:gajananaconstructionsinfo@gmail.com" className="text-white font-bold underline">gajananaconstructionsinfo@gmail.com</a></span>
           </div>

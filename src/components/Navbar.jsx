@@ -113,14 +113,15 @@ export default function Navbar() {
 
           {/* Desktop Right CTA */}
           <div className="hidden sm:flex items-center space-x-3">
-            <a
-              href="tel:8884238688"
-              className="hidden xl:inline-flex items-center gap-1.5 px-3 py-2 bg-amber-50 hover:bg-amber-100 text-slate-900 rounded-xl text-xs font-bold border border-amber-200 transition"
+            <div
+              className="hidden xl:inline-flex items-center gap-1.5 px-3 py-2 bg-amber-50 hover:bg-amber-100 text-slate-900 rounded-xl text-xs font-bold border border-amber-200 transition font-mono"
               title="Call for Price Enquiry"
             >
               <i className="fa-solid fa-phone text-amber-600"></i>
-              <span>8884238688</span>
-            </a>
+              <a href="tel:8884238688" className="hover:text-amber-700">8884238688</a>
+              <span className="text-slate-400 font-normal">/</span>
+              <a href="tel:9535828286" className="hover:text-amber-700">9535828286</a>
+            </div>
             <Link
               to="/get-a-quote"
               className="px-5 py-2.5 bg-slate-950 hover:bg-amber-600 text-white font-extrabold text-xs tracking-wider uppercase rounded-xl transition-all shadow hover:shadow-md"
@@ -237,13 +238,13 @@ export default function Navbar() {
           </Link>
 
           <div className="pt-2 space-y-2">
-            <a
-              href="tel:8884238688"
-              className="flex items-center justify-center gap-2 w-full py-3 bg-slate-900 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow"
-            >
+            <div className="flex items-center justify-center gap-2 w-full py-3 bg-slate-900 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow font-mono">
               <i className="fa-solid fa-phone text-amber-400"></i>
-              <span>Price Queries: 8884238688</span>
-            </a>
+              <span>Call: </span>
+              <a href="tel:8884238688" className="underline hover:text-amber-400">8884238688</a>
+              <span>/</span>
+              <a href="tel:9535828286" className="underline hover:text-amber-400">9535828286</a>
+            </div>
             <Link
               to="/get-a-quote"
               onClick={() => setMobileMenuOpen(false)}

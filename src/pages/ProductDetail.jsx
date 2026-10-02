@@ -77,9 +77,9 @@ export default function ProductDetail() {
                   For wholesale market rates, bulk project volume discounts, and site delivery quotation:
                 </p>
                 <div className="mt-3 flex flex-wrap items-center gap-4 text-xs font-mono font-bold">
-                  <a href="tel:8884238688" className="text-slate-950 hover:text-amber-600 underline">
-                    📞 Call: 8884238688
-                  </a>
+                  <span>
+                    📞 Call: <a href="tel:8884238688" className="text-slate-950 hover:text-amber-600 underline">8884238688</a> / <a href="tel:9535828286" className="text-slate-950 hover:text-amber-600 underline">9535828286</a>
+                  </span>
                   <span className="text-slate-300">•</span>
                   <a href="mailto:gajananaconstructionsinfo@gmail.com" className="text-slate-950 hover:text-amber-600 underline">
                     ✉️ gajananaconstructionsinfo@gmail.com
@@ -113,9 +113,15 @@ export default function ProductDetail() {
                 </button>
                 <a
                   href="tel:8884238688"
-                  className="px-6 py-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs tracking-wider uppercase rounded-xl transition-all shadow-md flex items-center space-x-2 font-mono"
+                  className="px-5 py-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs tracking-wider uppercase rounded-xl transition-all shadow-md flex items-center space-x-2 font-mono"
                 >
                   <span>CALL 8884238688</span>
+                </a>
+                <a
+                  href="tel:9535828286"
+                  className="px-5 py-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs tracking-wider uppercase rounded-xl transition-all shadow-md flex items-center space-x-2 font-mono"
+                >
+                  <span>CALL 9535828286</span>
                 </a>
                 <a
                   href={`https://wa.me/918884238688?text=Hello%20GCM,%20please%20send%20current%20site%20delivery%20rates%20for%20${encodeURIComponent(

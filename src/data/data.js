@@ -1,6 +1,6 @@
 // GAJANANA CONSTRUCTIONS & MATERIALS - Core Data Store (React Vite Edition)
 // Brand Positioning: "Building Dreams. Supplying Quality. Delivering Strength."
-// Pricing Policy: Direct quotes on enquiry - Contact 8884238688 | gajananaconstructionsinfo@gmail.com
+// Pricing Policy: Direct quotes on enquiry - Contact 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com
 
 import jcb3dxImg from '../assets/products/jcb-3dx.jpg';
 import excavator20tImg from '../assets/products/excavator-20t.jpg';
@@ -38,14 +38,17 @@ export const DEFAULT_DATA = {
     trustStatement: "Trading • Construction • Earthmoving & JCB Fleet • All Building Materials",
     phone: "8884238688",
     phoneDisplay: "+91 88842 38688",
+    phoneSecondary: "9535828286",
+    phoneSecondaryDisplay: "+91 95358 28286",
+    phonesDisplay: "+91 88842 38688 / +91 95358 28286",
     whatsapp: "8884238688",
     whatsappNumber: "918884238688",
     email: "gajananaconstructionsinfo@gmail.com",
-    priceNotice: "For all pricing queries, daily wholesale rates, and quantity discounts, contact 8884238688 or email gajananaconstructionsinfo@gmail.com",
+    priceNotice: "For all pricing queries, daily wholesale rates, and quantity discounts, contact 8884238688 / 9535828286 or email gajananaconstructionsinfo@gmail.com",
     address: "Plot No. 42, Heavy Industrial & Construction Supply Zone, Outer Ring Road, Bengaluru, Karnataka, India",
     workingHours: "Monday - Saturday: 8:00 AM – 7:30 PM | Sunday: 9:00 AM – 2:00 PM (Yard & Machinery Dispatch Open)",
-    establishedYear: 1999,
-    experienceYears: "25+",
+    establishedYear: 2005,
+    experienceYears: "20+",
     stats: [
       { id: "01", label: "Complete Construction Solutions", value: "Turnkey & Civil Engineering" },
       { id: "02", label: "Heavy Machinery & Fleet", value: "JCB 3DX, Excavators, Tippers & Cranes" },
@@ -134,7 +137,7 @@ export const DEFAULT_DATA = {
       ],
       faqs: [
         { q: "What machines are available in your earthmoving fleet?", a: "Our fleet includes JCB 3DX Super Backhoe Loaders, Tata Hitachi / Hyundai 20-Ton Excavators with Rock Breaker attachments, 10-Ton Vibratory Road Rollers, and high-capacity Tipper Trucks." },
-        { q: "How do I get machine rental rates or excavation contract pricing?", a: "For competitive pricing and immediate site mobilization, please contact our dispatch desk at 8884238688 or email gajananaconstructionsinfo@gmail.com." }
+        { q: "How do I get machine rental rates or excavation contract pricing?", a: "For competitive pricing and immediate site mobilization, please contact our dispatch desk at 8884238688 / 9535828286 or email gajananaconstructionsinfo@gmail.com." }
       ]
     },
     {
@@ -159,7 +162,7 @@ export const DEFAULT_DATA = {
         "Subgrade Road Compaction & Earth Consolidation"
       ],
       faqs: [
-        { q: "How are crane and equipment bookings scheduled?", a: "Equipment dispatch is scheduled directly through our central desk. Call 8884238688 or email gajananaconstructionsinfo@gmail.com with your site location and required dates." }
+        { q: "How are crane and equipment bookings scheduled?", a: "Equipment dispatch is scheduled directly through our central desk. Call 8884238688 / 9535828286 or email gajananaconstructionsinfo@gmail.com with your site location and required dates." }
       ]
     },
     {
@@ -180,7 +183,7 @@ export const DEFAULT_DATA = {
       applications: ["Custom Individual Villas", "Independent Duplex Residences", "Multi-Storey Individual Homes", "Custom Bungalows"],
       faqs: [
         { q: "How do you ensure material quality during construction?", a: "Because Gajanana Constructions & Materials operates its own certified material depot, all steel rebars, cement, and aggregates undergo rigorous batch testing with NABL mill test reports before site delivery." },
-        { q: "How do we get a project quote for our residential plan?", a: "For an itemized BOQ estimation and turnkey pricing, contact 8884238688 or email your floor plan to gajananaconstructionsinfo@gmail.com." }
+        { q: "How do we get a project quote for our residential plan?", a: "For an itemized BOQ estimation and turnkey pricing, contact 8884238688 / 9535828286 or email your floor plan to gajananaconstructionsinfo@gmail.com." }
       ]
     },
     {
@@ -320,7 +323,7 @@ export const DEFAULT_DATA = {
       badge: "Quality Oversight",
       applications: ["Turnkey Project Supervision", "Independent Quality Audits", "Contractor Material Verification", "Structural Safety Compliance"],
       faqs: [
-        { q: "How do I request a site visit or consultation?", a: "Contact our project coordination desk at 8884238688 or email gajananaconstructionsinfo@gmail.com." }
+        { q: "How do I request a site visit or consultation?", a: "Contact our project coordination desk at 8884238688 / 9535828286 or email gajananaconstructionsinfo@gmail.com." }
       ]
     }
   ],
@@ -361,7 +364,7 @@ export const DEFAULT_DATA = {
         { label: "Operator Included", val: "Certified Experienced Driver" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "Available for Daily / Shift / Project Contract",
       testReportId: "TR-JCB-3DX-09",
       image: jcb3dxImg
@@ -380,7 +383,7 @@ export const DEFAULT_DATA = {
         { label: "Application", val: "Hard Rock, Deep Basements, Demolition" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "Immediate Site Mobilization",
       testReportId: "TR-EXC-20T-01",
       image: excavator20tImg
@@ -399,7 +402,7 @@ export const DEFAULT_DATA = {
         { label: "Carbon Equivalent", val: "<= 0.42%" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "1,200 MT In Stock (Yard Weighed)",
       testReportId: "TR-TISCON-9821",
       image: tataTisconImg
@@ -418,7 +421,7 @@ export const DEFAULT_DATA = {
         { label: "Fineness", val: ">= 280 m2/kg" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "18,000 Bags Ready for Dispatch",
       testReportId: "TR-ULTRA-4412",
       image: ultratechImg
@@ -437,7 +440,7 @@ export const DEFAULT_DATA = {
         { label: "Slump Value", val: "120 +/- 25 mm at Discharge" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "Continuous Plant Pouring Available",
       testReportId: "TR-RMC-2026-M25",
       image: roofSlabPouringImg
@@ -456,7 +459,7 @@ export const DEFAULT_DATA = {
         { label: "Sizes", val: "10mm to 25mm" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "450 MT Available",
       testReportId: "TR-JSW-7730",
       image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=600&q=80"
@@ -475,7 +478,7 @@ export const DEFAULT_DATA = {
         { label: "Dead Load Red.", val: "50% vs Clay Brick" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "35,000 Units Stocked",
       testReportId: "TR-AAC-1092",
       image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=600&q=80"
@@ -494,7 +497,7 @@ export const DEFAULT_DATA = {
         { label: "Packing", val: "Stack Loaded Tippers" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "50,000+ Units Ready for Site Tipping",
       testReportId: "TR-BRK-RED-55",
       image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=600&q=80"
@@ -513,7 +516,7 @@ export const DEFAULT_DATA = {
         { label: "Weighbridge Delivery", val: "Electronic Computer Slip" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "Continuous Tipper Supply (10 & 16 Wheelers)",
       testReportId: "TR-MSAND-5521",
       image: "https://images.unsplash.com/photo-160058515526-990dced4db0d?auto=format&fit=crop&w=600&q=80"
@@ -532,7 +535,7 @@ export const DEFAULT_DATA = {
         { label: "Bulk Density", val: "1,550 kg/m3" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "Large Yard Stockpiles",
       testReportId: "TR-AGG-20MM-99",
       image: "https://images.unsplash.com/photo-160058515526-990dced4db0d?auto=format&fit=crop&w=600&q=80"
@@ -551,7 +554,7 @@ export const DEFAULT_DATA = {
         { label: "Props & Spans", val: "Adjustable 2m to 4m" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "Direct Warehouse Dispatch",
       testReportId: "TR-PLY-SHUT-08",
       image: "https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=600&q=80"
@@ -570,7 +573,7 @@ export const DEFAULT_DATA = {
         { label: "Jointing", val: "Solvent Cement Welded" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "Full Wholesale Stock",
       testReportId: "TR-ASTRAL-882",
       image: "https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=600&q=80"
@@ -589,7 +592,7 @@ export const DEFAULT_DATA = {
         { label: "Pack Sizes", val: "5L, 20L, 200L Barrels" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "Fresh Stock Sealed Buckets",
       testReportId: "TR-FOSROC-661",
       image: slabLevelingImg
@@ -608,7 +611,7 @@ export const DEFAULT_DATA = {
         { label: "Standard Length", val: "90 Meter Project Box" }
       ],
       priceGuide: "Price on Enquiry",
-      priceContact: "Contact: 8884238688 | gajananaconstructionsinfo@gmail.com",
+      priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
       availability: "Full Electrical Inventory",
       testReportId: "TR-POLYCAB-42",
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80"
@@ -801,7 +804,7 @@ export const DEFAULT_DATA = {
 
   workflow: [
     { step: "01", name: "CONSULT & SCOPE", desc: "Understand your site parameters, earthmoving needs, architectural drawings, and material schedule." },
-    { step: "02", name: "ESTIMATE & QUOTE", desc: "Prepare a detailed Bill of Quantities (BOQ). Contact 8884238688 / gajananaconstructionsinfo@gmail.com for competitive rates." },
+    { step: "02", name: "ESTIMATE & QUOTE", desc: "Prepare a detailed Bill of Quantities (BOQ). Contact 8884238688 / 9535828286 / gajananaconstructionsinfo@gmail.com for competitive rates." },
     { step: "03", name: "MOBILIZE & SUPPLY", desc: "Dispatch in-house JCB machinery and NABL-certified building materials directly from our central yard." },
     { step: "04", name: "CONSTRUCT & SUPERVISE", desc: "Execute civil works and structural casting with qualified site engineers and daily digital supervision." },
     { step: "05", name: "QUALITY AUDIT", desc: "Conduct soil compaction tests, concrete cube testing, and structural safety sign-offs." },
@@ -1158,7 +1161,7 @@ export const DEFAULT_DATA = {
 };
 
 // Storage helper functions
-const STORAGE_KEY = 'GCM_PLATFORM_DATA_V10';
+const STORAGE_KEY = 'GCM_PLATFORM_DATA_V11';
 
 export function getPlatformData() {
   try {

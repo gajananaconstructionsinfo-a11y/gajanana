@@ -66,7 +66,7 @@ export default function About() {
               <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm font-mono text-xs text-slate-700 space-y-2">
                 <div className="flex justify-between">
                   <span className="text-slate-500">Established:</span>
-                  <span className="font-bold text-slate-900">{company.establishedYear} (25+ Years Legacy)</span>
+                  <span className="font-bold text-slate-900">{company.establishedYear} ({company.experienceYears} Years Legacy)</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-slate-500">Central Logistics:</span>

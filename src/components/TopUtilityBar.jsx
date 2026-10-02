@@ -28,13 +28,12 @@ export default function TopUtilityBar() {
             <span>gajananaconstructionsinfo@gmail.com</span>
           </a>
           <span className="text-slate-700">|</span>
-          <a
-            href="tel:8884238688"
-            className="flex items-center hover:text-amber-400 transition-colors font-bold text-amber-400"
-          >
-            <Phone className="w-3.5 h-3.5 mr-1.5 text-amber-500" />
-            <span className="font-mono">8884238688</span>
-          </a>
+          <div className="flex items-center text-amber-400 font-bold space-x-1.5 font-mono">
+            <Phone className="w-3.5 h-3.5 mr-1 text-amber-500" />
+            <a href="tel:8884238688" className="hover:text-white transition-colors">8884238688</a>
+            <span className="text-slate-600 font-normal">/</span>
+            <a href="tel:9535828286" className="hover:text-white transition-colors">9535828286</a>
+          </div>
         </div>
       </div>
     </div>

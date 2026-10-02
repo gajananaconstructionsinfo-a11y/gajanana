@@ -295,7 +295,7 @@ export default function Home() {
                         <span className="text-xs font-extrabold text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Price on Enquiry</span>
                       </div>
                       <div className="text-[11px] text-slate-600">
-                        Call: <a href="tel:8884238688" className="font-bold text-slate-900 hover:text-amber-600 font-mono">8884238688</a>
+                        Call: <a href="tel:8884238688" className="font-bold text-slate-900 hover:text-amber-600 font-mono">8884238688</a> / <a href="tel:9535828286" className="font-bold text-slate-900 hover:text-amber-600 font-mono">9535828286</a>
                       </div>
                     </div>
                   </div>
@@ -332,7 +332,7 @@ export default function Home() {
                 We supply primary steel, cement, triple-washed M-Sand, and dispatch JCB 3DX &amp; heavy excavators directly to site. For live market rates and project quotes, contact our coordination desk:
               </p>
               <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-mono text-amber-400">
-                <span>📞 <a href="tel:8884238688" className="font-bold underline text-white hover:text-amber-400">8884238688</a></span>
+                <span>📞 <a href="tel:8884238688" className="font-bold underline text-white hover:text-amber-400">8884238688</a> / <a href="tel:9535828286" className="font-bold underline text-white hover:text-amber-400">9535828286</a></span>
                 <span>✉️ <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold underline text-white hover:text-amber-400">gajananaconstructionsinfo@gmail.com</a></span>
               </div>
             </div>
@@ -533,7 +533,7 @@ export default function Home() {
             Schedule a consultation with our senior civil engineering estimators today. For all pricing queries, daily wholesale rates, and machine dispatch:
           </p>
           <div className="inline-flex flex-wrap items-center justify-center gap-6 px-6 py-2.5 rounded-2xl bg-slate-900 border border-slate-800 text-xs font-mono text-amber-400 mb-8 shadow-inner">
-            <span>Call: <a href="tel:8884238688" className="font-bold underline text-white hover:text-amber-400">8884238688</a></span>
+            <span>Call: <a href="tel:8884238688" className="font-bold underline text-white hover:text-amber-400">8884238688</a> / <a href="tel:9535828286" className="font-bold underline text-white hover:text-amber-400">9535828286</a></span>
             <span>•</span>
             <span>Email: <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold underline text-white hover:text-amber-400">gajananaconstructionsinfo@gmail.com</a></span>
           </div>

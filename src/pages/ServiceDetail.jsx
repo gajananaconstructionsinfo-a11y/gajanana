@@ -141,7 +141,7 @@ export default function ServiceDetail() {
                 <div className="space-y-3">
                   <div className="p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-xs font-mono">
                     <span className="font-bold text-amber-900 block mb-1">Pricing &amp; Mobilization:</span>
-                    <span className="text-slate-700">Call <a href="tel:8884238688" className="font-bold underline text-amber-800">8884238688</a> or email <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold underline text-amber-800">gajananaconstructionsinfo@gmail.com</a></span>
+                    <span className="text-slate-700">Call <a href="tel:8884238688" className="font-bold underline text-amber-800">8884238688</a> / <a href="tel:9535828286" className="font-bold underline text-amber-800">9535828286</a> or email <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold underline text-amber-800">gajananaconstructionsinfo@gmail.com</a></span>
                   </div>
                   <Link
                     to="/get-a-quote"
@@ -149,12 +149,20 @@ export default function ServiceDetail() {
                   >
                     <span>SUBMIT SPECIFICATIONS →</span>
                   </Link>
-                  <a
-                    href="tel:8884238688"
-                    className="w-full py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow flex items-center justify-center space-x-2 font-mono"
-                  >
-                    <span>CALL 8884238688</span>
-                  </a>
+                  <div className="grid grid-cols-2 gap-2">
+                    <a
+                      href="tel:8884238688"
+                      className="w-full py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow flex items-center justify-center space-x-1.5 font-mono"
+                    >
+                      <span>CALL 8884238688</span>
+                    </a>
+                    <a
+                      href="tel:9535828286"
+                      className="w-full py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow flex items-center justify-center space-x-1.5 font-mono"
+                    >
+                      <span>CALL 9535828286</span>
+                    </a>
+                  </div>
                   <a
                     href={`https://wa.me/918884238688?text=Hello%20GCM,%20I%20would%20like%20to%20inquire%20about%20${encodeURIComponent(
                       service.title

@@ -25,6 +25,8 @@ export default function Materials() {
       <div className="bg-amber-500 text-slate-950 py-2.5 px-4 text-xs font-mono font-bold text-center border-b border-amber-600 shadow-inner">
         <span>📢 NOTICE: We maintain strict transparency with zero hidden brokerage. For wholesale bulk rates, project BOQ pricing, and today's market rate card, contact </span>
         <a href="tel:8884238688" className="underline font-extrabold text-slate-950 hover:text-white ml-1">8884238688</a>
+        <span className="mx-1">/</span>
+        <a href="tel:9535828286" className="underline font-extrabold text-slate-950 hover:text-white">9535828286</a>
         <span className="mx-1.5">|</span>
         <a href="mailto:gajananaconstructionsinfo@gmail.com" className="underline font-extrabold text-slate-950 hover:text-white">gajananaconstructionsinfo@gmail.com</a>
       </div>
@@ -165,7 +167,7 @@ export default function Materials() {
                   ⚡ <strong>Rate Schedule:</strong> For wholesale prices per MT/bag &amp; machine dispatch, contact our dispatch desk:
                 </span>
                 <span className="shrink-0 font-bold text-white">
-                  Call <a href="tel:8884238688" className="text-amber-400 underline">8884238688</a>
+                  Call <a href="tel:8884238688" className="text-amber-400 underline">8884238688</a> / <a href="tel:9535828286" className="text-amber-400 underline">9535828286</a>
                 </span>
               </div>
             </div>
@@ -231,7 +233,7 @@ export default function Materials() {
                         <span className="text-xs font-extrabold text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Price on Enquiry</span>
                       </div>
                       <div className="text-[11px] text-slate-600">
-                        Call: <a href="tel:8884238688" className="font-bold text-slate-900 hover:text-amber-600 font-mono">8884238688</a>
+                        Call: <a href="tel:8884238688" className="font-bold text-slate-900 hover:text-amber-600 font-mono">8884238688</a> / <a href="tel:9535828286" className="font-bold text-slate-900 hover:text-amber-600 font-mono">9535828286</a>
                       </div>
                     </div>
                   </div>
@@ -366,7 +368,7 @@ export default function Materials() {
             We provide timed site tipping for aggregates, transit mixer coordinate pourings, and heavy machinery dispatch.
           </p>
           <div className="inline-flex flex-wrap items-center justify-center gap-4 px-6 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-amber-400 mb-8">
-            <span>Price Queries: <a href="tel:8884238688" className="text-white font-bold underline">8884238688</a></span>
+            <span>Price Queries: <a href="tel:8884238688" className="text-white font-bold underline">8884238688</a> / <a href="tel:9535828286" className="text-white font-bold underline">9535828286</a></span>
             <span>•</span>
             <span><a href="mailto:gajananaconstructionsinfo@gmail.com" className="text-white font-bold underline">gajananaconstructionsinfo@gmail.com</a></span>
           </div>

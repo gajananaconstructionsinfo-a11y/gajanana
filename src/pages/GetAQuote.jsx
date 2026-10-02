@@ -9,6 +9,8 @@ export default function GetAQuote() {
   const company = data?.company || {
     phone: "8884238688",
     phoneDisplay: "+91 88842 38688",
+    phoneSecondary: "9535828286",
+    phoneSecondaryDisplay: "+91 95358 28286",
     email: "gajananaconstructionsinfo@gmail.com",
     whatsappNumber: "918884238688"
   };
@@ -101,6 +103,8 @@ export default function GetAQuote() {
       <div className="bg-amber-500 text-slate-950 py-2.5 px-4 text-xs font-mono font-bold text-center border-b border-amber-600 shadow-inner">
         <span>📢 ZERO BROKERAGE PRICING: For official rate cards, wholesale project pricing, and machine dispatch, contact </span>
         <a href="tel:8884238688" className="underline font-extrabold text-slate-950 hover:text-white ml-1">8884238688</a>
+        <span className="mx-1">/</span>
+        <a href="tel:9535828286" className="underline font-extrabold text-slate-950 hover:text-white">9535828286</a>
         <span className="mx-1.5">|</span>
         <a href="mailto:gajananaconstructionsinfo@gmail.com" className="underline font-extrabold text-slate-950 hover:text-white">gajananaconstructionsinfo@gmail.com</a>
       </div>
@@ -326,7 +330,7 @@ export default function GetAQuote() {
                   📞 For Official Price Queries &amp; Signed Rate Sheet:
                 </div>
                 <div className="text-slate-200">
-                  Phone: <a href="tel:8884238688" className="font-bold underline text-amber-400">8884238688</a>
+                  Phone: <a href="tel:8884238688" className="font-bold underline text-amber-400">8884238688</a> / <a href="tel:9535828286" className="font-bold underline text-amber-400">9535828286</a>
                 </div>
                 <div className="text-slate-200">
                   Email: <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold underline text-amber-400">gajananaconstructionsinfo@gmail.com</a>
@@ -421,13 +425,22 @@ export default function GetAQuote() {
                         <span>Send BOQ via WhatsApp (8884238688)</span>
                       </a>
 
-                      <a
-                        href="tel:8884238688"
-                        className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-xl text-xs font-bold transition font-mono"
-                      >
-                        <i className="fa-solid fa-phone text-sm"></i>
-                        <span>Call Dispatch Desk: 8884238688</span>
-                      </a>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <a
+                          href="tel:8884238688"
+                          className="inline-flex items-center justify-center gap-2 px-3 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-xl text-xs font-bold transition font-mono"
+                        >
+                          <i className="fa-solid fa-phone text-sm"></i>
+                          <span>Call 8884238688</span>
+                        </a>
+                        <a
+                          href="tel:9535828286"
+                          className="inline-flex items-center justify-center gap-2 px-3 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-xl text-xs font-bold transition font-mono"
+                        >
+                          <i className="fa-solid fa-phone text-sm"></i>
+                          <span>Call 9535828286</span>
+                        </a>
+                      </div>
 
                       <button
                         type="button"
@@ -499,7 +512,7 @@ export default function GetAQuote() {
                       )}
                     </button>
                     <p className="text-[11px] text-slate-400 text-center">
-                      Rates provided directly without broker markup. For price queries call 8884238688.
+                      Rates provided directly without broker markup. For price queries call 8884238688 / 9535828286.
                     </p>
                   </form>
                 )}
