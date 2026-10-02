@@ -428,17 +428,17 @@ export const DEFAULT_DATA = {
       image: tataTisconImg
     },
     {
-      id: "sku-ultratech-53",
-      name: "UltraTech 53-Grade Ordinary Portland Cement (OPC)",
+      id: "sku-ultratech-43",
+      name: "UltraTech 43-Grade Ordinary Portland Cement (OPC)",
       category: "Cement & Binders",
       catSlug: "cement",
       tag: "Fresh Batch / Dry Silo",
-      specSummary: "IS 12269:2013 | 50 kg Moisture-Proof HDPE Bags",
+      specSummary: "IS 8112:2013 | 50 kg Moisture-Proof HDPE Bags",
       specs: [
-        { label: "Grade", val: "OPC 53 Structural" },
-        { label: "28-Day Strength", val: ">= 58.0 MPa" },
+        { label: "Grade", val: "OPC 43 General Civil & Structural" },
+        { label: "28-Day Strength", val: ">= 43.0 MPa" },
         { label: "Soundness", val: "<= 1.5 mm (Le-Chat)" },
-        { label: "Fineness", val: ">= 280 m2/kg" }
+        { label: "Fineness", val: ">= 225 m2/kg" }
       ],
       priceGuide: "Price on Enquiry",
       priceContact: "Contact: 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com",
@@ -641,7 +641,7 @@ export const DEFAULT_DATA = {
   // Mill Heat Sheets & Certified Reports Table
   millReports: [
     { date: "10 Sep 2026", material: "Tata Tiscon Fe 550D Rebar", mill: "Jamshedpur Primary Rolling", heatNo: "HEAT-26/517-A", yieldStrength: "592 N/mm2", chemicalCheck: "Carbon 0.18%", status: "NABL Passed" },
-    { date: "09 Sep 2026", material: "UltraTech 53-Grade OPC", mill: "Awarpur Unit", heatNo: "SILO-08/BATCH-14", yieldStrength: "59.4 MPa (28D)", chemicalCheck: "SO3 2.1%", status: "NABL Passed" },
+    { date: "09 Sep 2026", material: "UltraTech 43-Grade OPC", mill: "Awarpur Unit", heatNo: "SILO-08/BATCH-14", yieldStrength: "48.2 MPa (28D)", chemicalCheck: "SO3 2.1%", status: "NABL Passed" },
     { date: "08 Sep 2026", material: "JSW Neosteel CRS 16mm", mill: "Vijayanagar Works", heatNo: "HEAT-NEO-8812", yieldStrength: "588 N/mm2", chemicalCheck: "Chromium 0.42%", status: "NABL Passed" },
     { date: "07 Sep 2026", material: "VSI Triple-Washed M-Sand", mill: "Crusher Unit B-4", heatNo: "SAND-VSI-2026-09", yieldStrength: "Zone II Sieve Pass", chemicalCheck: "Silt 2.4%", status: "NABL Passed" },
     { date: "06 Sep 2026", material: "Aerocon AAC 150mm Blocks", mill: "Hinjawadi Plant", heatNo: "AUTOCLAVE-04-B", yieldStrength: "4.4 N/mm2", chemicalCheck: "Density 590 kg/m3", status: "NABL Passed" }
@@ -1181,7 +1181,7 @@ export const DEFAULT_DATA = {
 };
 
 // Storage helper functions
-const STORAGE_KEY = 'GCM_PLATFORM_DATA_V15';
+const STORAGE_KEY = 'GCM_PLATFORM_DATA_V16';
 
 export function getPlatformData() {
   try {

@@ -74,7 +74,7 @@ export default function Footer() {
               <li><Link to="/services/earthmoving-machinery-jcb" className="hover:text-amber-400 transition-colors">JCB 3DX &amp; Excavator Fleet</Link></li>
               <li><Link to="/materials/earthmoving-machinery" className="hover:text-amber-400 transition-colors">Heavy Machinery Fleet</Link></li>
               <li><Link to="/materials/steel" className="hover:text-amber-400 transition-colors">Tata Tiscon Fe 550D TMT</Link></li>
-              <li><Link to="/materials/cement" className="hover:text-amber-400 transition-colors">UltraTech Grade 53 OPC</Link></li>
+              <li><Link to="/materials/cement" className="hover:text-amber-400 transition-colors">UltraTech Grade 43 OPC</Link></li>
               <li><Link to="/materials/sand-aggregates" className="hover:text-amber-400 transition-colors">Washed M-Sand &amp; 20mm Metal</Link></li>
               <li><Link to="/materials/rmc" className="hover:text-amber-400 transition-colors">Ready-Mix Concrete (RMC)</Link></li>
               <li><Link to="/services/residential-construction" className="hover:text-amber-400 transition-colors">Turnkey Residential Civil</Link></li>
