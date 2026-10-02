@@ -28,6 +28,7 @@ import stage15Img from '../assets/construction-works/stage-15-exterior-outdoor.j
 import stage16Img from '../assets/construction-works/stage-16-hvac-cooling.jpg';
 import stage17Img from '../assets/construction-works/stage-17-security-smart-home.jpg';
 import stage18Img from '../assets/construction-works/stage-18-cleaning-handover.jpg';
+import renovationRetrofittingImg from '../assets/services/renovation-retrofitting.jpg';
 
 export const DEFAULT_DATA = {
   company: {
@@ -276,7 +277,7 @@ export const DEFAULT_DATA = {
         "Complete Plumbing, Electrical & Flooring Replacement",
         "Non-Destructive Concrete Testing Before Commencing Modifications"
       ],
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80",
+      image: renovationRetrofittingImg,
       badge: "Restoration & Expansion",
       applications: ["Residential Home Modernization", "Commercial Office Overhauls", "Structural Distress Strengthening", "Retail Space Refurbishment"],
       faqs: [
@@ -1178,7 +1179,7 @@ export const DEFAULT_DATA = {
 };
 
 // Storage helper functions
-const STORAGE_KEY = 'GCM_PLATFORM_DATA_V12';
+const STORAGE_KEY = 'GCM_PLATFORM_DATA_V13';
 
 export function getPlatformData() {
   try {
