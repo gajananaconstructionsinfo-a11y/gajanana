@@ -188,7 +188,7 @@ export const DEFAULT_DATA = {
     {
       id: "residential-construction",
       slug: "residential-construction",
-      title: "Residential Turnkey Construction",
+      title: "Turnkey House Construction Services",
       subtitle: "Independent houses, luxury villas, duplexes, and residential apartment buildings.",
       desc: "End-to-end turnkey residential building solutions. We manage every phase from soil test, foundation layout, structural RCC casting, brickwork, to high-end interior finishes with engineering precision and zero material compromise.",
       deliverables: [
@@ -229,7 +229,7 @@ export const DEFAULT_DATA = {
     {
       id: "civil-construction",
       slug: "civil-construction",
-      title: "Civil & Structural Engineering",
+      title: "Civil Contractors & RCC Structural Works",
       subtitle: "Deep piling, isolated footings, heavy machine foundations, RCC frame casting, and slabs.",
       desc: "Heavy-duty civil infrastructure and structural core works executed with certified machinery and strict civil engineering standards for residential, commercial, industrial, and infrastructure sectors.",
       deliverables: [
@@ -269,7 +269,7 @@ export const DEFAULT_DATA = {
     {
       id: "renovation",
       slug: "renovation",
-      title: "Renovation, Remodeling & Structural Retrofitting",
+      title: "House Renovation & Remodeling Services",
       subtitle: "Building extensions, vertical floor additions, column jacketing, and facade revamp.",
       desc: "Breathe new life into existing structures. We reinforce structural integrity, reconfigure layouts, add vertical floors, modernize electrical and plumbing networks, and execute architectural exterior transformations.",
       deliverables: [
@@ -289,7 +289,7 @@ export const DEFAULT_DATA = {
     {
       id: "finishing",
       slug: "finishing",
-      title: "Interior & Exterior Finishing Works",
+      title: "House Painting & Interior Finishing Contractors",
       subtitle: "Vitrified tiling, Italian marble, false ceilings, waterproofing, and architectural painting.",
       desc: "Turn raw masonry into breathtaking, durable spaces. We execute precision vitrified and natural stone tiling, designer false ceilings, premium texture painting, and flawless weather-barrier exterior coats.",
       deliverables: [
@@ -309,7 +309,7 @@ export const DEFAULT_DATA = {
     {
       id: "waterproofing-solutions",
       slug: "waterproofing-solutions",
-      title: "Waterproofing & Structural Protection",
+      title: "Waterproofing Contractors & Protection",
       subtitle: "Basement tanking, terrace heat-proof waterproofing, expansion joints, and chemical injection.",
       desc: "Guaranteed moisture barrier systems engineered to protect RCC structures against seepage, chemical attack, and efflorescence. We use polymer-modified coatings, crystalline treatments, and elastomeric membranes.",
       deliverables: [

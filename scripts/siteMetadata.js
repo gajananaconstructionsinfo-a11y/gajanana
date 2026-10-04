@@ -36,10 +36,10 @@ export const SERVICES_META = [
   },
   {
     slug: 'residential-construction',
-    title: 'Turnkey Residential House Construction Contractors Bengaluru',
+    title: 'Turnkey House Construction in Bangalore | Sri Gajanana Constructions',
     subtitle: 'Independent houses, luxury villas, duplexes, and residential apartment buildings.',
     description: 'End-to-end turnkey residential building contractors in Bangalore. Custom luxury villas, duplex houses, and independent homes with verified structural materials and zero delays.',
-    keywords: 'house construction Bangalore, turnkey home builders Bengaluru, residential construction contractors Arekere, duplex house construction, villa builders South Bangalore',
+    keywords: 'house construction company in Bangalore, turnkey house construction Bangalore, residential construction company Bangalore, house builders in Bangalore, independent house construction, duplex house builders Bengaluru',
     badge: 'Turnkey Residential'
   },
   {
@@ -52,10 +52,10 @@ export const SERVICES_META = [
   },
   {
     slug: 'civil-construction',
-    title: 'Civil & Structural Engineering Contractors Bengaluru',
+    title: 'Civil Contractors in Bangalore | Sri Gajanana Constructions',
     subtitle: 'Deep piling, isolated footings, heavy machine foundations, RCC frame casting, and slabs.',
     description: 'Heavy civil infrastructure, RCC structural frame casting, deep footings, machine foundations, and retaining walls in Bangalore executed with certified machinery.',
-    keywords: 'civil contractors Bangalore, structural engineering services, RCC frame construction, machine foundations Bengaluru, retaining wall contractors Arekere',
+    keywords: 'civil contractors in Bangalore, residential civil contractors Bangalore, civil construction company Bangalore, RCC frame construction, machine foundations, retaining wall contractors',
     badge: 'Core Civil Engineering'
   },
   {
@@ -68,26 +68,26 @@ export const SERVICES_META = [
   },
   {
     slug: 'renovation',
-    title: 'Building Renovation, Remodeling & Structural Retrofitting Bangalore',
+    title: 'House Renovation Company in Bangalore | Sri Gajanana Constructions',
     subtitle: 'Building extensions, vertical floor additions, column jacketing, and facade revamp.',
     description: 'Breathe new life into existing buildings in Bangalore. Column jacketing, vertical floor additions, structural retrofitting, plumbing overhauls, and modern facade revamps.',
-    keywords: 'house renovation Bangalore, structural retrofitting contractors, vertical floor addition, building remodeling Bengaluru, column jacketing Bangalore',
+    keywords: 'house renovation Bangalore, home renovation company Bangalore, house renovation contractors Bangalore, residential renovation Bangalore, home remodeling Bangalore, vertical floor addition',
     badge: 'Restoration & Expansion'
   },
   {
     slug: 'finishing',
-    title: 'Interior & Exterior Finishing Works Contractors Bengaluru',
+    title: 'House Painting & Finishing Contractors Bangalore | Sri Gajanana Constructions',
     subtitle: 'Vitrified tiling, Italian marble, false ceilings, waterproofing, and architectural painting.',
     description: 'Premium vitrified and Italian marble tiling, gypsum false ceilings, texture painting, UPVC windows, and architectural finishing works across Bangalore.',
-    keywords: 'interior finishing contractors Bangalore, vitrified tiling works, false ceiling contractors, painting services Bengaluru, UPVC windows Arekere',
+    keywords: 'house painting contractors Bangalore, home painting services Bangalore, residential painting contractors Bangalore, interior painting Bangalore, exterior house painting Bangalore',
     badge: 'Finishing & Interiors'
   },
   {
     slug: 'waterproofing-solutions',
-    title: 'Waterproofing & Structural Protection Services Bangalore',
+    title: 'Waterproofing Contractors in Bangalore | Sri Gajanana Constructions',
     subtitle: 'Basement tanking, terrace heat-proof waterproofing, expansion joints, and chemical injection.',
     description: 'Guaranteed leak-proof waterproofing systems in Bangalore: terrace heat barriers, deep basement tanking, PU pressure grouting, and bathroom waterproofing with warranty.',
-    keywords: 'waterproofing contractors Bangalore, terrace waterproofing, basement tanking Bengaluru, Dr Fixit applicator, PU grouting services Arekere',
+    keywords: 'waterproofing contractors Bangalore, house waterproofing Bangalore, terrace waterproofing Bangalore, bathroom waterproofing Bangalore, residential waterproofing contractors Bangalore',
     badge: 'Leak-Proof Warranty'
   },
   {

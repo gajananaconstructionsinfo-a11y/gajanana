@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <div className="space-y-0">
       <SEOHead
-        title="Sri Gajanana Constructions | Best Construction Company & Materials Depot in Bengaluru"
-        description="Leading construction company in Bangalore. Turnkey residential house construction, JCB & earthmoving machinery rental, and wholesale building materials depot (TMT steel, cement, M-sand). Call 8884238688 / 9535828286."
-        keywords="construction company Bangalore, house builders Bengaluru, building materials Arekere, TMT steel Fe 550D, UltraTech cement Bangalore, JCB rental Bangalore, civil contractors South Bengaluru, Sri Gajanana Constructions, turnkey home construction"
+        title="House Construction Company in Bangalore | Sri Gajanana Constructions"
+        description="Sri Gajanana Constructions is a leading house construction company in Bangalore. Turnkey residential building, in-house JCB fleet & direct materials depot. Call 8884238688 / 9535828286."
+        keywords="house construction company in Bangalore, house construction in Bangalore, house builders in Bangalore, residential construction company in Bangalore, construction company in Bangalore, house construction contractors in Bangalore, turnkey house construction near me, civil contractors in Bangalore"
         canonical="https://www.gajananaconstructions.in/"
         schema={{
           "@context": "https://schema.org",
@@ -70,16 +70,21 @@ export default function Home() {
             <div className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-900 text-white text-xs font-mono tracking-wider uppercase shadow-sm">
                 <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-                <span>{company.trustStatement}</span>
+                <span>HOUSE CONSTRUCTION COMPANY IN BANGALORE • SINCE 2005</span>
               </div>
 
-              <h1 className="text-4xl sm:text-6xl font-extrabold text-slate-950 font-heading leading-none tracking-tight">
-                BUILDING DREAMS. <br />
-                SUPPLYING QUALITY. <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-700">
-                  DELIVERING STRENGTH.
-                </span>
-              </h1>
+              <div>
+                <p className="text-amber-600 font-bold text-xs sm:text-sm tracking-widest uppercase font-mono mb-2">
+                  Premier Residential Builders &amp; Turnkey Civil Contractors
+                </p>
+                <h1 className="text-4xl sm:text-6xl font-extrabold text-slate-950 font-heading leading-none tracking-tight">
+                  BUILDING DREAMS. <br />
+                  SUPPLYING QUALITY. <br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-700">
+                    DELIVERING STRENGTH.
+                  </span>
+                </h1>
+              </div>
 
               <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-light max-w-2xl">
                 {company.subheading}. Since {company.establishedYear}, we bridge high-engineering civil execution with a central 15,000 MT primary materials depot to ensure zero site delays and verified structural integrity.
