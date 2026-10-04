@@ -5,7 +5,7 @@ export const AREAS = [
   {
     slug: 'arekere',
     name: 'Arekere',
-    heroTitle: 'Construction Company & Building Materials Depot in Arekere, Bengaluru',
+    heroTitle: 'House Construction Services in Arekere',
     subheading: 'Turnkey Residential House Construction, JCB Fleet Rental & Direct Building Materials Yard',
     badge: 'Headquarters & Primary Depot',
     zone: 'South Bengaluru',
@@ -88,14 +88,14 @@ Because our building materials stockyard is located right here in Arekere, clien
         a: 'Absolutely. We operate a full-service wholesale depot. You can order individual truckloads of cement, TMT steel rebars, M-sand, and aggregates for your own independent contractor or mason with depot-direct invoicing.'
       }
     ],
-    metaTitle: 'Construction Company in Arekere, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Top-rated construction company & building materials depot in Arekere, Bengaluru. Turnkey house construction, JCB fleet rental, Tata Tiscon TMT & UltraTech cement. Call 8884238688.',
+    metaTitle: 'House Construction Company in Arekere, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Arekere, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8878405, lng: 77.6017497 }
   },
   {
     slug: 'jp-nagar',
     name: 'JP Nagar',
-    heroTitle: 'Construction Company & Building Contractors in JP Nagar, Bengaluru',
+    heroTitle: 'House Construction Services in JP Nagar',
     subheading: 'Premium Residential House Construction, Structural Retrofitting & Wholesale Building Materials',
     badge: 'South Bengaluru Prime Enclave',
     zone: 'South Bengaluru',
@@ -178,14 +178,14 @@ Our proximity from our Arekere materials hub (just 3.8 km away) enables us to de
         a: 'Yes, all residential turnkey projects built by Sri Gajanana Constructions come with a guaranteed 10-year structural warranty covering the RCC framework, foundation stability, and waterproofing systems.'
       }
     ],
-    metaTitle: 'Construction Company in JP Nagar, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Trusted construction company & building contractor in JP Nagar, Bengaluru. Turnkey house construction, building materials supply & JCB earthmoving. Call 8884238688.',
+    metaTitle: 'House Construction Company in JP Nagar, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in JP Nagar, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.9063, lng: 77.5857 }
   },
   {
     slug: 'btm-layout',
     name: 'BTM Layout',
-    heroTitle: 'Construction Company & Building Contractor in BTM Layout, Bengaluru',
+    heroTitle: 'House Construction Services in BTM Layout',
     subheading: 'High-Yield Residential Buildings, PG Hostels, Commercial Spaces & Bulk Materials Depot',
     badge: 'Central South Bengaluru Hub',
     zone: 'South Bengaluru',
@@ -267,14 +267,14 @@ Furthermore, contractors and independent builders in BTM Layout rely on our whol
         a: 'We provide itemized billing, genuine manufacturer test certificates for Tata Tiscon TMT rebar, batch test slips for cement, and digital weighbridge receipts for sand and aggregates on every delivery.'
       }
     ],
-    metaTitle: 'Construction Company in BTM Layout, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Leading building contractor & construction company in BTM Layout, Bengaluru. High-yield residential buildings, turnkey civil works, and bulk materials depot. Call 8884238688.',
+    metaTitle: 'House Construction Company in BTM Layout, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in BTM Layout, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.9166, lng: 77.6101 }
   },
   {
     slug: 'hsr-layout',
     name: 'HSR Layout',
-    heroTitle: 'Construction Company & Premium House Builders in HSR Layout, Bengaluru',
+    heroTitle: 'House Construction Services in HSR Layout',
     subheading: 'Architectural Contemporary Homes, Modern Duplex Villas & Luxury Building Materials',
     badge: 'Premier Startup & Villa Sector',
     zone: 'Southeast Bengaluru',
@@ -357,14 +357,14 @@ Because we own our primary materials depot and heavy machinery fleet, we provide
         a: 'Yes, we operate medium-sized 6-wheeler tippers and small commercial vehicles in addition to large trucks to deliver materials effortlessly through gated layouts and residential lanes without disturbing neighbors.'
       }
     ],
-    metaTitle: 'Construction Company in HSR Layout, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Award-winning construction company & villa builders in HSR Layout, Bengaluru. Architectural turnkey house construction, wholesale materials & JCB hire. Call 8884238688.',
+    metaTitle: 'House Construction Company in HSR Layout, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in HSR Layout, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.9116, lng: 77.6389 }
   },
   {
     slug: 'bommanahalli',
     name: 'Bommanahalli',
-    heroTitle: 'Construction Company & Building Materials Depot in Bommanahalli, Bengaluru',
+    heroTitle: 'House Construction Services in Bommanahalli',
     subheading: 'Heavy Civil Works, Commercial Complexes, Residential Buildings & Direct Highway Material Supply',
     badge: 'Hosur Road Industrial & Civil Corridor',
     zone: 'Southeast Bengaluru',
@@ -447,14 +447,14 @@ Project owners and sub-contractors in Bommanahalli benefit from our nearby mater
         a: 'Yes, our turnkey civil contracting team manages the liaison for BBMP road cutting permissions, BESCOM transformer setup, and BWSSB sanitary/water main connections.'
       }
     ],
-    metaTitle: 'Construction Company in Bommanahalli, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Leading construction company & building contractor in Bommanahalli, Bengaluru. Turnkey civil works, heavy JCB earthmoving fleet & wholesale building materials. Call 8884238688.',
+    metaTitle: 'House Construction Company in Bommanahalli, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Bommanahalli, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.9029, lng: 77.6242 }
   },
   {
     slug: 'electronic-city',
     name: 'Electronic City',
-    heroTitle: 'Construction Company & Building Contractors in Electronic City, Bengaluru',
+    heroTitle: 'House Construction Services in Electronic City',
     subheading: 'Turnkey Gated Community Villas, Commercial Tech Spaces & Wholesale Building Materials Depot',
     badge: "Asia's Premier IT Capital & Residential Hub",
     zone: 'Southeast Bengaluru',
@@ -538,14 +538,14 @@ Furthermore, we are a preferred wholesale materials partner for projects in Elec
         a: 'Yes, our certified structural engineers conduct core soil bore tests, calculate safe bearing capacity (SBC), and provide certified structural drawings with design calculation sheets for bank loans and approval authorities.'
       }
     ],
-    metaTitle: 'Construction Company in Electronic City, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Premier construction company & building contractor in Electronic City, Bengaluru. Turnkey luxury villas, commercial civil works & wholesale building materials. Call 8884238688.',
+    metaTitle: 'House Construction Company in Electronic City, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Electronic City, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8452, lng: 77.6602 }
   },
   {
     slug: 'attibele',
     name: 'Attibele',
-    heroTitle: 'Construction Company & Building Material Supplier in Attibele, Bengaluru',
+    heroTitle: 'House Construction Services in Attibele',
     subheading: 'Industrial Civil Contracting, Warehouse Sheds, Plotted Villa Construction & Bulk Materials',
     badge: 'Industrial Gateway & Border Growth Corridor',
     zone: 'Southeast Bengaluru',
@@ -628,14 +628,14 @@ Furthermore, we supply high-tonnage bulk materials across Attibele: direct trail
         a: 'Yes, we have 20-ton excavators and JCB 3DX backhoes available on daily, weekly, or project-based lease with seasoned operators for site clearance, ditching, and leveling.'
       }
     ],
-    metaTitle: 'Construction Company in Attibele, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Premier building contractor & construction company in Attibele, Bengaluru. Industrial civil works, turnkey villas, JCB machinery & bulk materials. Call 8884238688.',
+    metaTitle: 'House Construction Company in Attibele, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Attibele, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.7797, lng: 77.7719 }
   },
   {
     slug: 'begur',
     name: 'Begur',
-    heroTitle: 'Construction Company & Building Contractor in Begur, Bengaluru',
+    heroTitle: 'House Construction Services in Begur',
     subheading: 'Residential House Construction, Basement Civil Works & Direct Building Materials Supply',
     badge: 'Historic South Hub Connecting Hosur & Bannerghatta',
     zone: 'South Bengaluru',
@@ -717,14 +717,14 @@ Being just 3.1 km from our main Arekere depot, Begur receives lightning-fast del
         a: 'Yes, our JCB 3DX earthmoving machinery is available on flexible hourly, half-day, or full-day rates for plot clearing, leveling, and foundation digging in Begur.'
       }
     ],
-    metaTitle: 'Construction Company in Begur, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Trusted construction company & building contractor in Begur, Bengaluru. Turnkey house construction, building materials depot & JCB fleet rental. Call 8884238688.',
+    metaTitle: 'House Construction Company in Begur, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Begur, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8797, lng: 77.6277 }
   },
   {
     slug: 'bommasandra',
     name: 'Bommasandra',
-    heroTitle: 'Construction Company & Building Contractor in Bommasandra, Bengaluru',
+    heroTitle: 'House Construction Services in Bommasandra',
     subheading: 'Industrial Civil Contracting, Commercial Sheds, Residential Quarters & Heavy Fleet Rental',
     badge: 'Premier Industrial Hub on Hosur Road',
     zone: 'Southeast Bengaluru',
@@ -805,14 +805,14 @@ Furthermore, we are a key supplier of bulk construction materials in Bommasandra
         a: 'We coordinate dedicated trailer loads directly dispatched to your site, complete with factory mill test certificates and digital weigh slips to guarantee quantity and grade.'
       }
     ],
-    metaTitle: 'Construction Company in Bommasandra, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Top industrial civil contractors & construction company in Bommasandra, Bengaluru. Turnkey residential buildings, heavy JCB fleet & wholesale materials depot. Call 8884238688.',
+    metaTitle: 'House Construction Company in Bommasandra, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Bommasandra, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8173, lng: 77.6896 }
   },
   {
     slug: 'chandapura',
     name: 'Chandapura',
-    heroTitle: 'Construction Company & Building Material Supplier in Chandapura, Bengaluru',
+    heroTitle: 'House Construction Services in Chandapura',
     subheading: 'Turnkey Residential Plotted Homes, Gated Community Villas & Wholesale Building Materials',
     badge: 'Booming Residential Hub on Hosur Road',
     zone: 'Southeast Bengaluru',
@@ -893,14 +893,14 @@ Plot owners and local builders in Chandapura benefit from our wholesale stockyar
         a: 'Yes, we provide bank-approved detailed estimates, CAD elevation drawings, structural stability certificates, and milestone stage billing required by SBI, HDFC, ICICI, and other leading housing finance institutions.'
       }
     ],
-    metaTitle: 'Construction Company in Chandapura, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Top-rated construction company & building contractor in Chandapura, Bengaluru. Turnkey villa construction, wholesale materials & JCB hire. Call 8884238688.',
+    metaTitle: 'House Construction Company in Chandapura, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Chandapura, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.7933, lng: 77.7011 }
   },
   {
     slug: 'hebbagodi',
     name: 'Hebbagodi',
-    heroTitle: 'Construction Company & Building Contractors in Hebbagodi, Bengaluru',
+    heroTitle: 'House Construction Services in Hebbagodi',
     subheading: 'Multi-Floor Residential Buildings, Commercial Showrooms, Civil Works & Wholesale Materials',
     badge: 'Electronic City Metro Corridor',
     zone: 'Southeast Bengaluru',
@@ -980,14 +980,14 @@ Local contractors and property developers in Hebbagodi also rely on our wholesal
         a: 'Yes, our JCB 3DX backhoe loaders and excavators are stationed nearby and available on daily or project contracts with experienced operators.'
       }
     ],
-    metaTitle: 'Construction Company in Hebbagodi, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Leading building contractor & construction company in Hebbagodi, Bengaluru. Turnkey house construction, commercial civil works & wholesale building materials. Call 8884238688.',
+    metaTitle: 'House Construction Company in Hebbagodi, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Hebbagodi, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8258, lng: 77.6838 }
   },
   {
     slug: 'hulimavu',
     name: 'Hulimavu',
-    heroTitle: 'Construction Company & Building Contractor in Hulimavu, Bengaluru',
+    heroTitle: 'House Construction Services in Hulimavu',
     subheading: 'Lake-View Luxury Villas, Turnkey House Construction & Direct Building Materials Depot',
     badge: 'Bannerghatta Road Scenic Enclave',
     zone: 'South Bengaluru',
@@ -1069,16 +1069,21 @@ Furthermore, we are the primary building material supplier for Hulimavu projects
         a: 'Yes, we specialize in adding upper floors (G+1 to G+3), modernizing kitchens, terrace garden waterproofing, and full interior renovations for independent houses in Hulimavu.'
       }
     ],
-    metaTitle: 'Construction Company in Hulimavu, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Top construction company & building contractor in Hulimavu, Bengaluru. Turnkey luxury villas, lake-sensitive foundation civil works & materials depot. Call 8884238688.',
+    metaTitle: 'House Construction Company in Hulimavu, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Hulimavu, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8783, lng: 77.6006 }
   },
   {
     slug: 'bilekahalli',
     name: 'Bilekahalli',
-    heroTitle: 'Construction Company & Building Contractor in Bilekahalli, Bengaluru',
+    heroTitle: 'House Construction Services in Bilekahalli',
     subheading: 'Turnkey House Construction, Structural Retrofitting & Wholesale Building Materials Depot',
     badge: 'Central Bannerghatta Road Sector',
+    featuredPublication: {
+      title: 'Central Bannerghatta Road Sector South Bengaluru Construction Company & Building Contractor in Bilekahalli',
+      url: 'https://www.quora.com/profile/Gajananaconstructions/Central-Bannerghatta-Road-Sector-South-Bengaluru-Construction-Company-Building-Contractor-in-Bilekahalli-Bengaluru',
+      platform: 'Quora'
+    },
     zone: 'South Bengaluru',
     pincode: '560076',
     establishedBase: 'Serving Bilekahalli Main Road, Panduranga Nagar, Vijaya Bank Layout & IIMB Belt',
@@ -1156,14 +1161,14 @@ Because our central materials stockyard is situated just 2.5 km away in Arekere,
         a: 'Yes, we deploy our in-house JCB 3DX backhoes and tipper trucks for controlled demolition, site clearance, and swift debris removal without disturbing neighboring properties.'
       }
     ],
-    metaTitle: 'Construction Company in Bilekahalli, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Trusted construction company & building contractor in Bilekahalli, Bengaluru. Turnkey house construction, structural remodeling & materials depot. Call 8884238688.',
+    metaTitle: 'House Construction Company in Bilekahalli, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Bilekahalli, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8988, lng: 77.6033 }
   },
   {
     slug: 'harlur',
     name: 'Harlur & Haralur Road',
-    heroTitle: 'Construction Company in Harlur & Haralur Road, Bengaluru',
+    heroTitle: 'House Construction Services in Harlur & Haralur Road',
     subheading: 'Luxury Architectural Villas, Contemporary Duplex Homes & Premium Building Materials',
     badge: 'Sarjapur-HSR Luxury Corridor',
     zone: 'Southeast Bengaluru',
@@ -1244,14 +1249,14 @@ Furthermore, we supply certified construction materials across Haralur Road: who
         a: 'Yes, we are thoroughly familiar with gated community security protocols, quiet-hour working guidelines, and material unloading regulations across all major layouts on Haralur Road.'
       }
     ],
-    metaTitle: 'Construction Company in Harlur & Haralur Road | Sri Gajanana Constructions',
-    metaDescription: 'Premier construction company & villa builders in Harlur & Haralur Road, Bengaluru. Architectural turnkey house construction & wholesale materials depot. Call 8884238688.',
+    metaTitle: 'House Construction Company in Harlur & Haralur Road, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Harlur & Haralur Road, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.9056, lng: 77.6622 }
   },
   {
     slug: 'kudlu',
     name: 'Kudlu',
-    heroTitle: 'Construction Company & Building Contractor in Kudlu, Bengaluru',
+    heroTitle: 'House Construction Services in Kudlu',
     subheading: 'Turnkey House Construction, Civil Contracting & Wholesale Building Materials Depot',
     badge: 'Hosur Road Tech-Residential Belt',
     zone: 'Southeast Bengaluru',
@@ -1331,14 +1336,14 @@ Local plot owners and contractors in Kudlu also rely on our wholesale depot for 
         a: 'Yes, our JCB 3DX earthmoving machinery is available on flexible hourly, half-day, or full-day rates for plot clearing, leveling, and foundation digging in Kudlu.'
       }
     ],
-    metaTitle: 'Construction Company in Kudlu, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Trusted construction company & building contractor in Kudlu, Bengaluru. Turnkey house construction, building materials depot & JCB fleet rental. Call 8884238688.',
+    metaTitle: 'House Construction Company in Kudlu, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Kudlu, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8894, lng: 77.6533 }
   },
   {
     slug: 'singasandra',
     name: 'Singasandra',
-    heroTitle: 'Construction Company & Building Contractor in Singasandra, Bengaluru',
+    heroTitle: 'House Construction Services in Singasandra',
     subheading: 'Turnkey Residential Homes, Commercial Civil Contracting & Wholesale Building Materials',
     badge: 'Hosur Road Corridor Hub',
     zone: 'Southeast Bengaluru',
@@ -1418,14 +1423,14 @@ Builders, contractors, and plot owners in Singasandra also benefit from our dire
         a: 'Yes, our JCB 3DX earthmoving machinery is available on flexible hourly, half-day, or full-day rates for plot clearing, leveling, and foundation digging in Singasandra.'
       }
     ],
-    metaTitle: 'Construction Company in Singasandra, Bengaluru | Sri Gajanana Constructions',
-    metaDescription: 'Trusted construction company & building contractor in Singasandra, Bengaluru. Turnkey house construction, building materials depot & JCB fleet rental. Call 8884238688.',
+    metaTitle: 'House Construction Company in Singasandra, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Singasandra, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8794, lng: 77.6511 }
   },
   {
     slug: 'sarjapur-road',
     name: 'Sarjapur Road',
-    heroTitle: 'Construction Company & Building Materials Near Sarjapur Road, Bengaluru',
+    heroTitle: 'House Construction Services in Sarjapur Road',
     subheading: 'Turnkey Luxury Villa Communities, Architectural Residences & Wholesale Depot Supply',
     badge: 'Premier Villa & Tech Expansion Corridor',
     zone: 'Southeast Bengaluru',
@@ -1505,8 +1510,8 @@ Furthermore, we are a key wholesale building materials partner for Sarjapur Road
         a: 'Yes, our in-house fleet includes JCB 3DX backhoes and 20-ton hydraulic excavators for site grading, plot clearing, and foundation digging across Sarjapur Road.'
       }
     ],
-    metaTitle: 'Construction Company & Building Materials Near Sarjapur Road | Sri Gajanana Constructions',
-    metaDescription: 'Premier villa builders & construction company near Sarjapur Road, Bengaluru. Architectural turnkey house construction & wholesale materials depot. Call 8884238688.',
+    metaTitle: 'House Construction Company in Sarjapur Road, Bangalore | Sri Gajanana Constructions',
+    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Sarjapur Road, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.9107, lng: 77.6833 }
   }
 ];

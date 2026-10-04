@@ -58,6 +58,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs text-slate-400">
               <li><Link to="/" className="hover:text-amber-400 transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-amber-400 transition-colors">About Us</Link></li>
+              <li><Link to="/guides" className="text-amber-400 font-semibold hover:text-white transition-colors">📚 Construction Guides</Link></li>
               <li><Link to="/services" className="hover:text-amber-400 transition-colors">Services Directory</Link></li>
               <li><Link to="/materials" className="hover:text-amber-400 transition-colors">Materials Depot</Link></li>
               <li><Link to="/projects" className="hover:text-amber-400 transition-colors">Projects Portfolio</Link></li>
@@ -126,6 +127,25 @@ export default function Footer() {
           </div>
         </div>
 
+        
+        {/* Industry Publications & External Citations */}
+        <div className="pt-6 pb-6 border-t border-slate-900 mb-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+          <div className="flex items-center space-x-2">
+            <span className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-[10px] uppercase font-mono font-bold text-amber-400">
+              Verified Publication
+            </span>
+            <span>Central Bannerghatta Road Sector Civil Engineering Feature:</span>
+          </div>
+          <a
+            href="https://www.quora.com/profile/Gajananaconstructions/Central-Bannerghatta-Road-Sector-South-Bengaluru-Construction-Company-Building-Contractor-in-Bilekahalli-Bengaluru"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-amber-400 hover:text-white underline font-semibold transition-colors flex items-center space-x-1"
+          >
+            <span>Read Bilekahalli &amp; Bannerghatta Road Construction Feature on Quora</span>
+            <span>↗</span>
+          </a>
+        </div>
         {/* Areas We Serve Across South & Southeast Bengaluru */}
         <div className="pt-8 pb-6 border-t border-slate-900 mb-6">
           <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">

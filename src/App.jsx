@@ -21,6 +21,8 @@ import Contact from './pages/Contact';
 import GetAQuote from './pages/GetAQuote';
 import AreasDirectory from './pages/AreasDirectory';
 import AreaDetail from './pages/AreaDetail';
+import GuidesDirectory from './pages/GuidesDirectory';
+import GuideDetail from './pages/GuideDetail';
 import NotFound from './pages/NotFound';
 
 export default function App() {
@@ -55,6 +57,8 @@ export default function App() {
           <Route path="/get-a-quote" element={<GetAQuote />} />
           <Route path="/areas" element={<AreasDirectory />} />
           <Route path="/areas/:slug" element={<AreaDetail />} />
+          <Route path="/guides" element={<GuidesDirectory />} />
+          <Route path="/guides/:slug" element={<GuideDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

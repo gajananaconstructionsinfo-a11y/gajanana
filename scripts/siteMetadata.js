@@ -350,3 +350,194 @@ export const PROJECTS_META = [
     description: 'Structural phase photos of standalone commercial retail showroom in Bengaluru with heavy RCC retaining walls, wide-span column framing, and subgrade compaction.'
   }
 ];
+
+
+export const GUIDES_META = [
+  {
+    "slug": "how-much-does-it-cost-to-build-a-house-in-bangalore",
+    "title": "How Much Does It Cost to Build a House in Bangalore? (2026 Guide)",
+    "description": "Complete breakdown of house construction costs in Bangalore. Understand civil structure, steel, cement, labor, finishing, and approvals without hidden markups.",
+    "h1": "How Much Does It Cost to Build a House in Bangalore?",
+    "category": "Cost & Budgeting",
+    "author": "Er. Gajanana, Civil Engineering Lead",
+    "publishedDate": "2026-09-15",
+    "lastUpdated": "2026-10-04",
+    "summary": "Planning to build an independent house or villa in Bangalore? Learn the true cost components—from BBMP plan sanctions and soil excavation to RCC framing, plumbing, electrical, and premium interior finishes.",
+    "tags": [
+      "Construction Cost",
+      "Bangalore Housing",
+      "Turnkey Construction",
+      "BOQ Budgeting"
+    ]
+  },
+  {
+    "slug": "house-construction-cost-per-sq-ft-bangalore",
+    "title": "House Construction Cost Per Sq Ft in Bangalore | Key Cost Drivers",
+    "description": "Discover the key drivers of residential construction cost per sq ft in Bangalore. Learn how soil type, material grade, and architectural complexity shape your estimate.",
+    "h1": "House Construction Cost Per Sq Ft in Bangalore",
+    "category": "Cost & Budgeting",
+    "author": "Er. Gajanana, Civil Engineering Lead",
+    "publishedDate": "2026-09-20",
+    "lastUpdated": "2026-10-04",
+    "summary": "A clear, transparent analysis of the variables that determine construction cost per square foot in Bengaluru—including soil bearing capacity, structural spans, and interior finishes.",
+    "tags": [
+      "Cost Per Sq Ft",
+      "Bangalore Builders",
+      "Material Grades",
+      "Budget Planning"
+    ]
+  },
+  {
+    "slug": "residential-house-construction-timeline",
+    "title": "Realistic Construction Timeline for a House in Bangalore (Month by Month)",
+    "description": "Step-by-step month-by-month construction timeline for a residential house in Bangalore. From foundation excavation and RCC slab curing to final key handover.",
+    "h1": "Realistic Construction Timeline for a House in Bangalore",
+    "category": "Planning & Timelines",
+    "author": "Er. Gajanana, Civil Engineering Lead",
+    "publishedDate": "2026-09-10",
+    "lastUpdated": "2026-10-04",
+    "summary": "Understand the realistic month-by-month construction timeline for a G+1 or G+2 residential house in Bangalore, including mandatory concrete curing durations.",
+    "tags": [
+      "Timeline",
+      "Construction Stages",
+      "Curing Schedule",
+      "Milestone Management"
+    ]
+  },
+  {
+    "slug": "rcc-frame-vs-load-bearing-structures",
+    "title": "RCC Framed vs Load-Bearing House Construction in Bangalore",
+    "description": "Detailed engineering comparison between Reinforced Concrete (RCC) framed structures and traditional load-bearing brick masonry for Bangalore homes.",
+    "h1": "RCC Framed Structures vs Load-Bearing Construction",
+    "category": "Engineering & Structural",
+    "author": "Er. Gajanana, Civil Engineering Lead",
+    "publishedDate": "2026-08-28",
+    "lastUpdated": "2026-10-04",
+    "summary": "Discover why 95% of modern homes in Bengaluru are constructed with RCC framed systems, and how it enables flexible room layouts, large windows, and vertical floor additions.",
+    "tags": [
+      "RCC Framing",
+      "Structural Engineering",
+      "Load Bearing",
+      "Earthquake Resistance"
+    ]
+  },
+  {
+    "slug": "checklist-before-starting-house-construction-bangalore",
+    "title": "Essential Checklist Before Starting House Construction in Bangalore",
+    "description": "A practical pre-construction checklist for Bangalore plot owners: soil investigation, BBMP plan sanctions, BESCOM power, BWSSB water, and contractor agreement.",
+    "h1": "Things to Check Before Starting House Construction in Bangalore",
+    "category": "Planning & Timelines",
+    "author": "Er. Gajanana, Civil Engineering Lead",
+    "publishedDate": "2026-09-02",
+    "lastUpdated": "2026-10-04",
+    "summary": "Before digging the first foundation trench on your Bengaluru plot, ensure these mandatory legal, engineering, and logistics prerequisites are in order.",
+    "tags": [
+      "Checklist",
+      "Pre-Construction",
+      "BBMP Sanctions",
+      "Plot Development"
+    ]
+  },
+  {
+    "slug": "how-to-choose-construction-company-bangalore",
+    "title": "How to Choose the Best Construction Company in Bangalore",
+    "description": "Practical guide to selecting a reliable, trustworthy home construction contractor in Bangalore. Avoid delays, substandard materials, and hidden cost escalations.",
+    "h1": "How to Choose the Right House Construction Company in Bangalore",
+    "category": "Planning & Timelines",
+    "author": "Er. Gajanana, Civil Engineering Lead",
+    "publishedDate": "2026-08-18",
+    "lastUpdated": "2026-10-04",
+    "summary": "Avoid middleman markup, contractor abandonment, and poor materials. Learn the crucial questions to ask prospective builders in Bengaluru.",
+    "tags": [
+      "Builder Selection",
+      "Contractor Vetting",
+      "Turnkey Contracts",
+      "Quality Assurance"
+    ]
+  },
+  {
+    "slug": "waterproofing-methods-residential-buildings",
+    "title": "Effective Waterproofing Methods for Bangalore Homes | Complete Guide",
+    "description": "Comprehensive guide to residential waterproofing: basement tanking, terrace elastomeric membranes, bathroom sunken slabs, and PU injection grouting.",
+    "h1": "Waterproofing Methods for Residential Buildings",
+    "category": "Engineering & Structural",
+    "author": "Er. Gajanana, Civil Engineering Lead",
+    "publishedDate": "2026-08-05",
+    "lastUpdated": "2026-10-04",
+    "summary": "Prevent dampness, efflorescence, and ceiling leaks during intense Bengaluru monsoon downpours with engineered multi-barrier waterproofing techniques.",
+    "tags": [
+      "Waterproofing",
+      "Terrace Protection",
+      "Basement Tanking",
+      "Monsoon Care"
+    ]
+  },
+  {
+    "slug": "house-construction-stages-foundation-to-finishing",
+    "title": "18 Stages of House Construction: Foundation to Handover (Illustrated Guide)",
+    "description": "A complete walkthrough of the 18 distinct civil, structural, and finishing stages involved in building an individual house or villa in Bangalore.",
+    "h1": "18 Stages of House Construction from Foundation to Finishing",
+    "category": "Engineering & Structural",
+    "author": "Er. Gajanana, Civil Engineering Lead",
+    "publishedDate": "2026-07-22",
+    "lastUpdated": "2026-10-04",
+    "summary": "Follow the complete engineering progression of a residential build—from ground trenching, rebar binding, and slab pouring to tiling, woodwork, and final cleaning.",
+    "tags": [
+      "Construction Stages",
+      "Civil Engineering",
+      "Workmanship",
+      "Site Progression"
+    ]
+  },
+  {
+    "slug": "what-is-included-turnkey-house-construction-package",
+    "title": "What is Included in a Turnkey House Construction Contract?",
+    "description": "A transparent guide to turnkey home construction deliverables: architectural plans, structural RCC, plumbing, electrical, flooring, painting, and warranty.",
+    "h1": "What is Included in a Turnkey House Construction Package?",
+    "category": "Planning & Timelines",
+    "author": "Er. Gajanana, Civil Engineering Lead",
+    "publishedDate": "2026-07-15",
+    "lastUpdated": "2026-10-04",
+    "summary": "Understand the comprehensive inclusions and boundaries of a turnkey residential construction contract in Bangalore with zero hidden expenses.",
+    "tags": [
+      "Turnkey Package",
+      "Contract Inclusions",
+      "Specifications",
+      "Deliverables"
+    ]
+  },
+  {
+    "slug": "house-construction-jp-nagar-guide",
+    "title": "House Construction in JP Nagar, Bangalore | Local Homeowner Guide",
+    "description": "Essential guide for building an independent house or villa in JP Nagar, Bangalore: soil strata, BBMP setback bylaws, rock breaking, and nearby material logistics.",
+    "h1": "House Construction Services & Guide for JP Nagar",
+    "category": "Area-Specific Guides",
+    "author": "Er. Gajanana, Civil Engineering Lead",
+    "publishedDate": "2026-06-30",
+    "lastUpdated": "2026-10-04",
+    "summary": "Building a home in JP Nagar (Phases 1 to 9, Sarakki, or Dollars Colony)? Learn about shallow granite rock excavation, BBMP zoning, and material logistics from nearby Arekere.",
+    "tags": [
+      "JP Nagar",
+      "Local Construction",
+      "Soil Profile",
+      "Rock Breaking"
+    ]
+  },
+  {
+    "slug": "construction-cost-factors-electronic-city",
+    "title": "House Construction in Electronic City, Bangalore | Cost Factors & Guide",
+    "description": "Planning house construction in Electronic City? Understand soil considerations near Bettadasanapura, foundation requirements, and wholesale material logistics.",
+    "h1": "Construction Cost Factors & Guide for Electronic City",
+    "category": "Area-Specific Guides",
+    "author": "Er. Gajanana, Civil Engineering Lead",
+    "publishedDate": "2026-06-15",
+    "lastUpdated": "2026-10-04",
+    "summary": "A detailed civil engineering overview for building individual houses, villas, and rental apartments across Electronic City Phase 1, Phase 2, and Neeladri Road.",
+    "tags": [
+      "Electronic City",
+      "Local Construction",
+      "Foundation Design",
+      "Hosur Road"
+    ]
+  }
+];

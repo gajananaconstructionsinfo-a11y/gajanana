@@ -14,7 +14,7 @@ const areasModule = await import('../src/data/areasData.js');
 const AREAS = areasModule.AREAS;
 
 const metaModule = await import('./siteMetadata.js');
-const { SERVICES_META, MATERIAL_CATEGORIES_META, PRODUCTS_SKUS_META, PROJECTS_META } = metaModule;
+const { SERVICES_META, MATERIAL_CATEGORIES_META, PRODUCTS_SKUS_META, PROJECTS_META, GUIDES_META } = metaModule;
 
 const cnameContent = 'www.gajananaconstructions.in';
 
@@ -247,6 +247,9 @@ for (const targetDir of targets) {
             "url": `https://www.gajananaconstructions.in/areas/${area.slug}`,
             "telephone": "+918884238688",
             "priceRange": "₹₹",
+            "sameAs": [
+              "https://www.quora.com/profile/Gajananaconstructions/Central-Bannerghatta-Road-Sector-South-Bengaluru-Construction-Company-Building-Contractor-in-Bilekahalli-Bengaluru"
+            ],
             "image": "https://www.gajananaconstructions.in/images/products/tata-tiscon-tmt.jpg",
             "address": {
               "@type": "PostalAddress",
@@ -352,6 +355,52 @@ for (const targetDir of targets) {
           "price": "Price on Enquiry",
           "priceCurrency": "INR",
           "availability": "https://schema.org/InStock"
+        }
+      }
+    });
+  }
+
+  
+  // 9. Guides Hub (/guides)
+  writeRouteHtml('guides', {
+    title: 'Bengaluru House Construction Guides & Knowledge Hub | Sri Gajanana Constructions',
+    description: 'Authoritative homeowner guides on building a house in Bangalore. Civil engineering insights, construction cost breakdowns, structural RCC tips, timelines, and BBMP bylaws.',
+    keywords: 'Bangalore house construction guide, house construction cost Bangalore, building stages foundation to finishing, civil contractors advice',
+    canonical: 'https://www.gajananaconstructions.in/guides',
+    hashRoute: 'guides',
+    depth: 1,
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Bengaluru House Construction Guides & Knowledge Hub",
+      "url": "https://www.gajananaconstructions.in/guides"
+    }
+  });
+
+  // 10. All 11 Guides (/guides/:slug)
+  for (const g of GUIDES_META) {
+    writeRouteHtml(path.join('guides', g.slug), {
+      title: g.title,
+      description: g.description,
+      keywords: g.tags.join(', '),
+      canonical: `https://www.gajananaconstructions.in/guides/${g.slug}`,
+      hashRoute: `guides/${g.slug}`,
+      depth: 2,
+      schema: {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": g.title,
+        "description": g.description,
+        "datePublished": g.publishedDate,
+        "dateModified": g.lastUpdated,
+        "author": {
+          "@type": "Person",
+          "name": g.author
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Sri Gajanana Constructions",
+          "url": "https://www.gajananaconstructions.in/"
         }
       }
     });
@@ -466,6 +515,27 @@ for (const proj of PROJECTS_META) {
 `;
 }
 
+
+// Guides Hub
+sitemapXml += `  <url>
+    <loc>https://www.gajananaconstructions.in/guides</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+  </url>
+`;
+
+// 11 Guides
+for (const g of GUIDES_META) {
+  sitemapXml += `  <url>
+    <loc>https://www.gajananaconstructions.in/guides/${g.slug}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+`;
+}
+
 sitemapXml += `</urlset>\n`;
 
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapXml, 'utf8');
@@ -475,4 +545,4 @@ fs.writeFileSync(path.join(docsDir, 'sitemap.xml'), sitemapXml, 'utf8');
 // Replace public/404.html with clean fallback
 fs.writeFileSync(path.join(publicDir, '404.html'), fs.readFileSync(path.join(distDir, '404.html'), 'utf8'), 'utf8');
 
-console.log('Complete static pre-rendering (66 routes) and sitemap.xml generated successfully in dist and docs!');
+console.log('Complete static pre-rendering (78 routes) and sitemap.xml generated successfully in dist and docs!');

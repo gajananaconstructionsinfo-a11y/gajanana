@@ -141,6 +141,9 @@ export default function Navbar() {
             <NavLink to="/projects" className={navLinkClass}>
               PROJECTS
             </NavLink>
+            <NavLink to="/guides" className={navLinkClass}>
+              GUIDES
+            </NavLink>
             <NavLink to="/why-us" className={navLinkClass}>
               WHY US
             </NavLink>

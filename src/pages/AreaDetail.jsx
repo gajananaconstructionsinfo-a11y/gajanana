@@ -187,6 +187,28 @@ export default function AreaDetail() {
                 <span>{area.badge} • {area.zone}</span>
               </div>
 
+                            {/* Verified External Publication Link */}
+              {area.featuredPublication && (
+                <div className="mb-6 p-4 bg-amber-500/10 border border-amber-500/30 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-xs">
+                  <div className="flex items-start sm:items-center space-x-2.5">
+                    <span className="px-2 py-0.5 bg-slate-900 text-amber-400 font-mono text-[10px] font-bold uppercase rounded-md shrink-0">
+                      Verified Publication
+                    </span>
+                    <span className="text-xs font-semibold text-slate-800 leading-snug">
+                      {area.featuredPublication.title}
+                    </span>
+                  </div>
+                  <a
+                    href={area.featuredPublication.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-1.5 text-xs font-bold text-amber-700 hover:text-amber-800 underline shrink-0 transition-colors"
+                  >
+                    <span>Read on {area.featuredPublication.platform}</span>
+                    <span>↗</span>
+                  </a>
+                </div>
+              )}
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight font-heading leading-tight mb-4">
                 {area.heroTitle}
               </h1>
