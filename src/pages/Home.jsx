@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
-import { Shield, Award, Users, CheckCircle, ArrowRight, Building, Truck, FileText, Star } from 'lucide-react';
+import { Shield, Award, Users, CheckCircle, ArrowRight, Building, Truck, FileText, Star, ChevronDown, Check, X, HelpCircle, MapPin, Sparkles } from 'lucide-react';
+import { AREAS } from '../data/areasData';
 import SEOHead from '../components/SEOHead';
 
 export default function Home() {
   const { data, openQuickQuote } = useApp();
   const { company, services, heavySKUs, projects, workflow, testimonials } = data;
+  const [openFaq, setOpenFaq] = useState(0);
+
+  const toggleFaq = (idx) => {
+    setOpenFaq(openFaq === idx ? null : idx);
+  };
 
   return (
     <div className="space-y-0">
@@ -55,6 +61,68 @@ export default function Home() {
                 "bestRating": "5"
               },
               "priceRange": "₹₹"
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.gajananaconstructions.in/#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Which is the best house construction company in Bangalore?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sri Gajanana Constructions is rated among the best house construction companies in Bangalore, with over 20 years of continuous civil engineering legacy since 2005. Unlike tech aggregator portals that subcontract builds to third-party labor groups, Sri Gajanana operates its own central 15,000 MT primary materials depot (Tata Tiscon, UltraTech) and in-house JCB 3DX & excavator fleet in Arekere, ensuring 100% authentic IS-grade materials, zero broker markups, and on-time project completion."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How much does it cost to build a house in Bangalore in 2026?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "House construction costs in Bangalore vary based on architectural design, soil depth, steel grades, and interior finishes. Rather than arbitrary flat per-sqft estimates that lead to 25-40% cost overruns, Sri Gajanana Constructions provides transparent, itemized Bill of Quantities (BOQ) estimates based on actual structural drawings. Call 8884238688 for an itemized estimate for your plot (30x40, 30x50, 40x60)."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is the difference between turnkey construction and a labor contract in Bangalore?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In a labor contract, the homeowner is responsible for buying, transporting, and securing steel, cement, sand, bricks, and tiles, which frequently causes project halts and material price fluctuations. Turnkey house construction with Sri Gajanana Constructions is an all-inclusive solution covering architectural planning, BBMP sanctions, mechanized excavation, high-grade structural materials from our own stockyard, plumbing, electrical, and turnkey interior handover with a single point of structural accountability."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why is choosing a builder with their own material depot better than tech aggregator apps?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tech aggregators act as middleman portals charging 15% to 25% commissions and passing the actual work to unknown subcontractors who often cut corners on steel grades and cement batches. With Sri Gajanana Constructions, you deal directly with the builder and stockyard. We supply genuine Tata Tiscon Fe 550D rebar and factory-fresh UltraTech cement with NABL batch test certificates at wholesale rates."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What BBMP bylaws and plan sanctions are required in South Bangalore?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Building a residential house requires clear A-Khata/B-Khata title deeds, BBMP building plan sanction, BESCOM temporary power connection, and BWSSB water/sewerage connections. Sri Gajanana assists homeowners with complete sanction drawings, structural stability certificates, setback calculations, and rainwater harvesting compliance."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How long does it take to construct a G+1 or G+2 house in Bangalore?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Typically, a G+1 house (approx. 2,400 sq.ft) takes 8 to 10 months, while a G+2 house takes 10 to 12 months. This includes 21-day slab curing, mechanized soil excavation, foundation footings, brick masonry, MEP rough-ins, plastering, waterproofing, and architectural finishing. Our in-house machinery and direct material stockyard prevent the supply-chain bottlenecks common with other contractors."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What areas in Bangalore does Sri Gajanana Constructions serve?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our primary service areas include Arekere (Central Headquarters & Stockyard), JP Nagar, BTM Layout, HSR Layout, Bommanahalli, Electronic City, Attibele, Begur, Hulimavu, Singasandra, Kudlu, Harlur, Sarjapur Road, Hebbagodi, Chandapura, and Bommasandra."
+                  }
+                }
+              ]
             }
           ]
         }}
@@ -540,6 +608,214 @@ export default function Home() {
         </div>
       </section>
 
+      
+      {/* 8.5. COMPETITOR COMPARISON TABLE (Rank #1 Factor: Demonstrating Superior Capability) */}
+      <section className="py-20 bg-white border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
+              WHY SRI GAJANANA OUTPERFORMS OTHERS
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
+              Sri Gajanana Constructions vs. Tech Aggregators vs. Local Contractors
+            </h2>
+            <p className="text-slate-600 text-sm sm:text-base mt-3 font-light">
+              See why hundreds of Bengaluru families choose our direct-builder ecosystem over middleman apps and unverified contractors.
+            </p>
+          </div>
+
+          <div className="overflow-x-auto rounded-3xl border border-slate-200 shadow-xl bg-white">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="bg-slate-900 text-white text-xs sm:text-sm font-heading">
+                  <th className="p-4 sm:p-6 w-1/4 border-b border-slate-800">Key Feature &amp; Capability</th>
+                  <th className="p-4 sm:p-6 w-1/3 bg-amber-500 text-slate-950 font-black border-b border-amber-600">
+                    <div className="flex items-center space-x-1.5">
+                      <Sparkles className="w-4 h-4 fill-slate-950" />
+                      <span>Sri Gajanana Constructions</span>
+                    </div>
+                  </th>
+                  <th className="p-4 sm:p-6 w-1/4 border-b border-slate-800 text-slate-300">Tech Aggregator Portals</th>
+                  <th className="p-4 sm:p-6 w-1/4 border-b border-slate-800 text-slate-400">Local Unregistered Labor</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 text-xs sm:text-sm">
+                <tr className="hover:bg-amber-50/20 transition-colors">
+                  <td className="p-4 sm:p-6 font-bold text-slate-900 bg-slate-50/50">
+                    Material Sourcing &amp; Authenticity
+                  </td>
+                  <td className="p-4 sm:p-6 bg-amber-500/10 font-bold text-slate-950 border-x border-amber-500/20">
+                    <div className="flex items-start space-x-2">
+                      <Check className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <span><strong>Own 15,000 MT Stockyard:</strong> Direct primary mill Fe 550D TMT (Tata Tiscon, JSW) &amp; UltraTech Cement with NABL test certificates.</span>
+                    </div>
+                  </td>
+                  <td className="p-4 sm:p-6 text-slate-600">
+                    <div className="flex items-start space-x-2">
+                      <X className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
+                      <span>Subcontracts supply to random local traders. No mill test batch verification.</span>
+                    </div>
+                  </td>
+                  <td className="p-4 sm:p-6 text-slate-600">
+                    <div className="flex items-start space-x-2">
+                      <X className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
+                      <span>Retail hardware sourcing with frequent secondary steel &amp; expired cement bags.</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr className="hover:bg-amber-50/20 transition-colors">
+                  <td className="p-4 sm:p-6 font-bold text-slate-900 bg-slate-50/50">
+                    Heavy Machinery Fleet
+                  </td>
+                  <td className="p-4 sm:p-6 bg-amber-500/10 font-bold text-slate-950 border-x border-amber-500/20">
+                    <div className="flex items-start space-x-2">
+                      <Check className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <span><strong>In-House Fleet:</strong> JCB 3DX, 20-ton excavators, rock breakers, and tippers ready for immediate site mobilization.</span>
+                    </div>
+                  </td>
+                  <td className="p-4 sm:p-6 text-slate-600">
+                    <div className="flex items-start space-x-2">
+                      <X className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
+                      <span>Rents machinery from third parties. Severe scheduling delays and markup rental fees.</span>
+                    </div>
+                  </td>
+                  <td className="p-4 sm:p-6 text-slate-600">
+                    <div className="flex items-start space-x-2">
+                      <X className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
+                      <span>Manual pickaxe digging or irregular equipment rentals causing site delays.</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr className="hover:bg-amber-50/20 transition-colors">
+                  <td className="p-4 sm:p-6 font-bold text-slate-900 bg-slate-50/50">
+                    Execution Team &amp; Accountability
+                  </td>
+                  <td className="p-4 sm:p-6 bg-amber-500/10 font-bold text-slate-950 border-x border-amber-500/20">
+                    <div className="flex items-start space-x-2">
+                      <Check className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <span><strong>100% In-House Civil Engineers:</strong> Dedicated project managers, licensed structural consultants, and verified skilled craftsmen.</span>
+                    </div>
+                  </td>
+                  <td className="p-4 sm:p-6 text-slate-600">
+                    <div className="flex items-start space-x-2">
+                      <X className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
+                      <span>Subcontracts to 3rd-party freelance contractors. High dispute rates &amp; lack of ownership.</span>
+                    </div>
+                  </td>
+                  <td className="p-4 sm:p-6 text-slate-600">
+                    <div className="flex items-start space-x-2">
+                      <X className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
+                      <span>Unsupervised migrant labor groups without structural engineering qualifications.</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr className="hover:bg-amber-50/20 transition-colors">
+                  <td className="p-4 sm:p-6 font-bold text-slate-900 bg-slate-50/50">
+                    Cost Transparency &amp; Variations
+                  </td>
+                  <td className="p-4 sm:p-6 bg-amber-500/10 font-bold text-slate-950 border-x border-amber-500/20">
+                    <div className="flex items-start space-x-2">
+                      <Check className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <span><strong>Transparent BOQ:</strong> Itemized material and labor schedules. Milestone-linked payment stages with zero hidden markups.</span>
+                    </div>
+                  </td>
+                  <td className="p-4 sm:p-6 text-slate-600">
+                    <div className="flex items-start space-x-2">
+                      <X className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
+                      <span>Teaser square-foot rates with 20% to 35% surprise variation charges during structural work.</span>
+                    </div>
+                  </td>
+                  <td className="p-4 sm:p-6 text-slate-600">
+                    <div className="flex items-start space-x-2">
+                      <X className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
+                      <span>Vague verbal estimates leading to frequent mid-project budget disputes and abandonment.</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr className="hover:bg-amber-50/20 transition-colors">
+                  <td className="p-4 sm:p-6 font-bold text-slate-900 bg-slate-50/50">
+                    Quality &amp; Structural Warranty
+                  </td>
+                  <td className="p-4 sm:p-6 bg-amber-500/10 font-bold text-slate-950 border-x border-amber-500/20">
+                    <div className="flex items-start space-x-2">
+                      <Check className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <span><strong>10-Year Written Warranty:</strong> IS 456 &amp; IS 13920 seismic-compliant RCC casting backed by physical Arekere office presence since 2005.</span>
+                    </div>
+                  </td>
+                  <td className="p-4 sm:p-6 text-slate-600">
+                    <div className="flex items-start space-x-2">
+                      <X className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
+                      <span>Complicated warranty clauses with third-party liability disclaimers on digital apps.</span>
+                    </div>
+                  </td>
+                  <td className="p-4 sm:p-6 text-slate-600">
+                    <div className="flex items-start space-x-2">
+                      <X className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
+                      <span>Zero warranty. Contractor phone numbers often disconnect once final payments clear.</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* 8.6. LOCAL SERVICE NETWORK (High-Ranking Geo Coverage) */}
+      <section className="py-20 bg-slate-50 border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
+              LOCAL SOUTH BENGALURU COVERAGE
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
+              House Construction Services Across South &amp; Southeast Bengaluru
+            </h2>
+            <p className="text-slate-600 text-sm sm:text-base mt-3 font-light">
+              Our central yard in Arekere and machinery depot allows us to provide rapid on-site civil execution, material delivery, and supervision across all major residential sectors.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
+            {AREAS.map((a) => (
+              <Link
+                key={a.slug}
+                to={`/areas/${a.slug}`}
+                className="group p-4 bg-white rounded-2xl border border-slate-200 hover:border-amber-500 hover:shadow-lg transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center space-x-1.5 text-amber-600 mb-2">
+                    <MapPin className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500 group-hover:text-amber-600">
+                      {a.distanceFromArekere}
+                    </span>
+                  </div>
+                  <h3 className="font-bold text-slate-900 group-hover:text-amber-600 transition-colors text-sm font-heading leading-snug">
+                    {a.name}
+                  </h3>
+                </div>
+                <div className="mt-3 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-slate-500 group-hover:text-slate-900">
+                  <span>Explore Area</span>
+                  <span className="text-amber-600">→</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-10 p-6 bg-white rounded-2xl border border-slate-200 text-center max-w-2xl mx-auto">
+            <p className="text-xs sm:text-sm text-slate-700 font-medium">
+              Planning a house construction project in South Bengaluru? Call our engineering desk at{' '}
+              <a href="tel:8884238688" className="font-bold text-amber-600 hover:underline">+91 88842 38688</a>{' '}
+              or visit our stockyard at Samrat Layout, Arekere.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 9. TESTIMONIALS */}
       <section className="py-20 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -572,6 +848,100 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      
+      {/* 9.5. GOOGLE SEARCH FAQS (High-Rank People Also Ask Search Queries) */}
+      <section className="py-20 bg-slate-50 border-b border-slate-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
+              FREQUENTLY ASKED QUESTIONS
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
+              Everything You Need to Know Before Building a House in Bangalore
+            </h2>
+            <p className="text-slate-600 text-sm mt-3 font-light">
+              Clear, transparent answers from our senior civil engineers on costs, bylaws, timelines, and material standards.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {[
+              {
+                q: "Which is the best house construction company in Bangalore?",
+                a: "Sri Gajanana Constructions is rated among the best house construction companies in Bangalore, with over 20 years of continuous civil engineering legacy since 2005. Unlike tech aggregator portals that subcontract builds to third-party labor groups, Sri Gajanana operates its own central 15,000 MT primary materials depot (Tata Tiscon, UltraTech) and in-house JCB 3DX & excavator fleet in Arekere, ensuring 100% authentic IS-grade materials, zero broker markups, and on-time project completion."
+              },
+              {
+                q: "How much does it cost to build a house in Bangalore in 2026?",
+                a: "House construction costs in Bangalore vary based on architectural design, soil depth, steel grades, and interior finishes. Rather than arbitrary flat per-sqft estimates that lead to 25-40% cost overruns, Sri Gajanana Constructions provides transparent, itemized Bill of Quantities (BOQ) estimates based on actual structural drawings. Call 8884238688 for an itemized estimate for your plot (30x40, 30x50, 40x60)."
+              },
+              {
+                q: "What is the difference between turnkey construction and a labor contract in Bangalore?",
+                a: "In a labor contract, the homeowner is responsible for buying, transporting, and securing steel, cement, sand, bricks, and tiles, which frequently causes project halts and material price fluctuations. Turnkey house construction with Sri Gajanana Constructions is an all-inclusive solution covering architectural planning, BBMP sanctions, mechanized excavation, high-grade structural materials from our own stockyard, plumbing, electrical, and turnkey interior handover with a single point of structural accountability."
+              },
+              {
+                q: "Why is choosing a builder with their own material depot better than tech aggregator apps?",
+                a: "Tech aggregators act as middleman portals charging 15% to 25% commissions and passing the actual work to unknown subcontractors who often cut corners on steel grades and cement batches. With Sri Gajanana Constructions, you deal directly with the primary builder and materials stockyard. We supply genuine Tata Tiscon Fe 550D rebar and factory-fresh UltraTech cement with NABL batch test certificates at wholesale rates."
+              },
+              {
+                q: "What BBMP bylaws and plan sanctions are required in South Bangalore?",
+                a: "Building a house in Bangalore requires an A-Khata/B-Khata title verification, BBMP plan sanction (or BDA/BMRDA approvals depending on jurisdiction), BESCOM temporary electrical connection, and BWSSB water/sewerage connections. Sri Gajanana assists homeowners with complete sanction drawings, structural stability certificates, setback calculations, and rainwater harvesting compliance."
+              },
+              {
+                q: "How long does it take to construct a G+1 or G+2 house in Bangalore?",
+                a: "Typically, a G+1 house (approx. 2,400 sq.ft) takes 8 to 10 months, while a G+2 house takes 10 to 12 months. This includes 21-day slab curing, mechanized soil excavation, foundation footings, brick masonry, MEP rough-ins, plastering, waterproofing, and architectural finishing. Our in-house machinery and direct material stockyard prevent the supply-chain bottlenecks common with other contractors."
+              },
+              {
+                q: "What areas in Bangalore does Sri Gajanana Constructions serve?",
+                a: "Our primary service areas include Arekere (Central Headquarters & Stockyard), JP Nagar, BTM Layout, HSR Layout, Bommanahalli, Electronic City, Attibele, Begur, Hulimavu, Singasandra, Kudlu, Harlur, Sarjapur Road, Hebbagodi, Chandapura, and Bommasandra."
+              }
+            ].map((faq, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:border-amber-400 transition-colors"
+              >
+                <button
+                  type="button"
+                  onClick={() => toggleFaq(idx)}
+                  className="w-full px-6 py-5 text-left font-bold text-slate-900 flex items-center justify-between gap-4 font-heading text-base sm:text-lg focus:outline-none"
+                >
+                  <span className="flex items-center space-x-3">
+                    <span className="w-7 h-7 rounded-lg bg-amber-500/10 text-amber-700 font-mono text-xs font-black flex items-center justify-center shrink-0">
+                      Q{idx + 1}
+                    </span>
+                    <span>{faq.q}</span>
+                  </span>
+                  <ChevronDown
+                    className={`w-5 h-5 text-amber-600 transition-transform duration-300 shrink-0 ${
+                      openFaq === idx ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                {openFaq === idx && (
+                  <div className="px-6 pb-6 pt-2 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100 bg-slate-50/50 font-light">
+                    <p>{faq.a}</p>
+                    <div className="mt-3 pt-3 border-t border-slate-200/60 flex items-center justify-between text-[11px] font-mono text-slate-500">
+                      <span>Sri Gajanana Engineering Advisory</span>
+                      <a href="tel:8884238688" className="text-amber-600 font-bold hover:underline">
+                        Call 8884238688 for Details →
+                      </a>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-xs text-slate-500 font-mono">
+              Have a specific architectural drawing or plot measurement?{' '}
+              <Link to="/contact" className="text-amber-600 font-bold underline hover:text-amber-700">
+                Contact our Arekere Engineering Office
+              </Link>
+            </p>
           </div>
         </div>
       </section>
