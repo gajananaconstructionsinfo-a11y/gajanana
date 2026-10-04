@@ -19,6 +19,8 @@ import ProjectDetail from './pages/ProjectDetail';
 import WhyUs from './pages/WhyUs';
 import Contact from './pages/Contact';
 import GetAQuote from './pages/GetAQuote';
+import AreasDirectory from './pages/AreasDirectory';
+import AreaDetail from './pages/AreaDetail';
 import NotFound from './pages/NotFound';
 
 export default function App() {
@@ -51,6 +53,8 @@ export default function App() {
           <Route path="/why-us" element={<WhyUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/get-a-quote" element={<GetAQuote />} />
+          <Route path="/areas" element={<AreasDirectory />} />
+          <Route path="/areas/:slug" element={<AreaDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

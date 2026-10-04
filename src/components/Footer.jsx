@@ -124,7 +124,43 @@ export default function Footer() {
               </p>
             </div>
           </div>
+        </div>
 
+        {/* Areas We Serve Across South & Southeast Bengaluru */}
+        <div className="pt-8 pb-6 border-t border-slate-900 mb-6">
+          <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+            <div>
+              <h4 className="text-white font-bold text-xs tracking-wider uppercase font-mono">
+                Service Areas &bull; South &amp; Southeast Bengaluru Construction Corridor
+              </h4>
+              <p className="text-[11px] text-slate-500 mt-0.5">
+                Turnkey residential construction, commercial civil contracting, JCB fleet rental &amp; wholesale materials stockyard
+              </p>
+            </div>
+            <Link to="/areas" className="text-xs text-amber-400 hover:text-amber-300 font-bold mt-2 md:mt-0 inline-flex items-center">
+              All 17 Areas Directory &rarr;
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 text-xs">
+            <Link to="/areas/arekere" className="text-amber-400 hover:text-white transition-colors font-medium">📍 Arekere (Main Depot)</Link>
+            <Link to="/areas/jp-nagar" className="text-slate-400 hover:text-amber-400 transition-colors">JP Nagar</Link>
+            <Link to="/areas/btm-layout" className="text-slate-400 hover:text-amber-400 transition-colors">BTM Layout</Link>
+            <Link to="/areas/hsr-layout" className="text-slate-400 hover:text-amber-400 transition-colors">HSR Layout</Link>
+            <Link to="/areas/bommanahalli" className="text-slate-400 hover:text-amber-400 transition-colors">Bommanahalli</Link>
+            <Link to="/areas/electronic-city" className="text-slate-400 hover:text-amber-400 transition-colors">Electronic City</Link>
+            <Link to="/areas/attibele" className="text-slate-400 hover:text-amber-400 transition-colors">Attibele</Link>
+            <Link to="/areas/begur" className="text-slate-400 hover:text-amber-400 transition-colors">Begur</Link>
+            <Link to="/areas/bommasandra" className="text-slate-400 hover:text-amber-400 transition-colors">Bommasandra</Link>
+            <Link to="/areas/chandapura" className="text-slate-400 hover:text-amber-400 transition-colors">Chandapura</Link>
+            <Link to="/areas/hebbagodi" className="text-slate-400 hover:text-amber-400 transition-colors">Hebbagodi</Link>
+            <Link to="/areas/hulimavu" className="text-slate-400 hover:text-amber-400 transition-colors">Hulimavu</Link>
+            <Link to="/areas/bilekahalli" className="text-slate-400 hover:text-amber-400 transition-colors">Bilekahalli</Link>
+            <Link to="/areas/harlur" className="text-slate-400 hover:text-amber-400 transition-colors">Harlur &amp; Haralur Rd</Link>
+            <Link to="/areas/kudlu" className="text-slate-400 hover:text-amber-400 transition-colors">Kudlu</Link>
+            <Link to="/areas/singasandra" className="text-slate-400 hover:text-amber-400 transition-colors">Singasandra</Link>
+            <Link to="/areas/sarjapur-road" className="text-slate-400 hover:text-amber-400 transition-colors">Sarjapur Road</Link>
+          </div>
         </div>
 
         <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">

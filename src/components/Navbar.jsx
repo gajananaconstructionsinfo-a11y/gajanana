@@ -8,6 +8,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileMaterialsOpen, setMobileMaterialsOpen] = useState(false);
+  const [mobileAreasOpen, setMobileAreasOpen] = useState(false);
 
   const navLinkClass = ({ isActive }) =>
     `py-2 text-sm font-semibold transition-colors ${
@@ -96,6 +97,43 @@ export default function Navbar() {
                   className="block px-3 py-2 text-xs font-bold text-amber-600 hover:bg-amber-50 rounded-xl transition-colors border-t border-slate-100 text-center"
                 >
                   All Building Materials Depot →
+                </Link>
+              </div>
+            </div>
+
+            {/* Areas We Serve Dropdown */}
+            <div className="relative group py-2">
+              <NavLink to="/areas" className="flex items-center space-x-1 text-slate-700 hover:text-amber-600">
+                <span>AREAS</span>
+                <ChevronDown className="w-3.5 h-3.5 text-slate-400 group-hover:text-amber-600 transition-transform group-hover:rotate-180" />
+              </NavLink>
+              <div className="absolute left-1/2 -translate-x-1/2 top-full hidden group-hover:block w-72 bg-white rounded-2xl shadow-xl border border-slate-100 p-3 z-50 animate-fade-in">
+                <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-2 px-1">
+                  17 Localities in South &amp; East Bengaluru
+                </div>
+                <div className="grid grid-cols-2 gap-1 mb-2">
+                  <div>
+                    <div className="text-[10px] font-bold text-amber-700 uppercase px-1 mb-1">South</div>
+                    <Link to="/areas/arekere" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Arekere (HQ)</Link>
+                    <Link to="/areas/jp-nagar" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">JP Nagar</Link>
+                    <Link to="/areas/btm-layout" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">BTM Layout</Link>
+                    <Link to="/areas/hulimavu" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Hulimavu</Link>
+                    <Link to="/areas/begur" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Begur</Link>
+                  </div>
+                  <div>
+                    <div className="text-[10px] font-bold text-amber-700 uppercase px-1 mb-1">Southeast</div>
+                    <Link to="/areas/hsr-layout" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">HSR Layout</Link>
+                    <Link to="/areas/electronic-city" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Electronic City</Link>
+                    <Link to="/areas/bommanahalli" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Bommanahalli</Link>
+                    <Link to="/areas/sarjapur-road" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Sarjapur Rd</Link>
+                    <Link to="/areas/attibele" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Attibele</Link>
+                  </div>
+                </div>
+                <Link
+                  to="/areas"
+                  className="block px-3 py-2 text-xs font-bold text-amber-600 hover:bg-amber-50 rounded-xl transition-colors border-t border-slate-100 text-center"
+                >
+                  All 17 Areas Directory →
                 </Link>
               </div>
             </div>
@@ -211,6 +249,30 @@ export default function Navbar() {
                 <Link to="/materials/sub-base-filling" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Earthfilling &amp; Murrum</Link>
                 <Link to="/materials/tiles" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Tiles &amp; Granite</Link>
                 <Link to="/materials" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs font-bold text-amber-600">Full Building Materials Depot →</Link>
+              </div>
+            )}
+          </div>
+
+          {/* Mobile Areas Accordion */}
+          <div>
+            <button
+              onClick={() => setMobileAreasOpen(!mobileAreasOpen)}
+              className="w-full flex items-center justify-between py-2 text-sm font-semibold text-slate-800 hover:text-amber-600"
+            >
+              <span>AREAS WE SERVE</span>
+              <ChevronDown className={`w-4 h-4 transition-transform ${mobileAreasOpen ? 'rotate-180' : ''}`} />
+            </button>
+            {mobileAreasOpen && (
+              <div className="pl-4 space-y-1.5 py-1 border-l-2 border-amber-500 my-1">
+                <Link to="/areas/arekere" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-amber-700 font-bold">📍 Arekere (Main Depot)</Link>
+                <Link to="/areas/jp-nagar" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">JP Nagar</Link>
+                <Link to="/areas/btm-layout" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">BTM Layout</Link>
+                <Link to="/areas/hsr-layout" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">HSR Layout</Link>
+                <Link to="/areas/electronic-city" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Electronic City</Link>
+                <Link to="/areas/bommanahalli" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Bommanahalli</Link>
+                <Link to="/areas/sarjapur-road" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Sarjapur Road</Link>
+                <Link to="/areas/attibele" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Attibele</Link>
+                <Link to="/areas" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs font-bold text-amber-600">All 17 Areas Directory →</Link>
               </div>
             )}
           </div>
