@@ -100,7 +100,7 @@ export default function GuideDetail() {
             <User className="w-4 h-4 text-amber-600" />
             <span className="font-semibold text-slate-800">{guide.author}</span>
             <span>•</span>
-            <span>Sri Gajanana Constructions Engineering Desk</span>
+            <span>Gajanana Constructions Engineering Desk</span>
           </div>
         </div>
       </header>

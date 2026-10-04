@@ -924,7 +924,7 @@ export default function Home() {
                   <div className="px-6 pb-6 pt-2 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100 bg-slate-50/50 font-light">
                     <p>{faq.a}</p>
                     <div className="mt-3 pt-3 border-t border-slate-200/60 flex items-center justify-between text-[11px] font-mono text-slate-500">
-                      <span>Sri Gajanana Engineering Advisory</span>
+                      <span>Gajanana Constructions Engineering Desk</span>
                       <a href="tel:8884238688" className="text-amber-600 font-bold hover:underline">
                         Call 8884238688 for Details →
                       </a>
