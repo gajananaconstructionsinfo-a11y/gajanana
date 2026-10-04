@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://gajananaconstructionsinfo-a11y.github.io/gajanana/sitemap.xml
+Sitemap: https://www.gajananaconstructions.in/sitemap.xml
