@@ -9,8 +9,6 @@ import {
   CheckCircle2, 
   ChevronRight, 
   ChevronDown, 
-  Calculator, 
-  Calendar, 
   HardHat, 
   ArrowRight,
   Clock,
@@ -156,27 +154,12 @@ export default function AreaDetail() {
     };
   }, [area]);
 
-  // Interactive Cost Estimator State
-  const [builtUpArea, setBuiltUpArea] = useState(2400);
-  const [packageType, setPackageType] = useState('premium'); // 'standard' | 'premium' | 'luxury'
   const [openFaqIndex, setOpenFaqIndex] = useState(0);
 
   if (!area) return null;
 
-  const packageRates = {
-    standard: 1750,
-    premium: 2050,
-    luxury: 2450
-  };
-
-  const currentRate = packageRates[packageType];
-  const totalCost = builtUpArea * currentRate;
-  const materialsCost = Math.round(totalCost * 0.60);
-  const laborCost = Math.round(totalCost * 0.25);
-  const finishingCost = Math.round(totalCost * 0.15);
-
   const whatsappMessage = encodeURIComponent(
-    `Hi Sri Gajanana Constructions, I am planning a construction project in ${area.name}, Bengaluru. I estimated ${builtUpArea.toLocaleString()} sq.ft with ${packageType.toUpperCase()} package (approx ₹${(totalCost / 100000).toFixed(1)} Lakhs). Please share a detailed quote and schedule a site visit.`
+    `Hi Sri Gajanana Constructions, I am planning a construction project in ${area.name}, Bengaluru. Please share a detailed quote and schedule an on-site consultation.`
   );
 
   return (
@@ -238,8 +221,8 @@ export default function AreaDetail() {
                   onClick={openQuoteModal}
                   className="px-6 py-3.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold rounded-xl shadow-lg shadow-amber-500/20 hover:scale-[1.02] transition-all flex items-center space-x-2 text-sm"
                 >
-                  <Calculator className="w-4 h-4" />
-                  <span>Get Estimate for {area.name}</span>
+                  <FileCheck className="w-4 h-4" />
+                  <span>Request Quote for {area.name}</span>
                 </button>
 
                 <a
@@ -568,197 +551,7 @@ export default function AreaDetail() {
         </div>
       </section>
 
-      {/* 7. Interactive Construction Cost Calculator for This Locality */}
-      <section className="py-16 bg-slate-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-amber-400 text-xs font-extrabold uppercase tracking-wider">
-              Transparent Pricing
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold mt-1 font-heading">
-              House Construction Cost Estimator for {area.name}
-            </h2>
-            <p className="text-slate-400 text-sm mt-2">
-              Select your plot configuration or enter your planned built-up area to calculate real-time turnkey construction investment.
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto bg-slate-800 rounded-3xl p-6 sm:p-10 border border-slate-700 shadow-xl">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-              
-              {/* Controls */}
-              <div className="md:col-span-7 space-y-6">
-                <div>
-                  <label className="text-xs font-bold uppercase tracking-wider text-slate-300 block mb-2">
-                    1. Choose Common Plot Configuration:
-                  </label>
-                  <div className="grid grid-cols-3 gap-2">
-                    <button
-                      type="button"
-                      onClick={() => setBuiltUpArea(2400)}
-                      className={`py-2.5 px-3 rounded-xl text-xs font-extrabold border transition-all ${
-                        builtUpArea === 2400
-                          ? 'bg-amber-500 text-slate-950 border-amber-400 shadow-sm'
-                          : 'bg-slate-700/60 text-slate-300 border-slate-600 hover:border-slate-500'
-                      }`}
-                    >
-                      30x40 (G+1)
-                      <span className="block text-[10px] font-normal opacity-80">2,400 sq.ft</span>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => setBuiltUpArea(3000)}
-                      className={`py-2.5 px-3 rounded-xl text-xs font-extrabold border transition-all ${
-                        builtUpArea === 3000
-                          ? 'bg-amber-500 text-slate-950 border-amber-400 shadow-sm'
-                          : 'bg-slate-700/60 text-slate-300 border-slate-600 hover:border-slate-500'
-                      }`}
-                    >
-                      30x50 (G+1)
-                      <span className="block text-[10px] font-normal opacity-80">3,000 sq.ft</span>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => setBuiltUpArea(4200)}
-                      className={`py-2.5 px-3 rounded-xl text-xs font-extrabold border transition-all ${
-                        builtUpArea === 4200
-                          ? 'bg-amber-500 text-slate-950 border-amber-400 shadow-sm'
-                          : 'bg-slate-700/60 text-slate-300 border-slate-600 hover:border-slate-500'
-                      }`}
-                    >
-                      40x60 (G+2)
-                      <span className="block text-[10px] font-normal opacity-80">4,200 sq.ft</span>
-                    </button>
-                  </div>
-                </div>
-
-                {/* Area Slider */}
-                <div>
-                  <div className="flex justify-between items-center text-xs font-bold text-slate-300 mb-2">
-                    <span>Custom Built-Up Area:</span>
-                    <span className="font-mono text-amber-400 text-sm font-extrabold">{builtUpArea.toLocaleString()} sq.ft</span>
-                  </div>
-                  <input
-                    type="range"
-                    min="1000"
-                    max="10000"
-                    step="100"
-                    value={builtUpArea}
-                    onChange={(e) => setBuiltUpArea(Number(e.target.value))}
-                    className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
-                  />
-                  <div className="flex justify-between text-[10px] text-slate-500 mt-1">
-                    <span>1,000 sq.ft</span>
-                    <span>5,000 sq.ft</span>
-                    <span>10,000 sq.ft</span>
-                  </div>
-                </div>
-
-                {/* Package Select */}
-                <div>
-                  <label className="text-xs font-bold uppercase tracking-wider text-slate-300 block mb-2">
-                    2. Select Construction Package:
-                  </label>
-                  <div className="grid grid-cols-3 gap-2">
-                    <button
-                      type="button"
-                      onClick={() => setPackageType('standard')}
-                      className={`p-3 rounded-xl text-left border transition-all ${
-                        packageType === 'standard'
-                          ? 'bg-amber-500/20 border-amber-500 text-white'
-                          : 'bg-slate-700/40 border-slate-600 text-slate-300 hover:border-slate-500'
-                      }`}
-                    >
-                      <div className="text-xs font-extrabold">Standard</div>
-                      <div className="text-[11px] text-amber-400 font-mono font-bold mt-0.5">₹1,750 / sqft</div>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => setPackageType('premium')}
-                      className={`p-3 rounded-xl text-left border transition-all ${
-                        packageType === 'premium'
-                          ? 'bg-amber-500/20 border-amber-500 text-white'
-                          : 'bg-slate-700/40 border-slate-600 text-slate-300 hover:border-slate-500'
-                      }`}
-                    >
-                      <div className="text-xs font-extrabold">Premium</div>
-                      <div className="text-[11px] text-amber-400 font-mono font-bold mt-0.5">₹2,050 / sqft</div>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => setPackageType('luxury')}
-                      className={`p-3 rounded-xl text-left border transition-all ${
-                        packageType === 'luxury'
-                          ? 'bg-amber-500/20 border-amber-500 text-white'
-                          : 'bg-slate-700/40 border-slate-600 text-slate-300 hover:border-slate-500'
-                      }`}
-                    >
-                      <div className="text-xs font-extrabold">Luxury Villa</div>
-                      <div className="text-[11px] text-amber-400 font-mono font-bold mt-0.5">₹2,450 / sqft</div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Estimate Result Box */}
-              <div className="md:col-span-5 bg-slate-900/90 rounded-2xl p-6 border border-amber-500/30 text-center">
-                <div className="text-xs uppercase font-extrabold text-slate-400 tracking-wider">
-                  Estimated Investment ({area.name})
-                </div>
-                
-                <div className="text-3xl sm:text-4xl font-extrabold text-amber-400 font-mono mt-2 mb-1">
-                  ₹{(totalCost / 100000).toFixed(2)} <span className="text-lg text-white">Lakhs</span>
-                </div>
-                <div className="text-[11px] text-slate-400">
-                  @ ₹{currentRate}/sq.ft for {builtUpArea.toLocaleString()} sq.ft built-up
-                </div>
-
-                {/* Breakdown Mini Table */}
-                <div className="mt-6 pt-4 border-t border-slate-800 space-y-2 text-xs text-left">
-                  <div className="flex justify-between text-slate-300">
-                    <span>Structural Materials (Steel, Cement, Sand):</span>
-                    <span className="font-mono text-white">₹{(materialsCost / 100000).toFixed(1)}L (60%)</span>
-                  </div>
-                  <div className="flex justify-between text-slate-300">
-                    <span>Labor, Shuttering & Machinery:</span>
-                    <span className="font-mono text-white">₹{(laborCost / 100000).toFixed(1)}L (25%)</span>
-                  </div>
-                  <div className="flex justify-between text-slate-300">
-                    <span>Finishing, Tiles & Plumbing:</span>
-                    <span className="font-mono text-white">₹{(finishingCost / 100000).toFixed(1)}L (15%)</span>
-                  </div>
-                  <div className="flex justify-between text-emerald-400 pt-2 border-t border-slate-800 font-bold">
-                    <span>Estimated Completion:</span>
-                    <span>8 – 11 Months</span>
-                  </div>
-                </div>
-
-                <div className="mt-6 space-y-2">
-                  <a
-                    href={`https://wa.me/918884238688?text=${whatsappMessage}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold rounded-xl transition-all flex items-center justify-center space-x-2 text-xs"
-                  >
-                    <span>Lock This Estimate via WhatsApp</span>
-                  </a>
-                  <button
-                    onClick={openQuoteModal}
-                    className="w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold rounded-xl transition-colors text-xs"
-                  >
-                    Request Comprehensive BOQ Breakdown
-                  </button>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* 8. Real Bangalore Construction Photo Showcase */}
       <section className="py-16 bg-white border-b border-slate-100">

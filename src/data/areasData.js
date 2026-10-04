@@ -73,7 +73,7 @@ Because our building materials stockyard is located right here in Arekere, clien
     faqs: [
       {
         q: 'What is the average cost of house construction per sq ft in Arekere, Bengaluru?',
-        a: 'In Arekere, turnkey residential house construction by Sri Gajanana Constructions typically ranges from ₹1,750 per sq ft for Standard quality packages to ₹2,050 per sq ft for Premium specification finishes, and ₹2,450+ per sq ft for Luxury villas. Because our material depot is situated in Arekere, you save an estimated 15% on transport and material markups.'
+        a: 'In Arekere, turnkey residential house construction by Sri Gajanana Constructions is quoted via transparent, itemized Bill of Quantities (BOQ) with zero middleman markup. Because our primary material stockyard is located right in Samrat Layout, Arekere, clients save significantly on transportation and wholesale procurement. Contact 8884238688 / 9535828286 for a custom BOQ quotation.'
       },
       {
         q: 'How fast can building materials and JCBs be dispatched to sites in Arekere?',
@@ -163,7 +163,7 @@ Our proximity from our Arekere materials hub (just 3.8 km away) enables us to de
     faqs: [
       {
         q: 'What is the cost per sq ft for luxury home construction in JP Nagar?',
-        a: 'Turnkey house construction in JP Nagar generally ranges between ₹1,800 to ₹2,200 per sq ft for premium quality specifications (including teakwood doors, granite flooring, branded plumbing fittings, and structural RCC), and ₹2,500+ per sq ft for bespoke architectural luxury builds.'
+        a: 'Turnkey house construction in JP Nagar is quoted based on customized architectural plans and finish specifications (teakwood joinery, granite/vitrified tiling, branded plumbing fixtures, and seismic RCC). Contact our project engineers at 8884238688 for an itemized estimate.'
       },
       {
         q: 'Can you deliver building materials across JP Nagar 1st through 9th Phase?',
@@ -252,7 +252,7 @@ Furthermore, contractors and independent builders in BTM Layout rely on our whol
     faqs: [
       {
         q: 'What is the cost of building a PG or rental apartment in BTM Layout?',
-        a: 'Turnkey construction of multi-room PG buildings and rental apartments in BTM Layout typically averages ₹1,650 to ₹1,950 per sq ft. This includes RCC framed structure, modular electrical points per room, attached bathroom plumbing, tiled corridors, and overhead water storage.'
+        a: 'Turnkey construction of multi-room PG buildings and rental apartments in BTM Layout is tailored to space optimization and rental yield. This includes heavy RCC framed structures, modular electrical points per room, attached bathroom plumbing, and durable finishes. Contact 8884238688 for a complete BOQ estimate.'
       },
       {
         q: 'Can you supply building materials during nighttime or off-peak hours in BTM Layout?',
@@ -342,7 +342,7 @@ Because we own our primary materials depot and heavy machinery fleet, we provide
     faqs: [
       {
         q: 'What is the cost of building a contemporary villa in HSR Layout?',
-        a: 'Premium turnkey villa construction in HSR Layout typically ranges from ₹2,050 to ₹2,550 per sq ft. This includes premium branded materials (Tata Tiscon Fe 550D rebar, UltraTech 43G cement, Kohler/Jaguar bath fittings, teak entrance doors, and large vitrified tiles).'
+        a: 'Premium turnkey villa construction in HSR Layout is planned with verified branded materials (Tata Tiscon Fe 550D rebar, UltraTech 43G cement, premium bath fittings, and custom joinery). Contact 8884238688 for an exact structural and architectural quotation.'
       },
       {
         q: 'How long does it take to complete a 30x40 or 40x60 duplex villa in HSR Layout?',
@@ -432,7 +432,7 @@ Project owners and sub-contractors in Bommanahalli benefit from our nearby mater
     faqs: [
       {
         q: 'What is the construction rate for commercial and residential buildings in Bommanahalli?',
-        a: 'In Bommanahalli, residential turnkey construction ranges from ₹1,700 to ₹1,950 per sq ft, while commercial RCC shell and core construction starts from ₹1,450 to ₹1,750 per sq ft depending on spans and load specifications.'
+        a: 'In Bommanahalli, residential and commercial construction costs are calculated transparently based on your architectural design, structural spans, and load specifications. Our direct stockyard supply eliminates middleman markups. Contact 8884238688 for a customized BOQ estimate.'
       },
       {
         q: 'How fast can a JCB 3DX or excavator reach a construction site in Bommanahalli?',
@@ -523,7 +523,7 @@ Furthermore, we are a preferred wholesale materials partner for projects in Elec
     faqs: [
       {
         q: 'What is the cost of turnkey house construction in Electronic City, Bengaluru?',
-        a: 'Residential house construction in Electronic City ranges from ₹1,750 per sq ft for Standard quality packages to ₹2,100 per sq ft for Premium finishes, and ₹2,450+ per sq ft for luxury architectural villas. Our direct depot pricing on steel and cement saves an estimated 15% overall.'
+        a: 'Residential house construction in Electronic City is estimated based on your built-up area, foundation depth, and interior finish preferences. By supplying primary steel and cement directly from our own depot, we offer unmatched cost efficiency. Call 8884238688 for an itemized proposal.'
       },
       {
         q: 'Do you build in gated communities across Electronic City Phase 1 and Phase 2?',
@@ -613,11 +613,11 @@ Furthermore, we supply high-tonnage bulk materials across Attibele: direct trail
     faqs: [
       {
         q: 'What is the construction rate for warehouses and industrial sheds in Attibele?',
-        a: 'Industrial civil construction in Attibele typically ranges from ₹1,250 to ₹1,650 per sq ft for civil foundations, VDF flooring, and perimeter masonry walls, excluding PEB steel superstructure fabrication.'
+        a: 'Industrial civil construction in Attibele is quoted based on machine foundation requirements, heavy VDF flooring, and structural perimeter masonry. Call 8884238688 for an engineering assessment.'
       },
       {
         q: 'What is the cost of building a residential house in Attibele layouts?',
-        a: 'Turnkey residential house construction in Attibele plotted layouts starts at an affordable ₹1,650 per sq ft for Standard packages and ₹1,950 per sq ft for Premium villa finishes with complete turnkey management.'
+        a: 'Turnkey residential house construction in Attibele plotted layouts is delivered with complete turnkey civil and material management from our stockyard. Contact 8884238688 for a transparent cost estimate.'
       },
       {
         q: 'Can you supply multi-truckload volumes of cement and steel rebar to Attibele industrial projects?',
@@ -702,7 +702,7 @@ Being just 3.1 km from our main Arekere depot, Begur receives lightning-fast del
     faqs: [
       {
         q: 'What is the cost of house construction in Begur, Bengaluru?',
-        a: 'Turnkey residential house construction in Begur typically ranges between ₹1,700 and ₹1,950 per sq ft for Standard to Premium packages. Our nearby Arekere yard ensures zero transit delays and saves you 10-15% on material markups.'
+        a: 'Turnkey residential house construction in Begur is backed by our nearby Arekere stockyard, ensuring zero transit delays and saving 10-15% on middleman markups. Contact 8884238688 for an itemized BOQ.'
       },
       {
         q: 'How quickly can materials reach my site on Begur Main Road or Akshayanagar?',
@@ -790,11 +790,11 @@ Furthermore, we are a key supplier of bulk construction materials in Bommasandra
     faqs: [
       {
         q: 'What is the cost of industrial civil construction in Bommasandra?',
-        a: 'Industrial civil contracting in Bommasandra typically ranges between ₹1,350 and ₹1,750 per sq ft for heavy RCC foundations, grade slabs, and perimeter masonry walls, customized to load and machinery specifications.'
+        a: 'Industrial civil contracting in Bommasandra is customized to heavy machinery foundations, grade slabs, and perimeter masonry. Contact our civil engineers at 8884238688 for an itemized quote.'
       },
       {
         q: 'What are the charges for turnkey residential house construction in Bommasandra?',
-        a: 'Turnkey residential house construction in Bommasandra residential enclaves ranges from ₹1,650 to ₹1,950 per sq ft for Standard to Premium packages, with 100% material quality guarantees.'
+        a: 'Turnkey residential house construction in Bommasandra is executed with 100% certified primary materials and verified structural integrity. Contact 8884238688 for an itemized BOQ proposal.'
       },
       {
         q: 'Can you provide heavy hydraulic rock-breaker excavators in Bommasandra?',
@@ -878,7 +878,7 @@ Plot owners and local builders in Chandapura benefit from our wholesale stockyar
     faqs: [
       {
         q: 'What is the cost of building a 30x40 duplex house in Chandapura?',
-        a: 'In Chandapura, a 30x40 duplex home (approx. 2,200 to 2,400 sq ft built-up area) turnkey construction costs between ₹38 Lakhs and ₹48 Lakhs depending on chosen finishes (Standard vs Premium specifications). Our direct materials depot helps save up to ₹4 Lakhs on procurement costs.'
+        a: 'In Chandapura, duplex home turnkey construction is tailored to your chosen finishes and layout specifications. Our direct materials depot eliminates retailer commissions and provides substantial procurement savings. Contact 8884238688 for a tailored estimate.'
       },
       {
         q: 'Do you build homes in Surya City and surrounding Chandapura layouts?',
@@ -965,7 +965,7 @@ Local contractors and property developers in Hebbagodi also rely on our wholesal
     faqs: [
       {
         q: 'What is the construction rate for residential homes in Hebbagodi?',
-        a: 'Turnkey residential house construction in Hebbagodi typically costs between ₹1,700 and ₹1,950 per sq ft for Standard to Premium packages, inclusive of all structural, civil, plumbing, electrical, and painting works.'
+        a: 'Turnkey residential house construction in Hebbagodi is fully inclusive of all structural, civil, plumbing, electrical, and finishing works, backed by our primary material stockyard. Contact 8884238688 for a custom quote.'
       },
       {
         q: 'How fast can you dispatch building materials to Ananth Nagar or Hebbagodi Main Road?',
@@ -1054,7 +1054,7 @@ Furthermore, we are the primary building material supplier for Hulimavu projects
     faqs: [
       {
         q: 'What is the cost of turnkey house construction in Hulimavu, Bengaluru?',
-        a: 'Turnkey residential house construction in Hulimavu typically ranges from ₹1,750 per sq ft for Standard quality to ₹2,100 per sq ft for Premium luxury finishes. Being only 1.2 km from our Arekere depot, clients save substantially on transportation and material costs.'
+        a: 'Turnkey residential house construction in Hulimavu is priced via itemized BOQ estimates. Being only 1.2 km from our Arekere depot, Hulimavu clients benefit from rapid material dispatch and zero middleman markups. Call 8884238688 for a site visit.'
       },
       {
         q: 'How do you handle construction on plots near Hulimavu Lake?',
@@ -1141,7 +1141,7 @@ Because our central materials stockyard is situated just 2.5 km away in Arekere,
     faqs: [
       {
         q: 'What is the cost of building a house in Bilekahalli, Bengaluru?',
-        a: 'Turnkey residential house construction in Bilekahalli typically ranges between ₹1,750 and ₹2,050 per sq ft for Standard to Premium packages. Our nearby stockyard in Arekere ensures lower transit overheads and wholesale pricing on steel and cement.'
+        a: 'Turnkey residential house construction in Bilekahalli is customized to your plot dimensions and architectural plans. Our nearby stockyard in Arekere guarantees prompt transit and wholesale pricing on primary steel and cement. Call 8884238688 to discuss your build.'
       },
       {
         q: 'Can you add an additional floor to an existing house in Bilekahalli?',
@@ -1229,7 +1229,7 @@ Furthermore, we supply certified construction materials across Haralur Road: who
     faqs: [
       {
         q: 'What is the cost of building a luxury villa on Haralur Road, Bengaluru?',
-        a: 'Turnkey luxury villa construction on Haralur Road typically ranges from ₹2,050 to ₹2,550 per sq ft. This covers premium grade materials (Tata Tiscon Fe 550D rebar, UltraTech 43G cement, teakwood entrance, large vitrified/marble tiles, and high-end bath fittings).'
+        a: 'Turnkey luxury villa construction on Haralur Road covers premium grade materials (Tata Tiscon Fe 550D rebar, UltraTech 43G cement, teakwood entrance, vitrified/marble flooring, and branded bath fittings). Contact 8884238688 for a detailed BOQ proposal.'
       },
       {
         q: 'How long does it take to complete a 40x60 villa on Haralur Road?',
@@ -1316,7 +1316,7 @@ Local plot owners and contractors in Kudlu also rely on our wholesale depot for 
     faqs: [
       {
         q: 'What is the cost of house construction in Kudlu, Bengaluru?',
-        a: 'Turnkey residential house construction in Kudlu typically costs between ₹1,700 and ₹1,950 per sq ft for Standard to Premium packages, inclusive of all structural, civil, plumbing, electrical, and painting works.'
+        a: 'Turnkey residential house construction in Kudlu is executed end-to-end with structural, civil, MEP, and premium finishing works backed by certified quality audits. Call 8884238688 for an itemized estimate.'
       },
       {
         q: 'How fast can building materials reach a site in Kudlu?',
@@ -1403,7 +1403,7 @@ Builders, contractors, and plot owners in Singasandra also benefit from our dire
     faqs: [
       {
         q: 'What is the cost of house construction in Singasandra, Bengaluru?',
-        a: 'Turnkey residential house construction in Singasandra typically costs between ₹1,700 and ₹1,950 per sq ft for Standard to Premium packages, inclusive of all structural, civil, plumbing, electrical, and painting works.'
+        a: 'Turnkey residential house construction in Singasandra is delivered with complete structural, civil, MEP, and painting works, backed by direct delivery from our Arekere yard. Call 8884238688 for a custom BOQ quote.'
       },
       {
         q: 'How fast can building materials reach a site in Singasandra?',
@@ -1490,7 +1490,7 @@ Furthermore, we are a key wholesale building materials partner for Sarjapur Road
     faqs: [
       {
         q: 'What is the cost of building a villa on Sarjapur Road, Bengaluru?',
-        a: 'Turnkey luxury villa construction on Sarjapur Road typically ranges from ₹1,950 to ₹2,450 per sq ft depending on finishing specifications (teakwood doors, premium vitrified/granite flooring, branded bath fixtures, and structural RCC).'
+        a: 'Turnkey luxury villa construction on Sarjapur Road is customized to your exact architectural specifications (teakwood joinery, vitrified/granite flooring, branded bath fixtures, and structural RCC frames). Contact 8884238688 for a personalized project proposal.'
       },
       {
         q: 'How fast can building materials reach job sites on Sarjapur Road?',

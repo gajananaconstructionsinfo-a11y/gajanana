@@ -203,7 +203,7 @@ export default function AreasDirectory() {
                 {/* Card Action Footer */}
                 <div className="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
                   <span className="text-xs font-bold text-slate-700">
-                    From ₹1,750 / sqft
+                    Direct Depot &amp; Turnkey Civil
                   </span>
                   
                   <Link
