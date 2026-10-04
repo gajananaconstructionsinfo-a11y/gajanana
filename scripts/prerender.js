@@ -545,4 +545,23 @@ fs.writeFileSync(path.join(docsDir, 'sitemap.xml'), sitemapXml, 'utf8');
 // Replace public/404.html with clean fallback
 fs.writeFileSync(path.join(publicDir, '404.html'), fs.readFileSync(path.join(distDir, '404.html'), 'utf8'), 'utf8');
 
+// Sync root index.html to docs/index.html (critical for GitHub Pages /docs source)
+fs.writeFileSync(path.join(docsDir, 'index.html'), fs.readFileSync(path.join(distDir, 'index.html'), 'utf8'), 'utf8');
+
+// Sync dist/assets to docs/assets
+const copyDirSync = (src, dest) => {
+  if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
+  const entries = fs.readdirSync(src, { withFileTypes: true });
+  for (const entry of entries) {
+    const srcPath = path.join(src, entry.name);
+    const destPath = path.join(dest, entry.name);
+    if (entry.isDirectory()) {
+      copyDirSync(srcPath, destPath);
+    } else {
+      fs.copyFileSync(srcPath, destPath);
+    }
+  }
+};
+copyDirSync(path.join(distDir, 'assets'), path.join(docsDir, 'assets'));
+
 console.log('Complete static pre-rendering (78 routes) and sitemap.xml generated successfully in dist and docs!');
