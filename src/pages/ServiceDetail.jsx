@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import Breadcrumb from '../components/Breadcrumb';
+import SEOHead from '../components/SEOHead';
 import { CheckCircle, ArrowRight, HelpCircle, Building } from 'lucide-react';
 
 export default function ServiceDetail() {
@@ -17,6 +18,47 @@ export default function ServiceDetail() {
 
   return (
     <div>
+      <SEOHead
+        title={`${service.title} in Bengaluru | Sri Gajanana Constructions`}
+        description={`${service.subtitle || service.desc.slice(0, 150)} Call 8884238688 / 9535828286 for immediate service mobilization.`}
+        keywords={[`${service.title} Bangalore`, service.badge, 'construction services South Bangalore', 'civil contractor Arekere', 'Sri Gajanana Constructions']}
+        canonical={`https://www.gajananaconstructions.in/services/${service.slug}`}
+        schema={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Service",
+              "name": service.title,
+              "description": service.desc,
+              "provider": {
+                "@type": "GeneralContractor",
+                "name": "Sri Gajanana Constructions",
+                "telephone": "+918884238688",
+                "url": "https://www.gajananaconstructions.in/"
+              },
+              "areaServed": "Bengaluru, Karnataka",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "price": "Price on Enquiry",
+                "priceCurrency": "INR"
+              }
+            },
+            ...(service.faqs ? [{
+              "@type": "FAQPage",
+              "mainEntity": service.faqs.map(f => ({
+                "@type": "Question",
+                "name": f.q,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": f.a
+                }
+              }))
+            }] : [])
+          ]
+        }}
+      />
+
       <Breadcrumb
         items={[
           { label: 'Services', link: '/services' },

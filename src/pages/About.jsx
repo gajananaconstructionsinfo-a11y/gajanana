@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import Breadcrumb from '../components/Breadcrumb';
+import SEOHead from '../components/SEOHead';
 import { Shield, Target, Eye, CheckCircle2, Building, ArrowRight, Award } from 'lucide-react';
 
 export default function About() {
@@ -10,6 +11,36 @@ export default function About() {
 
   return (
     <div>
+      <SEOHead
+        title="About Sri Gajanana Constructions | 20+ Years Civil Engineering Legacy in Bangalore"
+        description="Learn about Sri Gajanana Constructions (GTCM) founded by Mr. Gajanana in 2005. Over 20 years of trusted civil engineering, turnkey house builds, and 15,000 MT primary stockyard in Bengaluru."
+        keywords="about Sri Gajanana Constructions, civil contractors Bangalore history, Mr Gajanana CEO, building contractors Arekere, trusted builders South Bangalore"
+        canonical="https://www.gajananaconstructions.in/about"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About Sri Gajanana Constructions",
+          "url": "https://www.gajananaconstructions.in/about",
+          "description": "About Sri Gajanana Constructions - 20+ Years of Construction Leadership & Direct Material Stockyard in Bengaluru.",
+          "mainEntity": {
+            "@type": "GeneralContractor",
+            "name": "Sri Gajanana Constructions",
+            "foundingDate": "2005",
+            "founder": {
+              "@type": "Person",
+              "name": "Mr. Gajanana"
+            },
+            "telephone": "+918884238688",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Bengaluru",
+              "postalCode": "560076",
+              "addressCountry": "IN"
+            }
+          }
+        }}
+      />
+
       <Breadcrumb items={[{ label: 'About Us' }]} />
 
       {/* Hero */}

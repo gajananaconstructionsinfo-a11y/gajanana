@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import Breadcrumb from '../components/Breadcrumb';
+import SEOHead from '../components/SEOHead';
 import { Shield, CheckCircle, FileText, ArrowRight } from 'lucide-react';
 
 export default function ProductDetail() {
@@ -17,6 +18,34 @@ export default function ProductDetail() {
 
   return (
     <div>
+      <SEOHead
+        title={`${sku.name} | Direct Depot Supply Bangalore | Sri Gajanana Constructions`}
+        description={`Procure ${sku.name} in Bengaluru with NABL mill test reports and electronic weighbridge delivery. Contact 8884238688 / 9535828286 for wholesale quote.`}
+        keywords={[`${sku.name}`, sku.category, 'wholesale building materials Bangalore', 'NABL certified', 'Sri Gajanana Constructions']}
+        canonical={`https://www.gajananaconstructions.in/materials/product/${sku.id}`}
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": sku.name,
+          "description": sku.specSummary,
+          "image": sku.image,
+          "brand": {
+            "@type": "Brand",
+            "name": "Sri Gajanana Constructions Depot"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "Price on Enquiry",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "Sri Gajanana Constructions"
+            }
+          }
+        }}
+      />
+
       <Breadcrumb
         items={[
           { label: 'Materials Depot', link: '/materials' },

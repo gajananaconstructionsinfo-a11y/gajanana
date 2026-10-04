@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import Breadcrumb from '../components/Breadcrumb';
+import SEOHead from '../components/SEOHead';
 import { ArrowRight, Clock, HardHat, Layers } from 'lucide-react';
 
 export default function Projects() {
@@ -15,6 +16,20 @@ export default function Projects() {
 
   return (
     <div>
+      <SEOHead
+        title="Ongoing & Completed Construction Projects in Bengaluru | Sri Gajanana Constructions"
+        description="Explore authentic on-site photos of individual residential houses, standalone villas, and commercial builds in Bangalore at foundation, masonry, shuttering, and slab stages."
+        keywords="construction projects Bangalore, house construction photos, villa construction stage, residential civil works Bengaluru, Sri Gajanana Projects"
+        canonical="https://www.gajananaconstructions.in/projects"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Construction Projects Portfolio - Sri Gajanana Constructions",
+          "url": "https://www.gajananaconstructions.in/projects",
+          "description": "Authentic on-site construction photos and structural progress across individual residential and commercial builds in Bengaluru."
+        }}
+      />
+
       <Breadcrumb items={[{ label: 'Individual Projects' }]} />
 
       {/* Hero */}

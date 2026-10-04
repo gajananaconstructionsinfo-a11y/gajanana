@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import Breadcrumb from '../components/Breadcrumb';
+import SEOHead from '../components/SEOHead';
 import { Shield, ArrowRight } from 'lucide-react';
 
 export default function MaterialCategory() {
@@ -22,6 +23,26 @@ export default function MaterialCategory() {
 
   return (
     <div>
+      <SEOHead
+        title={`${currentCategory.name} Wholesale Supplier Bangalore | Sri Gajanana Constructions`}
+        description={`Buy genuine ${currentCategory.name} in Bengaluru with manufacturer test certificates and weighbridge accuracy. Direct stockyard supply with site delivery. Call 8884238688.`}
+        keywords={[`${currentCategory.name} Bangalore`, 'wholesale building materials', 'direct yard dispatch', 'Arekere stockyard', 'Sri Gajanana Materials']}
+        canonical={`https://www.gajananaconstructions.in/materials/${currentCategory.slug}`}
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": `${currentCategory.name} - Wholesale Building Materials`,
+          "url": `https://www.gajananaconstructions.in/materials/${currentCategory.slug}`,
+          "description": currentCategory.shortDesc,
+          "provider": {
+            "@type": "WholesaleStore",
+            "name": "Sri Gajanana Constructions Materials Depot",
+            "telephone": "+918884238688",
+            "url": "https://www.gajananaconstructions.in/"
+          }
+        }}
+      />
+
       <Breadcrumb
         items={[
           { label: 'Materials Depot', link: '/materials' },

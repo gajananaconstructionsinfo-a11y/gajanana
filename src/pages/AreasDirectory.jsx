@@ -12,6 +12,7 @@ import {
   Phone
 } from 'lucide-react';
 import { AREAS } from '../data/areasData';
+import SEOHead from '../components/SEOHead';
 import { useApp } from '../context/AppContext';
 
 export default function AreasDirectory() {
@@ -29,6 +30,26 @@ export default function AreasDirectory() {
 
   return (
     <div className="bg-white min-h-screen">
+      <SEOHead
+        title="Areas We Serve in South Bengaluru | Sri Gajanana Constructions"
+        description="Turnkey residential house construction, JCB earthmoving fleet rental & wholesale building materials depot across 17 South & Southeast Bengaluru localities."
+        keywords="construction areas Bangalore, house builders South Bangalore, civil contractors JP Nagar, building materials Electronic City, Arekere builders"
+        canonical="https://www.gajananaconstructions.in/areas"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Areas We Serve in South Bengaluru",
+          "url": "https://www.gajananaconstructions.in/areas",
+          "description": "Comprehensive construction and materials supply across 17 major South & Southeast Bengaluru localities.",
+          "provider": {
+            "@type": "GeneralContractor",
+            "name": "Sri Gajanana Constructions",
+            "telephone": "+918884238688",
+            "url": "https://www.gajananaconstructions.in/"
+          }
+        }}
+      />
+
       {/* Breadcrumb */}
       <nav className="bg-slate-50 border-b border-slate-200 py-3 text-xs text-slate-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2">

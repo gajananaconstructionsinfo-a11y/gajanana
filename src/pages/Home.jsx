@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import { Shield, Award, Users, CheckCircle, ArrowRight, Building, Truck, FileText, Star } from 'lucide-react';
+import SEOHead from '../components/SEOHead';
 
 export default function Home() {
   const { data, openQuickQuote } = useApp();
@@ -9,6 +10,56 @@ export default function Home() {
 
   return (
     <div className="space-y-0">
+      <SEOHead
+        title="Sri Gajanana Constructions | Best Construction Company & Materials Depot in Bengaluru"
+        description="Leading construction company in Bangalore. Turnkey residential house construction, JCB & earthmoving machinery rental, and wholesale building materials depot (TMT steel, cement, M-sand). Call 8884238688 / 9535828286."
+        keywords="construction company Bangalore, house builders Bengaluru, building materials Arekere, TMT steel Fe 550D, UltraTech cement Bangalore, JCB rental Bangalore, civil contractors South Bengaluru, Sri Gajanana Constructions, turnkey home construction"
+        canonical="https://www.gajananaconstructions.in/"
+        schema={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "GeneralContractor",
+              "@id": "https://www.gajananaconstructions.in/#contractor",
+              "name": "Sri Gajanana Constructions - GAJANANA TRADERS & CONSTRUCTIONS & MATERIALS",
+              "alternateName": "Sri Gajanana Constructions",
+              "url": "https://www.gajananaconstructions.in/",
+              "logo": "https://www.gajananaconstructions.in/fallback.svg",
+              "image": "https://www.gajananaconstructions.in/images/products/tata-tiscon-tmt.jpg",
+              "description": "Complete construction solutions company, trading house and one-stop construction materials destination. Turnkey house building, earthmoving fleet, and primary stockyard in Bangalore since 2005.",
+              "founder": {
+                "@type": "Person",
+                "name": "Mr. Gajanana",
+                "jobTitle": "Founder & Managing Director"
+              },
+              "foundingDate": "2005",
+              "telephone": ["+918884238688", "+919535828286"],
+              "email": "gajananaconstructionsinfo@gmail.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "7013, 2nd Main Rd, Samrat Layout, Sarvobhogam Nagar, Arekere",
+                "addressLocality": "Bengaluru",
+                "addressRegion": "Karnataka",
+                "postalCode": "560076",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 12.8878405,
+                "longitude": 77.6017497
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "248",
+                "bestRating": "5"
+              },
+              "priceRange": "₹₹"
+            }
+          ]
+        }}
+      />
+
       
       {/* 1. HERO SECTION (Matching Stitch Screen 1) */}
       <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-white py-12 sm:py-20 border-b border-slate-200">

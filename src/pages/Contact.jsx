@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
+import SEOHead from '../components/SEOHead';
 import { useApp } from '../context/AppContext';
 import { buildMailtoUrl, buildWhatsAppUrl } from '../lib/email';
 
@@ -43,6 +44,37 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEOHead
+        title="Contact Sri Gajanana Constructions | Yard Location & Phone Numbers Bangalore"
+        description="Contact Sri Gajanana Constructions. Call +91 88842 38688 / +91 95358 28286 or visit our central office and stockyard at Samrat Layout, Arekere, Bengaluru 560076."
+        keywords="contact Sri Gajanana Constructions, construction company Arekere contact, building materials Bangalore phone number, Sarvobhogam Nagar contractor"
+        canonical="https://www.gajananaconstructions.in/contact"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact Sri Gajanana Constructions",
+          "url": "https://www.gajananaconstructions.in/contact",
+          "mainEntity": {
+            "@type": "GeneralContractor",
+            "name": "Sri Gajanana Constructions",
+            "telephone": ["+918884238688", "+919535828286"],
+            "email": "gajananaconstructionsinfo@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "7013, 2nd Main Rd, Samrat Layout, Sarvobhogam Nagar, Arekere",
+              "addressLocality": "Bengaluru",
+              "postalCode": "560076",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 12.8878405,
+              "longitude": 77.6017497
+            }
+          }
+        }}
+      />
+
       <Breadcrumb items={[{ label: 'Contact Us' }]} />
 
       {/* Pricing Policy Top Banner */}

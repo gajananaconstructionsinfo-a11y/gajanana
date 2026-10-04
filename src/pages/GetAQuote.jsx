@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
+import SEOHead from '../components/SEOHead';
 import { useApp } from '../context/AppContext';
 import { buildMailtoUrl, buildWhatsAppUrl } from '../lib/email';
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import Breadcrumb from '../components/Breadcrumb';
+import SEOHead from '../components/SEOHead';
 import { CheckCircle, MapPin, Clock, Building, ArrowRight } from 'lucide-react';
 
 export default function ProjectDetail() {
@@ -9,7 +10,7 @@ export default function ProjectDetail() {
   const { data } = useApp();
   const { projects } = data;
 
-  const project = projects.find((p) => p.id === id) || projects[0];
+  const project = projects.find((p) => p.id === id || p.slug === id) || projects[0];
 
   if (!project) {
     return <Navigate to="/projects" replace />;
@@ -17,6 +18,24 @@ export default function ProjectDetail() {
 
   return (
     <div>
+      <SEOHead
+        title={`${project.title} | Construction Portfolio | Sri Gajanana Constructions`}
+        description={`${project.desc.slice(0, 150)}... Built with Fe 550D TMT, 53G cement, and verified structural integrity in Bengaluru.`}
+        keywords={[`${project.title}`, project.type, project.stage, 'Bengaluru construction progress', 'Sri Gajanana Constructions']}
+        canonical={`https://www.gajananaconstructions.in/projects/${project.id}`}
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "name": project.title,
+          "description": project.desc,
+          "provider": {
+            "@type": "GeneralContractor",
+            "name": "Sri Gajanana Constructions",
+            "url": "https://www.gajananaconstructions.in/"
+          }
+        }}
+      />
+
       <Breadcrumb
         items={[
           { label: 'Projects', link: '/projects' },
