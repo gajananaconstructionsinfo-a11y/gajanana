@@ -37,10 +37,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-18 lg:h-20 gap-2">
           
           {/* Brand Logo */}
-          <Link to="/" className="flex items-center space-x-2.5 sm:space-x-3 group shrink-0">
-            <div className="w-10 h-10 sm:w-11 sm:h-11 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center text-slate-950 shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform shrink-0">
-              <Building2 className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.2]" />
-            </div>
+          <Link to="/" className="flex items-center space-x-2.5 sm:space-x-3 group shrink-0" title="Gajanana Constructions Home">
+            <img
+              src="/logo.svg"
+              alt="Gajanana Constructions Logo"
+              width="44"
+              height="44"
+              className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform shrink-0 object-contain"
+            />
             <div className="flex flex-col">
               <div className="text-slate-900 font-extrabold text-base sm:text-lg lg:text-xl tracking-wider font-heading leading-tight group-hover:text-amber-600 transition-colors">
                 GAJANANA

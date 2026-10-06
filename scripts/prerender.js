@@ -250,7 +250,8 @@ for (const targetDir of targets) {
             "sameAs": [
               "https://www.quora.com/profile/Gajananaconstructions/Central-Bannerghatta-Road-Sector-South-Bengaluru-Construction-Company-Building-Contractor-in-Bilekahalli-Bengaluru"
             ],
-            "image": "https://www.gajananaconstructions.in/images/products/tata-tiscon-tmt.jpg",
+            "image": "https://www.gajananaconstructions.in/images/og-logo-preview.png",
+            "logo": "https://www.gajananaconstructions.in/logo.png",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Samrat Layout, Sarvobhogam Nagar, Arekere",
@@ -548,8 +549,23 @@ fs.writeFileSync(path.join(publicDir, '404.html'), fs.readFileSync(path.join(dis
 // Sync root index.html to docs/index.html (critical for GitHub Pages /docs source)
 fs.writeFileSync(path.join(docsDir, 'index.html'), fs.readFileSync(path.join(distDir, 'index.html'), 'utf8'), 'utf8');
 
-// Sync favicon.svg and robots.txt
-['favicon.svg', 'robots.txt'].forEach((file) => {
+// Sync branding assets, multi-size favicons, manifest, and robots.txt
+[
+  'favicon.svg',
+  'favicon.ico',
+  'favicon-16x16.png',
+  'favicon-32x32.png',
+  'favicon-48x48.png',
+  'favicon-96x96.png',
+  'apple-touch-icon.png',
+  'android-chrome-192x192.png',
+  'android-chrome-512x512.png',
+  'logo.png',
+  'logo-192.png',
+  'logo.svg',
+  'site.webmanifest',
+  'robots.txt'
+].forEach((file) => {
   const src = path.join(publicDir, file);
   if (fs.existsSync(src)) {
     fs.copyFileSync(src, path.join(distDir, file));
@@ -572,5 +588,9 @@ const copyDirSync = (src, dest) => {
   }
 };
 copyDirSync(path.join(distDir, 'assets'), path.join(docsDir, 'assets'));
+if (fs.existsSync(path.join(publicDir, 'images'))) {
+  copyDirSync(path.join(publicDir, 'images'), path.join(distDir, 'images'));
+  copyDirSync(path.join(publicDir, 'images'), path.join(docsDir, 'images'));
+}
 
 console.log('Complete static pre-rendering (78 routes) and sitemap.xml generated successfully in dist and docs!');

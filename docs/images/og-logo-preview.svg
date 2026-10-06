@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="ogBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="40%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="ogGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="ogShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="badgeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#f59e0b" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+
+  <!-- Architectural Background Grid -->
+  <g stroke="#334155" stroke-opacity="0.25" stroke-width="1.5">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#ogGold)"/>
+
+  <!-- Left: Official Brand Emblem Container -->
+  <g transform="translate(90, 135)" filter="url(#ogShadow)">
+    <rect width="360" height="360" rx="64" fill="url(#cardGrad)" stroke="url(#ogGold)" stroke-width="3" stroke-opacity="0.4"/>
+    
+    <!-- Stylized Monogram in Logo Card -->
+    <g transform="translate(180, 180) scale(0.6) translate(-256, -256)">
+      <path d="M 370 156
+               C 325 110, 240 100, 180 135
+               C 115 174, 96 260, 130 330
+               C 165 400, 250 425, 330 395
+               C 380 376, 405 340, 412 288
+               L 260 288
+               L 260 236
+               L 456 236
+               C 460 320, 420 415, 340 452
+               C 230 502, 110 455, 60 350
+               C 12 248, 48 126, 142 72
+               C 225 24, 342 36, 408 100
+               Z"
+            fill="url(#ogGold)"/>
+      <rect x="190" y="176" width="34" height="170" rx="8" fill="#ffffff" fill-opacity="0.95"/>
+      <rect x="238" y="140" width="34" height="206" rx="8" fill="#fbbf24"/>
+      <rect x="286" y="184" width="34" height="162" rx="8" fill="#ffffff" fill-opacity="0.95"/>
+      <rect x="170" y="356" width="170" height="14" rx="7" fill="url(#ogGold)"/>
+    </g>
+
+    <!-- Emblem Text -->
+    <text x="180" y="325" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#f59e0b" letter-spacing="4" text-anchor="middle">ESTD 2005 • BENGALURU</text>
+  </g>
+
+  <!-- Right: Typography & Brand Value -->
+  <g transform="translate(500, 140)">
+    <!-- Pill Badge -->
+    <rect x="0" y="0" width="410" height="38" rx="19" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1.5"/>
+    <circle cx="20" cy="19" r="6" fill="#10b981"/>
+    <text x="36" y="24" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" fill="#fbbf24" letter-spacing="1.5">VERIFIED BUILDER &amp; MATERIAL DEPOT</text>
+
+    <!-- Main Headline -->
+    <text x="0" y="95" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="900" fill="#ffffff" letter-spacing="-1">
+      GAJANANA
+    </text>
+    <text x="0" y="150" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="url(#ogGold)" letter-spacing="-0.5">
+      CONSTRUCTIONS
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="200" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="500" fill="#cbd5e1" letter-spacing="0.2">
+      Turnkey House Construction • Earthmoving Fleet • Direct Stockyard
+    </text>
+
+    <!-- Key Pillars / Trust Tags -->
+    <g transform="translate(0, 240)">
+      <rect x="0" y="0" width="170" height="42" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="85" y="26" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">15,000 MT Depot</text>
+
+      <rect x="185" y="0" width="180" height="42" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="275" y="26" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">In-House JCB Fleet</text>
+
+      <rect x="380" y="0" width="180" height="42" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="470" y="26" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">20+ Yrs Civil Legacy</text>
+    </g>
+
+    <!-- Contact & Action Footer -->
+    <g transform="translate(0, 315)">
+      <rect x="0" y="0" width="260" height="48" rx="12" fill="url(#ogGold)" filter="url(#badgeGlow)"/>
+      <text x="130" y="30" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900" fill="#090d16" text-anchor="middle">CALL 8884238688</text>
+
+      <text x="290" y="31" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#94a3b8">
+        www.gajananaconstructions.in
+      </text>
+    </g>
+  </g>
+</svg>

@@ -14,19 +14,23 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div className="lg:col-span-3">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-amber-500 rounded-xl flex items-center justify-center text-slate-950 font-extrabold text-base shadow-md font-heading shrink-0">
-                GTCM
-              </div>
+            <Link to="/" className="flex items-center space-x-3 mb-4 group inline-flex" title="Gajanana Constructions Home">
+              <img
+                src="/logo.svg"
+                alt="Gajanana Constructions Logo"
+                width="40"
+                height="40"
+                className="w-10 h-10 rounded-xl shadow-md group-hover:scale-105 transition-transform shrink-0 object-contain"
+              />
               <div className="flex flex-col">
-                <div className="text-white font-heading font-extrabold text-lg tracking-wider leading-tight">
+                <div className="text-white font-heading font-extrabold text-lg tracking-wider leading-tight group-hover:text-amber-400 transition-colors">
                   GAJANANA
                 </div>
                 <div className="text-amber-400 text-[9px] sm:text-[10px] font-bold tracking-wider uppercase leading-tight mt-0.5">
                   TRADERS &amp; CONSTRUCTIONS &amp; MATERIALS
                 </div>
               </div>
-            </div>
+            </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-sm font-light">
               {company.subheading}. {company.tagline}
             </p>

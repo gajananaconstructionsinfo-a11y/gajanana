@@ -10,7 +10,7 @@ export default function SEOHead({
   description,
   keywords,
   canonical,
-  ogImage = 'https://www.gajananaconstructions.in/images/products/tata-tiscon-tmt.jpg',
+  ogImage = 'https://www.gajananaconstructions.in/images/og-logo-preview.png',
   ogType = 'website',
   schema
 }) {
@@ -57,14 +57,24 @@ export default function SEOHead({
     if (title) setMetaTag('property', 'og:title', title);
     if (description) setMetaTag('property', 'og:description', description);
     if (canonical) setMetaTag('property', 'og:url', canonical);
-    if (ogImage) setMetaTag('property', 'og:image', ogImage);
+    if (ogImage) {
+      setMetaTag('property', 'og:image', ogImage);
+      setMetaTag('property', 'og:image:secure_url', ogImage);
+      setMetaTag('property', 'og:image:width', '1200');
+      setMetaTag('property', 'og:image:height', '630');
+      setMetaTag('property', 'og:image:type', 'image/png');
+      setMetaTag('property', 'og:image:alt', 'Gajanana Constructions - Bangalore House Construction & Materials Depot');
+    }
     setMetaTag('property', 'og:type', ogType);
 
     // 5. Twitter Card Meta Tags
     setMetaTag('name', 'twitter:card', 'summary_large_image');
     if (title) setMetaTag('name', 'twitter:title', title);
     if (description) setMetaTag('name', 'twitter:description', description);
-    if (ogImage) setMetaTag('name', 'twitter:image', ogImage);
+    if (ogImage) {
+      setMetaTag('name', 'twitter:image', ogImage);
+      setMetaTag('name', 'twitter:image:alt', 'Gajanana Constructions Official Logo');
+    }
 
     // 6. Schema.org JSON-LD Structured Data
     if (schema) {
