@@ -557,6 +557,7 @@ fs.writeFileSync(path.join(docsDir, 'index.html'), fs.readFileSync(path.join(dis
   'favicon-32x32.png',
   'favicon-48x48.png',
   'favicon-96x96.png',
+  'favicon-144x144.png',
   'apple-touch-icon.png',
   'android-chrome-192x192.png',
   'android-chrome-512x512.png',
