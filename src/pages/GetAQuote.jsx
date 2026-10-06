@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { Home, Truck, Layers, Boxes, Factory, Check, Mail, MessageSquare, Phone, Loader2, ArrowRight, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
 import SEOHead from '../components/SEOHead';
@@ -101,7 +102,7 @@ export default function GetAQuote() {
       <Breadcrumb items={[{ label: 'Get a Quote' }]} />
 
       {/* Pricing Policy Top Notice */}
-      <div className="bg-amber-500 text-slate-950 py-2.5 px-4 text-xs font-mono font-bold text-center border-b border-amber-600 shadow-inner">
+      <div className="bg-amber-500 text-slate-950 py-2.5 px-4 text-xs font-mono font-bold text-center border-b border-amber-700 shadow-inner">
         <span>📢 ZERO BROKERAGE PRICING: For official rate cards, wholesale project pricing, and machine dispatch, contact </span>
         <a href="tel:8884238688" className="underline font-extrabold text-slate-950 hover:text-white ml-1">8884238688</a>
         <span className="mx-1">/</span>
@@ -143,11 +144,11 @@ export default function GetAQuote() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
-                  { id: 'turnkey', title: 'Complete Turnkey Construction', desc: 'Architecture, civil structure, finishes, plumbing, electrical & handover.', icon: 'fa-house-chimney' },
-                  { id: 'machinery', title: 'Earthmoving & JCB Fleet Rental', desc: 'JCB 3DX backhoes, 20T hydraulic excavators, rock breakers & site grading.', icon: 'fa-truck-front' },
-                  { id: 'civil', title: 'Civil & Structural Core', desc: 'Foundation, RCC column frame, masonry walls & slab casting.', icon: 'fa-cubes-stacked' },
-                  { id: 'materials', title: 'Direct Yard Materials Supply', desc: 'Bulk procurement of Fe 550D TMT, 53G cement, sand & bricks.', icon: 'fa-truck-ramp-box' },
-                  { id: 'renovation', title: 'Commercial & Structural Additions', desc: 'Vertical floors expansion, retrofitting, industrial shed erection.', icon: 'fa-industry' },
+                  { id: 'turnkey', title: 'Complete Turnkey Construction', desc: 'Architecture, civil structure, finishes, plumbing, electrical & handover.', icon: 'Home' },
+                  { id: 'machinery', title: 'Earthmoving & JCB Fleet Rental', desc: 'JCB 3DX backhoes, 20T hydraulic excavators, rock breakers & site grading.', icon: 'Truck' },
+                  { id: 'civil', title: 'Civil & Structural Core', desc: 'Foundation, RCC column frame, masonry walls & slab casting.', icon: 'Layers' },
+                  { id: 'materials', title: 'Direct Yard Materials Supply', desc: 'Bulk procurement of Fe 550D TMT, 53G cement, sand & bricks.', icon: 'Boxes' },
+                  { id: 'renovation', title: 'Commercial & Structural Additions', desc: 'Vertical floors expansion, retrofitting, industrial shed erection.', icon: 'Factory' },
                 ].map((item) => (
                   <button
                     key={item.id}
@@ -160,7 +161,11 @@ export default function GetAQuote() {
                     }`}
                   >
                     <div className="flex items-center gap-3 mb-2">
-                      <i className={`fa-solid ${item.icon} ${projectType === item.id ? 'text-amber-600' : 'text-slate-500'} text-lg`}></i>
+                      {item.id === 'turnkey' && <Home className={projectType === item.id ? 'w-5 h-5 text-amber-700' : 'w-5 h-5 text-slate-500'} />}
+  {item.id === 'machinery' && <Truck className={projectType === item.id ? 'w-5 h-5 text-amber-700' : 'w-5 h-5 text-slate-500'} />}
+  {item.id === 'civil' && <Layers className={projectType === item.id ? 'w-5 h-5 text-amber-700' : 'w-5 h-5 text-slate-500'} />}
+  {item.id === 'materials' && <Boxes className={projectType === item.id ? 'w-5 h-5 text-amber-700' : 'w-5 h-5 text-slate-500'} />}
+  {item.id === 'renovation' && <Factory className={projectType === item.id ? 'w-5 h-5 text-amber-700' : 'w-5 h-5 text-slate-500'} />}
                       <span className="font-bold text-sm text-slate-900">{item.title}</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">{item.desc}</p>
@@ -264,7 +269,7 @@ export default function GetAQuote() {
                   >
                     <div className="flex items-center gap-3">
                       <div className={`w-5 h-5 rounded flex items-center justify-center border ${selectedMaterials[mat.key] ? 'bg-amber-500 border-amber-500 text-white' : 'border-slate-300'}`}>
-                        {selectedMaterials[mat.key] && <i className="fa-solid fa-check text-xs"></i>}
+                        {selectedMaterials[mat.key] && <Check className="w-3.5 h-3.5 inline text-slate-950" />}
                       </div>
                       <span className="text-sm font-semibold text-slate-800">{mat.name}</span>
                     </div>
@@ -392,14 +397,14 @@ export default function GetAQuote() {
                 {submitted ? (
                   <div className="p-5 rounded-xl bg-emerald-950/80 border border-emerald-500/50 text-center space-y-3">
                     <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto text-xl shadow-inner">
-                      <i className="fa-solid fa-check"></i>
+                      <Check className="w-4 h-4 inline text-emerald-600" />
                     </div>
                     <div className="font-bold text-white text-base">Quotation Specifications Recorded!</div>
                     <div className="text-xs text-slate-300">Ticket Reference:</div>
                     <div className="font-mono text-amber-400 font-bold text-base bg-slate-900/80 py-1 px-3 rounded border border-slate-700 inline-block">{generatedTicket?.ticketId}</div>
 
                     <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded bg-emerald-900/60 border border-emerald-500/40 text-emerald-300 text-[11px] font-mono">
-                      <i className="fa-solid fa-envelope"></i>
+                      <Mail className="w-4 h-4 inline" />
                       <span>Forwarded to gajananaconstructionsinfo@gmail.com</span>
                     </div>
 
@@ -412,7 +417,7 @@ export default function GetAQuote() {
                         href={buildMailtoUrl(generatedTicket || { customer, builtUpArea, ticketId: generatedTicket?.ticketId })}
                         className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-xs font-bold transition shadow"
                       >
-                        <i className="fa-solid fa-envelope text-sm"></i>
+                        <Mail className="w-4 h-4 inline" />
                         <span>Send BOQ via Gmail / Mail App</span>
                       </a>
 
@@ -422,7 +427,7 @@ export default function GetAQuote() {
                         rel="noreferrer"
                         className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold transition shadow"
                       >
-                        <i className="fa-brands fa-whatsapp text-sm"></i>
+                        <MessageSquare className="w-4 h-4 inline" />
                         <span>Send BOQ via WhatsApp (8884238688)</span>
                       </a>
 
@@ -431,14 +436,14 @@ export default function GetAQuote() {
                           href="tel:8884238688"
                           className="inline-flex items-center justify-center gap-2 px-3 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-xl text-xs font-bold transition font-mono"
                         >
-                          <i className="fa-solid fa-phone text-sm"></i>
+                          <Phone className="w-3.5 h-3.5 inline" />
                           <span>Call 8884238688</span>
                         </a>
                         <a
                           href="tel:9535828286"
                           className="inline-flex items-center justify-center gap-2 px-3 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-xl text-xs font-bold transition font-mono"
                         >
-                          <i className="fa-solid fa-phone text-sm"></i>
+                          <Phone className="w-3.5 h-3.5 inline" />
                           <span>Call 9535828286</span>
                         </a>
                       </div>
@@ -502,13 +507,13 @@ export default function GetAQuote() {
                     >
                       {isSubmitting ? (
                         <>
-                          <i className="fa-solid fa-circle-notch fa-spin text-slate-950"></i>
+                          <Loader2 className="w-4 h-4 inline animate-spin text-slate-950" />
                           <span>Transmitting to gajananaconstructionsinfo@gmail.com...</span>
                         </>
                       ) : (
                         <>
                           <span>Lock In Specifications &amp; Request BOQ</span>
-                          <i className="fa-solid fa-arrow-right"></i>
+                          <ArrowRight className="w-4 h-4 inline" />
                         </>
                       )}
                     </button>
@@ -524,20 +529,20 @@ export default function GetAQuote() {
             {/* Corporate Transparency Callout */}
             <div className="p-5 rounded-xl border border-slate-200 bg-white shadow-sm space-y-3">
               <h4 className="font-bold text-sm text-slate-900 flex items-center gap-2">
-                <i className="fa-solid fa-certificate text-amber-500"></i>
+                <Award className="w-4 h-4 inline text-amber-500" />
                 <span>Gajanana Direct Transparency Promise</span>
               </h4>
               <ul className="text-xs text-slate-600 space-y-2">
                 <li className="flex items-start gap-2">
-                  <i className="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                  <Check className="w-4 h-4 inline text-emerald-600 shrink-0 mt-0.5" />
                   <span><strong>Zero Hidden Cost Policy:</strong> Itemized line-by-line schedules with standard escalation clauses.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <i className="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                  <Check className="w-4 h-4 inline text-emerald-600 shrink-0 mt-0.5" />
                   <span><strong>Direct Weighbridge Slips:</strong> Certified computer slip delivered with every tipper / flatbed.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <i className="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                  <Check className="w-4 h-4 inline text-emerald-600 shrink-0 mt-0.5" />
                   <span><strong>In-House Machinery Fleet:</strong> JCB 3DX &amp; heavy excavators mobilized directly from yard.</span>
                 </li>
               </ul>

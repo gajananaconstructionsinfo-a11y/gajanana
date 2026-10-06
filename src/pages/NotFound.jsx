@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Compass } from 'lucide-react';
 
 export default function NotFound() {
   return (
     <div className="min-h-[70vh] flex items-center justify-center bg-white px-4 py-16">
       <div className="max-w-md w-full text-center">
         <div className="w-20 h-20 bg-amber-50 rounded-full flex items-center justify-center mx-auto mb-6 border border-amber-200">
-          <i className="fa-solid fa-compass-drafting text-3xl text-amber-600"></i>
+          <Compass className="w-10 h-10 text-amber-700" />
         </div>
-        <div className="text-sm font-bold uppercase tracking-widest text-amber-600 mb-2">404 Error</div>
+        <div className="text-sm font-bold uppercase tracking-widest text-amber-700 mb-2">404 Error</div>
         <h1 className="text-3xl font-extrabold font-heading text-slate-900 mb-3">
           Blueprint Not Found
         </h1>

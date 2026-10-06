@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { MapPin, Truck, Phone, Mail, Clock, Zap, ArrowRight, Check, MessageSquare, ShieldCheck, Loader2, Send, Navigation, Compass, Building2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
 import SEOHead from '../components/SEOHead';
@@ -78,7 +79,7 @@ export default function Contact() {
       <Breadcrumb items={[{ label: 'Contact Us' }]} />
 
       {/* Pricing Policy Top Banner */}
-      <div className="bg-amber-500 text-slate-950 py-2.5 px-3 sm:px-4 text-[11px] sm:text-xs font-mono font-bold text-center border-b border-amber-600 shadow-inner leading-relaxed overflow-hidden w-full max-w-full">
+      <div className="bg-amber-500 text-slate-950 py-2.5 px-3 sm:px-4 text-[11px] sm:text-xs font-mono font-bold text-center border-b border-amber-700 shadow-inner leading-relaxed overflow-hidden w-full max-w-full">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
           <span>📢 FOR PRICING, WHOLESALE RATES &amp; MACHINERY:</span>
           <span className="inline-flex items-center gap-1">
@@ -125,8 +126,8 @@ export default function Contact() {
             <div className="space-y-4 w-full">
               {/* Address Card */}
               <div className="p-4 sm:p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3 sm:gap-4 overflow-hidden w-full">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0 mt-0.5">
-                  <i className="fa-solid fa-location-dot text-xl"></i>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0 mt-0.5">
+                  <MapPin className="w-5 h-5 inline" />
                 </div>
                 <div>
                   <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Registered Facility</div>
@@ -137,7 +138,7 @@ export default function Contact() {
                     Bengaluru, Karnataka - 560076
                   </p>
                   <p className="text-xs text-amber-700 font-medium mt-2">
-                    <i className="fa-solid fa-truck-moving mr-1"></i> Heavy commercial trailers clearance &amp; central dispatch available
+                    <Truck className="w-5 h-5 inline" /> Heavy commercial trailers clearance &amp; central dispatch available
                   </p>
                 </div>
               </div>
@@ -145,7 +146,7 @@ export default function Contact() {
               {/* Direct Phones */}
               <div className="p-4 sm:p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3 sm:gap-4 overflow-hidden w-full">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-blue-500/10 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
-                  <i className="fa-solid fa-phone text-lg sm:text-xl"></i>
+                  <Phone className="w-4 h-4 inline" />
                 </div>
                 <div className="min-w-0 flex-1">
                   <div className="text-[11px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Contact Details</div>
@@ -153,9 +154,9 @@ export default function Contact() {
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                       <span className="text-xs text-slate-500">Phone Numbers:</span>
                       <div className="flex items-center gap-2 font-mono font-bold text-slate-900 text-xs sm:text-sm">
-                        <a href="tel:8884238688" className="hover:text-amber-600">8884238688</a>
+                        <a href="tel:8884238688" className="hover:text-amber-700">8884238688</a>
                         <span className="text-slate-400 font-normal">/</span>
-                        <a href="tel:9535828286" className="hover:text-amber-600">9535828286</a>
+                        <a href="tel:9535828286" className="hover:text-amber-700">9535828286</a>
                       </div>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
@@ -171,11 +172,11 @@ export default function Contact() {
               {/* Email & Correspondence */}
               <div className="p-4 sm:p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3 sm:gap-4 overflow-hidden w-full">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
-                  <i className="fa-solid fa-envelope text-lg sm:text-xl"></i>
+                  <Mail className="w-4 h-4 inline" />
                 </div>
                 <div className="min-w-0 flex-1">
                   <div className="text-[11px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Official Communications &amp; Pricing</div>
-                  <a href="mailto:gajananaconstructionsinfo@gmail.com" className="text-xs sm:text-sm font-bold text-slate-900 hover:text-amber-600 block break-all font-mono">
+                  <a href="mailto:gajananaconstructionsinfo@gmail.com" className="text-xs sm:text-sm font-bold text-slate-900 hover:text-amber-700 block break-all font-mono">
                     gajananaconstructionsinfo@gmail.com
                   </a>
                   <p className="text-xs text-slate-500 mt-2 leading-relaxed">Verified digital tenders, structural drawings, and itemized BOQ rate requests.</p>
@@ -185,7 +186,7 @@ export default function Contact() {
               {/* Operating Hours */}
               <div className="p-4 sm:p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3 sm:gap-4 overflow-hidden w-full">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-purple-500/10 text-purple-600 flex items-center justify-center shrink-0 mt-0.5">
-                  <i className="fa-solid fa-clock text-xl"></i>
+                  <Clock className="w-5 h-5 inline" />
                 </div>
                 <div>
                   <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Operations Timing</div>
@@ -201,11 +202,11 @@ export default function Contact() {
 
             {/* Quick Links */}
             <div className="p-4 sm:p-5 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 overflow-hidden w-full">
-              <h4 className="font-bold text-sm mb-1"><i className="fa-solid fa-bolt text-amber-600 mr-1.5"></i> Need an immediate formal rate quotation?</h4>
+              <h4 className="font-bold text-sm mb-1"><Zap className="w-4 h-4 inline text-amber-500" /> Need an immediate formal rate quotation?</h4>
               <p className="text-xs text-amber-800 mb-3">Skip manual email threads and generate an instant itemized estimate with transport costs.</p>
               <Link to="/get-a-quote" className="inline-flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-lg text-xs font-bold transition">
                 <span>Go to Estimation Engine</span>
-                <i className="fa-solid fa-arrow-right"></i>
+                <ArrowRight className="w-4 h-4 inline" />
               </Link>
             </div>
           </div>
@@ -214,7 +215,7 @@ export default function Contact() {
           <div className="lg:col-span-7 min-w-0 w-full max-w-full overflow-hidden">
             <div className="bg-white border border-slate-200 rounded-2xl p-4 sm:p-8 lg:p-10 shadow-sm overflow-hidden w-full max-w-full">
               <div className="mb-8">
-                <span className="text-xs font-bold text-amber-600 uppercase tracking-wider">Fast-Track Form</span>
+                <span className="text-xs font-bold text-amber-700 uppercase tracking-wider">Fast-Track Form</span>
                 <h3 className="text-2xl font-bold font-heading text-slate-900 mt-1">Send an Official Message or Inquiry</h3>
                 <p className="text-slate-600 text-sm mt-1">
                   Our chief project engineer or regional material manager will review your submission and respond within 2 business hours.
@@ -224,7 +225,7 @@ export default function Contact() {
               {submitted ? (
                 <div className="py-8 px-5 sm:px-8 bg-emerald-50/70 rounded-2xl border border-emerald-200">
                   <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl shadow-sm">
-                    <i className="fa-solid fa-check"></i>
+                    <Check className="w-4 h-4 inline text-emerald-600" />
                   </div>
                   <h4 className="text-2xl font-bold text-slate-900 font-heading text-center mb-1">
                     Inquiry Details Recorded!
@@ -254,7 +255,7 @@ export default function Contact() {
                         href={buildMailtoUrl({ ...formData, ticketId, type: 'Contact Page Inquiry' })}
                         className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition shadow"
                       >
-                        <i className="fa-solid fa-envelope text-sm"></i>
+                        <Mail className="w-4 h-4 inline" />
                         <span>Send via Gmail / Mail App</span>
                       </a>
 
@@ -265,7 +266,7 @@ export default function Contact() {
                         rel="noreferrer"
                         className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition shadow"
                       >
-                        <i className="fa-brands fa-whatsapp text-sm"></i>
+                        <MessageSquare className="w-4 h-4 inline" />
                         <span>Send via WhatsApp (8884238688)</span>
                       </a>
                     </div>
@@ -275,14 +276,14 @@ export default function Contact() {
                         href="tel:8884238688"
                         className="inline-flex items-center justify-center gap-2 px-3 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition font-mono shadow"
                       >
-                        <i className="fa-solid fa-phone text-xs text-amber-400"></i>
+                        <Phone className="w-4 h-4 inline" />
                         <span>Call 8884238688</span>
                       </a>
                       <a
                         href="tel:9535828286"
                         className="inline-flex items-center justify-center gap-2 px-3 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition font-mono shadow"
                       >
-                        <i className="fa-solid fa-phone text-xs text-amber-400"></i>
+                        <Phone className="w-4 h-4 inline" />
                         <span>Call 9535828286</span>
                       </a>
                     </div>
@@ -410,24 +411,24 @@ export default function Contact() {
                   </div>
 
                   <div className="flex items-center gap-2 text-xs text-slate-500">
-                    <i className="fa-solid fa-shield-halved text-amber-500"></i>
+                    <ShieldCheck className="w-4 h-4 inline text-amber-500" />
                     <span>Your contact details are encrypted and strictly used for project coordination. Zero spam policy.</span>
                   </div>
 
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-4 bg-slate-900 hover:bg-amber-600 disabled:bg-slate-700 disabled:cursor-not-allowed text-white font-bold rounded-lg text-sm transition-colors duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg"
+                    className="w-full py-4 bg-slate-900 hover:bg-amber-700 disabled:bg-slate-700 disabled:cursor-not-allowed text-white font-bold rounded-lg text-sm transition-colors duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg"
                   >
                     {isSubmitting ? (
                       <>
-                        <i className="fa-solid fa-circle-notch fa-spin text-amber-400"></i>
+                        <Loader2 className="w-4 h-4 inline animate-spin text-amber-400" />
                         <span>Transmitting to gajananaconstructionsinfo@gmail.com...</span>
                       </>
                     ) : (
                       <>
                         <span>Transmit Inquiry to Official Desk (Email Dispatch)</span>
-                        <i className="fa-solid fa-paper-plane text-amber-400"></i>
+                        <Send className="w-4 h-4 inline text-amber-400" />
                       </>
                     )}
                   </button>
@@ -438,15 +439,15 @@ export default function Contact() {
             {/* Quick Map & Directions Callout */}
             <div className="mt-6 sm:mt-8 p-4 sm:p-5 rounded-2xl border border-slate-200 bg-slate-50 flex flex-col sm:flex-row sm:items-center justify-between gap-4 overflow-hidden w-full">
               <div>
-                <div className="text-[11px] font-bold uppercase tracking-wider text-amber-600 font-mono mb-0.5">Office &amp; Yard Location</div>
+                <div className="text-[11px] font-bold uppercase tracking-wider text-amber-700 font-mono mb-0.5">Office &amp; Yard Location</div>
                 <h4 className="font-bold text-slate-900 text-sm">7013, 2nd Main Rd, Samrat Layout, Arekere</h4>
                 <p className="text-xs text-slate-500 font-mono">12.8878° N, 77.6017° E • Sarvobhogam Nagar, Bengaluru 560076</p>
               </div>
               <a
                 href="#interactive-map"
-                className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-amber-600 text-white text-xs font-bold transition shadow-sm"
+                className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-amber-700 text-white text-xs font-bold transition shadow-sm"
               >
-                <i className="fa-solid fa-map-location-dot text-amber-400"></i>
+                <Navigation className="w-4 h-4 inline text-amber-400" />
                 <span>View Google Map Below</span>
               </a>
             </div>
@@ -461,7 +462,7 @@ export default function Contact() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-700 text-xs font-semibold uppercase tracking-wider mb-2 border border-amber-500/20 font-mono">
-                <i className="fa-solid fa-location-dot text-amber-600"></i> Interactive Google Maps Navigation
+                <MapPin className="w-5 h-5 inline" /> Interactive Google Maps Navigation
               </div>
               <h2 className="text-2xl sm:text-4xl font-extrabold font-heading text-slate-900 tracking-tight">
                 Locate Us on Google Maps
@@ -475,9 +476,9 @@ export default function Contact() {
                 href="https://www.google.com/maps/place/7013,+2nd+Main+Rd+Samrat+Layout,+Sarvobhogam+Nagar,+Arekere,+Bengaluru,+Karnataka+560076/@12.8877432,77.6017726,21z/data=!4m6!3m5!1s0x3bae152f523d38af:0x73dac50967405142!8m2!3d12.8878405!4d77.6017497!16s%2Fg%2F11lmp2c1d0?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-950 hover:bg-amber-600 text-white text-xs font-bold uppercase tracking-wider transition shadow text-center w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-950 hover:bg-amber-700 text-white text-xs font-bold uppercase tracking-wider transition shadow text-center w-full sm:w-auto"
               >
-                <i className="fa-solid fa-map-location-dot text-amber-400"></i>
+                <Navigation className="w-4 h-4 inline text-amber-400" />
                 <span>Open in Google Maps</span>
               </a>
               <a
@@ -486,7 +487,7 @@ export default function Contact() {
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold uppercase tracking-wider transition shadow text-center w-full sm:w-auto"
               >
-                <i className="fa-solid fa-diamond-turn-right text-slate-950"></i>
+                <Navigation className="w-4 h-4 inline text-slate-950" />
                 <span>Get Driving Directions</span>
               </a>
               <a
@@ -495,7 +496,7 @@ export default function Contact() {
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white hover:bg-slate-100 text-slate-800 text-xs font-bold border border-slate-300 transition shadow-sm font-mono text-center w-full sm:w-auto"
               >
-                <i className="fa-solid fa-location-crosshairs text-blue-600"></i>
+                <Compass className="w-4 h-4 inline text-blue-600" />
                 <span>12.8878° N, 77.6017° E</span>
               </a>
             </div>
@@ -522,8 +523,8 @@ export default function Contact() {
             <div className="lg:col-span-4 flex flex-col justify-between space-y-4 min-w-0 w-full max-w-full overflow-hidden">
               <div className="p-4 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4 overflow-hidden w-full">
                 <div className="flex items-center gap-3 pb-3 border-b border-slate-100">
-                  <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
-                    <i className="fa-solid fa-building-wheat text-lg"></i>
+                  <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0">
+                    <Building2 className="w-5 h-5 inline" />
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-900 text-sm">Corporate Office &amp; Facility Complex</h3>
@@ -544,14 +545,14 @@ export default function Contact() {
                   <div className="flex items-center justify-between">
                     <span className="text-slate-500">Contact Details:</span>
                     <div className="flex items-center gap-2 font-mono font-bold text-slate-900">
-                      <a href="tel:8884238688" className="hover:text-amber-600">8884238688</a>
+                      <a href="tel:8884238688" className="hover:text-amber-700">8884238688</a>
                       <span className="text-slate-400 font-normal">/</span>
-                      <a href="tel:9535828286" className="hover:text-amber-600">9535828286</a>
+                      <a href="tel:9535828286" className="hover:text-amber-700">9535828286</a>
                     </div>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 w-full overflow-hidden">
                     <span className="text-slate-500 shrink-0">Official Email:</span>
-                    <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold text-slate-900 hover:text-amber-600 font-mono text-[11px] sm:text-xs break-all">
+                    <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold text-slate-900 hover:text-amber-700 font-mono text-[11px] sm:text-xs break-all">
                       gajananaconstructionsinfo@gmail.com
                     </a>
                   </div>
@@ -577,13 +578,13 @@ export default function Contact() {
                 </div>
                 <div className="p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl border border-slate-200 shadow-sm min-w-0 overflow-hidden">
                   <span className="text-[10px] text-slate-400 block font-bold uppercase tracking-wider">Loading Bays</span>
-                  <span className="text-base font-extrabold text-amber-600">8 Bays</span>
+                  <span className="text-base font-extrabold text-amber-700">8 Bays</span>
                   <span className="text-[10px] text-slate-500 block mt-0.5">Fast Turnaround</span>
                 </div>
               </div>
 
               <div className="p-3.5 sm:p-4 bg-emerald-50 rounded-xl sm:rounded-2xl border border-emerald-200 text-emerald-900 text-xs flex items-center gap-2.5 sm:gap-3 overflow-hidden w-full">
-                <i className="fa-solid fa-truck-moving text-emerald-600 text-lg shrink-0"></i>
+                <Truck className="w-5 h-5 inline" />
                 <div className="leading-tight">
                   <span className="font-bold block">Heavy Commercial Vehicle Clearance</span>
                   <span className="text-[11px] text-emerald-700">Open 24/7 for raw material rake offloading &amp; bulk dispatches.</span>

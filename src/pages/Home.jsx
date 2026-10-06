@@ -154,7 +154,7 @@ export default function Home() {
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <Link
                   to="/get-a-quote"
-                  className="px-8 py-4 bg-slate-950 hover:bg-amber-600 text-white font-extrabold text-xs tracking-wider uppercase rounded-xl transition-all shadow-lg hover:shadow-amber-500/20 flex items-center space-x-2 group"
+                  className="px-8 py-4 bg-slate-950 hover:bg-amber-700 text-white font-extrabold text-xs tracking-wider uppercase rounded-xl transition-all shadow-lg hover:shadow-amber-500/20 flex items-center space-x-2 group"
                 >
                   <span>REQUEST PROJECT ESTIMATE</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -223,13 +223,14 @@ export default function Home() {
       {/* 2. TRUST INDICATORS (4 Key Cards matching Screen 1) */}
       <section className="py-14 bg-slate-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="sr-only">Our Core Pillars &amp; Operational Strengths</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {company.stats.map((stat) => (
               <div key={stat.id} className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                <span className="text-amber-600 font-mono font-bold text-xs uppercase tracking-wider block mb-1">
+                <span className="text-amber-700 font-mono font-bold text-xs uppercase tracking-wider block mb-1">
                   Pillar {stat.id}
                 </span>
-                <h4 className="text-base font-bold text-slate-950 mb-1 font-heading">{stat.label}</h4>
+                <h3 className="text-base font-bold text-slate-950 mb-1 font-heading">{stat.label}</h3>
                 <p className="text-xs text-slate-600 font-mono">{stat.value}</p>
               </div>
             ))}
@@ -268,7 +269,7 @@ export default function Home() {
               <div className="pt-2">
                 <Link
                   to="/about"
-                  className="inline-flex items-center text-xs font-extrabold text-amber-600 hover:text-amber-700 font-mono uppercase tracking-wider group"
+                  className="inline-flex items-center text-xs font-extrabold text-amber-700 hover:text-amber-800 font-mono uppercase tracking-wider group"
                 >
                   <span>LEARN MORE ABOUT US</span>
                   <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -279,14 +280,16 @@ export default function Home() {
             <div className="lg:col-span-6">
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=600&q=80"
+                  src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=500&fm=webp&q=65"
                   alt="Construction Site Engineering"
+                  loading="lazy"
                   className="rounded-2xl object-cover h-64 w-full shadow-md"
                   onError={(e) => { e.currentTarget.src = '/fallback.svg'; }}
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500&fm=webp&q=65"
                   alt="Quality Material Depot"
+                  loading="lazy"
                   className="rounded-2xl object-cover h-64 w-full shadow-md mt-6"
                   onError={(e) => { e.currentTarget.src = '/fallback.svg'; }}
                 />
@@ -336,7 +339,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-lg font-bold text-slate-950 font-heading mb-2 group-hover:text-amber-600 transition-colors">
+                    <h3 className="text-lg font-bold text-slate-950 font-heading mb-2 group-hover:text-amber-700 transition-colors">
                       {service.title}
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed line-clamp-3">
@@ -400,7 +403,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="font-extrabold text-slate-950 text-base font-heading mb-1.5 group-hover:text-amber-600 transition-colors">
+                    <h3 className="font-extrabold text-slate-950 text-base font-heading mb-1.5 group-hover:text-amber-700 transition-colors">
                       {sku.name}
                     </h3>
                     <p className="text-xs text-slate-500 font-mono mb-4">
@@ -412,7 +415,7 @@ export default function Home() {
                         <span className="text-xs font-extrabold text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Price on Enquiry</span>
                       </div>
                       <div className="text-[11px] text-slate-600">
-                        Call: <a href="tel:8884238688" className="font-bold text-slate-900 hover:text-amber-600 font-mono">8884238688</a> / <a href="tel:9535828286" className="font-bold text-slate-900 hover:text-amber-600 font-mono">9535828286</a>
+                        Call: <a href="tel:8884238688" className="font-bold text-slate-900 hover:text-amber-700 font-mono">8884238688</a> / <a href="tel:9535828286" className="font-bold text-slate-900 hover:text-amber-700 font-mono">9535828286</a>
                       </div>
                     </div>
                   </div>
@@ -421,7 +424,7 @@ export default function Home() {
                 <div className="p-6 pt-0 space-y-2">
                   <button
                     onClick={() => openQuickQuote(sku.name)}
-                    className="w-full py-3 bg-slate-950 hover:bg-amber-600 text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-sm"
+                    className="w-full py-3 bg-slate-950 hover:bg-amber-700 text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-sm"
                   >
                     REQUEST BATCH QUOTE
                   </button>
@@ -552,7 +555,7 @@ export default function Home() {
                     <div className="text-xs text-slate-500 font-mono mb-2">
                       <span className="text-amber-700 font-bold">{proj.stage}</span> • {proj.area}
                     </div>
-                    <h3 className="text-lg font-bold text-slate-950 font-heading mb-2 group-hover:text-amber-600 transition-colors">
+                    <h3 className="text-lg font-bold text-slate-950 font-heading mb-2 group-hover:text-amber-700 transition-colors">
                       {proj.title}
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4">
@@ -621,7 +624,7 @@ export default function Home() {
               <thead>
                 <tr className="bg-slate-900 text-white text-xs sm:text-sm font-heading">
                   <th className="p-4 sm:p-6 w-1/4 border-b border-slate-800">Key Feature &amp; Capability</th>
-                  <th className="p-4 sm:p-6 w-1/3 bg-amber-500 text-slate-950 font-black border-b border-amber-600">
+                  <th className="p-4 sm:p-6 w-1/3 bg-amber-500 text-slate-950 font-black border-b border-amber-700">
                     <div className="flex items-center space-x-1.5">
                       <Sparkles className="w-4 h-4 fill-slate-950" />
                       <span>Gajanana Constructions</span>
@@ -780,19 +783,19 @@ export default function Home() {
                 className="group p-4 bg-white rounded-2xl border border-slate-200 hover:border-amber-500 hover:shadow-lg transition-all flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex items-center space-x-1.5 text-amber-600 mb-2">
+                  <div className="flex items-center space-x-1.5 text-amber-700 mb-2">
                     <MapPin className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
-                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500 group-hover:text-amber-600">
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500 group-hover:text-amber-700">
                       {a.distanceFromArekere}
                     </span>
                   </div>
-                  <h3 className="font-bold text-slate-900 group-hover:text-amber-600 transition-colors text-sm font-heading leading-snug">
+                  <h3 className="font-bold text-slate-900 group-hover:text-amber-700 transition-colors text-sm font-heading leading-snug">
                     {a.name}
                   </h3>
                 </div>
                 <div className="mt-3 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-slate-500 group-hover:text-slate-900">
                   <span>Explore Area</span>
-                  <span className="text-amber-600">→</span>
+                  <span className="text-amber-700">→</span>
                 </div>
               </Link>
             ))}
@@ -907,7 +910,7 @@ export default function Home() {
                     <span>{faq.q}</span>
                   </span>
                   <ChevronDown
-                    className={`w-5 h-5 text-amber-600 transition-transform duration-300 shrink-0 ${
+                    className={`w-5 h-5 text-amber-700 transition-transform duration-300 shrink-0 ${
                       openFaq === idx ? 'rotate-180' : ''
                     }`}
                   />

@@ -2,33 +2,33 @@
 // Brand Positioning: "Building Dreams. Supplying Quality. Delivering Strength."
 // Pricing Policy: Direct quotes on enquiry - Contact 8884238688 / 9535828286 | gajananaconstructionsinfo@gmail.com
 
-import jcb3dxImg from '../assets/products/jcb-3dx.jpg';
-import excavator20tImg from '../assets/products/excavator-20t.jpg';
-import tataTisconImg from '../assets/products/tata-tiscon-tmt.jpg';
-import ultratechImg from '../assets/products/ultratech-cement.jpg';
-import roofSlabPouringImg from '../assets/projects/roof-slab-pouring.jpg';
-import slabShutteringRebarImg from '../assets/projects/slab-shuttering-rebar.jpg';
-import slabLevelingImg from '../assets/projects/slab-concrete-leveling.jpg';
+import jcb3dxImg from '../assets/products/jcb-3dx.webp';
+import excavator20tImg from '../assets/products/excavator-20t.webp';
+import tataTisconImg from '../assets/products/tata-tiscon-tmt.webp';
+import ultratechImg from '../assets/products/ultratech-cement.webp';
+import roofSlabPouringImg from '../assets/projects/roof-slab-pouring.webp';
+import slabShutteringRebarImg from '../assets/projects/slab-shuttering-rebar.webp';
+import slabLevelingImg from '../assets/projects/slab-concrete-leveling.webp';
 
-import stage01Img from '../assets/construction-works/stage-01-site-foundation.jpg';
-import stage02Img from '../assets/construction-works/stage-02-structural-work.jpg';
-import stage03Img from '../assets/construction-works/stage-03-roofing.jpg';
-import stage04Img from '../assets/construction-works/stage-04-electrical.jpg';
-import stage05Img from '../assets/construction-works/stage-05-plumbing-sanitary.jpg';
-import stage06Img from '../assets/construction-works/stage-06-flooring-tiling.jpg';
-import stage07Img from '../assets/construction-works/stage-07-doors-windows.jpg';
-import stage08Img from '../assets/construction-works/stage-08-kitchen.jpg';
-import stage09Img from '../assets/construction-works/stage-09-bathrooms.jpg';
-import stage10Img from '../assets/construction-works/stage-10-painting-finishing.jpg';
-import stage11Img from '../assets/construction-works/stage-11-carpentry-woodwork.jpg';
-import stage12Img from '../assets/construction-works/stage-12-false-ceiling.jpg';
-import stage13Img from '../assets/construction-works/stage-13-metal-fabrication.jpg';
-import stage14Img from '../assets/construction-works/stage-14-waterproofing.jpg';
-import stage15Img from '../assets/construction-works/stage-15-exterior-outdoor.jpg';
-import stage16Img from '../assets/construction-works/stage-16-hvac-cooling.jpg';
-import stage17Img from '../assets/construction-works/stage-17-security-smart-home.jpg';
-import stage18Img from '../assets/construction-works/stage-18-cleaning-handover.jpg';
-import renovationRetrofittingImg from '../assets/services/renovation-retrofitting.jpg';
+import stage01Img from '../assets/construction-works/stage-01-site-foundation.webp';
+import stage02Img from '../assets/construction-works/stage-02-structural-work.webp';
+import stage03Img from '../assets/construction-works/stage-03-roofing.webp';
+import stage04Img from '../assets/construction-works/stage-04-electrical.webp';
+import stage05Img from '../assets/construction-works/stage-05-plumbing-sanitary.webp';
+import stage06Img from '../assets/construction-works/stage-06-flooring-tiling.webp';
+import stage07Img from '../assets/construction-works/stage-07-doors-windows.webp';
+import stage08Img from '../assets/construction-works/stage-08-kitchen.webp';
+import stage09Img from '../assets/construction-works/stage-09-bathrooms.webp';
+import stage10Img from '../assets/construction-works/stage-10-painting-finishing.webp';
+import stage11Img from '../assets/construction-works/stage-11-carpentry-woodwork.webp';
+import stage12Img from '../assets/construction-works/stage-12-false-ceiling.webp';
+import stage13Img from '../assets/construction-works/stage-13-metal-fabrication.webp';
+import stage14Img from '../assets/construction-works/stage-14-waterproofing.webp';
+import stage15Img from '../assets/construction-works/stage-15-exterior-outdoor.webp';
+import stage16Img from '../assets/construction-works/stage-16-hvac-cooling.webp';
+import stage17Img from '../assets/construction-works/stage-17-security-smart-home.webp';
+import stage18Img from '../assets/construction-works/stage-18-cleaning-handover.webp';
+import renovationRetrofittingImg from '../assets/services/renovation-retrofitting.webp';
 
 export const DEFAULT_DATA = {
   company: {

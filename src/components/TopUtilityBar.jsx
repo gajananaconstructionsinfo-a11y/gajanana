@@ -1,6 +1,4 @@
-import React from 'react';
-import { useApp } from '../context/AppContext';
-import { Clock, Phone } from 'lucide-react';
+import { Clock, Phone, Mail } from 'lucide-react';
 
 export default function TopUtilityBar() {
   const { data } = useApp();
@@ -24,7 +22,7 @@ export default function TopUtilityBar() {
             href="mailto:gajananaconstructionsinfo@gmail.com"
             className="flex items-center hover:text-amber-400 transition-colors text-slate-300"
           >
-            <i className="fa-solid fa-envelope mr-1.5 text-amber-500"></i>
+            <Mail className="w-3.5 h-3.5 mr-1.5 text-amber-500" />
             <span>gajananaconstructionsinfo@gmail.com</span>
           </a>
           <span className="text-slate-700">|</span>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
-import { X, CheckCircle, Send } from 'lucide-react';
+import { X, CheckCircle, Send, Loader2, Mail } from 'lucide-react';
 import { buildMailtoUrl, buildWhatsAppUrl } from '../lib/email';
 
 export default function QuickQuoteModal() {
@@ -70,7 +70,7 @@ export default function QuickQuoteModal() {
 
         {!submittedId ? (
           <div>
-            <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-wider block mb-1">
+            <span className="text-amber-700 font-mono text-xs font-bold uppercase tracking-wider block mb-1">
               DIRECT WHOLESALE QUOTE
             </span>
             <h3 className="text-xl font-extrabold text-slate-950 font-heading mb-1">
@@ -161,11 +161,11 @@ export default function QuickQuoteModal() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3.5 bg-slate-950 hover:bg-amber-600 disabled:bg-slate-700 text-white font-extrabold text-xs uppercase tracking-wider rounded-xl transition-all shadow flex items-center justify-center space-x-2 cursor-pointer disabled:cursor-not-allowed"
+                className="w-full py-3.5 bg-slate-950 hover:bg-amber-700 disabled:bg-slate-700 text-white font-extrabold text-xs uppercase tracking-wider rounded-xl transition-all shadow flex items-center justify-center space-x-2 cursor-pointer disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
                   <>
-                    <i className="fa-solid fa-circle-notch fa-spin text-amber-400"></i>
+                    <Loader2 className="animate-spin w-4 h-4 text-amber-400" />
                     <span>DISPATCHING TO GAJANANACONSTRUCTIONSINFO@GMAIL.COM...</span>
                   </>
                 ) : (
@@ -182,7 +182,7 @@ export default function QuickQuoteModal() {
             <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3">
               <CheckCircle className="w-8 h-8" />
             </div>
-            <div className="text-xs font-mono font-bold text-amber-600 uppercase tracking-widest mb-1">
+            <div className="text-xs font-mono font-bold text-amber-700 uppercase tracking-widest mb-1">
               REQUEST RECORDED
             </div>
             <h3 className="text-xl font-extrabold text-slate-950 font-heading mb-2">
@@ -190,7 +190,7 @@ export default function QuickQuoteModal() {
             </h3>
 
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-mono mb-2">
-              <i className="fa-solid fa-envelope text-emerald-600"></i>
+              <Mail className="w-3.5 h-3.5 text-emerald-600" />
               <span>Delivered to gajananaconstructionsinfo@gmail.com</span>
             </div>
 
@@ -210,7 +210,7 @@ export default function QuickQuoteModal() {
                 })}
                 className="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center space-x-2 shadow"
               >
-                <i className="fa-solid fa-envelope text-xs"></i>
+                <Mail className="w-3.5 h-3.5" />
                 <span>Send via Gmail / Mail App</span>
               </a>
 

@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TT7H8PVQ');</script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYFNPJTMQM"></script>
+    <!-- Optimized Google Tag Manager & Google Analytics (Non-blocking, deferred to idle/interaction) -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      (function() {
+        var loaded = false;
+        function loadGTM() {
+          if (loaded) return;
+          loaded = true;
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-TT7H8PVQ');
 
-      gtag('config', 'G-DYFNPJTMQM');
+          var ga = document.createElement('script');
+          ga.async = true;
+          ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-DYFNPJTMQM';
+          document.head.appendChild(ga);
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', 'G-DYFNPJTMQM');
+        }
+
+        var events = ['scroll', 'touchstart', 'mousemove', 'keydown', 'click'];
+        function onInteraction() {
+          loadGTM();
+          events.forEach(function(e) { window.removeEventListener(e, onInteraction, { passive: true }); });
+        }
+        events.forEach(function(e) { window.addEventListener(e, onInteraction, { passive: true }); });
+
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(function() { setTimeout(loadGTM, 2500); });
+        } else {
+          setTimeout(loadGTM, 3000);
+        }
+      })();
     </script>
 
     <meta charset="UTF-8" />
@@ -61,14 +82,11 @@
     <!-- Favicon & Brand Icons -->
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
 
-    <!-- Typography & Icons -->
-    <!-- Typography & Icons (Non-Render-Blocking) -->
+    <!-- Typography (Non-Render-Blocking Google Fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap"></noscript>
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"></noscript>
 
     <!-- Schema.org Structured Data (JSON-LD) for Google Search Console & Rich Results -->
     <script type="application/ld+json">
@@ -189,28 +207,10 @@
     }
     </script>
   
-    <!-- FontAwesome font-display: swap override -->
-    <style>
-      @font-face {
-        font-family: 'Font Awesome 6 Free';
-        font-style: normal;
-        font-weight: 900;
-        font-display: swap;
-        src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2') format('woff2');
-      }
-      @font-face {
-        font-family: 'Font Awesome 6 Brands';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2') format('woff2');
-      }
-    </style>
-
-    <script type="module" crossorigin src="./assets/index-BQEJhFcN.js"></script>
+    <script type="module" crossorigin src="./assets/index-GQp8kVEN.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/vendor-react-Bx2PYoT8.js">
-    <link rel="modulepreload" crossorigin href="./assets/vendor-icons-ighLVi53.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-DcqjS1w_.css">
+    <link rel="modulepreload" crossorigin href="./assets/vendor-icons-CRrDsM8m.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-M2iAf4W1.css">
       <script>
       var path = window.location.pathname.replace(/^\//, '');
       if (path && !window.location.hash) {
@@ -223,6 +223,36 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TT7H8PVQ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="root"></div>
+    <div id="root"><header class="bg-white border-b border-slate-200 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+          <div class="flex items-center space-x-3">
+            <span class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-slate-950 font-black text-xl shadow-md">G</span>
+            <div>
+              <div class="text-base sm:text-lg font-black tracking-tight font-heading text-slate-950 leading-none">GAJANANA CONSTRUCTIONS</div>
+              <div class="text-[9px] font-mono tracking-wider uppercase text-amber-700 font-extrabold mt-1">ENGINEERING &amp; DIRECT STOCKYARD</div>
+            </div>
+          </div>
+          <a href="tel:8884238688" class="px-4 py-2 bg-slate-950 text-white rounded-xl text-xs font-bold font-mono">CALL 8884238688</a>
+        </div>
+      </header>
+      <section class="relative bg-gradient-to-b from-amber-500/10 via-white to-slate-50 pt-10 pb-20 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl space-y-5">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-800 text-xs font-mono font-bold tracking-wide">
+              <span>TRADING • HEAVY MACHINERY • TURNKEY CIVIL BUILDS</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-950 font-heading leading-tight tracking-tight">
+              House Construction Company in Bangalore
+            </h1>
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-light max-w-2xl">
+              Complete Construction Solutions, Earthmoving Machinery &amp; One-Stop Building Materials Destination. Since 2005, we bridge high-engineering civil execution with a central 15,000 MT primary materials depot to ensure zero site delays and verified structural integrity.
+            </p>
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a href="/#/get-a-quote" class="px-8 py-4 bg-slate-950 text-white font-extrabold text-xs tracking-wider uppercase rounded-xl shadow-lg">REQUEST PROJECT ESTIMATE</a>
+              <a href="/#/materials" class="px-8 py-4 bg-slate-100 text-slate-800 font-bold text-xs tracking-wider uppercase rounded-xl border border-slate-200">EXPLORE MATERIALS</a>
+            </div>
+          </div>
+        </div>
+      </section></div>
   </body>
 </html>
