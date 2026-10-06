@@ -1,4 +1,5 @@
 import { Clock, Phone, Mail } from 'lucide-react';
+import { useApp } from '../context/AppContext';
 
 export default function TopUtilityBar() {
   const { data } = useApp();
