@@ -54,7 +54,7 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <div className="lg:col-span-2">
-            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Navigation</h4>
+            <h3 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Navigation</h3>
             <ul className="space-y-2.5 text-xs text-slate-400">
               <li><Link to="/" className="hover:text-amber-400 transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-amber-400 transition-colors">About Us</Link></li>
@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Fleet & Services Links */}
           <div className="lg:col-span-3">
-            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Fleet &amp; Materials</h4>
+            <h3 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Fleet &amp; Materials</h3>
             <ul className="space-y-2.5 text-xs text-slate-400">
               <li><Link to="/services/earthmoving-machinery-jcb" className="hover:text-amber-400 transition-colors">JCB 3DX &amp; Excavator Fleet</Link></li>
               <li><Link to="/materials/earthmoving-machinery" className="hover:text-amber-400 transition-colors">Heavy Machinery Fleet</Link></li>
@@ -84,7 +84,7 @@ export default function Footer() {
 
           {/* Contact Yard & Price Queries - WIDE AND SPACIOUS (4 columns on lg) */}
           <div className="lg:col-span-4">
-            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Contact &amp; Quotes</h4>
+            <h3 className="text-white font-bold text-sm tracking-wider uppercase mb-4 font-mono">Contact &amp; Quotes</h3>
             <div className="space-y-4 text-xs text-slate-400">
               
               {/* Wide Pricing Queries Card with Generous Margins */}
@@ -150,10 +150,10 @@ export default function Footer() {
         <div className="pt-8 pb-6 border-t border-slate-900 mb-6">
           <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
             <div>
-              <h4 className="text-white font-bold text-xs tracking-wider uppercase font-mono">
+              <h3 className="text-white font-bold text-xs tracking-wider uppercase font-mono">
                 Service Areas &bull; South &amp; Southeast Bengaluru Construction Corridor
-              </h4>
-              <p className="text-[11px] text-slate-500 mt-0.5">
+              </h3>
+              <p className="text-[11px] text-slate-400 mt-0.5">
                 Turnkey residential construction, commercial civil contracting, JCB fleet rental &amp; wholesale materials stockyard
               </p>
             </div>
@@ -183,7 +183,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+        <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400">
           <p>&copy; {new Date().getFullYear()} {company.name}. All rights reserved.</p>
           <p className="mt-2 sm:mt-0 font-mono">{company.tagline}</p>
         </div>

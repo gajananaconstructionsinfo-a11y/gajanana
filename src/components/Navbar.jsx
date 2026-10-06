@@ -45,7 +45,7 @@ export default function Navbar() {
               <div className="text-slate-900 font-extrabold text-base sm:text-lg lg:text-xl tracking-wider font-heading leading-tight group-hover:text-amber-600 transition-colors">
                 GAJANANA
               </div>
-              <div className="text-amber-600 text-[8.5px] sm:text-[9.5px] font-extrabold tracking-wider uppercase leading-tight">
+              <div className="text-amber-700 text-[8.5px] sm:text-[9.5px] font-extrabold tracking-wider uppercase leading-tight">
                 TRADERS &amp; CONSTRUCTIONS &amp; MATERIALS
               </div>
             </div>

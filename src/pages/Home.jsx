@@ -136,7 +136,7 @@ export default function Home() {
               </div>
 
               <div>
-                <p className="text-amber-600 font-bold text-xs sm:text-sm tracking-widest uppercase font-mono mb-2">
+                <p className="text-amber-700 font-bold text-xs sm:text-sm tracking-widest uppercase font-mono mb-2">
                   Turnkey Residential Builders &amp; Civil Contractors
                 </p>
                 <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-950 font-heading leading-tight tracking-tight">
@@ -174,7 +174,7 @@ export default function Home() {
                   <div className="text-slate-500 font-medium">Years Legacy</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-extrabold text-amber-600 font-heading">240+</div>
+                  <div className="text-2xl font-extrabold text-amber-700 font-heading">240+</div>
                   <div className="text-slate-500 font-medium">Completed Builds</div>
                 </div>
                 <div>
@@ -182,7 +182,7 @@ export default function Home() {
                   <div className="text-slate-500 font-medium">Live Depot Stock</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-extrabold text-amber-600 font-heading">NABL</div>
+                  <div className="text-2xl font-extrabold text-amber-700 font-heading">NABL</div>
                   <div className="text-slate-500 font-medium">Certified Mill Tests</div>
                 </div>
               </div>
@@ -191,7 +191,7 @@ export default function Home() {
             {/* Right Column: Hero Showcase Individual Build Card (5 cols) */}
             <div className="lg:col-span-5">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
-                <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1000&q=80" alt="Turnkey residential house construction and masonry works in Bangalore" className="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-700" loading="eager" fetchPriority="high"
+                <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=700&fm=webp&q=75" alt="Turnkey residential house construction and masonry works in Bangalore" className="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-700" loading="eager" fetchPriority="high"
                   onError={(e) => { e.currentTarget.src = '/fallback.svg'; }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
@@ -200,7 +200,7 @@ export default function Home() {
                   <span className="px-3 py-1 rounded-full bg-amber-500 text-slate-950 font-mono text-[11px] font-extrabold uppercase">
                     ON-SITE CONSTRUCTION PROGRESS
                   </span>
-                  <h3 className="text-xl font-bold font-heading">Individual Residential Build #101</h3>
+                  <h2 className="text-xl font-bold font-heading">Individual Residential Build #101</h2>
                   <p className="text-xs text-slate-300 font-mono">
                     Wall Construction &amp; Brick Masonry • 2,800 sq ft • Wire-Cut Bricks &amp; Fe 550D
                   </p>
@@ -242,7 +242,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6 space-y-5">
-              <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block">
+              <span className="text-amber-700 font-mono text-xs font-bold uppercase tracking-widest block">
                 INTEGRATED ECOSYSTEM
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
@@ -301,7 +301,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
             <div>
-              <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-1">
+              <span className="text-amber-700 font-mono text-xs font-bold uppercase tracking-widest block mb-1">
                 OUR SERVICES
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
@@ -310,7 +310,7 @@ export default function Home() {
             </div>
             <Link
               to="/services"
-              className="inline-flex items-center text-xs font-extrabold text-amber-600 hover:text-amber-700 uppercase tracking-wider font-mono"
+              className="inline-flex items-center text-xs font-extrabold text-amber-700 hover:text-amber-800 uppercase tracking-wider font-mono"
             >
               <span>VIEW ALL SERVICES →</span>
             </Link>
@@ -327,6 +327,7 @@ export default function Home() {
                     <img
                       src={service.image}
                       alt={service.title}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       onError={(e) => { e.currentTarget.src = '/fallback.svg'; }}
                     />
@@ -346,7 +347,8 @@ export default function Home() {
                 <div className="p-6 pt-0 border-t border-slate-100 mt-4 flex items-center justify-between">
                   <Link
                     to={`/services/${service.slug}`}
-                    className="text-xs font-extrabold text-amber-600 hover:text-amber-700 font-mono uppercase tracking-wider flex items-center space-x-1"
+                    aria-label={`Explore details for ${service.title}`}
+                    className="text-xs font-extrabold text-amber-700 hover:text-amber-800 font-mono uppercase tracking-wider flex items-center space-x-1"
                   >
                     <span>EXPLORE DETAILS</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -363,7 +365,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
             <div>
-              <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-1">
+              <span className="text-amber-700 font-mono text-xs font-bold uppercase tracking-widest block mb-1">
                 CENTRAL DEPOT INVENTORY
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
@@ -372,7 +374,7 @@ export default function Home() {
             </div>
             <Link
               to="/materials"
-              className="inline-flex items-center text-xs font-extrabold text-amber-600 hover:text-amber-700 uppercase tracking-wider font-mono"
+              className="inline-flex items-center text-xs font-extrabold text-amber-700 hover:text-amber-800 uppercase tracking-wider font-mono"
             >
               <span>VIEW ALL MATERIALS →</span>
             </Link>
@@ -389,6 +391,7 @@ export default function Home() {
                     <img
                       src={sku.image}
                       alt={sku.name}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       onError={(e) => { e.currentTarget.src = '/fallback.svg'; }}
                     />
@@ -424,7 +427,8 @@ export default function Home() {
                   </button>
                   <Link
                     to={`/materials/product/${sku.id}`}
-                    className="block text-center py-2 text-xs font-bold text-amber-600 hover:text-amber-700 uppercase tracking-wider font-mono"
+                    aria-label={`View technical sheet for ${sku.name}`}
+                    className="block text-center py-2 text-xs font-bold text-amber-700 hover:text-amber-800 uppercase tracking-wider font-mono"
                   >
                     View Technical Sheet →
                   </Link>
@@ -464,7 +468,7 @@ export default function Home() {
       <section className="py-20 bg-slate-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
+            <span className="text-amber-700 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
               THE GAJANANA ADVANTAGE
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
@@ -487,10 +491,8 @@ export default function Home() {
               { id: '08', title: '10-Year Warranty', desc: 'Comprehensive structural stability guarantee on all turnkey projects.' }
             ].map((pillar) => (
               <div key={pillar.id} className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                <span className="text-amber-600 font-mono font-extrabold text-lg block mb-2">
-                  {pillar.id}
-                </span>
-                <h4 className="font-bold text-slate-950 text-base mb-1 font-heading">{pillar.title}</h4>
+                <span className="text-amber-700 font-mono font-extrabold text-lg block mb-2">{pillar.id}</span>
+                <h3 className="font-bold text-slate-950 text-base mb-1 font-heading">{pillar.title}</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">{pillar.desc}</p>
               </div>
             ))}
@@ -499,7 +501,7 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               to="/why-us"
-              className="inline-flex items-center text-xs font-extrabold text-amber-600 hover:text-amber-700 uppercase tracking-wider font-mono"
+              className="inline-flex items-center text-xs font-extrabold text-amber-700 hover:text-amber-800 uppercase tracking-wider font-mono"
             >
               <span>EXPLORE COMPLETE WHY US MATRIX →</span>
             </Link>
@@ -512,7 +514,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
             <div>
-              <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-1">
+              <span className="text-amber-700 font-mono text-xs font-bold uppercase tracking-widest block mb-1">
                 ON-SITE PROGRESS
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
@@ -521,7 +523,7 @@ export default function Home() {
             </div>
             <Link
               to="/projects"
-              className="inline-flex items-center text-xs font-extrabold text-amber-600 hover:text-amber-700 uppercase tracking-wider font-mono"
+              className="inline-flex items-center text-xs font-extrabold text-amber-700 hover:text-amber-800 uppercase tracking-wider font-mono"
             >
               <span>VIEW ALL INDIVIDUAL BUILDS →</span>
             </Link>
@@ -538,6 +540,7 @@ export default function Home() {
                     <img
                       src={proj.image}
                       alt={proj.title}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       onError={(e) => { e.currentTarget.src = '/fallback.svg'; }}
                     />
@@ -547,7 +550,7 @@ export default function Home() {
                   </div>
                   <div className="p-6">
                     <div className="text-xs text-slate-500 font-mono mb-2">
-                      <span className="text-amber-600 font-bold">{proj.stage}</span> • {proj.area}
+                      <span className="text-amber-700 font-bold">{proj.stage}</span> • {proj.area}
                     </div>
                     <h3 className="text-lg font-bold text-slate-950 font-heading mb-2 group-hover:text-amber-600 transition-colors">
                       {proj.title}
@@ -560,7 +563,8 @@ export default function Home() {
                 <div className="p-6 pt-0 border-t border-slate-100 flex items-center justify-between">
                   <Link
                     to={`/projects/${proj.id}`}
-                    className="text-xs font-extrabold text-amber-600 hover:text-amber-700 uppercase tracking-wider font-mono flex items-center space-x-1"
+                    aria-label={`View on-site photos of ${proj.title}`}
+                    className="text-xs font-extrabold text-amber-700 hover:text-amber-800 uppercase tracking-wider font-mono flex items-center space-x-1"
                   >
                     <span>VIEW ON-SITE PHOTOS</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -576,7 +580,7 @@ export default function Home() {
       <section className="py-20 bg-slate-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
+            <span className="text-amber-700 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
               DISCIPLINED PROCESS
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
@@ -587,10 +591,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {workflow.map((w) => (
               <div key={w.step} className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                <span className="text-amber-600 font-mono font-extrabold text-xl block mb-2">
-                  {w.step}
-                </span>
-                <h4 className="font-bold text-slate-950 text-base mb-2 font-heading">{w.name}</h4>
+                <span className="text-amber-700 font-mono font-extrabold text-xl block mb-2">{w.step}</span>
+                <h3 className="font-bold text-slate-950 text-base mb-2 font-heading">{w.name}</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">{w.desc}</p>
               </div>
             ))}
@@ -603,7 +605,7 @@ export default function Home() {
       <section className="py-20 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
+            <span className="text-amber-700 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
               WHY GAJANANA OUTPERFORMS OTHERS
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
@@ -759,7 +761,7 @@ export default function Home() {
       <section className="py-20 bg-slate-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
+            <span className="text-amber-700 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
               LOCAL SOUTH BENGALURU COVERAGE
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
@@ -799,7 +801,7 @@ export default function Home() {
           <div className="mt-10 p-6 bg-white rounded-2xl border border-slate-200 text-center max-w-2xl mx-auto">
             <p className="text-xs sm:text-sm text-slate-700 font-medium">
               Planning a house construction project in South Bengaluru? Call our engineering desk at{' '}
-              <a href="tel:8884238688" className="font-bold text-amber-600 hover:underline">+91 88842 38688</a>{' '}
+              <a href="tel:8884238688" className="font-bold text-amber-700 hover:underline">+91 88842 38688</a>{' '}
               or visit our stockyard at Samrat Layout, Arekere.
             </p>
           </div>
@@ -810,7 +812,7 @@ export default function Home() {
       <section className="py-20 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
+            <span className="text-amber-700 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
               CLIENT TRUST
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
@@ -847,7 +849,7 @@ export default function Home() {
       <section className="py-20 bg-slate-50 border-b border-slate-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
+            <span className="text-amber-700 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
               FREQUENTLY ASKED QUESTIONS
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
@@ -915,7 +917,7 @@ export default function Home() {
                     <p>{faq.a}</p>
                     <div className="mt-3 pt-3 border-t border-slate-200/60 flex items-center justify-between text-[11px] font-mono text-slate-500">
                       <span>Gajanana Constructions Engineering Desk</span>
-                      <a href="tel:8884238688" className="text-amber-600 font-bold hover:underline">
+                      <a href="tel:8884238688" className="text-amber-700 font-bold hover:underline">
                         Call 8884238688 for Details →
                       </a>
                     </div>
@@ -928,7 +930,7 @@ export default function Home() {
           <div className="mt-12 text-center">
             <p className="text-xs text-slate-500 font-mono">
               Have a specific architectural drawing or plot measurement?{' '}
-              <Link to="/contact" className="text-amber-600 font-bold underline hover:text-amber-700">
+              <Link to="/contact" className="text-amber-700 font-bold underline hover:text-amber-800">
                 Contact our Arekere Engineering Office
               </Link>
             </p>
