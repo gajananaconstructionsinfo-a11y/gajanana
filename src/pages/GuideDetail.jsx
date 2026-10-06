@@ -39,7 +39,7 @@ export default function GuideDetail() {
               },
               "publisher": {
                 "@type": "Organization",
-                "name": "Sri Gajanana Constructions",
+                "name": "Gajanana Constructions",
                 "url": "https://www.gajananaconstructions.in/",
                 "logo": "https://www.gajananaconstructions.in/fallback.svg"
               },

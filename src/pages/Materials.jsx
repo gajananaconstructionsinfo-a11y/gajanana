@@ -21,14 +21,14 @@ export default function Materials() {
   return (
     <div>
       <SEOHead
-        title="Wholesale Building Materials Depot Bengaluru | TMT Steel, Cement, M-Sand | Sri Gajanana"
+        title="Wholesale Building Materials Depot Bengaluru | TMT Steel, Cement, M-Sand | Gajanana"
         description="Direct primary wholesale building materials depot in Bangalore. 15,000 MT capacity stockyard for Tata Tiscon Fe 550D, UltraTech Cement, VSI M-Sand, AAC Blocks, and aggregates. Call 8884238688."
         keywords="building materials depot Bangalore, Tata Tiscon wholesale dealer, UltraTech cement supplier, M-sand price Bangalore, AAC blocks Arekere, construction materials stockyard"
         canonical="https://www.gajananaconstructions.in/materials"
         schema={{
           "@context": "https://schema.org",
           "@type": "WholesaleStore",
-          "name": "Sri Gajanana Wholesale Building Materials Depot",
+          "name": "Gajanana Wholesale Building Materials Depot",
           "url": "https://www.gajananaconstructions.in/materials",
           "description": "Central 15,000 MT capacity certified primary building materials depot in Arekere, Bengaluru. Supplying primary TMT steel, cement, M-sand, aggregates, and AAC blocks.",
           "telephone": "+918884238688",

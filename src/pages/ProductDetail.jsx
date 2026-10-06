@@ -19,9 +19,9 @@ export default function ProductDetail() {
   return (
     <div>
       <SEOHead
-        title={`${sku.name} | Direct Depot Supply Bangalore | Sri Gajanana Constructions`}
+        title={`${sku.name} | Direct Depot Supply Bangalore | Gajanana Constructions`}
         description={`Procure ${sku.name} in Bengaluru with NABL mill test reports and electronic weighbridge delivery. Contact 8884238688 / 9535828286 for wholesale quote.`}
-        keywords={[`${sku.name}`, sku.category, 'wholesale building materials Bangalore', 'NABL certified', 'Sri Gajanana Constructions']}
+        keywords={[`${sku.name}`, sku.category, 'wholesale building materials Bangalore', 'NABL certified', 'Gajanana Constructions']}
         canonical={`https://www.gajananaconstructions.in/materials/product/${sku.id}`}
         schema={{
           "@context": "https://schema.org",
@@ -31,7 +31,7 @@ export default function ProductDetail() {
           "image": sku.image,
           "brand": {
             "@type": "Brand",
-            "name": "Sri Gajanana Constructions Depot"
+            "name": "Gajanana Constructions Depot"
           },
           "offers": {
             "@type": "Offer",
@@ -40,7 +40,7 @@ export default function ProductDetail() {
             "availability": "https://schema.org/InStock",
             "seller": {
               "@type": "Organization",
-              "name": "Sri Gajanana Constructions"
+              "name": "Gajanana Constructions"
             }
           }
         }}

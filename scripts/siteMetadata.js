@@ -36,7 +36,7 @@ export const SERVICES_META = [
   },
   {
     slug: 'residential-construction',
-    title: 'Turnkey House Construction in Bangalore | Sri Gajanana Constructions',
+    title: 'Turnkey House Construction in Bangalore | Gajanana Constructions',
     subtitle: 'Independent houses, luxury villas, duplexes, and residential apartment buildings.',
     description: 'End-to-end turnkey residential building contractors in Bangalore. Custom luxury villas, duplex houses, and independent homes with verified structural materials and zero delays.',
     keywords: 'house construction company in Bangalore, turnkey house construction Bangalore, residential construction company Bangalore, house builders in Bangalore, independent house construction, duplex house builders Bengaluru',
@@ -52,7 +52,7 @@ export const SERVICES_META = [
   },
   {
     slug: 'civil-construction',
-    title: 'Civil Contractors in Bangalore | Sri Gajanana Constructions',
+    title: 'Civil Contractors in Bangalore | Gajanana Constructions',
     subtitle: 'Deep piling, isolated footings, heavy machine foundations, RCC frame casting, and slabs.',
     description: 'Heavy civil infrastructure, RCC structural frame casting, deep footings, machine foundations, and retaining walls in Bangalore executed with certified machinery.',
     keywords: 'civil contractors in Bangalore, residential civil contractors Bangalore, civil construction company Bangalore, RCC frame construction, machine foundations, retaining wall contractors',
@@ -62,13 +62,13 @@ export const SERVICES_META = [
     slug: 'architectural-planning',
     title: 'Architectural Planning, 3D Elevation & BBMP Approvals Bengaluru',
     subtitle: '2D/3D floor layouts, structural detailing, 3D exterior elevations, and building approvals.',
-    description: '2D working drawings, 3D exterior elevations, structural BBS reinforcement schedules, and BBMP plan sanction assistance in Bangalore by Sri Gajanana Constructions.',
+    description: '2D working drawings, 3D exterior elevations, structural BBS reinforcement schedules, and BBMP plan sanction assistance in Bangalore by Gajanana Constructions.',
     keywords: 'architectural planning Bangalore, 3D house elevation Bengaluru, BBMP plan sanction assistance, structural drawings, vastu floor plans Bangalore',
     badge: 'Design & Approvals'
   },
   {
     slug: 'renovation',
-    title: 'House Renovation Company in Bangalore | Sri Gajanana Constructions',
+    title: 'House Renovation Company in Bangalore | Gajanana Constructions',
     subtitle: 'Building extensions, vertical floor additions, column jacketing, and facade revamp.',
     description: 'Breathe new life into existing buildings in Bangalore. Column jacketing, vertical floor additions, structural retrofitting, plumbing overhauls, and modern facade revamps.',
     keywords: 'house renovation Bangalore, home renovation company Bangalore, house renovation contractors Bangalore, residential renovation Bangalore, home remodeling Bangalore, vertical floor addition',
@@ -76,7 +76,7 @@ export const SERVICES_META = [
   },
   {
     slug: 'finishing',
-    title: 'House Painting & Finishing Contractors Bangalore | Sri Gajanana Constructions',
+    title: 'House Painting & Finishing Contractors Bangalore | Gajanana Constructions',
     subtitle: 'Vitrified tiling, Italian marble, false ceilings, waterproofing, and architectural painting.',
     description: 'Premium vitrified and Italian marble tiling, gypsum false ceilings, texture painting, UPVC windows, and architectural finishing works across Bangalore.',
     keywords: 'house painting contractors Bangalore, home painting services Bangalore, residential painting contractors Bangalore, interior painting Bangalore, exterior house painting Bangalore',
@@ -84,7 +84,7 @@ export const SERVICES_META = [
   },
   {
     slug: 'waterproofing-solutions',
-    title: 'Waterproofing Contractors in Bangalore | Sri Gajanana Constructions',
+    title: 'Waterproofing Contractors in Bangalore | Gajanana Constructions',
     subtitle: 'Basement tanking, terrace heat-proof waterproofing, expansion joints, and chemical injection.',
     description: 'Guaranteed leak-proof waterproofing systems in Bangalore: terrace heat barriers, deep basement tanking, PU pressure grouting, and bathroom waterproofing with warranty.',
     keywords: 'waterproofing contractors Bangalore, house waterproofing Bangalore, terrace waterproofing Bangalore, bathroom waterproofing Bangalore, residential waterproofing contractors Bangalore',

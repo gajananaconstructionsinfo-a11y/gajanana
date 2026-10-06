@@ -117,7 +117,7 @@ for (const targetDir of targets) {
   const topPages = [
     {
       path: 'services',
-      title: 'Construction Services & Heavy Machinery Rental in Bengaluru | Sri Gajanana Constructions',
+      title: 'Construction Services & Heavy Machinery Rental in Bengaluru | Gajanana Constructions',
       description: 'Complete construction services in Bangalore: turnkey residential villa construction, commercial civil works, JCB 3DX & excavator rental, architectural planning, and structural renovation. Call 8884238688.',
       keywords: 'construction services Bangalore, turnkey house construction, JCB hire Bangalore, civil contractors Arekere, structural engineering Bengaluru, renovation contractors',
       schema: {
@@ -129,71 +129,71 @@ for (const targetDir of targets) {
     },
     {
       path: 'materials',
-      title: 'Wholesale Building Materials Depot Bengaluru | TMT Steel, Cement, M-Sand | Sri Gajanana',
+      title: 'Wholesale Building Materials Depot Bengaluru | TMT Steel, Cement, M-Sand | Gajanana',
       description: 'Direct primary wholesale building materials depot in Bangalore. 15,000 MT capacity stockyard for Tata Tiscon Fe 550D, UltraTech Cement, VSI M-Sand, AAC Blocks, and aggregates. Call 8884238688.',
       keywords: 'building materials depot Bangalore, Tata Tiscon wholesale dealer, UltraTech cement supplier, M-sand price Bangalore, AAC blocks Arekere, construction materials stockyard',
       schema: {
         "@context": "https://schema.org",
         "@type": "WholesaleStore",
-        "name": "Sri Gajanana Wholesale Building Materials Depot",
+        "name": "Gajanana Wholesale Building Materials Depot",
         "url": "https://www.gajananaconstructions.in/materials",
         "telephone": "+918884238688"
       }
     },
     {
       path: 'projects',
-      title: 'Ongoing & Completed Construction Projects in Bengaluru | Sri Gajanana Constructions',
+      title: 'Ongoing & Completed Construction Projects in Bengaluru | Gajanana Constructions',
       description: 'Explore authentic on-site photos of individual residential houses, standalone villas, and commercial builds in Bangalore at foundation, masonry, shuttering, and slab stages.',
-      keywords: 'construction projects Bangalore, house construction photos, villa construction stage, residential civil works Bengaluru, Sri Gajanana Projects',
+      keywords: 'construction projects Bangalore, house construction photos, villa construction stage, residential civil works Bengaluru, Gajanana Projects',
       schema: {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "Construction Projects Portfolio - Sri Gajanana Constructions",
+        "name": "Construction Projects Portfolio - Gajanana Constructions",
         "url": "https://www.gajananaconstructions.in/projects"
       }
     },
     {
       path: 'about',
-      title: 'About Sri Gajanana Constructions | 20+ Years Civil Engineering Legacy in Bangalore',
-      description: 'Learn about Sri Gajanana Constructions (GTCM) founded by Mr. Gajanana in 2005. Over 20 years of trusted civil engineering, turnkey house builds, and 15,000 MT primary stockyard in Bengaluru.',
-      keywords: 'about Sri Gajanana Constructions, civil contractors Bangalore history, Mr Gajanana CEO, building contractors Arekere, trusted builders South Bangalore',
+      title: 'About Gajanana Constructions | 20+ Years Civil Engineering Legacy in Bangalore',
+      description: 'Learn about Gajanana Constructions (GTCM) founded by Mr. Gajanana in 2005. Over 20 years of trusted civil engineering, turnkey house builds, and 15,000 MT primary stockyard in Bengaluru.',
+      keywords: 'about Gajanana Constructions, civil contractors Bangalore history, Mr Gajanana CEO, building contractors Arekere, trusted builders South Bangalore',
       schema: {
         "@context": "https://schema.org",
         "@type": "AboutPage",
-        "name": "About Sri Gajanana Constructions",
+        "name": "About Gajanana Constructions",
         "url": "https://www.gajananaconstructions.in/about"
       }
     },
     {
       path: 'why-us',
-      title: 'Why Choose Sri Gajanana Constructions | Single-Source Construction Advantage',
+      title: 'Why Choose Gajanana Constructions | Single-Source Construction Advantage',
       description: 'Discover the Gajanana advantage: Turnkey civil engineering backed by our own 15,000 MT primary materials stockyard and JCB fleet. Zero broker markups, 100% IS grade compliance.',
-      keywords: 'why choose Sri Gajanana Constructions, best builders Bangalore, direct material depot builders, trusted contractor Arekere',
+      keywords: 'why choose Gajanana Constructions, best builders Bangalore, direct material depot builders, trusted contractor Arekere',
       schema: {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Why Choose Sri Gajanana Constructions",
+        "name": "Why Choose Gajanana Constructions",
         "url": "https://www.gajananaconstructions.in/why-us"
       }
     },
     {
       path: 'contact',
-      title: 'Contact Sri Gajanana Constructions | Yard Location & Phone Numbers Bangalore',
-      description: 'Contact Sri Gajanana Constructions. Call +91 88842 38688 / +91 95358 28286 or visit our central office and stockyard at Samrat Layout, Arekere, Bengaluru 560076.',
-      keywords: 'contact Sri Gajanana Constructions, construction company Arekere contact, building materials Bangalore phone number, Sarvobhogam Nagar contractor',
+      title: 'Contact Gajanana Constructions | Yard Location & Phone Numbers Bangalore',
+      description: 'Contact Gajanana Constructions. Call +91 88842 38688 / +91 95358 28286 or visit our central office and stockyard at Samrat Layout, Arekere, Bengaluru 560076.',
+      keywords: 'contact Gajanana Constructions, construction company Arekere contact, building materials Bangalore phone number, Sarvobhogam Nagar contractor',
       schema: {
         "@context": "https://schema.org",
         "@type": "ContactPage",
-        "name": "Contact Sri Gajanana Constructions",
+        "name": "Contact Gajanana Constructions",
         "url": "https://www.gajananaconstructions.in/contact",
         "telephone": ["+918884238688", "+919535828286"]
       }
     },
     {
       path: 'get-a-quote',
-      title: 'Get Free Construction Quote & BOQ Estimate Bangalore | Sri Gajanana Constructions',
+      title: 'Get Free Construction Quote & BOQ Estimate Bangalore | Gajanana Constructions',
       description: 'Get an instant itemized construction cost estimate and BOQ quote for your residential house, commercial build, JCB rental, or bulk material supply in Bangalore. Call 8884238688.',
-      keywords: 'construction quote Bangalore, house construction cost estimator Bengaluru, BOQ estimate, turnkey building quotation, Sri Gajanana Quote',
+      keywords: 'construction quote Bangalore, house construction cost estimator Bengaluru, BOQ estimate, turnkey building quotation, Gajanana Quote',
       schema: {
         "@context": "https://schema.org",
         "@type": "ContactPage",
@@ -203,7 +203,7 @@ for (const targetDir of targets) {
     },
     {
       path: 'areas',
-      title: 'Areas We Serve in South Bengaluru | Sri Gajanana Constructions',
+      title: 'Areas We Serve in South Bengaluru | Gajanana Constructions',
       description: 'Turnkey residential house construction, JCB earthmoving fleet rental & wholesale building materials depot across 17 South & Southeast Bengaluru localities.',
       keywords: 'Construction company Bangalore, house builders South Bengaluru, building materials depot Arekere, civil contractors JP Nagar, BTM, HSR Layout, Electronic City',
       schema: {
@@ -242,7 +242,7 @@ for (const targetDir of targets) {
           {
             "@type": "GeneralContractor",
             "@id": `https://www.gajananaconstructions.in/areas/${area.slug}#contractor`,
-            "name": `Sri Gajanana Constructions - ${area.name}`,
+            "name": `Gajanana Constructions - ${area.name}`,
             "description": area.metaDescription,
             "url": `https://www.gajananaconstructions.in/areas/${area.slug}`,
             "telephone": "+918884238688",
@@ -298,7 +298,7 @@ for (const targetDir of targets) {
         "description": s.description,
         "provider": {
           "@type": "GeneralContractor",
-          "name": "Sri Gajanana Constructions",
+          "name": "Gajanana Constructions",
           "telephone": "+918884238688",
           "url": "https://www.gajananaconstructions.in/"
         },
@@ -316,7 +316,7 @@ for (const targetDir of targets) {
   // 6. All 16 Material Categories (/materials/:category)
   for (const c of MATERIAL_CATEGORIES_META) {
     writeRouteHtml(path.join('materials', c.slug), {
-      title: `${c.name} in Bengaluru | Sri Gajanana Constructions`,
+      title: `${c.name} in Bengaluru | Gajanana Constructions`,
       description: `${c.shortDesc} Direct wholesale supply with weighbridge accuracy. Call 8884238688.`,
       keywords: c.keywords,
       canonical: `https://www.gajananaconstructions.in/materials/${c.slug}`,
@@ -335,7 +335,7 @@ for (const targetDir of targets) {
   // 7. All 14 Product SKUs (/materials/product/:skuId)
   for (const p of PRODUCTS_SKUS_META) {
     writeRouteHtml(path.join('materials', 'product', p.id), {
-      title: `${p.name} | Bangalore Depot | Sri Gajanana Constructions`,
+      title: `${p.name} | Bangalore Depot | Gajanana Constructions`,
       description: `Procure ${p.name} in Bengaluru. ${p.specSummary}. Call 8884238688 / 9535828286 for immediate yard delivery.`,
       keywords: p.keywords,
       canonical: `https://www.gajananaconstructions.in/materials/product/${p.id}`,
@@ -348,7 +348,7 @@ for (const targetDir of targets) {
         "description": p.specSummary,
         "brand": {
           "@type": "Brand",
-          "name": "Sri Gajanana Constructions Depot"
+          "name": "Gajanana Constructions Depot"
         },
         "offers": {
           "@type": "Offer",
@@ -363,7 +363,7 @@ for (const targetDir of targets) {
   
   // 9. Guides Hub (/guides)
   writeRouteHtml('guides', {
-    title: 'Bengaluru House Construction Guides & Knowledge Hub | Sri Gajanana Constructions',
+    title: 'Bengaluru House Construction Guides & Knowledge Hub | Gajanana Constructions',
     description: 'Authoritative homeowner guides on building a house in Bangalore. Civil engineering insights, construction cost breakdowns, structural RCC tips, timelines, and BBMP bylaws.',
     keywords: 'Bangalore house construction guide, house construction cost Bangalore, building stages foundation to finishing, civil contractors advice',
     canonical: 'https://www.gajananaconstructions.in/guides',
@@ -399,7 +399,7 @@ for (const targetDir of targets) {
         },
         "publisher": {
           "@type": "Organization",
-          "name": "Sri Gajanana Constructions",
+          "name": "Gajanana Constructions",
           "url": "https://www.gajananaconstructions.in/"
         }
       }
@@ -409,7 +409,7 @@ for (const targetDir of targets) {
   // 8. All 6 Projects (/projects/:id)
   for (const proj of PROJECTS_META) {
     writeRouteHtml(path.join('projects', proj.id), {
-      title: `${proj.title} | Sri Gajanana Constructions`,
+      title: `${proj.title} | Gajanana Constructions`,
       description: proj.description,
       keywords: `${proj.title}, ${proj.type}, ${proj.stage}, construction progress Bangalore`,
       canonical: `https://www.gajananaconstructions.in/projects/${proj.id}`,

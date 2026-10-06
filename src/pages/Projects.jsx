@@ -17,14 +17,14 @@ export default function Projects() {
   return (
     <div>
       <SEOHead
-        title="Ongoing & Completed Construction Projects in Bengaluru | Sri Gajanana Constructions"
+        title="Ongoing & Completed Construction Projects in Bengaluru | Gajanana Constructions"
         description="Explore authentic on-site photos of individual residential houses, standalone villas, and commercial builds in Bangalore at foundation, masonry, shuttering, and slab stages."
-        keywords="construction projects Bangalore, house construction photos, villa construction stage, residential civil works Bengaluru, Sri Gajanana Projects"
+        keywords="construction projects Bangalore, house construction photos, villa construction stage, residential civil works Bengaluru, Gajanana Projects"
         canonical="https://www.gajananaconstructions.in/projects"
         schema={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          "name": "Construction Projects Portfolio - Sri Gajanana Constructions",
+          "name": "Construction Projects Portfolio - Gajanana Constructions",
           "url": "https://www.gajananaconstructions.in/projects",
           "description": "Authentic on-site construction photos and structural progress across individual residential and commercial builds in Bengaluru."
         }}

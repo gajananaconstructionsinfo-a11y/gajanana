@@ -80,7 +80,7 @@ export default function Services() {
   return (
     <div>
       <SEOHead
-        title="Construction Services & Heavy Machinery Rental in Bengaluru | Sri Gajanana Constructions"
+        title="Construction Services & Heavy Machinery Rental in Bengaluru | Gajanana Constructions"
         description="Complete construction services in Bangalore: turnkey residential villa construction, commercial civil works, JCB 3DX & excavator rental, architectural planning, and structural renovation. Call 8884238688."
         keywords="construction services Bangalore, turnkey house construction, JCB hire Bangalore, civil contractors Arekere, structural engineering Bengaluru, renovation contractors"
         canonical="https://www.gajananaconstructions.in/services"
@@ -89,10 +89,10 @@ export default function Services() {
           "@type": "CollectionPage",
           "name": "Construction & Fleet Services in Bengaluru",
           "url": "https://www.gajananaconstructions.in/services",
-          "description": "Turnkey civil engineering, heavy earthmoving fleet rental, and comprehensive construction services by Sri Gajanana Constructions.",
+          "description": "Turnkey civil engineering, heavy earthmoving fleet rental, and comprehensive construction services by Gajanana Constructions.",
           "provider": {
             "@type": "GeneralContractor",
-            "name": "Sri Gajanana Constructions",
+            "name": "Gajanana Constructions",
             "telephone": "+918884238688",
             "url": "https://www.gajananaconstructions.in/"
           }

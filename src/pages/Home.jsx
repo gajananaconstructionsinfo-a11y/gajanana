@@ -27,8 +27,8 @@ export default function Home() {
             {
               "@type": "GeneralContractor",
               "@id": "https://www.gajananaconstructions.in/#contractor",
-              "name": "Sri Gajanana Constructions - GAJANANA TRADERS & CONSTRUCTIONS & MATERIALS",
-              "alternateName": "Sri Gajanana Constructions",
+              "name": "Gajanana Constructions - GAJANANA TRADERS & CONSTRUCTIONS & MATERIALS",
+              "alternateName": "Gajanana Constructions",
               "url": "https://www.gajananaconstructions.in/",
               "logo": "https://www.gajananaconstructions.in/favicon.svg",
               "image": "https://www.gajananaconstructions.in/images/products/tata-tiscon-tmt.jpg",
@@ -65,7 +65,7 @@ export default function Home() {
                   "name": "Which is the best house construction company in Bangalore?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Sri Gajanana Constructions is rated among the best house construction companies in Bangalore, with over 20 years of continuous civil engineering legacy since 2005. Unlike tech aggregator portals that subcontract builds to third-party labor groups, Sri Gajanana operates its own central 15,000 MT primary materials depot (Tata Tiscon, UltraTech) and in-house JCB 3DX & excavator fleet in Arekere, ensuring 100% authentic IS-grade materials, zero broker markups, and on-time project completion."
+                    "text": "Gajanana Constructions is rated among the best house construction companies in Bangalore, with over 20 years of continuous civil engineering legacy since 2005. Unlike tech aggregator portals that subcontract builds to third-party labor groups, Gajanana operates its own central 15,000 MT primary materials depot (Tata Tiscon, UltraTech) and in-house JCB 3DX & excavator fleet in Arekere, ensuring 100% authentic IS-grade materials, zero broker markups, and on-time project completion."
                   }
                 },
                 {
@@ -73,7 +73,7 @@ export default function Home() {
                   "name": "How much does it cost to build a house in Bangalore in 2026?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "House construction costs in Bangalore vary based on architectural design, soil depth, steel grades, and interior finishes. Rather than arbitrary flat per-sqft estimates that lead to 25-40% cost overruns, Sri Gajanana Constructions provides transparent, itemized Bill of Quantities (BOQ) estimates based on actual structural drawings. Call 8884238688 for an itemized estimate for your plot (30x40, 30x50, 40x60)."
+                    "text": "House construction costs in Bangalore vary based on architectural design, soil depth, steel grades, and interior finishes. Rather than arbitrary flat per-sqft estimates that lead to 25-40% cost overruns, Gajanana Constructions provides transparent, itemized Bill of Quantities (BOQ) estimates based on actual structural drawings. Call 8884238688 for an itemized estimate for your plot (30x40, 30x50, 40x60)."
                   }
                 },
                 {
@@ -81,7 +81,7 @@ export default function Home() {
                   "name": "What is the difference between turnkey construction and a labor contract in Bangalore?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "In a labor contract, the homeowner is responsible for buying, transporting, and securing steel, cement, sand, bricks, and tiles, which frequently causes project halts and material price fluctuations. Turnkey house construction with Sri Gajanana Constructions is an all-inclusive solution covering architectural planning, BBMP sanctions, mechanized excavation, high-grade structural materials from our own stockyard, plumbing, electrical, and turnkey interior handover with a single point of structural accountability."
+                    "text": "In a labor contract, the homeowner is responsible for buying, transporting, and securing steel, cement, sand, bricks, and tiles, which frequently causes project halts and material price fluctuations. Turnkey house construction with Gajanana Constructions is an all-inclusive solution covering architectural planning, BBMP sanctions, mechanized excavation, high-grade structural materials from our own stockyard, plumbing, electrical, and turnkey interior handover with a single point of structural accountability."
                   }
                 },
                 {
@@ -89,7 +89,7 @@ export default function Home() {
                   "name": "Why is choosing a builder with their own material depot better than tech aggregator apps?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Tech aggregators act as middleman portals charging 15% to 25% commissions and passing the actual work to unknown subcontractors who often cut corners on steel grades and cement batches. With Sri Gajanana Constructions, you deal directly with the builder and stockyard. We supply genuine Tata Tiscon Fe 550D rebar and factory-fresh UltraTech cement with NABL batch test certificates at wholesale rates."
+                    "text": "Tech aggregators act as middleman portals charging 15% to 25% commissions and passing the actual work to unknown subcontractors who often cut corners on steel grades and cement batches. With Gajanana Constructions, you deal directly with the builder and stockyard. We supply genuine Tata Tiscon Fe 550D rebar and factory-fresh UltraTech cement with NABL batch test certificates at wholesale rates."
                   }
                 },
                 {
@@ -97,7 +97,7 @@ export default function Home() {
                   "name": "What BBMP bylaws and plan sanctions are required in South Bangalore?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Building a residential house requires clear A-Khata/B-Khata title deeds, BBMP building plan sanction, BESCOM temporary power connection, and BWSSB water/sewerage connections. Sri Gajanana assists homeowners with complete sanction drawings, structural stability certificates, setback calculations, and rainwater harvesting compliance."
+                    "text": "Building a residential house requires clear A-Khata/B-Khata title deeds, BBMP building plan sanction, BESCOM temporary power connection, and BWSSB water/sewerage connections. Gajanana assists homeowners with complete sanction drawings, structural stability certificates, setback calculations, and rainwater harvesting compliance."
                   }
                 },
                 {
@@ -110,7 +110,7 @@ export default function Home() {
                 },
                 {
                   "@type": "Question",
-                  "name": "What areas in Bangalore does Sri Gajanana Constructions serve?",
+                  "name": "What areas in Bangalore does Gajanana Constructions serve?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Our primary service areas include Arekere (Central Headquarters & Stockyard), JP Nagar, BTM Layout, HSR Layout, Bommanahalli, Electronic City, Attibele, Begur, Hulimavu, Singasandra, Kudlu, Harlur, Sarjapur Road, Hebbagodi, Chandapura, and Bommasandra."
@@ -604,10 +604,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest block mb-2">
-              WHY SRI GAJANANA OUTPERFORMS OTHERS
+              WHY GAJANANA OUTPERFORMS OTHERS
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 font-heading">
-              Sri Gajanana Constructions vs. Tech Aggregators vs. Local Contractors
+              Gajanana Constructions vs. Tech Aggregators vs. Local Contractors
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mt-3 font-light">
               See why hundreds of Bengaluru families choose our direct-builder ecosystem over middleman apps and unverified contractors.
@@ -622,7 +622,7 @@ export default function Home() {
                   <th className="p-4 sm:p-6 w-1/3 bg-amber-500 text-slate-950 font-black border-b border-amber-600">
                     <div className="flex items-center space-x-1.5">
                       <Sparkles className="w-4 h-4 fill-slate-950" />
-                      <span>Sri Gajanana Constructions</span>
+                      <span>Gajanana Constructions</span>
                     </div>
                   </th>
                   <th className="p-4 sm:p-6 w-1/4 border-b border-slate-800 text-slate-300">Tech Aggregator Portals</th>
@@ -862,30 +862,30 @@ export default function Home() {
             {[
               {
                 q: "Which is the best house construction company in Bangalore?",
-                a: "Sri Gajanana Constructions is rated among the best house construction companies in Bangalore, with over 20 years of continuous civil engineering legacy since 2005. Unlike tech aggregator portals that subcontract builds to third-party labor groups, Sri Gajanana operates its own central 15,000 MT primary materials depot (Tata Tiscon, UltraTech) and in-house JCB 3DX & excavator fleet in Arekere, ensuring 100% authentic IS-grade materials, zero broker markups, and on-time project completion."
+                a: "Gajanana Constructions is rated among the best house construction companies in Bangalore, with over 20 years of continuous civil engineering legacy since 2005. Unlike tech aggregator portals that subcontract builds to third-party labor groups, Gajanana operates its own central 15,000 MT primary materials depot (Tata Tiscon, UltraTech) and in-house JCB 3DX & excavator fleet in Arekere, ensuring 100% authentic IS-grade materials, zero broker markups, and on-time project completion."
               },
               {
                 q: "How much does it cost to build a house in Bangalore in 2026?",
-                a: "House construction costs in Bangalore vary based on architectural design, soil depth, steel grades, and interior finishes. Rather than arbitrary flat per-sqft estimates that lead to 25-40% cost overruns, Sri Gajanana Constructions provides transparent, itemized Bill of Quantities (BOQ) estimates based on actual structural drawings. Call 8884238688 for an itemized estimate for your plot (30x40, 30x50, 40x60)."
+                a: "House construction costs in Bangalore vary based on architectural design, soil depth, steel grades, and interior finishes. Rather than arbitrary flat per-sqft estimates that lead to 25-40% cost overruns, Gajanana Constructions provides transparent, itemized Bill of Quantities (BOQ) estimates based on actual structural drawings. Call 8884238688 for an itemized estimate for your plot (30x40, 30x50, 40x60)."
               },
               {
                 q: "What is the difference between turnkey construction and a labor contract in Bangalore?",
-                a: "In a labor contract, the homeowner is responsible for buying, transporting, and securing steel, cement, sand, bricks, and tiles, which frequently causes project halts and material price fluctuations. Turnkey house construction with Sri Gajanana Constructions is an all-inclusive solution covering architectural planning, BBMP sanctions, mechanized excavation, high-grade structural materials from our own stockyard, plumbing, electrical, and turnkey interior handover with a single point of structural accountability."
+                a: "In a labor contract, the homeowner is responsible for buying, transporting, and securing steel, cement, sand, bricks, and tiles, which frequently causes project halts and material price fluctuations. Turnkey house construction with Gajanana Constructions is an all-inclusive solution covering architectural planning, BBMP sanctions, mechanized excavation, high-grade structural materials from our own stockyard, plumbing, electrical, and turnkey interior handover with a single point of structural accountability."
               },
               {
                 q: "Why is choosing a builder with their own material depot better than tech aggregator apps?",
-                a: "Tech aggregators act as middleman portals charging 15% to 25% commissions and passing the actual work to unknown subcontractors who often cut corners on steel grades and cement batches. With Sri Gajanana Constructions, you deal directly with the primary builder and materials stockyard. We supply genuine Tata Tiscon Fe 550D rebar and factory-fresh UltraTech cement with NABL batch test certificates at wholesale rates."
+                a: "Tech aggregators act as middleman portals charging 15% to 25% commissions and passing the actual work to unknown subcontractors who often cut corners on steel grades and cement batches. With Gajanana Constructions, you deal directly with the primary builder and materials stockyard. We supply genuine Tata Tiscon Fe 550D rebar and factory-fresh UltraTech cement with NABL batch test certificates at wholesale rates."
               },
               {
                 q: "What BBMP bylaws and plan sanctions are required in South Bangalore?",
-                a: "Building a house in Bangalore requires an A-Khata/B-Khata title verification, BBMP plan sanction (or BDA/BMRDA approvals depending on jurisdiction), BESCOM temporary electrical connection, and BWSSB water/sewerage connections. Sri Gajanana assists homeowners with complete sanction drawings, structural stability certificates, setback calculations, and rainwater harvesting compliance."
+                a: "Building a house in Bangalore requires an A-Khata/B-Khata title verification, BBMP plan sanction (or BDA/BMRDA approvals depending on jurisdiction), BESCOM temporary electrical connection, and BWSSB water/sewerage connections. Gajanana assists homeowners with complete sanction drawings, structural stability certificates, setback calculations, and rainwater harvesting compliance."
               },
               {
                 q: "How long does it take to construct a G+1 or G+2 house in Bangalore?",
                 a: "Typically, a G+1 house (approx. 2,400 sq.ft) takes 8 to 10 months, while a G+2 house takes 10 to 12 months. This includes 21-day slab curing, mechanized soil excavation, foundation footings, brick masonry, MEP rough-ins, plastering, waterproofing, and architectural finishing. Our in-house machinery and direct material stockyard prevent the supply-chain bottlenecks common with other contractors."
               },
               {
-                q: "What areas in Bangalore does Sri Gajanana Constructions serve?",
+                q: "What areas in Bangalore does Gajanana Constructions serve?",
                 a: "Our primary service areas include Arekere (Central Headquarters & Stockyard), JP Nagar, BTM Layout, HSR Layout, Bommanahalli, Electronic City, Attibele, Begur, Hulimavu, Singasandra, Kudlu, Harlur, Sarjapur Road, Hebbagodi, Chandapura, and Bommasandra."
               }
             ].map((faq, idx) => (

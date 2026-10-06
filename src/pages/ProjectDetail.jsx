@@ -19,9 +19,9 @@ export default function ProjectDetail() {
   return (
     <div>
       <SEOHead
-        title={`${project.title} | Construction Portfolio | Sri Gajanana Constructions`}
+        title={`${project.title} | Construction Portfolio | Gajanana Constructions`}
         description={`${project.desc.slice(0, 150)}... Built with Fe 550D TMT, 53G cement, and verified structural integrity in Bengaluru.`}
-        keywords={[`${project.title}`, project.type, project.stage, 'Bengaluru construction progress', 'Sri Gajanana Constructions']}
+        keywords={[`${project.title}`, project.type, project.stage, 'Bengaluru construction progress', 'Gajanana Constructions']}
         canonical={`https://www.gajananaconstructions.in/projects/${project.id}`}
         schema={{
           "@context": "https://schema.org",
@@ -30,7 +30,7 @@ export default function ProjectDetail() {
           "description": project.desc,
           "provider": {
             "@type": "GeneralContractor",
-            "name": "Sri Gajanana Constructions",
+            "name": "Gajanana Constructions",
             "url": "https://www.gajananaconstructions.in/"
           }
         }}

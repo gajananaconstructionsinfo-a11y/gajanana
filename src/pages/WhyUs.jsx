@@ -11,14 +11,14 @@ export default function WhyUs() {
   return (
     <div>
       <SEOHead
-        title="Why Choose Sri Gajanana Constructions | Single-Source Construction Advantage"
+        title="Why Choose Gajanana Constructions | Single-Source Construction Advantage"
         description="Discover the Gajanana advantage: Turnkey civil engineering backed by our own 15,000 MT primary materials stockyard and JCB fleet. Zero broker markups, 100% IS grade compliance."
-        keywords="why choose Sri Gajanana Constructions, best builders Bangalore, direct material depot builders, trusted contractor Arekere"
+        keywords="why choose Gajanana Constructions, best builders Bangalore, direct material depot builders, trusted contractor Arekere"
         canonical="https://www.gajananaconstructions.in/why-us"
         schema={{
           "@context": "https://schema.org",
           "@type": "WebPage",
-          "name": "Why Choose Sri Gajanana Constructions",
+          "name": "Why Choose Gajanana Constructions",
           "url": "https://www.gajananaconstructions.in/why-us",
           "description": "The Gajanana Advantage: Single-source construction solutions, heavy machinery fleet, and direct wholesale primary stockyard in Bengaluru."
         }}

@@ -31,7 +31,7 @@ export default function AreasDirectory() {
   return (
     <div className="bg-white min-h-screen">
       <SEOHead
-        title="Areas We Serve in South Bengaluru | Sri Gajanana Constructions"
+        title="Areas We Serve in South Bengaluru | Gajanana Constructions"
         description="Turnkey residential house construction, JCB earthmoving fleet rental & wholesale building materials depot across 17 South & Southeast Bengaluru localities."
         keywords="construction areas Bangalore, house builders South Bangalore, civil contractors JP Nagar, building materials Electronic City, Arekere builders"
         canonical="https://www.gajananaconstructions.in/areas"
@@ -43,7 +43,7 @@ export default function AreasDirectory() {
           "description": "Comprehensive construction and materials supply across 17 major South & Southeast Bengaluru localities.",
           "provider": {
             "@type": "GeneralContractor",
-            "name": "Sri Gajanana Constructions",
+            "name": "Gajanana Constructions",
             "telephone": "+918884238688",
             "url": "https://www.gajananaconstructions.in/"
           }
@@ -72,7 +72,7 @@ export default function AreasDirectory() {
           </h1>
 
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed mb-8">
-            Operating from our central Arekere depot, Sri Gajanana Constructions delivers A-Grade residential house construction, JCB earthmoving, and wholesale building materials across South Bengaluru.
+            Operating from our central Arekere depot, Gajanana Constructions delivers A-Grade residential house construction, JCB earthmoving, and wholesale building materials across South Bengaluru.
           </p>
 
           {/* Search & Filter Bar */}

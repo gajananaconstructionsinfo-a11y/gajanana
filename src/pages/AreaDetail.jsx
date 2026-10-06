@@ -82,7 +82,7 @@ export default function AreaDetail() {
         {
           "@type": "GeneralContractor",
           "@id": `https://www.gajananaconstructions.in/areas/${area.slug}#contractor`,
-          "name": `Sri Gajanana Constructions - ${area.name}`,
+          "name": `Gajanana Constructions - ${area.name}`,
           "description": area.metaDescription,
           "url": `https://www.gajananaconstructions.in/areas/${area.slug}`,
           "telephone": "+918884238688",
@@ -159,7 +159,7 @@ export default function AreaDetail() {
   if (!area) return null;
 
   const whatsappMessage = encodeURIComponent(
-    `Hi Sri Gajanana Constructions, I am planning a construction project in ${area.name}, Bengaluru. Please share a detailed quote and schedule an on-site consultation.`
+    `Hi Gajanana Constructions, I am planning a construction project in ${area.name}, Bengaluru. Please share a detailed quote and schedule an on-site consultation.`
   );
 
   return (
@@ -306,7 +306,7 @@ export default function AreaDetail() {
               Why We Outperform Other Builders
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold mt-1 font-heading">
-              The Sri Gajanana Dual-Strength Moat in {area.name}
+              The Gajanana Dual-Strength Moat in {area.name}
             </h2>
             <p className="text-slate-400 text-sm mt-2">
               Unlike online contractor aggregators who outsource labor and materials at hefty 15–20% markups, we own our building materials stockyard and JCB fleet right here in South Bengaluru.
@@ -735,7 +735,7 @@ export default function AreaDetail() {
                 Book a Free On-Site Consultation &amp; Soil Assessment
               </h3>
               <p className="text-xs sm:text-sm font-medium text-slate-900/80 mt-1 max-w-xl">
-                Speak directly with Sri Gajanana Constructions leadership. Get itemized estimates, BBMP sanction guidance, and direct depot material pricing.
+                Speak directly with Gajanana Constructions leadership. Get itemized estimates, BBMP sanction guidance, and direct depot material pricing.
               </p>
             </div>
 

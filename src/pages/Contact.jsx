@@ -43,20 +43,20 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-white overflow-x-hidden w-full">
+    <div className="min-h-screen bg-white overflow-x-hidden w-full max-w-full">
       <SEOHead
-        title="Contact Sri Gajanana Constructions | Yard Location & Phone Numbers Bangalore"
-        description="Contact Sri Gajanana Constructions. Call +91 88842 38688 / +91 95358 28286 or visit our central office and stockyard at Samrat Layout, Arekere, Bengaluru 560076."
-        keywords="contact Sri Gajanana Constructions, construction company Arekere contact, building materials Bangalore phone number, Sarvobhogam Nagar contractor"
+        title="Contact Gajanana Constructions | Yard Location & Phone Numbers Bangalore"
+        description="Contact Gajanana Constructions. Call +91 88842 38688 / +91 95358 28286 or visit our central office and stockyard at Samrat Layout, Arekere, Bengaluru 560076."
+        keywords="contact Gajanana Constructions, construction company Arekere contact, building materials Bangalore phone number, Sarvobhogam Nagar contractor"
         canonical="https://www.gajananaconstructions.in/contact"
         schema={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
-          "name": "Contact Sri Gajanana Constructions",
+          "name": "Contact Gajanana Constructions",
           "url": "https://www.gajananaconstructions.in/contact",
           "mainEntity": {
             "@type": "GeneralContractor",
-            "name": "Sri Gajanana Constructions",
+            "name": "Gajanana Constructions",
             "telephone": ["+918884238688", "+919535828286"],
             "email": "gajananaconstructionsinfo@gmail.com",
             "address": {
@@ -78,7 +78,7 @@ export default function Contact() {
       <Breadcrumb items={[{ label: 'Contact Us' }]} />
 
       {/* Pricing Policy Top Banner */}
-      <div className="bg-amber-500 text-slate-950 py-2.5 px-3 sm:px-4 text-[11px] sm:text-xs font-mono font-bold text-center border-b border-amber-600 shadow-inner leading-relaxed">
+      <div className="bg-amber-500 text-slate-950 py-2.5 px-3 sm:px-4 text-[11px] sm:text-xs font-mono font-bold text-center border-b border-amber-600 shadow-inner leading-relaxed overflow-hidden w-full max-w-full">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
           <span>📢 FOR PRICING, WHOLESALE RATES &amp; MACHINERY:</span>
           <span className="inline-flex items-center gap-1">
@@ -95,12 +95,12 @@ export default function Contact() {
       </div>
 
       {/* Hero Header */}
-      <section className="bg-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
+      <section className="bg-slate-900 text-white py-10 sm:py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-800 overflow-hidden w-full max-w-full">
         <div className="max-w-7xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-4 border border-amber-500/30">
             Direct Coordination Desk
           </div>
-          <h1 className="text-3xl sm:text-5xl font-extrabold font-heading text-white tracking-tight mb-4">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold font-heading text-white tracking-tight mb-4 break-words">
             Connect With Our Engineering & Yard Teams
           </h1>
           <p className="text-slate-300 text-lg max-w-3xl leading-relaxed">
@@ -110,27 +110,27 @@ export default function Contact() {
       </section>
 
       {/* Main Contact Grid */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <section className="py-10 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden w-full max-w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 w-full max-w-full">
           
           {/* Left: Contact Information & Cards (5 Cols) */}
-          <div className="lg:col-span-5 space-y-8">
+          <div className="lg:col-span-5 space-y-6 sm:space-y-8 min-w-0 w-full max-w-full overflow-hidden">
             <div>
-              <h2 className="text-2xl font-bold font-heading text-slate-900 mb-2">Corporate Headquarters & Yard</h2>
+              <h2 className="text-xl sm:text-2xl font-bold font-heading text-slate-900 mb-2">Corporate Headquarters & Yard</h2>
               <p className="text-slate-600 text-sm">
                 Direct walk-in consultations, engineering conference suites, and live physical sample yards.
               </p>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-4 w-full">
               {/* Address Card */}
-              <div className="p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
+              <div className="p-4 sm:p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3 sm:gap-4 overflow-hidden w-full">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0 mt-0.5">
                   <i className="fa-solid fa-location-dot text-xl"></i>
                 </div>
                 <div>
                   <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Registered Facility</div>
-                  <h3 className="font-bold text-slate-900 text-base mb-1">GAJANANA TRADERS &amp; CONSTRUCTIONS &amp; MATERIALS</h3>
+                  <h3 className="font-bold text-slate-900 text-sm sm:text-base mb-1 break-words">GAJANANA TRADERS &amp; CONSTRUCTIONS &amp; MATERIALS</h3>
                   <p className="text-sm text-slate-600 leading-relaxed">
                     7013, 2nd Main Rd, Samrat Layout,<br />
                     Sarvobhogam Nagar, Arekere,<br />
@@ -143,8 +143,8 @@ export default function Contact() {
               </div>
 
               {/* Direct Phones */}
-              <div className="p-5 sm:p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3.5 sm:gap-4 overflow-hidden">
-                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-lg bg-blue-500/10 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
+              <div className="p-4 sm:p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3 sm:gap-4 overflow-hidden w-full">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-blue-500/10 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
                   <i className="fa-solid fa-phone text-lg sm:text-xl"></i>
                 </div>
                 <div className="min-w-0 flex-1">
@@ -169,8 +169,8 @@ export default function Contact() {
               </div>
 
               {/* Email & Correspondence */}
-              <div className="p-5 sm:p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3.5 sm:gap-4 overflow-hidden">
-                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-lg bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+              <div className="p-4 sm:p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3 sm:gap-4 overflow-hidden w-full">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
                   <i className="fa-solid fa-envelope text-lg sm:text-xl"></i>
                 </div>
                 <div className="min-w-0 flex-1">
@@ -183,8 +183,8 @@ export default function Contact() {
               </div>
 
               {/* Operating Hours */}
-              <div className="p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-purple-500/10 text-purple-600 flex items-center justify-center shrink-0">
+              <div className="p-4 sm:p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3 sm:gap-4 overflow-hidden w-full">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-purple-500/10 text-purple-600 flex items-center justify-center shrink-0 mt-0.5">
                   <i className="fa-solid fa-clock text-xl"></i>
                 </div>
                 <div>
@@ -200,7 +200,7 @@ export default function Contact() {
             </div>
 
             {/* Quick Links */}
-            <div className="p-5 rounded-xl bg-amber-50 border border-amber-200 text-amber-900">
+            <div className="p-4 sm:p-5 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 overflow-hidden w-full">
               <h4 className="font-bold text-sm mb-1"><i className="fa-solid fa-bolt text-amber-600 mr-1.5"></i> Need an immediate formal rate quotation?</h4>
               <p className="text-xs text-amber-800 mb-3">Skip manual email threads and generate an instant itemized estimate with transport costs.</p>
               <Link to="/get-a-quote" className="inline-flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-lg text-xs font-bold transition">
@@ -211,8 +211,8 @@ export default function Contact() {
           </div>
 
           {/* Right: Interactive Contact Form & Live Routing Desk (7 Cols) */}
-          <div className="lg:col-span-7">
-            <div className="bg-white border border-slate-200 rounded-2xl p-8 sm:p-10 shadow-sm">
+          <div className="lg:col-span-7 min-w-0 w-full max-w-full overflow-hidden">
+            <div className="bg-white border border-slate-200 rounded-2xl p-4 sm:p-8 lg:p-10 shadow-sm overflow-hidden w-full max-w-full">
               <div className="mb-8">
                 <span className="text-xs font-bold text-amber-600 uppercase tracking-wider">Fast-Track Form</span>
                 <h3 className="text-2xl font-bold font-heading text-slate-900 mt-1">Send an Official Message or Inquiry</h3>
@@ -323,7 +323,7 @@ export default function Contact() {
                         placeholder="e.g. Ramesh Kumar / Ar. Sunita Rao"
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition"
+                        className="w-full max-w-full box-border px-3.5 sm:px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-base sm:text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition"
                       />
                     </div>
                     <div>
@@ -337,7 +337,7 @@ export default function Contact() {
                         placeholder="e.g. +91 98765 43210"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition"
+                        className="w-full max-w-full box-border px-3.5 sm:px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-base sm:text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition"
                       />
                     </div>
                   </div>
@@ -353,7 +353,7 @@ export default function Contact() {
                         placeholder="e.g. contact@domain.com"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition"
+                        className="w-full max-w-full box-border px-3.5 sm:px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-base sm:text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition"
                       />
                     </div>
                     <div>
@@ -364,7 +364,7 @@ export default function Contact() {
                         name="interest"
                         value={formData.interest}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition text-slate-800"
+                        className="w-full max-w-full box-border px-3.5 sm:px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-base sm:text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition text-slate-800"
                       >
                         <option value="General Construction Enquiry">General Construction Enquiry</option>
                         <option value="JCB 3DX & Heavy Earthmoving Machinery Rental">JCB 3DX &amp; Heavy Earthmoving Machinery Rental</option>
@@ -391,7 +391,7 @@ export default function Contact() {
                       placeholder="e.g. Sarjapur Road, Bangalore / Whitefield / Mysore Road"
                       value={formData.location}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition"
+                      className="w-full max-w-full box-border px-3.5 sm:px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-base sm:text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition"
                     />
                   </div>
 
@@ -405,7 +405,7 @@ export default function Contact() {
                       placeholder="Include built-up area (sq.ft), quantity requirements (metric tonnes or bags), expected schedule, or specific engineering parameters..."
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition"
+                      className="w-full max-w-full box-border px-3.5 sm:px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-base sm:text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition"
                     ></textarea>
                   </div>
 
@@ -436,7 +436,7 @@ export default function Contact() {
             </div>
 
             {/* Quick Map & Directions Callout */}
-            <div className="mt-8 p-5 rounded-2xl border border-slate-200 bg-slate-50 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="mt-6 sm:mt-8 p-4 sm:p-5 rounded-2xl border border-slate-200 bg-slate-50 flex flex-col sm:flex-row sm:items-center justify-between gap-4 overflow-hidden w-full">
               <div>
                 <div className="text-[11px] font-bold uppercase tracking-wider text-amber-600 font-mono mb-0.5">Office &amp; Yard Location</div>
                 <h4 className="font-bold text-slate-900 text-sm">7013, 2nd Main Rd, Samrat Layout, Arekere</h4>
@@ -456,8 +456,8 @@ export default function Contact() {
       </section>
 
       {/* Interactive Google Maps & Facility Location Section */}
-      <section id="interactive-map" className="py-16 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="interactive-map" className="py-10 sm:py-16 bg-slate-50 border-t border-slate-200 overflow-hidden w-full max-w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden w-full max-w-full">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-700 text-xs font-semibold uppercase tracking-wider mb-2 border border-amber-500/20 font-mono">
@@ -470,12 +470,12 @@ export default function Contact() {
                 7013, 2nd Main Rd, Samrat Layout, Sarvobhogam Nagar, Arekere, Bengaluru, Karnataka 560076
               </p>
             </div>
-            <div className="flex flex-wrap items-center gap-3">
+            <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-2.5 sm:gap-3 w-full sm:w-auto">
               <a
                 href="https://www.google.com/maps/place/7013,+2nd+Main+Rd+Samrat+Layout,+Sarvobhogam+Nagar,+Arekere,+Bengaluru,+Karnataka+560076/@12.8877432,77.6017726,21z/data=!4m6!3m5!1s0x3bae152f523d38af:0x73dac50967405142!8m2!3d12.8878405!4d77.6017497!16s%2Fg%2F11lmp2c1d0?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-950 hover:bg-amber-600 text-white text-xs font-bold uppercase tracking-wider transition shadow"
+                className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-950 hover:bg-amber-600 text-white text-xs font-bold uppercase tracking-wider transition shadow text-center w-full sm:w-auto"
               >
                 <i className="fa-solid fa-map-location-dot text-amber-400"></i>
                 <span>Open in Google Maps</span>
@@ -484,7 +484,7 @@ export default function Contact() {
                 href="https://www.google.com/maps/dir/?api=1&destination=7013,+2nd+Main+Rd+Samrat+Layout,+Sarvobhogam+Nagar,+Arekere,+Bengaluru,+Karnataka+560076"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold uppercase tracking-wider transition shadow"
+                className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold uppercase tracking-wider transition shadow text-center w-full sm:w-auto"
               >
                 <i className="fa-solid fa-diamond-turn-right text-slate-950"></i>
                 <span>Get Driving Directions</span>
@@ -493,7 +493,7 @@ export default function Contact() {
                 href="https://maps.google.com/?q=12.8878405,77.6017497"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white hover:bg-slate-100 text-slate-800 text-xs font-bold border border-slate-300 transition shadow-sm font-mono"
+                className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white hover:bg-slate-100 text-slate-800 text-xs font-bold border border-slate-300 transition shadow-sm font-mono text-center w-full sm:w-auto"
               >
                 <i className="fa-solid fa-location-crosshairs text-blue-600"></i>
                 <span>12.8878° N, 77.6017° E</span>
@@ -504,7 +504,7 @@ export default function Contact() {
           {/* Map Container + Overlay Info Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             {/* Embedded Google Map (8 Cols) */}
-            <div className="lg:col-span-8 rounded-3xl overflow-hidden border border-slate-300 shadow-xl bg-white relative min-h-[420px] sm:min-h-[480px]">
+            <div className="lg:col-span-8 rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-300 shadow-xl bg-white relative h-[360px] sm:h-[480px] w-full max-w-full">
               <iframe
                 title="GAJANANA TRADERS & CONSTRUCTIONS & MATERIALS Google Map - 7013 Samrat Layout Arekere"
                 src="https://maps.google.com/maps?q=7013,+2nd+Main+Rd+Samrat+Layout,+Sarvobhogam+Nagar,+Arekere,+Bengaluru,+Karnataka+560076&t=&z=17&ie=UTF8&iwloc=&output=embed"
@@ -519,15 +519,15 @@ export default function Contact() {
             </div>
 
             {/* Depot & Logistics Information Card (4 Cols) */}
-            <div className="lg:col-span-4 flex flex-col justify-between space-y-4">
-              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
+            <div className="lg:col-span-4 flex flex-col justify-between space-y-4 min-w-0 w-full max-w-full overflow-hidden">
+              <div className="p-4 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4 overflow-hidden w-full">
                 <div className="flex items-center gap-3 pb-3 border-b border-slate-100">
                   <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
                     <i className="fa-solid fa-building-wheat text-lg"></i>
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-900 text-sm">Corporate Office &amp; Facility Complex</h3>
-                    <p className="text-[11px] text-slate-500">Sri Gajanana Headquarters</p>
+                    <p className="text-[11px] text-slate-500">Gajanana Headquarters</p>
                   </div>
                 </div>
 
@@ -549,9 +549,9 @@ export default function Contact() {
                       <a href="tel:9535828286" className="hover:text-amber-600">9535828286</a>
                     </div>
                   </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-slate-500">Official Email:</span>
-                    <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold text-slate-900 hover:text-amber-600">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 w-full overflow-hidden">
+                    <span className="text-slate-500 shrink-0">Official Email:</span>
+                    <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold text-slate-900 hover:text-amber-600 font-mono text-[11px] sm:text-xs break-all">
                       gajananaconstructionsinfo@gmail.com
                     </a>
                   </div>
@@ -559,30 +559,30 @@ export default function Contact() {
               </div>
 
               {/* Transit & Infrastructure Stats */}
-              <div className="grid grid-cols-2 gap-3 text-center">
-                <div className="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm">
+              <div className="grid grid-cols-2 gap-2.5 sm:gap-3 text-center w-full">
+                <div className="p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl border border-slate-200 shadow-sm min-w-0 overflow-hidden">
                   <span className="text-[10px] text-slate-400 block font-bold uppercase tracking-wider">Yard Size</span>
                   <span className="text-base font-extrabold text-slate-900">4.5 Acres</span>
                   <span className="text-[10px] text-slate-500 block mt-0.5">Heavy Storage Area</span>
                 </div>
-                <div className="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                <div className="p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl border border-slate-200 shadow-sm min-w-0 overflow-hidden">
                   <span className="text-[10px] text-slate-400 block font-bold uppercase tracking-wider">Weighbridge</span>
                   <span className="text-base font-extrabold text-emerald-600">100-Ton</span>
                   <span className="text-[10px] text-slate-500 block mt-0.5">NABL Certified</span>
                 </div>
-                <div className="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                <div className="p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl border border-slate-200 shadow-sm min-w-0 overflow-hidden">
                   <span className="text-[10px] text-slate-400 block font-bold uppercase tracking-wider">Transit Fleet</span>
                   <span className="text-base font-extrabold text-slate-900">42 GPS Trucks</span>
                   <span className="text-[10px] text-slate-500 block mt-0.5">Live Tracked</span>
                 </div>
-                <div className="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                <div className="p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl border border-slate-200 shadow-sm min-w-0 overflow-hidden">
                   <span className="text-[10px] text-slate-400 block font-bold uppercase tracking-wider">Loading Bays</span>
                   <span className="text-base font-extrabold text-amber-600">8 Bays</span>
                   <span className="text-[10px] text-slate-500 block mt-0.5">Fast Turnaround</span>
                 </div>
               </div>
 
-              <div className="p-4 bg-emerald-50 rounded-2xl border border-emerald-200 text-emerald-900 text-xs flex items-center gap-3">
+              <div className="p-3.5 sm:p-4 bg-emerald-50 rounded-xl sm:rounded-2xl border border-emerald-200 text-emerald-900 text-xs flex items-center gap-2.5 sm:gap-3 overflow-hidden w-full">
                 <i className="fa-solid fa-truck-moving text-emerald-600 text-lg shrink-0"></i>
                 <div className="leading-tight">
                   <span className="font-bold block">Heavy Commercial Vehicle Clearance</span>

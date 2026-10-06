@@ -1,5 +1,5 @@
 // src/data/areasData.js
-// Comprehensive, unique Local SEO data for Sri Gajanana Constructions across 17 South & Southeast Bengaluru localities.
+// Comprehensive, unique Local SEO data for Gajanana Constructions across 17 South & Southeast Bengaluru localities.
 
 export const AREAS = [
   {
@@ -14,7 +14,7 @@ export const AREAS = [
     deliveryTime: '30 - 45 Minutes',
     heroImage: '/images/construction-works/stage-01-site-foundation.jpg',
     tagline: 'Direct Stockyard Depot & A-Grade Turnkey Civil Contractors in Arekere',
-    uniqueDescription: `Sri Gajanana Constructions is headquartered in Arekere, Bengaluru, operating our primary building materials depot, JCB earthmoving fleet, and turnkey civil contracting operations directly out of Samrat Layout, Sarvobhogam Nagar. For homeowners, plot owners, and developers in Arekere and along the Bannerghatta Road corridor, having our operational base right in your neighborhood translates into unbeatable cost efficiency, zero intermediary markups, and rapid on-site material dispatch.
+    uniqueDescription: `Gajanana Constructions is headquartered in Arekere, Bengaluru, operating our primary building materials depot, JCB earthmoving fleet, and turnkey civil contracting operations directly out of Samrat Layout, Sarvobhogam Nagar. For homeowners, plot owners, and developers in Arekere and along the Bannerghatta Road corridor, having our operational base right in your neighborhood translates into unbeatable cost efficiency, zero intermediary markups, and rapid on-site material dispatch.
 
 From independent duplex villas in Arekere MICO Layout and multi-storey residences near Hulimavu Lake to commercial storefronts on Bannerghatta Main Road, our civil engineering team delivers complete turnkey construction—from architectural blueprinting and BBMP plan sanctions to foundation excavation, RCC structural framing, premium finishing, and final key handover.
 
@@ -73,7 +73,7 @@ Because our building materials stockyard is located right here in Arekere, clien
     faqs: [
       {
         q: 'What is the average cost of house construction per sq ft in Arekere, Bengaluru?',
-        a: 'In Arekere, turnkey residential house construction by Sri Gajanana Constructions is quoted via transparent, itemized Bill of Quantities (BOQ) with zero middleman markup. Because our primary material stockyard is located right in Samrat Layout, Arekere, clients save significantly on transportation and wholesale procurement. Contact 8884238688 / 9535828286 for a custom BOQ quotation.'
+        a: 'In Arekere, turnkey residential house construction by Gajanana Constructions is quoted via transparent, itemized Bill of Quantities (BOQ) with zero middleman markup. Because our primary material stockyard is located right in Samrat Layout, Arekere, clients save significantly on transportation and wholesale procurement. Contact 8884238688 / 9535828286 for a custom BOQ quotation.'
       },
       {
         q: 'How fast can building materials and JCBs be dispatched to sites in Arekere?',
@@ -88,8 +88,8 @@ Because our building materials stockyard is located right here in Arekere, clien
         a: 'Absolutely. We operate a full-service wholesale depot. You can order individual truckloads of cement, TMT steel rebars, M-sand, and aggregates for your own independent contractor or mason with depot-direct invoicing.'
       }
     ],
-    metaTitle: 'House Construction Company in Arekere, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Arekere, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Arekere, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Arekere, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8878405, lng: 77.6017497 }
   },
   {
@@ -104,7 +104,7 @@ Because our building materials stockyard is located right here in Arekere, clien
     deliveryTime: '45 - 60 Minutes',
     heroImage: '/images/construction-works/stage-02-structural-work.jpg',
     tagline: 'Architectural Home Builders & Wholesale Material Suppliers in JP Nagar',
-    uniqueDescription: `JP Nagar represents one of South Bengaluru's most sought-after residential enclaves, spanning planned residential phases from 1st Phase up to 9th Phase, along with prime sectors like Sarakki, Dollars Colony, and the Kanakapura Road junction. Sri Gajanana Constructions offers comprehensive turnkey civil construction and wholesale building-material solutions tailored to the architectural aspirations of JP Nagar homeowners and investors.
+    uniqueDescription: `JP Nagar represents one of South Bengaluru's most sought-after residential enclaves, spanning planned residential phases from 1st Phase up to 9th Phase, along with prime sectors like Sarakki, Dollars Colony, and the Kanakapura Road junction. Gajanana Constructions offers comprehensive turnkey civil construction and wholesale building-material solutions tailored to the architectural aspirations of JP Nagar homeowners and investors.
 
 Whether you are looking to reconstruct an ancestral plot with a contemporary multi-dwelling villa, construct a high-yield rental building with stilt parking, or undertake structural floor additions (G+3 / G+4), our engineering team executes projects with stringent adherence to BBMP building bylaws, setback compliance, and earthquake-resistant structural standards.
 
@@ -175,11 +175,11 @@ Our proximity from our Arekere materials hub (just 3.8 km away) enables us to de
       },
       {
         q: 'Do you provide structural warranty on new construction projects in JP Nagar?',
-        a: 'Yes, all residential turnkey projects built by Sri Gajanana Constructions come with a guaranteed 10-year structural warranty covering the RCC framework, foundation stability, and waterproofing systems.'
+        a: 'Yes, all residential turnkey projects built by Gajanana Constructions come with a guaranteed 10-year structural warranty covering the RCC framework, foundation stability, and waterproofing systems.'
       }
     ],
-    metaTitle: 'House Construction Company in JP Nagar, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in JP Nagar, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in JP Nagar, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in JP Nagar, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.9063, lng: 77.5857 }
   },
   {
@@ -196,7 +196,7 @@ Our proximity from our Arekere materials hub (just 3.8 km away) enables us to de
     tagline: 'Turnkey Commercial & High-Yield Residential Builders in BTM Layout',
     uniqueDescription: `BTM Layout (Kuvempunagar) is one of Bengaluru's most vibrant residential-commercial crossroads, seamlessly bridging Jayanagar, JP Nagar, Koramangala, and the Outer Ring Road tech corridor. The high demand for multi-dwelling residential buildings, paying guest (PG) accommodations, serviced studio apartments, and commercial commercial complexes makes quality civil construction and structural optimization paramount for property owners in BTM 1st and 2nd Stages.
 
-Sri Gajanana Constructions specializes in maximizing floor-space index (FSI) and rental yields for BTM Layout plot owners. Our experienced civil engineers plan and construct sturdy, modern G+3, G+4, and G+5 structures equipped with fire safety provisions, lift shafts, underground sumps, rooftop dining/amenity spaces, and soundproof party walls.
+Gajanana Constructions specializes in maximizing floor-space index (FSI) and rental yields for BTM Layout plot owners. Our experienced civil engineers plan and construct sturdy, modern G+3, G+4, and G+5 structures equipped with fire safety provisions, lift shafts, underground sumps, rooftop dining/amenity spaces, and soundproof party walls.
 
 Furthermore, contractors and independent builders in BTM Layout rely on our wholesale depot for high-tonnage deliveries of Tata Tiscon Fe 550D TMT rebar, UltraTech 43G cement, graded M-sand, solid concrete blocks, and ready-mix concrete (RMC) delivered promptly via the Bannerghatta and Outer Ring Road corridors.`,
     soilAndFoundationInfo: `Soil conditions across BTM Layout range from brown clayey loam near Madiwala Lake periphery to dense red gravelly strata in 2nd Stage. In areas closer to water bodies, we implement deep column footings with tie beams or continuous raft foundations combined with crystalline waterproofing admixtures in the concrete mix to prevent capillary dampness and preserve basement structural health.`,
@@ -267,8 +267,8 @@ Furthermore, contractors and independent builders in BTM Layout rely on our whol
         a: 'We provide itemized billing, genuine manufacturer test certificates for Tata Tiscon TMT rebar, batch test slips for cement, and digital weighbridge receipts for sand and aggregates on every delivery.'
       }
     ],
-    metaTitle: 'House Construction Company in BTM Layout, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in BTM Layout, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in BTM Layout, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in BTM Layout, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.9166, lng: 77.6101 }
   },
   {
@@ -285,7 +285,7 @@ Furthermore, contractors and independent builders in BTM Layout rely on our whol
     tagline: 'Master Builders of Modern Architectural Villas in HSR Layout',
     uniqueDescription: `HSR Layout is recognized as Bengaluru's premier modern residential sector, characterized by wide grid-patterned boulevards, upscale parks, and high-value architectural properties across Sectors 1 through 7. Building a home in HSR Layout requires flawless execution, sleek minimalist aesthetics, superior acoustic insulation, smart home electrical conduits, and uncompromising structural longevity.
 
-Sri Gajanana Constructions delivers turnkey luxury villa construction that rivals international standards. Our team of experienced structural engineers, interior specialists, and civil supervisors ensures that every facet—from basement car parks and double-height living spaces to cantilevered balconies and terrace gardens—is executed with pinpoint precision.
+Gajanana Constructions delivers turnkey luxury villa construction that rivals international standards. Our team of experienced structural engineers, interior specialists, and civil supervisors ensures that every facet—from basement car parks and double-height living spaces to cantilevered balconies and terrace gardens—is executed with pinpoint precision.
 
 Because we own our primary materials depot and heavy machinery fleet, we provide HSR Layout clients with direct access to Tata Tiscon Fe 550D TMT rebar, UltraTech 43-Grade cement, premium river-grade M-sand, acoustic AAC blocks, and branded sanitary installations at direct distributor rates without middleman commissions.`,
     soilAndFoundationInfo: `HSR Layout features a solid foundation bed comprising compacted red soil with gravelly inclusions and good drainage. For contemporary villas and multi-level residential layouts, we engineer high-strength RCC isolated column footings or reinforced raft foundations capable of supporting large open floor spans and expansive glass facades without differential settlement risks.`,
@@ -357,8 +357,8 @@ Because we own our primary materials depot and heavy machinery fleet, we provide
         a: 'Yes, we operate medium-sized 6-wheeler tippers and small commercial vehicles in addition to large trucks to deliver materials effortlessly through gated layouts and residential lanes without disturbing neighbors.'
       }
     ],
-    metaTitle: 'House Construction Company in HSR Layout, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in HSR Layout, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in HSR Layout, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in HSR Layout, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.9116, lng: 77.6389 }
   },
   {
@@ -375,7 +375,7 @@ Because we own our primary materials depot and heavy machinery fleet, we provide
     tagline: 'Heavy Earthmoving, Commercial Civil Contracting & Bulk Depot in Bommanahalli',
     uniqueDescription: `Bommanahalli is one of South-East Bengaluru's most critical transit and development intersections along the Hosur Road arterial belt. Connecting BTM Layout, HSR Layout, Begur, and Electronic City, Bommanahalli hosts an intensive mix of multi-storey residential complexes, commercial showrooms, corporate logistics yards, and tech-support offices.
 
-Sri Gajanana Constructions brings heavy-duty civil engineering capabilities to Bommanahalli. With our in-house fleet of JCB 3DX backhoe loaders, 20-ton hydraulic excavators, and high-capacity tippers, we handle large-scale site grading, basement excavation, foundation piling, and fast-track RCC commercial and residential construction.
+Gajanana Constructions brings heavy-duty civil engineering capabilities to Bommanahalli. With our in-house fleet of JCB 3DX backhoe loaders, 20-ton hydraulic excavators, and high-capacity tippers, we handle large-scale site grading, basement excavation, foundation piling, and fast-track RCC commercial and residential construction.
 
 Project owners and sub-contractors in Bommanahalli benefit from our nearby materials yard, which supplies truckload volumes of Tata Tiscon Fe 550D TMT steel, UltraTech 43-Grade cement, solid concrete blocks, washed M-sand, and 20mm granite gravel with rapid highway delivery.`,
     soilAndFoundationInfo: `Soil characteristics in Bommanahalli vary between firm red gravelly soil on higher ground to clayey silt deposits in low-lying sectors near Hongasandra. For deep basement structures and multi-level buildings along the Hosur Road corridor, we employ continuous shoring piles, deep sump dewatering, and robust RCC combined raft foundations to ensure rock-solid stability.`,
@@ -447,8 +447,8 @@ Project owners and sub-contractors in Bommanahalli benefit from our nearby mater
         a: 'Yes, our turnkey civil contracting team manages the liaison for BBMP road cutting permissions, BESCOM transformer setup, and BWSSB sanitary/water main connections.'
       }
     ],
-    metaTitle: 'House Construction Company in Bommanahalli, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Bommanahalli, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Bommanahalli, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Bommanahalli, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.9029, lng: 77.6242 }
   },
   {
@@ -463,7 +463,7 @@ Project owners and sub-contractors in Bommanahalli benefit from our nearby mater
     deliveryTime: '45 - 60 Minutes',
     heroImage: '/images/products/tata-tiscon-tmt.jpg',
     tagline: 'Precision Engineering & Turnkey Construction in Electronic City',
-    uniqueDescription: `Electronic City is globally celebrated as Bengaluru's landmark technology powerhouse, spanning Phase 1, Phase 2, and rapidly expanding residential sectors like Neeladri Nagar, Doddathoguru, Konappana Agrahara, and the Hosa Road junction. As IT professionals and business leaders seek premium gated community villas, sustainable independent residences, and commercial facilities, Sri Gajanana Constructions delivers unmatched civil contracting expertise.
+    uniqueDescription: `Electronic City is globally celebrated as Bengaluru's landmark technology powerhouse, spanning Phase 1, Phase 2, and rapidly expanding residential sectors like Neeladri Nagar, Doddathoguru, Konappana Agrahara, and the Hosa Road junction. As IT professionals and business leaders seek premium gated community villas, sustainable independent residences, and commercial facilities, Gajanana Constructions delivers unmatched civil contracting expertise.
 
 Our turnkey house construction services cover every stage: from computerized 3D architectural elevations, soil SBC testing, and BMRDA/BBMP plan approvals to structural RCC casting, waterproofing, Italian flooring, and smart home automation.
 
@@ -538,8 +538,8 @@ Furthermore, we are a preferred wholesale materials partner for projects in Elec
         a: 'Yes, our certified structural engineers conduct core soil bore tests, calculate safe bearing capacity (SBC), and provide certified structural drawings with design calculation sheets for bank loans and approval authorities.'
       }
     ],
-    metaTitle: 'House Construction Company in Electronic City, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Electronic City, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Electronic City, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Electronic City, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8452, lng: 77.6602 }
   },
   {
@@ -556,7 +556,7 @@ Furthermore, we are a preferred wholesale materials partner for projects in Elec
     tagline: 'Industrial Civil Works & Plotted Villa Construction in Attibele',
     uniqueDescription: `Attibele represents South-East Bengaluru's premier industrial and logistics gateway, strategically positioned right on the Karnataka-Tamil Nadu border along National Highway 44 (Hosur Road). With the rapid expansion of industrial manufacturing units, warehousing logistics parks, and newly plotted residential township layouts connecting Attibele to Anekal, Sarjapur, and Jigani, high-caliber civil construction is in tremendous demand.
 
-Sri Gajanana Constructions serves industrial entrepreneurs, warehouse developers, and residential plot owners in Attibele with specialized civil contracting capabilities. From heavy industrial RCC flooring slabs, pre-engineered building (PEB) civil foundations, and boundary compound walls to turnkey duplex house construction in residential layouts, our team delivers robust engineering backed by certified materials.
+Gajanana Constructions serves industrial entrepreneurs, warehouse developers, and residential plot owners in Attibele with specialized civil contracting capabilities. From heavy industrial RCC flooring slabs, pre-engineered building (PEB) civil foundations, and boundary compound walls to turnkey duplex house construction in residential layouts, our team delivers robust engineering backed by certified materials.
 
 Furthermore, we supply high-tonnage bulk materials across Attibele: direct trailer deliveries of Tata Tiscon Fe 550D TMT steel rebar, UltraTech 43-Grade cement, crusher-direct blue metal aggregates, M-sand, and in-house heavy earthmovers (JCB 3DX & 20-ton excavators) for rapid plot preparation.`,
     soilAndFoundationInfo: `Attibele features predominantly hard gravelly red soil and shale bedrock with outstanding load-bearing capacity (250 - 300 kN/m²). This stable ground allows for highly cost-efficient isolated column footings for residential structures and heavy-duty load-spreading pad footings for industrial warehouses and crane-gantry foundations.`,
@@ -628,8 +628,8 @@ Furthermore, we supply high-tonnage bulk materials across Attibele: direct trail
         a: 'Yes, we have 20-ton excavators and JCB 3DX backhoes available on daily, weekly, or project-based lease with seasoned operators for site clearance, ditching, and leveling.'
       }
     ],
-    metaTitle: 'House Construction Company in Attibele, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Attibele, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Attibele, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Attibele, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.7797, lng: 77.7719 }
   },
   {
@@ -646,7 +646,7 @@ Furthermore, we supply high-tonnage bulk materials across Attibele: direct trail
     tagline: 'Reliable Turnkey House Construction & Building Materials in Begur',
     uniqueDescription: `Begur is a rapidly flourishing South Bengaluru locality bridging Bannerghatta Road, Bommanahalli, and Electronic City via Begur Main Road. Boasting a rich historical heritage centered around Begur Lake and the ancient Panchalingeshwara temple, the locality is now characterized by rapid modern urbanization, featuring upscale villa layouts, multi-storey apartment enclaves, and bustling commercial corridors.
 
-Sri Gajanana Constructions serves Begur plot owners and families with dependable turnkey residential house construction. Whether you are building on a 30x40 site in Akshayanagar or developing a sprawling multi-floor residence near Begur Lake, our seasoned civil engineers manage all aspects of design, BBMP building sanctions, foundation engineering, RCC superstructure casting, and fine interior finishes.
+Gajanana Constructions serves Begur plot owners and families with dependable turnkey residential house construction. Whether you are building on a 30x40 site in Akshayanagar or developing a sprawling multi-floor residence near Begur Lake, our seasoned civil engineers manage all aspects of design, BBMP building sanctions, foundation engineering, RCC superstructure casting, and fine interior finishes.
 
 Being just 3.1 km from our main Arekere depot, Begur receives lightning-fast deliveries of high-quality building materials: UltraTech 43-Grade cement, Tata Tiscon Fe 550D TMT rebars, double-washed M-sand, machine-cut solid blocks, and 20mm aggregates delivered at unbeatable depot rates.`,
     soilAndFoundationInfo: `Begur features red gravelly loam in elevated sections and softer sandy clay strata near the Begur Lake catchment. For residential builds near the lake boundary, we conduct precise soil investigation and engineer robust RCC raft or strapped column foundations combined with advanced crystalline waterproofing to shield subterranean sumps and foundations against water ingress.`,
@@ -717,8 +717,8 @@ Being just 3.1 km from our main Arekere depot, Begur receives lightning-fast del
         a: 'Yes, our JCB 3DX earthmoving machinery is available on flexible hourly, half-day, or full-day rates for plot clearing, leveling, and foundation digging in Begur.'
       }
     ],
-    metaTitle: 'House Construction Company in Begur, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Begur, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Begur, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Begur, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8797, lng: 77.6277 }
   },
   {
@@ -735,7 +735,7 @@ Being just 3.1 km from our main Arekere depot, Begur receives lightning-fast del
     tagline: 'Heavy Industrial Civil Engineering & Turnkey Contracting in Bommasandra',
     uniqueDescription: `Bommasandra is one of Karnataka's largest and most established industrial epicenters, located strategically along Hosur Road and the Jigani Industrial corridor. Home to manufacturing giants, pharmaceutical plants, engineering workshops, and a burgeoning residential footprint for industrial professionals, Bommasandra requires heavy-duty civil engineering execution.
 
-Sri Gajanana Constructions delivers specialized industrial and commercial civil construction across Bommasandra. We build high-load RCC industrial flooring, factory sheds, commercial complexes, staff quarters, and multi-storey residential buildings with rigorous adherence to industrial safety norms, high-strength concrete mixes, and tight project schedules.
+Gajanana Constructions delivers specialized industrial and commercial civil construction across Bommasandra. We build high-load RCC industrial flooring, factory sheds, commercial complexes, staff quarters, and multi-storey residential buildings with rigorous adherence to industrial safety norms, high-strength concrete mixes, and tight project schedules.
 
 Furthermore, we are a key supplier of bulk construction materials in Bommasandra: direct factory supplies of Tata Tiscon Fe 550D TMT rebars, UltraTech 43-Grade cement, high-density concrete blocks, machine-crushed 20mm/40mm granite aggregates, and high-performance JCB 3DX & 20-ton excavators available on project rental.`,
     soilAndFoundationInfo: `Bommasandra features extraordinarily stable geological strata characterized by weathered granite bedrock beneath a shallow layer of compact red gravely clay (SBC: 240 - 280 kN/m²). This enables robust industrial footing designs, heavy machinery equipment foundations with vibration-damping pads, and economical residential column pad foundations.`,
@@ -805,8 +805,8 @@ Furthermore, we are a key supplier of bulk construction materials in Bommasandra
         a: 'We coordinate dedicated trailer loads directly dispatched to your site, complete with factory mill test certificates and digital weigh slips to guarantee quantity and grade.'
       }
     ],
-    metaTitle: 'House Construction Company in Bommasandra, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Bommasandra, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Bommasandra, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Bommasandra, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8173, lng: 77.6896 }
   },
   {
@@ -823,7 +823,7 @@ Furthermore, we are a key supplier of bulk construction materials in Bommasandra
     tagline: 'Affordable & Luxury Turnkey House Builders in Chandapura',
     uniqueDescription: `Chandapura has emerged as one of Southeast Bengaluru's most sought-after residential destinations along the Hosur Road expressway, connecting Electronic City, Bommasandra, and Anekal. Known for planned townships like Surya City and numerous gated villa communities, Chandapura offers ideal land parcels for families seeking spacious independent houses and modern duplex villas away from city congestion.
 
-Sri Gajanana Constructions is the trusted construction partner for Chandapura plot owners. We provide end-to-end turnkey residential construction: from architectural drawings, 3D structural modeling, and BMRDA plan approvals to earthmoving, foundation laying, RCC slab casting, interior carpentry, and final key handover.
+Gajanana Constructions is the trusted construction partner for Chandapura plot owners. We provide end-to-end turnkey residential construction: from architectural drawings, 3D structural modeling, and BMRDA plan approvals to earthmoving, foundation laying, RCC slab casting, interior carpentry, and final key handover.
 
 Plot owners and local builders in Chandapura benefit from our wholesale stockyard pricing on Tata Tiscon Fe 550D TMT steel, UltraTech 43-Grade cement, double-washed M-sand, machine-molded solid blocks, and 20mm blue metal aggregate jelly, delivered promptly with guaranteed factory certifications.`,
     soilAndFoundationInfo: `The soil profile in Chandapura consists primarily of dense red loamy soil mixed with gravel, offering solid load-bearing capacity (200 - 240 kN/m²). For typical G+2 and G+3 villa projects, isolated trapezoidal column footings connected with ground tie beams provide optimal earthquake resistance and structural durability while keeping foundation costs efficient.`,
@@ -893,8 +893,8 @@ Plot owners and local builders in Chandapura benefit from our wholesale stockyar
         a: 'Yes, we provide bank-approved detailed estimates, CAD elevation drawings, structural stability certificates, and milestone stage billing required by SBI, HDFC, ICICI, and other leading housing finance institutions.'
       }
     ],
-    metaTitle: 'House Construction Company in Chandapura, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Chandapura, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Chandapura, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Chandapura, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.7933, lng: 77.7011 }
   },
   {
@@ -911,7 +911,7 @@ Plot owners and local builders in Chandapura benefit from our wholesale stockyar
     tagline: 'Precision Civil Engineering & Building Materials in Hebbagodi',
     uniqueDescription: `Hebbagodi is a high-growth urban center along the Hosur Road expressway, directly bordering Electronic City Phase 2 and Bommasandra. With the Yellow Line Metro station enhancing connectivity, Hebbagodi has witnessed a tremendous surge in demand for multi-family residential apartments, rental PG complexes, commercial retail showrooms, and modern independent houses in layouts like Ananth Nagar and Kammasandra.
 
-Sri Gajanana Constructions delivers complete turnkey civil contracting services in Hebbagodi. We manage everything: architectural floor layout design, BMRDA/BBMP plan sanction liaisons, foundation excavation with our in-house JCB 3DX fleet, structural RCC casting, brickwork, waterproofing, and luxury interior finishing.
+Gajanana Constructions delivers complete turnkey civil contracting services in Hebbagodi. We manage everything: architectural floor layout design, BMRDA/BBMP plan sanction liaisons, foundation excavation with our in-house JCB 3DX fleet, structural RCC casting, brickwork, waterproofing, and luxury interior finishing.
 
 Local contractors and property developers in Hebbagodi also rely on our wholesale depot for daily dispatches of Tata Tiscon Fe 550D TMT steel rebars, UltraTech 43-Grade cement bags, double-washed M-sand, and machine-cut solid blocks with guaranteed factory weighment slips.`,
     soilAndFoundationInfo: `Hebbagodi features stable red soil with decomposed granite strata at 6 to 10 feet depth, offering excellent safe bearing capacity (220 - 250 kN/m²). For typical G+3 and G+4 residential and commercial buildings, isolated and combined trapezoidal RCC footings with deep plinth beams ensure superior resistance to structural stress and vibration from nearby highway traffic.`,
@@ -980,8 +980,8 @@ Local contractors and property developers in Hebbagodi also rely on our wholesal
         a: 'Yes, our JCB 3DX backhoe loaders and excavators are stationed nearby and available on daily or project contracts with experienced operators.'
       }
     ],
-    metaTitle: 'House Construction Company in Hebbagodi, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Hebbagodi, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Hebbagodi, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Hebbagodi, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8258, lng: 77.6838 }
   },
   {
@@ -998,7 +998,7 @@ Local contractors and property developers in Hebbagodi also rely on our wholesal
     tagline: 'Lake-Sensitive Engineering & Luxury Villa Construction in Hulimavu',
     uniqueDescription: `Hulimavu is one of South Bengaluru's most picturesque and high-demand residential sectors along Bannerghatta Main Road. Adjacent to scenic Hulimavu Lake and home to prestigious developments like DLF New Town, BDA layouts, and serene independent villa colonies, Hulimavu combines prime city accessibility with tranquil residential surroundings.
 
-Sri Gajanana Constructions is intimately familiar with Hulimavu's ground conditions and municipal requirements. Located just 1.2 km away from our central Arekere stockyard, we provide Hulimavu homeowners with end-to-end turnkey construction: from architectural drawings and BBMP plan sanction assistance to water-table-sensitive foundation engineering, high-strength RCC structural framing, and luxury turnkey interior finishes.
+Gajanana Constructions is intimately familiar with Hulimavu's ground conditions and municipal requirements. Located just 1.2 km away from our central Arekere stockyard, we provide Hulimavu homeowners with end-to-end turnkey construction: from architectural drawings and BBMP plan sanction assistance to water-table-sensitive foundation engineering, high-strength RCC structural framing, and luxury turnkey interior finishes.
 
 Furthermore, we are the primary building material supplier for Hulimavu projects. Our direct depot provides wholesale rates on Tata Tiscon Fe 550D TMT steel, UltraTech 43-Grade cement, double-washed M-sand, 20mm granite blue metal, and heavy-duty JCB machinery delivered directly to your site in under 30 minutes.`,
     soilAndFoundationInfo: `Hulimavu features firm red soil across elevated layouts, while areas adjacent to the Hulimavu Lake catchment exhibit higher moisture content and silty clay layers. For plots near the lake, we conduct thorough geotechnical soil bore tests and engineer deep RCC raft foundations or combined strap footings coupled with specialized multi-coat crystalline waterproofing to permanently protect basements and sumps from water seepage.`,
@@ -1069,8 +1069,8 @@ Furthermore, we are the primary building material supplier for Hulimavu projects
         a: 'Yes, we specialize in adding upper floors (G+1 to G+3), modernizing kitchens, terrace garden waterproofing, and full interior renovations for independent houses in Hulimavu.'
       }
     ],
-    metaTitle: 'House Construction Company in Hulimavu, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Hulimavu, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Hulimavu, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Hulimavu, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8783, lng: 77.6006 }
   },
   {
@@ -1092,7 +1092,7 @@ Furthermore, we are the primary building material supplier for Hulimavu projects
     tagline: 'Home Remodeling & Turnkey Civil Contracting in Bilekahalli',
     uniqueDescription: `Bilekahalli is a well-established residential neighborhood situated directly along Bannerghatta Main Road, neighboring prestigious landmarks like IIM Bangalore, Vijaya Bank Layout, and Panduranga Nagar. With mature residential colonies, high commercial frontage, and prime connectivity to BTM Layout and JP Nagar, Bilekahalli property owners frequently invest in custom home construction, vertical floor additions (G+2 to G+4), and full structural modernizations.
 
-Sri Gajanana Constructions brings decades of civil engineering experience to Bilekahalli. We manage complete turnkey construction for new residential villas, multi-unit rental buildings, and structural floor additions with meticulous attention to structural safety, BBMP setback regulations, and earthquake-resistant RCC designs.
+Gajanana Constructions brings decades of civil engineering experience to Bilekahalli. We manage complete turnkey construction for new residential villas, multi-unit rental buildings, and structural floor additions with meticulous attention to structural safety, BBMP setback regulations, and earthquake-resistant RCC designs.
 
 Because our central materials stockyard is situated just 2.5 km away in Arekere, Bilekahalli clients receive rapid dispatches of genuine Tata Tiscon Fe 550D TMT rebar, UltraTech 43-Grade cement, high-quality M-sand, 20mm granite blue metal, and solid blocks at depot-direct wholesale prices.`,
     soilAndFoundationInfo: `Bilekahalli features dense red loamy soil layered over hard weathered rock at depths of 5 to 8 feet (SBC: 200 - 240 kN/m²). This enables highly stable isolated RCC column footings. For vertical floor additions on older properties, we conduct non-destructive rebound hammer tests on existing columns and implement micro-concrete column jacketing where needed to safely accommodate upper floors.`,
@@ -1161,8 +1161,8 @@ Because our central materials stockyard is situated just 2.5 km away in Arekere,
         a: 'Yes, we deploy our in-house JCB 3DX backhoes and tipper trucks for controlled demolition, site clearance, and swift debris removal without disturbing neighboring properties.'
       }
     ],
-    metaTitle: 'House Construction Company in Bilekahalli, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Bilekahalli, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Bilekahalli, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Bilekahalli, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8988, lng: 77.6033 }
   },
   {
@@ -1179,7 +1179,7 @@ Because our central materials stockyard is situated just 2.5 km away in Arekere,
     tagline: 'Modern Architectural Villas & Wholesale Materials in Harlur',
     uniqueDescription: `Harlur and the Haralur Road corridor have evolved into one of Southeast Bengaluru's most sought-after luxury residential enclaves, connecting HSR Layout, Sarjapur Road, and Kudlu. With prestigious gated villa communities like Reliable Lakedew Residency, Silver County, and high-end independent layouts, Haralur Road is the destination of choice for tech executives and entrepreneurs seeking bespoke, contemporary architectural homes.
 
-Sri Gajanana Constructions delivers turnkey luxury villa construction tailored to Haralur Road's discerning standards. From expansive double-height living rooms, floor-to-ceiling glass fenestrations, and cantilevered balconies to designer modular kitchens, Italian marble finishes, and rooftop terrace pools, our master builders execute every detail to perfection.
+Gajanana Constructions delivers turnkey luxury villa construction tailored to Haralur Road's discerning standards. From expansive double-height living rooms, floor-to-ceiling glass fenestrations, and cantilevered balconies to designer modular kitchens, Italian marble finishes, and rooftop terrace pools, our master builders execute every detail to perfection.
 
 Furthermore, we supply certified construction materials across Haralur Road: wholesale truckloads of Tata Tiscon Fe 550D TMT rebars, UltraTech 43-Grade cement, double-washed M-sand, acoustic AAC lightweight blocks, and 20mm granite blue metal delivered directly from our stockyard with zero middleman markups.`,
     soilAndFoundationInfo: `Haralur Road features sturdy red gravely soil with good structural compaction characteristics (SBC: 210 - 250 kN/m²). For custom multi-level villas featuring deep basements or sunken home theaters, our in-house JCB fleet provides clean foundation excavation, and we engineer reinforced RCC combined footings with perimeter drainage channels to ensure a lifetime of stability.`,
@@ -1249,8 +1249,8 @@ Furthermore, we supply certified construction materials across Haralur Road: who
         a: 'Yes, we are thoroughly familiar with gated community security protocols, quiet-hour working guidelines, and material unloading regulations across all major layouts on Haralur Road.'
       }
     ],
-    metaTitle: 'House Construction Company in Harlur & Haralur Road, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Harlur & Haralur Road, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Harlur & Haralur Road, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Harlur & Haralur Road, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.9056, lng: 77.6622 }
   },
   {
@@ -1267,7 +1267,7 @@ Furthermore, we supply certified construction materials across Haralur Road: who
     tagline: 'Quality Turnkey Home Construction & Building Materials in Kudlu',
     uniqueDescription: `Kudlu is a rapidly developing residential neighborhood nestled right between Hosur Road (Kudlu Gate) and Haralur Road. Its prime proximity to HSR Layout, Electronic City, and the Outer Ring Road tech parks makes it an ideal residential haven for IT professionals and families building independent multi-storey houses and modern duplex villas.
 
-Sri Gajanana Constructions offers comprehensive turnkey construction solutions in Kudlu. We handle every phase of your project: architectural 3D layouts, BBMP plan sanctions, basement excavation using our in-house JCB 3DX machinery, RCC structural framing, plumbing, electrical installations, and premium finishes.
+Gajanana Constructions offers comprehensive turnkey construction solutions in Kudlu. We handle every phase of your project: architectural 3D layouts, BBMP plan sanctions, basement excavation using our in-house JCB 3DX machinery, RCC structural framing, plumbing, electrical installations, and premium finishes.
 
 Local plot owners and contractors in Kudlu also rely on our wholesale depot for direct truckloads of Tata Tiscon Fe 550D TMT steel rebar, UltraTech 43-Grade cement, double-washed M-sand, high-density solid blocks, and 20mm aggregates delivered at genuine stockyard prices.`,
     soilAndFoundationInfo: `Kudlu features firm red gravelly soil with stable rock strata at moderate excavation depths (6 to 9 feet). For typical G+2 and G+3 residential dwellings, isolated trapezoidal RCC column footings or combined footings provide excellent structural stability and cost-effectiveness. In areas close to lake catchments, we conduct mandatory soil SBC testing and engineer moisture-resistant deep raft foundations.`,
@@ -1336,8 +1336,8 @@ Local plot owners and contractors in Kudlu also rely on our wholesale depot for 
         a: 'Yes, our JCB 3DX earthmoving machinery is available on flexible hourly, half-day, or full-day rates for plot clearing, leveling, and foundation digging in Kudlu.'
       }
     ],
-    metaTitle: 'House Construction Company in Kudlu, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Kudlu, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Kudlu, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Kudlu, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8894, lng: 77.6533 }
   },
   {
@@ -1354,7 +1354,7 @@ Local plot owners and contractors in Kudlu also rely on our wholesale depot for 
     tagline: 'Reliable Turnkey Civil Construction & Materials Supply in Singasandra',
     uniqueDescription: `Singasandra is a strategically positioned locality situated right on the Hosur Road expressway, connecting Bommanahalli and Kudlu to Electronic City. Boasting excellent metro connectivity, affordable land options, and thriving residential layouts like AECS Layout, Singasandra is a top choice for families, software professionals, and commercial investors building modern homes and rental apartments.
 
-Sri Gajanana Constructions provides end-to-end turnkey construction in Singasandra. Our experienced civil engineers handle every detail: architectural design, BBMP plan approvals, foundation excavation using our in-house JCB 3DX backhoes, RCC superstructure framing, waterproofing, and fine interior finishing.
+Gajanana Constructions provides end-to-end turnkey construction in Singasandra. Our experienced civil engineers handle every detail: architectural design, BBMP plan approvals, foundation excavation using our in-house JCB 3DX backhoes, RCC superstructure framing, waterproofing, and fine interior finishing.
 
 Builders, contractors, and plot owners in Singasandra also benefit from our direct materials stockyard pricing on Tata Tiscon Fe 550D TMT steel, UltraTech 43-Grade cement, double-washed M-sand, high-strength concrete blocks, and 20mm granite blue metal aggregates delivered directly to your site.`,
     soilAndFoundationInfo: `Singasandra features firm red gravelly soil with stable rock strata at moderate excavation depths (6 to 9 feet). For typical G+2 and G+3 residential dwellings, isolated trapezoidal RCC column footings or combined footings provide excellent structural stability and cost-effectiveness. In areas close to lake catchments, we conduct mandatory soil SBC testing and engineer moisture-resistant deep raft foundations.`,
@@ -1423,8 +1423,8 @@ Builders, contractors, and plot owners in Singasandra also benefit from our dire
         a: 'Yes, our JCB 3DX earthmoving machinery is available on flexible hourly, half-day, or full-day rates for plot clearing, leveling, and foundation digging in Singasandra.'
       }
     ],
-    metaTitle: 'House Construction Company in Singasandra, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Singasandra, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Singasandra, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Singasandra, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.8794, lng: 77.6511 }
   },
   {
@@ -1441,7 +1441,7 @@ Builders, contractors, and plot owners in Singasandra also benefit from our dire
     tagline: 'Master Villa Builders & Wholesale Materials Near Sarjapur Road',
     uniqueDescription: `Sarjapur Road has solidified its reputation as Bengaluru's most explosive villa and luxury residential growth corridor. Spanning from the Outer Ring Road junction (Iblur/Agara) through Carmelaram, Doddakannelli, and Sompura Gate all the way to Sarjapur Town, this belt is home to premier international schools, massive IT tech campuses (Wipro, RGA Tech Park), and hundreds of upscale gated villa communities.
 
-Sri Gajanana Constructions provides end-to-end turnkey residential construction for Sarjapur Road plot owners and villa developers. Whether you are building an expansive 4-bedroom architectural villa, a sustainable eco-home, or a commercial development, our civil engineers deliver exceptional structural design, premium material execution, and transparent milestone management.
+Gajanana Constructions provides end-to-end turnkey residential construction for Sarjapur Road plot owners and villa developers. Whether you are building an expansive 4-bedroom architectural villa, a sustainable eco-home, or a commercial development, our civil engineers deliver exceptional structural design, premium material execution, and transparent milestone management.
 
 Furthermore, we are a key wholesale building materials partner for Sarjapur Road builders: direct stockyard dispatches of Tata Tiscon Fe 550D TMT steel rebar, UltraTech 43-Grade cement, double-washed M-sand, machine-molded solid blocks, and 20mm granite blue metal aggregates delivered directly to your site with zero transit delays.`,
     soilAndFoundationInfo: `Sarjapur Road features predominantly deep red loamy soil transitioning into clayey loam in low-lying agricultural transition belts. For sprawling residential villas, we conduct thorough geotechnical soil tests and engineer deep RCC column footings or continuous raft foundations with heavy-duty waterproofing to guarantee decades of settlement-free stability.`,
@@ -1510,8 +1510,8 @@ Furthermore, we are a key wholesale building materials partner for Sarjapur Road
         a: 'Yes, our in-house fleet includes JCB 3DX backhoes and 20-ton hydraulic excavators for site grading, plot clearing, and foundation digging across Sarjapur Road.'
       }
     ],
-    metaTitle: 'House Construction Company in Sarjapur Road, Bangalore | Sri Gajanana Constructions',
-    metaDescription: 'Sri Gajanana Constructions provides residential house construction services in Sarjapur Road, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    metaTitle: 'House Construction Company in Sarjapur Road, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Sarjapur Road, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.9107, lng: 77.6833 }
   }
 ];

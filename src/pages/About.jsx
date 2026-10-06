@@ -12,19 +12,19 @@ export default function About() {
   return (
     <div>
       <SEOHead
-        title="About Sri Gajanana Constructions | 20+ Years Civil Engineering Legacy in Bangalore"
-        description="Learn about Sri Gajanana Constructions (GTCM) founded by Mr. Gajanana in 2005. Over 20 years of trusted civil engineering, turnkey house builds, and 15,000 MT primary stockyard in Bengaluru."
-        keywords="about Sri Gajanana Constructions, civil contractors Bangalore history, Mr Gajanana CEO, building contractors Arekere, trusted builders South Bangalore"
+        title="About Gajanana Constructions | 20+ Years Civil Engineering Legacy in Bangalore"
+        description="Learn about Gajanana Constructions (GTCM) founded by Mr. Gajanana in 2005. Over 20 years of trusted civil engineering, turnkey house builds, and 15,000 MT primary stockyard in Bengaluru."
+        keywords="about Gajanana Constructions, civil contractors Bangalore history, Mr Gajanana CEO, building contractors Arekere, trusted builders South Bangalore"
         canonical="https://www.gajananaconstructions.in/about"
         schema={{
           "@context": "https://schema.org",
           "@type": "AboutPage",
-          "name": "About Sri Gajanana Constructions",
+          "name": "About Gajanana Constructions",
           "url": "https://www.gajananaconstructions.in/about",
-          "description": "About Sri Gajanana Constructions - 20+ Years of Construction Leadership & Direct Material Stockyard in Bengaluru.",
+          "description": "About Gajanana Constructions - 20+ Years of Construction Leadership & Direct Material Stockyard in Bengaluru.",
           "mainEntity": {
             "@type": "GeneralContractor",
-            "name": "Sri Gajanana Constructions",
+            "name": "Gajanana Constructions",
             "foundingDate": "2005",
             "founder": {
               "@type": "Person",
@@ -138,7 +138,7 @@ export default function About() {
               Meet Our Founder &amp; CEO
             </h2>
             <p className="text-slate-400 text-sm sm:text-base mt-3">
-              Guiding Sri Gajanana's civil engineering standards, primary material integrity, and turnkey project execution since 2005.
+              Guiding Gajanana's civil engineering standards, primary material integrity, and turnkey project execution since 2005.
             </p>
           </div>
 

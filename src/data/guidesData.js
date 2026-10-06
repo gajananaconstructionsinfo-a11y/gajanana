@@ -1,6 +1,6 @@
 // src/data/guidesData.js
 // 11 Comprehensive, Authoritative Bengaluru Construction Guides & Knowledge Hub
-// Brand: Sri Gajanana Constructions (GTCM)
+// Brand: Gajanana Constructions (GTCM)
 
 export const GUIDES = [
   {
@@ -30,7 +30,7 @@ export const GUIDES = [
       },
       {
         heading: 'Why Direct Material Sourcing Makes a Crucial Difference',
-        content: `In traditional contractor setups, materials pass through 2 to 3 tiers of local retailers and hardware dealers, adding a 12% to 18% intermediary markup. By partnering with a construction company that owns and operates its own primary materials stockyard—such as Sri Gajanana Constructions in Arekere—homeowners benefit from direct manufacturer prices on primary steel (Tata Tiscon, JSW Neosteel) and factory-fresh cement (UltraTech, ACC) with certified weighbridge slips.`
+        content: `In traditional contractor setups, materials pass through 2 to 3 tiers of local retailers and hardware dealers, adding a 12% to 18% intermediary markup. By partnering with a construction company that owns and operates its own primary materials stockyard—such as Gajanana Constructions in Arekere—homeowners benefit from direct manufacturer prices on primary steel (Tata Tiscon, JSW Neosteel) and factory-fresh cement (UltraTech, ACC) with certified weighbridge slips.`
       },
       {
         heading: 'Hidden Costs Homeowners Often Overlook',
@@ -85,7 +85,7 @@ Genuine turnkey construction should always be quoted with an itemized Bill of Qu
     ],
     faqs: [
       {
-        q: 'Why does Sri Gajanana Constructions provide itemized BOQs instead of generic per-sqft rates?',
+        q: 'Why does Gajanana Constructions provide itemized BOQs instead of generic per-sqft rates?',
         a: 'Because every plot, architectural blueprint, and soil profile is unique. An itemized BOQ protects you from surprise cost escalations and guarantees full specification transparency.'
       }
     ]
@@ -202,7 +202,7 @@ Genuine turnkey construction should always be quoted with an itemized Bill of Qu
     ],
     faqs: [
       {
-        q: 'Can Sri Gajanana Constructions assist with BBMP plan sanctions and site setup?',
+        q: 'Can Gajanana Constructions assist with BBMP plan sanctions and site setup?',
         a: 'Yes, our liaison team handles municipal drawing approvals, structural certifications, and site mobilization across all South Bengaluru zones.'
       }
     ]
@@ -225,7 +225,7 @@ Genuine turnkey construction should always be quoted with an itemized Bill of Qu
         heading: '1. Do They Own Their Own Material Depot and Machinery Fleet?',
         content: `Most residential contractors in Bangalore are purely aggregators who sub-contract every trade and buy steel and cement on retail credit. When material prices rise, these contractors stall work.
 
-Choosing a company like Sri Gajanana Constructions—which operates its own 15,000 MT primary materials stockyard and in-house JCB fleet—guarantees uninterrupted material dispatch and direct wholesale rates.`
+Choosing a company like Gajanana Constructions—which operates its own 15,000 MT primary materials stockyard and in-house JCB fleet—guarantees uninterrupted material dispatch and direct wholesale rates.`
       },
       {
         heading: '2. Inspect Live On-Site Construction Works',
@@ -272,7 +272,7 @@ Choosing a company like Sri Gajanana Constructions—which operates its own 15,0
     ],
     faqs: [
       {
-        q: 'Does Sri Gajanana Constructions provide written waterproofing warranties?',
+        q: 'Does Gajanana Constructions provide written waterproofing warranties?',
         a: 'Yes, all our turnkey projects include a multi-year written leak-proof warranty backed by verified application logs and certified chemicals.'
       }
     ]
@@ -322,7 +322,7 @@ Choosing a company like Sri Gajanana Constructions—which operates its own 15,0
     faqs: [
       {
         q: 'Can I track stage progress digitally during construction?',
-        a: 'Yes. Sri Gajanana Constructions shares regular milestone reports, on-site photographs, and lab test reports for every stage.'
+        a: 'Yes. Gajanana Constructions shares regular milestone reports, on-site photographs, and lab test reports for every stage.'
       }
     ]
   },
@@ -389,7 +389,7 @@ Choosing a company like Sri Gajanana Constructions—which operates its own 15,0
     faqs: [
       {
         q: 'Do you build in all phases of JP Nagar?',
-        a: 'Yes, Sri Gajanana Constructions executes turnkey civil projects across JP Nagar 1st Phase through 9th Phase, Sarakki, Dollars Colony, and the Kanakapura Road corridor.'
+        a: 'Yes, Gajanana Constructions executes turnkey civil projects across JP Nagar 1st Phase through 9th Phase, Sarakki, Dollars Colony, and the Kanakapura Road corridor.'
       }
     ]
   },

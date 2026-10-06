@@ -27,7 +27,7 @@ import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-white text-slate-800 antialiased selection:bg-amber-500 selection:text-white overflow-x-hidden w-full max-w-full">
       <ScrollToTop />
       
       {/* Modals */}
@@ -41,7 +41,7 @@ export default function App() {
       </header>
 
       {/* Main Page Routing */}
-      <main className="flex-1">
+      <main className="flex-1 w-full max-w-full overflow-x-hidden">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

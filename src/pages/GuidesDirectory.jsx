@@ -24,9 +24,9 @@ export default function GuidesDirectory() {
   return (
     <div className="bg-white min-h-screen">
       <SEOHead
-        title="Bengaluru House Construction Guides & Knowledge Hub | Sri Gajanana Constructions"
+        title="Bengaluru House Construction Guides & Knowledge Hub | Gajanana Constructions"
         description="Authoritative homeowner guides on building a house in Bangalore. Civil engineering insights, construction cost breakdowns, structural RCC tips, timelines, and BBMP bylaws."
-        keywords="Bangalore house construction guide, house construction cost Bangalore, building stages foundation to finishing, civil contractors advice, Sri Gajanana Guides"
+        keywords="Bangalore house construction guide, house construction cost Bangalore, building stages foundation to finishing, civil contractors advice, Gajanana Guides"
         canonical="https://www.gajananaconstructions.in/guides"
         schema={{
           "@context": "https://schema.org",

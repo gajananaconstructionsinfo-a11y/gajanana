@@ -24,9 +24,9 @@ export default function MaterialCategory() {
   return (
     <div>
       <SEOHead
-        title={`${currentCategory.name} Wholesale Supplier Bangalore | Sri Gajanana Constructions`}
+        title={`${currentCategory.name} Wholesale Supplier Bangalore | Gajanana Constructions`}
         description={`Buy genuine ${currentCategory.name} in Bengaluru with manufacturer test certificates and weighbridge accuracy. Direct stockyard supply with site delivery. Call 8884238688.`}
-        keywords={[`${currentCategory.name} Bangalore`, 'wholesale building materials', 'direct yard dispatch', 'Arekere stockyard', 'Sri Gajanana Materials']}
+        keywords={[`${currentCategory.name} Bangalore`, 'wholesale building materials', 'direct yard dispatch', 'Arekere stockyard', 'Gajanana Materials']}
         canonical={`https://www.gajananaconstructions.in/materials/${currentCategory.slug}`}
         schema={{
           "@context": "https://schema.org",
@@ -36,7 +36,7 @@ export default function MaterialCategory() {
           "description": currentCategory.shortDesc,
           "provider": {
             "@type": "WholesaleStore",
-            "name": "Sri Gajanana Constructions Materials Depot",
+            "name": "Gajanana Constructions Materials Depot",
             "telephone": "+918884238688",
             "url": "https://www.gajananaconstructions.in/"
           }

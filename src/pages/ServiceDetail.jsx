@@ -19,9 +19,9 @@ export default function ServiceDetail() {
   return (
     <div>
       <SEOHead
-        title={`${service.title} in Bengaluru | Sri Gajanana Constructions`}
+        title={`${service.title} in Bengaluru | Gajanana Constructions`}
         description={`${service.subtitle || service.desc.slice(0, 150)} Call 8884238688 / 9535828286 for immediate service mobilization.`}
-        keywords={[`${service.title} Bangalore`, service.badge, 'construction services South Bangalore', 'civil contractor Arekere', 'Sri Gajanana Constructions']}
+        keywords={[`${service.title} Bangalore`, service.badge, 'construction services South Bangalore', 'civil contractor Arekere', 'Gajanana Constructions']}
         canonical={`https://www.gajananaconstructions.in/services/${service.slug}`}
         schema={{
           "@context": "https://schema.org",
@@ -32,7 +32,7 @@ export default function ServiceDetail() {
               "description": service.desc,
               "provider": {
                 "@type": "GeneralContractor",
-                "name": "Sri Gajanana Constructions",
+                "name": "Gajanana Constructions",
                 "telephone": "+918884238688",
                 "url": "https://www.gajananaconstructions.in/"
               },
