@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <div className="space-y-0">
       <SEOHead
-        title="House Construction Company in Bangalore | Sri Gajanana Constructions"
-        description="Sri Gajanana Constructions is a leading house construction company in Bangalore. Turnkey residential building, in-house JCB fleet & direct materials depot. Call 8884238688 / 9535828286."
+        title="House Construction Company in Bangalore | Gajanana Constructions"
+        description="Gajanana Constructions provides residential house construction, turnkey home building, and civil contracting in Bangalore. Direct materials stockyard & in-house JCB fleet. Call 8884238688."
         keywords="house construction company in Bangalore, house construction in Bangalore, house builders in Bangalore, residential construction company in Bangalore, construction company in Bangalore, house construction contractors in Bangalore, turnkey house construction near me, civil contractors in Bangalore"
         canonical="https://www.gajananaconstructions.in/"
         schema={{
@@ -30,7 +30,7 @@ export default function Home() {
               "name": "Sri Gajanana Constructions - GAJANANA TRADERS & CONSTRUCTIONS & MATERIALS",
               "alternateName": "Sri Gajanana Constructions",
               "url": "https://www.gajananaconstructions.in/",
-              "logo": "https://www.gajananaconstructions.in/fallback.svg",
+              "logo": "https://www.gajananaconstructions.in/favicon.svg",
               "image": "https://www.gajananaconstructions.in/images/products/tata-tiscon-tmt.jpg",
               "description": "Complete construction solutions company, trading house and one-stop construction materials destination. Turnkey house building, earthmoving fleet, and primary stockyard in Bangalore since 2005.",
               "founder": {
@@ -53,12 +53,6 @@ export default function Home() {
                 "@type": "GeoCoordinates",
                 "latitude": 12.8878405,
                 "longitude": 77.6017497
-              },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "248",
-                "bestRating": "5"
               },
               "priceRange": "₹₹"
             },
@@ -143,15 +137,14 @@ export default function Home() {
 
               <div>
                 <p className="text-amber-600 font-bold text-xs sm:text-sm tracking-widest uppercase font-mono mb-2">
-                  Premier Residential Builders &amp; Turnkey Civil Contractors
+                  Turnkey Residential Builders &amp; Civil Contractors
                 </p>
-                <h1 className="text-4xl sm:text-6xl font-extrabold text-slate-950 font-heading leading-none tracking-tight">
-                  BUILDING DREAMS. <br />
-                  SUPPLYING QUALITY. <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-700">
-                    DELIVERING STRENGTH.
-                  </span>
+                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-950 font-heading leading-tight tracking-tight">
+                  House Construction Company in Bangalore
                 </h1>
+                <p className="mt-3 text-lg sm:text-xl font-medium text-slate-700 leading-snug">
+                  Building dreams, supplying quality materials, and delivering turnkey homes across South Bengaluru since 2005.
+                </p>
               </div>
 
               <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-light max-w-2xl">
@@ -198,10 +191,7 @@ export default function Home() {
             {/* Right Column: Hero Showcase Individual Build Card (5 cols) */}
             <div className="lg:col-span-5">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
-                <img
-                  src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1000&q=80"
-                  alt="On-Site Wall Construction and Bricklaying"
-                  className="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-700"
+                <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1000&q=80" alt="Turnkey residential house construction and masonry works in Bangalore" className="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-700" loading="eager" fetchPriority="high"
                   onError={(e) => { e.currentTarget.src = '/fallback.svg'; }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>

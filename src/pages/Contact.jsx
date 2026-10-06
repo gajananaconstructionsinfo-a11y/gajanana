@@ -43,7 +43,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden w-full">
       <SEOHead
         title="Contact Sri Gajanana Constructions | Yard Location & Phone Numbers Bangalore"
         description="Contact Sri Gajanana Constructions. Call +91 88842 38688 / +91 95358 28286 or visit our central office and stockyard at Samrat Layout, Arekere, Bengaluru 560076."
@@ -78,13 +78,20 @@ export default function Contact() {
       <Breadcrumb items={[{ label: 'Contact Us' }]} />
 
       {/* Pricing Policy Top Banner */}
-      <div className="bg-amber-500 text-slate-950 py-2.5 px-4 text-xs font-mono font-bold text-center border-b border-amber-600 shadow-inner">
-        <span>📢 FOR ALL PRICING QUERIES, WHOLESALE RATES &amp; MACHINERY BOOKINGS: Contact </span>
-        <a href="tel:8884238688" className="underline font-extrabold text-slate-950 hover:text-white ml-1">8884238688</a>
-        <span className="mx-1">/</span>
-        <a href="tel:9535828286" className="underline font-extrabold text-slate-950 hover:text-white">9535828286</a>
-        <span className="mx-1.5">|</span>
-        <a href="mailto:gajananaconstructionsinfo@gmail.com" className="underline font-extrabold text-slate-950 hover:text-white">gajananaconstructionsinfo@gmail.com</a>
+      <div className="bg-amber-500 text-slate-950 py-2.5 px-3 sm:px-4 text-[11px] sm:text-xs font-mono font-bold text-center border-b border-amber-600 shadow-inner leading-relaxed">
+        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+          <span>📢 FOR PRICING, WHOLESALE RATES &amp; MACHINERY:</span>
+          <span className="inline-flex items-center gap-1">
+            <span>Call</span>
+            <a href="tel:8884238688" className="underline font-black text-slate-950 hover:text-white">8884238688</a>
+            <span>/</span>
+            <a href="tel:9535828286" className="underline font-black text-slate-950 hover:text-white">9535828286</a>
+          </span>
+          <span className="hidden sm:inline text-slate-950/60">•</span>
+          <a href="mailto:gajananaconstructionsinfo@gmail.com" className="underline font-black text-slate-950 hover:text-white break-all">
+            gajananaconstructionsinfo@gmail.com
+          </a>
+        </div>
       </div>
 
       {/* Hero Header */}
@@ -136,24 +143,24 @@ export default function Contact() {
               </div>
 
               {/* Direct Phones */}
-              <div className="p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-blue-500/10 text-blue-600 flex items-center justify-center shrink-0">
-                  <i className="fa-solid fa-phone text-xl"></i>
+              <div className="p-5 sm:p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3.5 sm:gap-4 overflow-hidden">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-lg bg-blue-500/10 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
+                  <i className="fa-solid fa-phone text-lg sm:text-xl"></i>
                 </div>
-                <div className="flex-1">
-                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Contact Details</div>
+                <div className="min-w-0 flex-1">
+                  <div className="text-[11px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Contact Details</div>
                   <div className="space-y-1.5">
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                       <span className="text-xs text-slate-500">Phone Numbers:</span>
-                      <div className="flex items-center gap-2 font-mono font-bold text-slate-900 text-sm">
+                      <div className="flex items-center gap-2 font-mono font-bold text-slate-900 text-xs sm:text-sm">
                         <a href="tel:8884238688" className="hover:text-amber-600">8884238688</a>
                         <span className="text-slate-400 font-normal">/</span>
                         <a href="tel:9535828286" className="hover:text-amber-600">9535828286</a>
                       </div>
                     </div>
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                       <span className="text-xs text-slate-500">Direct WhatsApp:</span>
-                      <a href="https://wa.me/918884238688?text=Hello%20Gajanana%20Constructions,%20I%20have%20an%20enquiry" target="_blank" rel="noreferrer" className="text-sm font-bold text-emerald-600 hover:underline font-mono">
+                      <a href="https://wa.me/918884238688?text=Hello%20Gajanana%20Constructions,%20I%20have%20an%20enquiry" target="_blank" rel="noreferrer" className="text-xs sm:text-sm font-bold text-emerald-600 hover:underline font-mono">
                         +91 88842 38688
                       </a>
                     </div>
@@ -162,16 +169,16 @@ export default function Contact() {
               </div>
 
               {/* Email & Correspondence */}
-              <div className="p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0">
-                  <i className="fa-solid fa-envelope text-xl"></i>
+              <div className="p-5 sm:p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3.5 sm:gap-4 overflow-hidden">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-lg bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+                  <i className="fa-solid fa-envelope text-lg sm:text-xl"></i>
                 </div>
-                <div>
-                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Official Communications &amp; Pricing</div>
-                  <a href="mailto:gajananaconstructionsinfo@gmail.com" className="text-sm font-bold text-slate-900 hover:text-amber-600 block">
+                <div className="min-w-0 flex-1">
+                  <div className="text-[11px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Official Communications &amp; Pricing</div>
+                  <a href="mailto:gajananaconstructionsinfo@gmail.com" className="text-xs sm:text-sm font-bold text-slate-900 hover:text-amber-600 block break-all font-mono">
                     gajananaconstructionsinfo@gmail.com
                   </a>
-                  <p className="text-xs text-slate-500 mt-2">Verified digital tenders, structural drawings, and itemized BOQ rate requests.</p>
+                  <p className="text-xs text-slate-500 mt-2 leading-relaxed">Verified digital tenders, structural drawings, and itemized BOQ rate requests.</p>
                 </div>
               </div>
 

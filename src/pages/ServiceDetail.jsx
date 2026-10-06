@@ -130,6 +130,34 @@ export default function ServiceDetail() {
                 </div>
               </div>
 
+              {/* Why Choose Gajanana Constructions */}
+              <div className="bg-gradient-to-br from-slate-900 to-slate-950 p-8 rounded-3xl text-white shadow-md">
+                <span className="text-amber-400 font-mono text-xs font-bold uppercase tracking-wider block mb-1">
+                  The Gajanana Advantage
+                </span>
+                <h3 className="text-xl font-extrabold font-heading mb-4">
+                  Why Homeowners &amp; Developers Choose Gajanana Constructions
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs leading-relaxed text-slate-300">
+                  <div className="p-4 rounded-xl bg-slate-800/60 border border-slate-700">
+                    <strong className="text-white block mb-1 text-sm">Direct Stockyard Sourcing</strong>
+                    Primary mill Fe 550D TMT steel and fresh 53-grade cement dispatched directly from our 15,000 MT Arekere stockyard with zero middleman markups.
+                  </div>
+                  <div className="p-4 rounded-xl bg-slate-800/60 border border-slate-700">
+                    <strong className="text-white block mb-1 text-sm">In-House Heavy Fleet</strong>
+                    Owned JCB 3DX backhoes, 20-ton excavators, and transit mixers ready for immediate site mobilization without rental delays.
+                  </div>
+                  <div className="p-4 rounded-xl bg-slate-800/60 border border-slate-700">
+                    <strong className="text-white block mb-1 text-sm">On-Site Civil Engineers</strong>
+                    Dedicated site engineers supervise every foundation footing, reinforcement bind, and slab casting with transparent BOQ milestone reporting.
+                  </div>
+                  <div className="p-4 rounded-xl bg-slate-800/60 border border-slate-700">
+                    <strong className="text-white block mb-1 text-sm">20+ Years Local Legacy</strong>
+                    Established in 2005 with permanent physical headquarters in Arekere, ensuring enduring structural accountability and warranty support.
+                  </div>
+                </div>
+              </div>
+
               {/* Target Applications */}
               {service.applications && (
                 <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
@@ -235,6 +263,41 @@ export default function ServiceDetail() {
                           {s.title}
                         </Link>
                       ))}
+                  </div>
+                </div>
+
+                {/* Service Coverage Across Bengaluru Localities */}
+                <div className="mt-8 pt-6 border-t border-slate-100">
+                  <div className="flex items-center justify-between mb-2">
+                    <h4 className="font-bold text-slate-900 text-xs font-mono uppercase tracking-wider">
+                      Service Coverage Areas
+                    </h4>
+                    <Link to="/areas" className="text-amber-600 hover:underline text-[10px] font-bold">All 17 Areas →</Link>
+                  </div>
+                  <p className="text-[11px] text-slate-500 mb-3">
+                    Mobilizing teams and direct stockyard supplies across South Bengaluru:
+                  </p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {[
+                      { name: 'Arekere (HQ)', slug: 'arekere' },
+                      { name: 'JP Nagar', slug: 'jp-nagar' },
+                      { name: 'BTM Layout', slug: 'btm-layout' },
+                      { name: 'HSR Layout', slug: 'hsr-layout' },
+                      { name: 'Bommanahalli', slug: 'bommanahalli' },
+                      { name: 'Electronic City', slug: 'electronic-city' },
+                      { name: 'Attibele', slug: 'attibele' },
+                      { name: 'Begur', slug: 'begur' },
+                      { name: 'Hulimavu', slug: 'hulimavu' },
+                      { name: 'Sarjapur Road', slug: 'sarjapur-road' }
+                    ].map((loc) => (
+                      <Link
+                        key={loc.slug}
+                        to={`/areas/${loc.slug}`}
+                        className="px-2 py-1 rounded-lg bg-slate-50 hover:bg-amber-50 hover:text-amber-700 border border-slate-200/80 text-[11px] text-slate-700 font-medium transition-colors"
+                      >
+                        {loc.name}
+                      </Link>
+                    ))}
                   </div>
                 </div>
 

@@ -548,6 +548,15 @@ fs.writeFileSync(path.join(publicDir, '404.html'), fs.readFileSync(path.join(dis
 // Sync root index.html to docs/index.html (critical for GitHub Pages /docs source)
 fs.writeFileSync(path.join(docsDir, 'index.html'), fs.readFileSync(path.join(distDir, 'index.html'), 'utf8'), 'utf8');
 
+// Sync favicon.svg and robots.txt
+['favicon.svg', 'robots.txt'].forEach((file) => {
+  const src = path.join(publicDir, file);
+  if (fs.existsSync(src)) {
+    fs.copyFileSync(src, path.join(distDir, file));
+    fs.copyFileSync(src, path.join(docsDir, file));
+  }
+});
+
 // Sync dist/assets to docs/assets
 const copyDirSync = (src, dest) => {
   if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
