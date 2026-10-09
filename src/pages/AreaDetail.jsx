@@ -716,7 +716,7 @@ export default function AreaDetail() {
               to="/areas"
               className="inline-flex items-center space-x-2 text-xs font-extrabold text-amber-600 hover:text-amber-700 underline"
             >
-              <span>View All 17 South & Southeast Bengaluru Service Areas</span>
+              <span>View All 19 South & Southeast Bengaluru Service Areas</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>

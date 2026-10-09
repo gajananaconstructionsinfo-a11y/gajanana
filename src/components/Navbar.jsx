@@ -137,7 +137,7 @@ export default function Navbar() {
               <div className="absolute left-1/2 -translate-x-1/2 top-full pt-1.5 hidden group-hover:block z-50">
                 <div className="w-72 bg-white rounded-2xl shadow-xl border border-slate-100 p-3 animate-fade-in">
                   <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-2 px-1">
-                    17 Localities in South &amp; East Bengaluru
+                    19 Localities in South &amp; Southeast Bengaluru
                   </div>
                   <div className="grid grid-cols-2 gap-1 mb-2">
                     <div>
@@ -145,6 +145,7 @@ export default function Navbar() {
                       <Link to="/areas/arekere" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Arekere (HQ)</Link>
                       <Link to="/areas/jp-nagar" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">JP Nagar</Link>
                       <Link to="/areas/btm-layout" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">BTM Layout</Link>
+                      <Link to="/areas/anekal" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Anekal</Link>
                       <Link to="/areas/hulimavu" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Hulimavu</Link>
                       <Link to="/areas/begur" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Begur</Link>
                     </div>
@@ -152,6 +153,7 @@ export default function Navbar() {
                       <div className="text-[10px] font-bold text-amber-700 uppercase px-1 mb-1">Southeast</div>
                       <Link to="/areas/hsr-layout" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">HSR Layout</Link>
                       <Link to="/areas/electronic-city" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Electronic City</Link>
+                      <Link to="/areas/marsur" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Marsur Gate</Link>
                       <Link to="/areas/bommanahalli" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Bommanahalli</Link>
                       <Link to="/areas/sarjapur-road" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Sarjapur Rd</Link>
                       <Link to="/areas/attibele" className="block px-2 py-1 text-xs text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-lg">Attibele</Link>
@@ -161,7 +163,7 @@ export default function Navbar() {
                     to="/areas"
                     className="block px-3 py-2 text-xs font-bold text-amber-600 hover:bg-amber-50 rounded-xl transition-colors border-t border-slate-100 text-center"
                   >
-                    All 17 Areas Directory →
+                    All 19 Areas Directory →
                   </Link>
                 </div>
               </div>
@@ -400,11 +402,13 @@ export default function Navbar() {
             {mobileAreasOpen && (
               <div className="ml-3 pl-3 space-y-1 py-1.5 border-l-2 border-amber-500 my-1 bg-slate-50/50 rounded-r-xl">
                 <Link to="/areas" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs font-bold text-amber-600 hover:underline">
-                  All 17 Areas Directory →
+                  All 19 Areas Directory →
                 </Link>
                 <Link to="/areas/arekere" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-amber-700 font-bold">📍 Arekere (Main Depot &amp; HQ)</Link>
                 <Link to="/areas/jp-nagar" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">JP Nagar</Link>
                 <Link to="/areas/btm-layout" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">BTM Layout</Link>
+                <Link to="/areas/anekal" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Anekal</Link>
+                <Link to="/areas/marsur" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Marsur Gate</Link>
                 <Link to="/areas/hsr-layout" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">HSR Layout</Link>
                 <Link to="/areas/electronic-city" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Electronic City</Link>
                 <Link to="/areas/bommanahalli" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-xs text-slate-600 hover:text-amber-600">Bommanahalli</Link>

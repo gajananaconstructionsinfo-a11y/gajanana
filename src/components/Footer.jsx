@@ -162,7 +162,7 @@ export default function Footer() {
               </p>
             </div>
             <Link to="/areas" className="text-xs text-amber-400 hover:text-amber-300 font-bold mt-2 md:mt-0 inline-flex items-center">
-              All 17 Areas Directory &rarr;
+              All 19 Areas Directory &rarr;
             </Link>
           </div>
 
@@ -177,6 +177,8 @@ export default function Footer() {
             <Link to="/areas/begur" className="text-slate-400 hover:text-amber-400 transition-colors">Begur</Link>
             <Link to="/areas/bommasandra" className="text-slate-400 hover:text-amber-400 transition-colors">Bommasandra</Link>
             <Link to="/areas/chandapura" className="text-slate-400 hover:text-amber-400 transition-colors">Chandapura</Link>
+            <Link to="/areas/anekal" className="text-slate-400 hover:text-amber-400 transition-colors">Anekal</Link>
+            <Link to="/areas/marsur" className="text-slate-400 hover:text-amber-400 transition-colors">Marsur Gate</Link>
             <Link to="/areas/hebbagodi" className="text-slate-400 hover:text-amber-400 transition-colors">Hebbagodi</Link>
             <Link to="/areas/hulimavu" className="text-slate-400 hover:text-amber-400 transition-colors">Hulimavu</Link>
             <Link to="/areas/bilekahalli" className="text-slate-400 hover:text-amber-400 transition-colors">Bilekahalli</Link>

@@ -272,7 +272,7 @@ export default function ServiceDetail() {
                     <h4 className="font-bold text-slate-900 text-xs font-mono uppercase tracking-wider">
                       Service Coverage Areas
                     </h4>
-                    <Link to="/areas" className="text-amber-600 hover:underline text-[10px] font-bold">All 17 Areas →</Link>
+                    <Link to="/areas" className="text-amber-600 hover:underline text-[10px] font-bold">All 19 Areas →</Link>
                   </div>
                   <p className="text-[11px] text-slate-500 mb-3">
                     Mobilizing teams and direct stockyard supplies across South Bengaluru:
@@ -286,6 +286,8 @@ export default function ServiceDetail() {
                       { name: 'Bommanahalli', slug: 'bommanahalli' },
                       { name: 'Electronic City', slug: 'electronic-city' },
                       { name: 'Attibele', slug: 'attibele' },
+                      { name: 'Anekal', slug: 'anekal' },
+                      { name: 'Marsur', slug: 'marsur' },
                       { name: 'Begur', slug: 'begur' },
                       { name: 'Hulimavu', slug: 'hulimavu' },
                       { name: 'Sarjapur Road', slug: 'sarjapur-road' }

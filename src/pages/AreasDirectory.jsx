@@ -32,7 +32,7 @@ export default function AreasDirectory() {
     <div className="bg-white min-h-screen">
       <SEOHead
         title="Areas We Serve in South Bengaluru | Gajanana Constructions"
-        description="Turnkey residential house construction, JCB earthmoving fleet rental & wholesale building materials depot across 17 South & Southeast Bengaluru localities."
+        description="Turnkey residential house construction, JCB earthmoving fleet rental & wholesale building materials depot across 19 South & Southeast Bengaluru localities."
         keywords="construction areas Bangalore, house builders South Bangalore, civil contractors JP Nagar, building materials Electronic City, Arekere builders"
         canonical="https://www.gajananaconstructions.in/areas"
         schema={{
@@ -40,7 +40,7 @@ export default function AreasDirectory() {
           "@type": "CollectionPage",
           "name": "Areas We Serve in South Bengaluru",
           "url": "https://www.gajananaconstructions.in/areas",
-          "description": "Comprehensive construction and materials supply across 17 major South & Southeast Bengaluru localities.",
+          "description": "Comprehensive construction and materials supply across 19 major South & Southeast Bengaluru localities.",
           "provider": {
             "@type": "GeneralContractor",
             "name": "Gajanana Constructions",
@@ -68,7 +68,7 @@ export default function AreasDirectory() {
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight font-heading leading-tight mb-4">
-            Turnkey Construction &amp; Building Materials Across 17 Localities
+            Turnkey Construction &amp; Building Materials Across 19 Localities
           </h1>
 
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed mb-8">
@@ -127,7 +127,7 @@ export default function AreasDirectory() {
         </div>
       </section>
 
-      {/* Grid of 17 Areas */}
+      {/* Grid of 19 Areas */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           

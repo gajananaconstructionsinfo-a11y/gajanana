@@ -891,7 +891,7 @@ export default function Home() {
               },
               {
                 q: "What areas in Bangalore does Gajanana Constructions serve?",
-                a: "Our primary service areas include Arekere (Central Headquarters & Stockyard), JP Nagar, BTM Layout, HSR Layout, Bommanahalli, Electronic City, Attibele, Begur, Hulimavu, Singasandra, Kudlu, Harlur, Sarjapur Road, Hebbagodi, Chandapura, and Bommasandra."
+                a: "Our primary service areas include Arekere (Central Headquarters & Stockyard), JP Nagar, BTM Layout, HSR Layout, Bommanahalli, Electronic City, Attibele, Chandapura, Anekal, Marsur Gate, Begur, Hulimavu, Singasandra, Kudlu, Harlur, Sarjapur Road, Hebbagodi, and Bommasandra."
               }
             ].map((faq, idx) => (
               <div

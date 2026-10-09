@@ -1,5 +1,5 @@
 // src/data/areasData.js
-// Comprehensive, unique Local SEO data for Gajanana Constructions across 17 South & Southeast Bengaluru localities.
+// Comprehensive, unique Local SEO data for Gajanana Constructions across 19 South & Southeast Bengaluru localities.
 
 export const AREAS = [
   {
@@ -594,6 +594,8 @@ Furthermore, we supply high-tonnage bulk materials across Attibele: direct trail
     nearbyLocalities: [
       { name: 'Bommasandra', slug: 'bommasandra', distance: '6.0 km' },
       { name: 'Chandapura', slug: 'chandapura', distance: '5.0 km' },
+      { name: 'Marsur', slug: 'marsur', distance: '8.0 km' },
+      { name: 'Anekal', slug: 'anekal', distance: '11.0 km' },
       { name: 'Hebbagodi', slug: 'hebbagodi', distance: '8.0 km' },
       { name: 'Electronic City', slug: 'electronic-city', distance: '11.0 km' },
       { name: 'Sarjapur', slug: 'sarjapur-road', distance: '9.0 km' }
@@ -774,6 +776,8 @@ Furthermore, we are a key supplier of bulk construction materials in Bommasandra
       { name: 'Electronic City', slug: 'electronic-city', distance: '4.5 km' },
       { name: 'Hebbagodi', slug: 'hebbagodi', distance: '2.5 km' },
       { name: 'Chandapura', slug: 'chandapura', distance: '3.5 km' },
+      { name: 'Marsur', slug: 'marsur', distance: '7.0 km' },
+      { name: 'Anekal', slug: 'anekal', distance: '12.0 km' },
       { name: 'Attibele', slug: 'attibele', distance: '6.0 km' },
       { name: 'Jigani', slug: 'jigani', distance: '5.0 km' }
     ],
@@ -860,6 +864,7 @@ Plot owners and local builders in Chandapura benefit from our wholesale stockyar
     ],
     nearbyLocalities: [
       { name: 'Bommasandra', slug: 'bommasandra', distance: '3.5 km' },
+      { name: 'Marsur', slug: 'marsur', distance: '4.5 km' },
       { name: 'Attibele', slug: 'attibele', distance: '5.0 km' },
       { name: 'Hebbagodi', slug: 'hebbagodi', distance: '5.5 km' },
       { name: 'Electronic City', slug: 'electronic-city', distance: '8.0 km' },
@@ -1513,6 +1518,190 @@ Furthermore, we are a key wholesale building materials partner for Sarjapur Road
     metaTitle: 'House Construction Company in Sarjapur Road, Bangalore | Gajanana Constructions',
     metaDescription: 'Gajanana Constructions provides residential house construction services in Sarjapur Road, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
     geo: { lat: 12.9107, lng: 77.6833 }
+  },
+  {
+    slug: 'anekal',
+    name: 'Anekal',
+    heroTitle: 'House Construction Services in Anekal',
+    subheading: 'Turnkey Residential Villa Construction, Farmhouse Civil Engineering & Bulk Building Materials Supply',
+    badge: 'Historic South Taluk & Growing Residential Corridor',
+    zone: 'South Bengaluru',
+    pincode: '562106',
+    establishedBase: 'Serving Anekal Town, Chandapura-Anekal Road, Jigani Link, Thally Road & Railway Station Environs',
+    deliveryTime: '55 - 75 Minutes',
+    distanceFromArekere: '22 km',
+    heroImage: '/images/construction-works/stage-01-site-foundation.jpg',
+    tagline: 'Turnkey Residential Builders & Direct Materials Wholesale Depot in Anekal',
+    uniqueDescription: `Anekal has developed from a historic administrative taluk headquarters into a vibrant, high-growth residential and semi-urban corridor in South Bengaluru Urban district. Situated south of the Electronic City-Bommasandra-Jigani industrial triangle and well-connected via the Chandapura-Anekal Main Road, Bannerghatta-Anekal Road, and the Bengaluru Suburban Rail network, Anekal is the premier destination for independent plotted layouts, spacious duplex villas, weekend farmhouses, and modern community residences.
+
+Gajanana Constructions serves plot buyers, individual landowners, and institutional developers throughout Anekal with complete turnkey civil construction solutions. Operating without intermediaries or broker commissions, we take your project from initial contour survey and architectural drafting to structural CAD modeling, town planning approvals, mechanized soil excavation, IS-standard RCC casting, and turnkey architectural handover.
+
+Homeowners and layout contractors across Anekal also benefit from our direct wholesale materials logistics. We supply certified Tata Tiscon Fe 550D TMT rebar, UltraTech 43-Grade cement, double-washed concrete M-sand, plastering P-sand, machine-crushed 20mm blue metal granite aggregates, and high-density solid concrete blocks directly to Anekal job sites with verified weighbridge documentation.`,
+    soilAndFoundationInfo: `Anekal features predominantly firm red gravelly soil, red sandy loam, and weathered granite bedrock located at shallow-to-moderate excavation depths (5 to 8 feet), with high Safe Bearing Capacity (SBC) typically ranging between 200 and 260 kN/m². This robust subsurface profile makes isolated trapezoidal column footings and combined RCC pad footings exceptionally stable and cost-efficient for G+1, G+2, and G+3 residential villas. For agricultural farmhouses and expansive single-level estates along Thally Road or Jigani Link Road, we engineer continuous plinth tie-beams and integrated anti-termite chemical soil barriers to protect against subsoil moisture and insect migration.`,
+    keyServices: [
+      {
+        title: 'Turnkey Independent House & Villa Construction',
+        description: 'End-to-end residential villa contracting from architectural blueprints and structural calculations to turnkey civil, electrical, plumbing, painting, and interior key handover.',
+        link: '/services/residential-construction'
+      },
+      {
+        title: 'Farmhouse & Estate Civil Contracting',
+        description: 'Custom civil engineering for expansive farmhouses, perimeter compound walls, security gates, water sump tanks, and RCC driveway paving.',
+        link: '/services/civil-contractors'
+      },
+      {
+        title: 'JCB 3DX & Hydraulic Excavator Fleet Rental',
+        description: 'In-house heavy machinery for plot clearance, tree removal, basement excavation, foundation trenching, and soil leveling across Anekal layouts.',
+        link: '/services/earthmoving-machinery-jcb'
+      },
+      {
+        title: 'Direct Wholesale Building Materials Supply',
+        description: 'Depot-direct dispatches of UltraTech cement, Tata Tiscon steel rebars, VSI M-sand, P-sand, and blue metal jelly delivered straight to Anekal construction sites.',
+        link: '/materials'
+      }
+    ],
+    materialsSupplied: [
+      'Tata Tiscon Fe 550D High-Ductility TMT Rebar (8mm - 25mm)',
+      'UltraTech 43-Grade Ordinary Portland Cement (OPC) & PPC',
+      'Factory-Crushed Double-Washed M-Sand for Concrete',
+      'Triple-Washed Superfine Plastering Sand (P-Sand)',
+      '20mm & 40mm Granite Blue Metal Crushed Aggregates',
+      'High-Density 6\" & 4\" Solid Concrete Blocks',
+      'JCB 3DX Earthmovers & 20-Ton Excavators on Project Hire'
+    ],
+    nearbyLocalities: [
+      { name: 'Marsur', slug: 'marsur', distance: '6.5 km' },
+      { name: 'Chandapura', slug: 'chandapura', distance: '9.0 km' },
+      { name: 'Jigani', slug: 'jigani', distance: '10.0 km' },
+      { name: 'Attibele', slug: 'attibele', distance: '11.0 km' },
+      { name: 'Bommasandra', slug: 'bommasandra', distance: '12.0 km' },
+      { name: 'Electronic City', slug: 'electronic-city', distance: '16.0 km' }
+    ],
+    seoKeywords: [
+      'Construction company in Anekal',
+      'House construction in Anekal',
+      'Building contractor in Anekal',
+      'Construction materials in Anekal',
+      'Building material supplier near Anekal',
+      'Turnkey house builders Anekal Bangalore',
+      'Villa construction contractors Anekal',
+      'JCB rental in Anekal',
+      'TMT steel and cement suppliers in Anekal',
+      'Farmhouse construction contractors Anekal'
+    ],
+    faqs: [
+      {
+        q: 'What is the cost of building an independent house or villa in Anekal, Bengaluru?',
+        a: 'Turnkey residential house and villa construction in Anekal is quoted through a transparent, itemized Bill of Quantities (BOQ) covering structural RCC, brickwork, plastering, branded sanitaryware, electricals, and premium flooring. Because we supply primary materials directly from our wholesale depot, clients in Anekal save substantially compared to broker-driven aggregator rates. Call 8884238688 for an exact site quotation.'
+      },
+      {
+        q: 'How fast can building materials and JCBs reach construction sites in Anekal?',
+        a: 'Standard truckloads of cement, Tata Tiscon steel rebars, M-sand, concrete blocks, and aggregates reach Anekal construction sites within 55 to 75 minutes. JCB 3DX earthmovers can be mobilized directly for site grading and foundation trenching.'
+      },
+      {
+        q: 'Do you assist with building plan approvals and sanctions in Anekal Taluk?',
+        a: 'Yes. Our civil engineering team assists clients with Anekal Planning Authority (APA) / BMRDA sanctions, Gram Panchayat permissions, structural stability drawings, BESCOM power connections, and borewell plumbing layout planning.'
+      },
+      {
+        q: 'Can you construct boundary walls and water sumps for vacant plots in Anekal?',
+        a: 'Yes. We provide complete plot security civil works including stone masonry foundation, concrete block compound walls, solar fencing pillars, and waterproof RCC underground sumps (6,000 to 20,000 liter capacity).'
+      }
+    ],
+    metaTitle: 'House Construction Company in Anekal, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Anekal, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    geo: { lat: 12.7105, lng: 77.6974 }
+  },
+  {
+    slug: 'marsur',
+    name: 'Marsur',
+    heroTitle: 'House Construction Services in Marsur',
+    subheading: 'Turnkey Residential Plotted Homes, Gated Community Villas & Wholesale Building Materials',
+    badge: 'Chandapura-Anekal Highway Corridor',
+    zone: 'Southeast Bengaluru',
+    pincode: '562106',
+    establishedBase: 'Serving Marsur Gate, Chandapura-Anekal Main Road, Indlabele, Karpur & Jigani-Marsur Junction',
+    deliveryTime: '45 - 65 Minutes',
+    distanceFromArekere: '17 km',
+    heroImage: '/images/construction-works/stage-03-roofing.jpg',
+    tagline: 'Turnkey Plotted Villa Builders & Material Suppliers at Marsur Gate',
+    uniqueDescription: `Marsur (anchored by the key transit node of Marsur Gate) is one of the most rapidly growing plotted residential sectors along the Chandapura–Anekal Main Road in South-East Bengaluru. Positioned midway between the industrial commercial employment centers of Bommasandra and Electronic City and the serene green belts of Anekal, Marsur has witnessed explosive expansion in gated villa enclaves, BMRDA-approved residential layouts, and independent plot developments.
+
+Gajanana Constructions is the preferred civil contractor and engineering partner for plot owners across Marsur and its neighboring rural-urban fringe layouts. We deliver complete, turn-key residential construction packages encompassing architectural 2D/3D planning, soil investigation, structural RCC framework casting, anti-termite treatment, high-durability brick masonry, precision plastering, and turnkey interior finishes.
+
+By sourcing materials directly from our central primary stockyard, builders and individual homeowners in Marsur bypass retailer inflation. We provide rapid direct-to-site deliveries of Tata Tiscon Fe 550D TMT rebar, UltraTech 43G cement, triple-washed M-sand and P-sand, machine-cut solid blocks, and 20mm blue metal aggregate jelly backed by genuine manufacturer test certificates.`,
+    soilAndFoundationInfo: `The soil around Marsur and the Chandapura-Anekal road belt consists mainly of stable red morrum and gravelly sandy clay with solid subsoil strata reached between 5 to 8 feet of excavation depth. Safe Bearing Capacity (SBC) averages between 190 and 240 kN/m², making it suitable for economical isolated trapezoidal column footings connected by reinforced plinth tie-beams. In layout areas adjoining irrigation channels or low-lying agricultural conversions, our civil engineers execute raised plinth beams with dense gravel backfilling and damp-proof course (DPC) membranes to guarantee zero capillary water dampness in residential ground floors.`,
+    keyServices: [
+      {
+        title: 'Turnkey Residential Villa & Plotted Home Construction',
+        description: 'Full-scope villa contracting for independent plot layouts in Marsur with architectural floor plans, 3D front elevations, and turnkey milestone execution.',
+        link: '/services/residential-construction'
+      },
+      {
+        title: 'Site Clearing, Grading & JCB Backhoe Excavation',
+        description: 'Heavy JCB 3DX earthmovers stationed for plot clearing, weed removal, basement digging, and road formation across Marsur developments.',
+        link: '/services/earthmoving-machinery-jcb'
+      },
+      {
+        title: 'Direct Wholesale Construction Materials Logistics',
+        description: 'Direct supply of Tata Tiscon Fe 550D TMT steel, UltraTech cement bags, VSI M-sand, P-sand, and 20mm jelly at wholesale depot rates.',
+        link: '/materials'
+      },
+      {
+        title: 'Structural Remodeling & Terrace Waterproofing',
+        description: 'Floor additions (G+1 to G+3), column strengthening, exterior weatherproofing, and multi-layer chemical terrace waterproofing.',
+        link: '/services/renovation-remodeling'
+      }
+    ],
+    materialsSupplied: [
+      'Tata Tiscon Fe 550D High-Strength TMT Rebars (8mm - 20mm)',
+      'UltraTech 43-Grade Ordinary Portland Cement (OPC & Super)',
+      'Double-Washed Manufactured Sand (M-Sand) for High-Strength Concrete',
+      'Triple-Washed Plastering Sand (P-Sand)',
+      'Machine-Crushed 20mm & 40mm Granite Blue Metal Jelly',
+      'High-Density 6\" & 4\" Solid Concrete Blocks',
+      'JCB 3DX Heavy Excavators with Experienced Site Operators'
+    ],
+    nearbyLocalities: [
+      { name: 'Chandapura', slug: 'chandapura', distance: '4.5 km' },
+      { name: 'Anekal', slug: 'anekal', distance: '6.5 km' },
+      { name: 'Bommasandra', slug: 'bommasandra', distance: '7.0 km' },
+      { name: 'Attibele', slug: 'attibele', distance: '8.0 km' },
+      { name: 'Jigani', slug: 'jigani', distance: '8.5 km' },
+      { name: 'Electronic City', slug: 'electronic-city', distance: '11.0 km' }
+    ],
+    seoKeywords: [
+      'Construction company in Marsur',
+      'House construction in Marsur',
+      'Building contractor in Marsur',
+      'Construction materials in Marsur',
+      'Building materials near Marsur Gate',
+      'Turnkey house builders Marsur Bangalore',
+      'Villa builders Chandapura Anekal Road Marsur',
+      'JCB hire Marsur Gate',
+      'Cement and steel suppliers in Marsur',
+      'Building contractors near Marsur Gate'
+    ],
+    faqs: [
+      {
+        q: 'What is the construction rate for a residential house in Marsur Gate, Bengaluru?',
+        a: 'Residential house construction in Marsur is customized to your plot size and preferred grade of finish. With Gajanana Constructions, you receive a detailed, transparent Bill of Quantities (BOQ) with zero hidden overheads. Call 8884238688 to discuss your site plan and receive an itemized estimate.'
+      },
+      {
+        q: 'How fast do construction material trucks arrive at Marsur job sites?',
+        a: 'Direct truckloads of UltraTech cement, Tata Tiscon steel, M-sand, solid concrete blocks, and 20mm aggregate reach Marsur Gate and surrounding layouts within 45 to 65 minutes.'
+      },
+      {
+        q: 'Can Gajanana Constructions handle layout sanctions and BMRDA approvals in Marsur?',
+        a: 'Yes, our architectural and liaison team prepares sanction drawings, structural stability certifications, setback compliance blueprints, and coordinates local authority clearances for residential plots in Marsur.'
+      },
+      {
+        q: 'Do you provide JCB excavation machinery for plot development around Marsur?',
+        a: 'Yes. Our in-house fleet of JCB 3DX backhoe loaders and hydraulic excavators is available on hourly, daily, or project contracts for plot grading, foundation excavation, and trenching in Marsur.'
+      }
+    ],
+    metaTitle: 'House Construction Company in Marsur, Bangalore | Gajanana Constructions',
+    metaDescription: 'Gajanana Constructions provides residential house construction services in Marsur, Bangalore, with complete civil, electrical, plumbing, painting and finishing works. Call 8884238688.',
+    geo: { lat: 12.7538, lng: 77.6912 }
   }
 ];
 

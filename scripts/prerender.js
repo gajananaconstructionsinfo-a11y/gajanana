@@ -204,7 +204,7 @@ for (const targetDir of targets) {
     {
       path: 'areas',
       title: 'Areas We Serve in South Bengaluru | Gajanana Constructions',
-      description: 'Turnkey residential house construction, JCB earthmoving fleet rental & wholesale building materials depot across 17 South & Southeast Bengaluru localities.',
+      description: 'Turnkey residential house construction, JCB earthmoving fleet rental & wholesale building materials depot across 19 South & Southeast Bengaluru localities.',
       keywords: 'Construction company Bangalore, house builders South Bengaluru, building materials depot Arekere, civil contractors JP Nagar, BTM, HSR Layout, Electronic City',
       schema: {
         "@context": "https://schema.org",
@@ -227,7 +227,7 @@ for (const targetDir of targets) {
     });
   }
 
-  // 4. All 17 Area Pages (/areas/:slug)
+  // 4. All 19 Area Pages (/areas/:slug)
   for (const area of AREAS) {
     writeRouteHtml(path.join('areas', area.slug), {
       title: area.metaTitle,
@@ -449,7 +449,7 @@ let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
   </url>
 `;
 
-// 17 Areas
+// 19 Areas
 for (const area of AREAS) {
   sitemapXml += `  <url>
     <loc>https://www.gajananaconstructions.in/areas/${area.slug}</loc>
@@ -588,10 +588,13 @@ const copyDirSync = (src, dest) => {
     }
   }
 };
+if (fs.existsSync(path.join(docsDir, 'assets'))) {
+  fs.rmSync(path.join(docsDir, 'assets'), { recursive: true, force: true });
+}
 copyDirSync(path.join(distDir, 'assets'), path.join(docsDir, 'assets'));
 if (fs.existsSync(path.join(publicDir, 'images'))) {
   copyDirSync(path.join(publicDir, 'images'), path.join(distDir, 'images'));
   copyDirSync(path.join(publicDir, 'images'), path.join(docsDir, 'images'));
 }
 
-console.log('Complete static pre-rendering (78 routes) and sitemap.xml generated successfully in dist and docs!');
+console.log('Complete static pre-rendering (80 routes) and sitemap.xml generated successfully in dist and docs!');
