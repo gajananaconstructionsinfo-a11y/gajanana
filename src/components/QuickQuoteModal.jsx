@@ -82,12 +82,20 @@ export default function QuickQuoteModal() {
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="p-2.5 rounded-xl bg-amber-50 border border-amber-200 text-[11px] font-mono text-amber-900">
-                <span>For immediate wholesale pricing: </span>
-                <a href="tel:8884238688" className="font-bold underline text-slate-900">8884238688</a>
-                <span className="mx-1">/</span>
-                <a href="tel:9535828286" className="font-bold underline text-slate-900">9535828286</a>
-                <span className="mx-1">•</span>
-                <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold underline text-slate-900">Email us</a>
+                <div className="flex items-center justify-between mb-1">
+                  <span>Direct Wholesale Desk:</span>
+                  <span className="text-emerald-700 font-bold">24/7 online support</span>
+                </div>
+                <div>
+                  <a href="tel:8884238688" className="font-bold underline text-slate-900">8884238688</a>
+                  <span className="mx-1">/</span>
+                  <a href="tel:9535828286" className="font-bold underline text-slate-900">9535828286</a>
+                  <span className="mx-1">•</span>
+                  <a href="mailto:gajananaconstructionsinfo@gmail.com" className="font-bold underline text-slate-900">Email us</a>
+                </div>
+                <div className="text-[10px] text-slate-500 mt-1">
+                  Yard: Mon - Sat 8:00 AM - 6:30 PM | Sunday: 8:00 AM - 1:00 PM
+                </div>
               </div>
 
               <div>

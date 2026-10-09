@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 export default function Footer() {
   const { data } = useApp();
@@ -127,6 +127,17 @@ export default function Footer() {
                   {company.email}
                 </a>
               </p>
+              <div className="flex items-start space-x-2.5 text-xs text-slate-300 pt-2 border-t border-slate-900">
+                <Clock className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
+                <div>
+                  <div className="text-white font-medium">Mon - Sat: 8:00 AM - 6:30 PM</div>
+                  <div className="text-slate-400 text-[11px]">Sunday: 8:00 AM - 1:00 PM</div>
+                  <div className="text-emerald-400 font-semibold text-[11px] mt-0.5 flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    24/7 online support
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

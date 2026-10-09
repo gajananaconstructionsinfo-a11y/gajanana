@@ -104,7 +104,21 @@ export default function AreaDetail() {
             "@type": "GeoCoordinates",
             "latitude": area.geo.lat,
             "longitude": area.geo.lng
-          }
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "08:00",
+              "closes": "18:30"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Sunday",
+              "opens": "08:00",
+              "closes": "13:00"
+            }
+          ]
         },
         {
           "@type": "FAQPage",

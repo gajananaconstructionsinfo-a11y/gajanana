@@ -49,7 +49,8 @@ export const DEFAULT_DATA = {
     address: "7013, 2nd Main Rd, Samrat Layout, Sarvobhogam Nagar, Arekere, Bengaluru, Karnataka 560076",
     mapsUrl: "https://www.google.com/maps/place/7013,+2nd+Main+Rd+Samrat+Layout,+Sarvobhogam+Nagar,+Arekere,+Bengaluru,+Karnataka+560076/@12.8877432,77.6017726,21z/data=!4m6!3m5!1s0x3bae152f523d38af:0x73dac50967405142!8m2!3d12.8878405!4d77.6017497!16s%2Fg%2F11lmp2c1d0",
     coordinates: "12.8878° N, 77.6017° E",
-    workingHours: "Monday - Saturday: 8:00 AM – 7:30 PM | Sunday: 9:00 AM – 2:00 PM (Yard & Machinery Dispatch Open)",
+    workingHours: "Mon - Sat: 8:00 AM - 6:30 PM | Sunday: 8:00 AM - 1:00 PM",
+    supportHours: "24/7 online support",
     establishedYear: 2005,
     experienceYears: "20+",
     founder: {

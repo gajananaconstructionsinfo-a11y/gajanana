@@ -190,11 +190,11 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Operations Timing</div>
-                  <p className="text-sm font-semibold text-slate-800">Mon - Sat: 8:00 AM - 7:30 PM</p>
-                  <p className="text-sm text-slate-600">Sunday: 9:00 AM - 2:00 PM (Materials Yard Dispatch Only)</p>
+                  <p className="text-sm font-semibold text-slate-800">Mon - Sat: 8:00 AM - 6:30 PM</p>
+                  <p className="text-sm text-slate-600">Sunday: 8:00 AM - 1:00 PM</p>
                   <div className="mt-2 inline-flex items-center gap-1.5 px-2.5 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-md">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    Central Weighbridge 24-Hr Gate Operational
+                    24/7 Online Support • Weighbridge Gate Open
                   </div>
                 </div>
               </div>

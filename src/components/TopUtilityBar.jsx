@@ -13,9 +13,13 @@ export default function TopUtilityBar() {
             <span className="w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>
             Trading, Building Materials, JCB Earthmoving &amp; Turnkey Construction
           </span>
-          <span className="text-slate-400 flex items-center">
-            <Clock className="w-3.5 h-3.5 mr-1.5 text-amber-500" />
-            <span>Mon - Sat: 8:00 AM – 7:30 PM (Yard &amp; Fleet Open)</span>
+          <span className="text-slate-400 flex items-center space-x-1.5">
+            <Clock className="w-3.5 h-3.5 mr-1 text-amber-500" />
+            <span>Mon - Sat: 8:00 AM - 6:30 PM</span>
+            <span className="text-slate-600">|</span>
+            <span>Sunday: 8:00 AM - 1:00 PM</span>
+            <span className="text-slate-600">|</span>
+            <span className="text-emerald-400 font-medium">24/7 online support</span>
           </span>
         </div>
         <div className="flex items-center space-x-5">
